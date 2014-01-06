@@ -4,7 +4,9 @@ title: 'Testing'
 weburl: ''
 ---
 
-include ../../fragments/slide_mixins
+include ../../fragments/unit_mixins
+include ../../fragments/compatibility_mixins
+include ../../fragments/logic_mixins
 
 
 .deck-container
@@ -19,13 +21,94 @@ include ../../fragments/slide_mixins
       .words
         span(style="position:relative;top:250px;left:450px;").white-box.big.center #{document.weburl}
 
+
+  +slide
+    p Some of this stuff is old, not the best way to do it.
+    p I try to keep the newer (better) stuff at the start.
+
+  +slide_middle
+    +question_mark
+    p.center nice big question mark behind some text
+    
+  +slide
+    p test 
+      span.highlights1 highlights
+      span  in text
+    p test 
+      span.highlights2 highlights
+      span  in text
+    p test 
+      span.highlights3 highlights
+      span  in text
+    p test 
+      span.highlights4 highlights
+      span   
+      span.in in
+      span   
+      span.text text
+    +invert('.highlights1')
+    +highlight('.highlights2')
+    +highlight('.highlights3','blue')
+    +highlight('p:eq(2)','yellow')
+    +highlight('.highlights4', 'forestgreen')
+    +highlight('.in', 'lime')
+    +highlight('.text', 'orange')
+
+  +slide
+    p test row bkg
+    ol
+      li first line (no span)
+      li second line (no span)
+    p test row bkg using span within li
+    ol
+      li
+        span first line (in span)
+      li
+        span second line
+    +highlight-row('ol:eq(0) li:eq(0)' ) 
+    +highlight-row-remove_('ol:eq(0) li:eq(0)' )
+    +highlight-row('ol:eq(0) li:eq(1)', 'pink')
+    +highlight-row-remove('ol:eq(0) li:eq(1)', 'pink')
+    // second list
+    +highlight-row('ol:eq(1) li:eq(0) span' )
+    +highlight-row-remove_('ol:eq(1) li:eq(0) span' )
+    +highlight-row('ol:eq(1) li:eq(1) span', 'pink')
+
+
+  +slide_rh_white({step:false})
+    .notes Here's what we already have about comprehending pointing gestures.
+    .notes This explains why apes don't comprehend pointing gestures --- they don't know (2) or (3) or both.
+    .notes But what can we say about why they don't point?  Think about what would be involved in producing a pointing gesture.
+    +run_across
+      p.center Two sides of a story
+    +left_half
+      p To comprehend:
+      ol
+        li know that this person is pointing to location L;
+        li don't use highlight-row in rh_white
+        li know that what she is attempting to communicate is that object X it at L.
+    +right_half({step:false})
+      .notes Here's parallel view about production.
+      p To produce:
+      ol
+        li know how to point to location L;
+        li really don't use highlight-row in rh_white
+        li know that what you can communicate is that object X is at L.
+      .notes So why don't apes point?
+      .notes Because they don't know (2) or (3) or both.
+      +highlight-row('ol:eq(1) li:eq(1)')
+      +highlight-row-remove_('ol:eq(1) li:eq(1)')
+      +highlight-row('ol:eq(0) li:eq(1)')
+
+
+
   .slide#test_blur
     .words: .container_12: .grid_12
       p.blur-text this is already blurred
       p.blur1 this will be blurred
       p.highlight1 this will be highlighted
       mixin blur('.blur1')
-      mixin words-bkg('.highlight1','teal')
+      mixin highlight('.highlight1','teal')
 
 
   .slide#test_steps
@@ -159,7 +242,8 @@ include ../../fragments/slide_mixins
 
   .slide#white-bottom-half
     .bottom-third-white
-      .test text in white bkg?
+      .container_12: .grid_12: .words
+        .test text in white bkg?
     .words
       .container_12: .grid_12
         p normal text
@@ -168,13 +252,13 @@ include ../../fragments/slide_mixins
           p unaffected by the white bottom part
         .grid_6
           p normal text can continue above
-      
-    .words.invert(style="position:absolute; top:350px;")
-      .container_12
-        .grid_6
-          p test on white added later
-        .grid_6
-          p seems to work even with columns
+    .slide
+      .words.invert(style="position:absolute; top:450px;")
+        .container_12
+          .grid_6
+            p test on white added later
+          .grid_6
+            p seems to work even with columns
     
       
 
@@ -367,20 +451,18 @@ include ../../fragments/slide_mixins
         mixin fitch_proof(prf1)
       
       //- highlight bits of the proof
-      mixin highlight_row(3)
-      mixin anim_end()
+      mixin highlight-proof-row(3)
       
       //- highlight bits of the proof and draw a connector linking them
       #fitch1_high
-        mixin unhighlight_row(3)
+        mixin unhighlight-proof-row_(3)
         mixin highlight_citation(3,1)
         mixin highlight_cited_sentence(1)
         mixin connect({from:'#firstproof .fitch-proof .row-1 .sentence', to:'#firstproof .fitch-proof .row-3 .citation-1', color:'yellow'})
 
       mixin unhighlight_citation(3,1)
       mixin unhighlight_cited_sentence(1)
-      mixin highlight_row(4)
-      mixin anim_end()
+      mixin highlight-proof-row(4)
 
   // lots of proofs on a page, with subproofs
   .slide
@@ -397,4 +479,3 @@ include ../../fragments/slide_mixins
 
 
           
-    a.deck-permalink(href='.', title='Permalink to this slide') #
