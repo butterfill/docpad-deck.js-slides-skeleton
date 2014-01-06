@@ -13,6 +13,14 @@ npm install
 docpad generate
 
 
+3b. [optional] to update local version docpad and plugins (CAUTION: may not work)
+
+docpad update
+
+
+3c. You may also get the latest deck.core.js (but don't upgrade deck.core.css)
+
+
 4. serve
 
 cd out/
