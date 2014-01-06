@@ -1,0 +1,16 @@
+---
+layout: 'default2'
+title: 'Lecture 01'
+weburl: ''
+units: []
+lecture_date: '2013/10/3'
+---
+
+include ../../fragments/slide_mixins
+
+- var images = get_images('bees')
+
+mixin title_slide({document:document, images:images})
+
+// the question
+mixin insert_unit({unit:'001', title_slide:false, images:images, handout:true})
