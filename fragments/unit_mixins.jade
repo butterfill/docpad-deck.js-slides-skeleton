@@ -1,5 +1,5 @@
 //-
-//- unit_mixins version 0.1
+//- unit_mixins version 0.2
 //- upgrading from slide_mixins:
 //-  - remove recall and unrecall (use the new slide-clone plugin instead)
 //-  - replace showhide and showremove with show_ hide_ etc
@@ -24,14 +24,20 @@
 //- mixins to create slides
 //- -------------
 
-
+mixin _slide(p)
+  if p && p.bkg
+    img.bkg(src='/img/#{p.bkg}')
+  .words
+    .container_12: .grid_12
+      block
 mixin slide(p)
   section.slide
-    if p && p.bkg
-      img.bkg(src='/img/#{p.bkg}')
-    .words
-      .container_12: .grid_12
-        block
+    +_slide(p)
+      block
+mixin slide_(p)
+  section.slide.anim-continue
+    +_slide(p)
+      block
 
 mixin middle(p)
   .container_12
@@ -42,11 +48,18 @@ mixin middle(p)
       .words: .middle
         block
 
+mixin _slide_middle(p)
+  if p && p.bkg
+    img.bkg(src='/img/#{p.bkg}')
+  +middle
+    block
 mixin slide_middle(p)
   section.slide
-    if p && p.bkg
-      img.bkg(src='/img/#{p.bkg}')
-    +middle
+    +_slide_middle(p)
+      block
+mixin slide_middle_(p)
+  section.slide.anim-continue
+    +_slide_middle(p)
       block
 
 //- don't use: pass img as param bkg to +slide({bkg:'file.jpg'})
@@ -68,6 +81,7 @@ mixin left_half()
   .grid_6.words.left-half
     div(style='padding-right:1em;')
       block
+
 mixin right_half(p)
   - p = p || {step:false}
   .grid_6.words.invert.right-half(class="#{ p.step ? 'hide' : '' }")
@@ -75,16 +89,26 @@ mixin right_half(p)
       if p.step
         +show('.right-half-white, .right-half')
       block
+
 mixin run_across()
   .clear
   //- .container_12: .grid_12: .words
   .words
     block
   .container_12
+
+
 mixin slide_rh_white(p)
   - p = p || {step:false}
   section.slide
     .right-half-white(style="z-index:-22;", class="#{ p.step ? 'hide' : '' }")
+    .container_12
+      block
+
+mixin slide_lh_white(p)
+  - p = p || {step:false}
+  section.slide
+    .left-half-white(style="z-index:-22;", class="#{ p.step ? 'hide' : '' }")
     .container_12
       block
 
@@ -242,38 +266,47 @@ mixin unremove(what)
     .slide.anim-continue.anim-removeclass(data-what="#{thing}",data-class="remove-me")
   +anim_end()
 
-mixin dim(what)
+mixin dim_(what)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
     .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="dim")
+mixin dim(what)
+  +dim_(what)
   +anim_end()
 
-mixin undim(what)
+mixin undim_(what)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
     .slide.anim-continue.anim-removeclass(data-what="#{thing}",data-class="dim")
+mixin undim(what)
+  +undim_(what)
   +anim_end()
 
-mixin nodim(what)
+mixin nodim_(what)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
     .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="nodim")
+mixin nodim(what)
+  +nodim_(what)
   +anim_end()
 
 
-mixin fade_(what, dur)
+mixin fade_(what, dur, opacity)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
-    if dur
-      .slide.anim-continue.anim-fade(data-what="#{thing}", data-dur="#{dur}")
+    if opacity || opacity === 0 || opacity === "0"
+      .slide.anim-continue.anim-fade(data-what="#{thing}", data-dur="#{dur}", data-opacity="#{opacity}")
     else
-      .slide.anim-continue.anim-fade(data-what="#{thing}")
-mixin fade(what, dur)
-  +fade_(what, dur)
+      if dur || dur === 0 || dur === "0"
+        .slide.anim-continue.anim-fade(data-what="#{thing}", data-dur="#{dur}")
+      else
+        .slide.anim-continue.anim-fade(data-what="#{thing}")
+mixin fade(what, dur, opacity)
+  +fade_(what, dur, opacity)
   +anim_end()
 
 mixin unfade_(what, dur)
@@ -336,6 +369,10 @@ mixin unhighlight(what, color, container)
   +highlight-remove(what, color, container)
 mixin unhighlight_(what, color, container)
   +highlight-remove_(what, color, container)
+mixin unhighlight-all(what, container)
+  +highlight-remove-all(what,container)
+mixin unhighlight-all_(what, container)
+  +highlight-remove-all_(what, container)
 
 mixin highlight-remove_(what, color, container)
   if typeof(what)==='string'

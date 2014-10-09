@@ -1,4 +1,4 @@
-1. copy the files in this directory into a new blank directory where you want to create the slides.
+1. copy the files in this directory (EXCEPT the .git subfolder) into a new blank directory where you want to create the slides.
 
 
 2. run:
@@ -30,7 +30,7 @@ serve.sh
 
 5. upload specifying ***SUBDOMAIN***
 
-s3cmd sync --delete-removed out/ s3://origins-of-mind.butterfill.com/***SUBDOMAIN*** --add-header "Cache-Control: max-age=86400"
+s3cmd sync --delete-removed out/ s3://***SUBDOMAIN***.butterfill.com/ --add-header "Cache-Control: max-age=86400"
 
 
 6. nb for watching

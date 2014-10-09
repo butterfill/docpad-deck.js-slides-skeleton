@@ -35,7 +35,8 @@
             animContinue: ".anim-continue"
         },
         anim: {
-            duration: 400
+            duration: 400,
+            opacity: 0.3
         }
     });
 
@@ -45,31 +46,39 @@
 
     var doInitIfReady = function hoho() {
         if (waitFor>0) {
-            setTimeout(doInitIfReady, 10) // retry until all is loaded
-            return;
+          setTimeout(doInitIfReady, 10) // retry until all is loaded
+          return;
         }
         // first we define some tools and grab some info from deck.js
         var o = $[deck]('getOptions');
         var context = function(el) {
-            return {
-                what: function() {return $(el).attr("data-what")},
-				// *added
-                from: function() {return $(el).attr("data-from")},
-                fromAnchor: function() {return $(el).attr("data-from-anchor") || "RightMiddle"},
-                to: function() {return $(el).attr("data-to")},
-                toAnchor: function() {return $(el).attr("data-to-anchor") || "RightMiddle"},
-                color: function() {return $(el).attr("data-color") || "rgba(255,255,0,1)"},
-                lineWidth: function() {return $(el).attr("data-width") || "3"},
-                dur: function() {return $(el).attr("data-dur")*1 || o.anim.duration},
-                classs: function() {return $(el).attr("data-class")},
-                attribute: function() {return $(el).attr("data-attr").split(':')[0]},
-                as: function() {return $(el).attr("data-as")},
-                value: function() {return $(el).attr("data-attr").split(':')[1]},
-				// modified by steve --- allow the scope for the selector to be specified (useful for reveal)
-                toplevel: function() {return ( $(el).attr("data-scope") ? $(el).attr("data-scope") : $[deck]('getToplevelSlideOf', el).node )},
-                all: function() {return $(this.what(),this.toplevel())},
-				allGlobal: function() {return $(this.what())} 
-            }
+          return {
+            what: function() {return $(el).attr("data-what")},
+    				// *added
+            from: function() {return $(el).attr("data-from")},
+            fromAnchor: function() {return $(el).attr("data-from-anchor") || "RightMiddle"},
+            to: function() {return $(el).attr("data-to")},
+            toAnchor: function() {return $(el).attr("data-to-anchor") || "RightMiddle"},
+            color: function() {return $(el).attr("data-color") || "rgba(255,255,0,1)"},
+            lineWidth: function() {return $(el).attr("data-width") || "3"},
+            dur: function() {return $(el).attr("data-dur")*1 || o.anim.duration},
+    				// *added
+            opacity: function() {
+              var op = $(el).attr("data-opacity");
+              if( op === 0 || op === '0' ) {
+                return 0;
+              }
+              return op*1 || o.anim.opacity;
+            },
+            classs: function() {return $(el).attr("data-class")},
+            attribute: function() {return $(el).attr("data-attr").split(':')[0]},
+            as: function() {return $(el).attr("data-as")},
+            value: function() {return $(el).attr("data-attr").split(':')[1]},
+    				// modified by steve --- allow the scope for the selector to be specified (useful for reveal)
+            toplevel: function() {return ( $(el).attr("data-scope") ? $(el).attr("data-scope") : $[deck]('getToplevelSlideOf', el).node )},
+            all: function() {return $(this.what(),this.toplevel())},
+    				allGlobal: function() {return $(this.what())} 
+          }
         };
         var classical = function(selector, methods) {
             $(selector).each(function(i, el) {
@@ -107,8 +116,8 @@
         classical(o.selectors.animFade, {
             init: function(c) {c.all().animate({'opacity': 1.}, 0)},
             undo: function(c) {c.all().animate({'opacity': 1.}, c.dur()/100)},
-            doit: function(c) {c.all().animate({'opacity': 0.3}, c.dur())},
-            fast: function(c) {c.all().animate({'opacity': 0.3}, 0)}
+            doit: function(c) {c.all().animate({'opacity': c.opacity()}, c.dur())},
+            fast: function(c) {c.all().animate({'opacity': c.opacity()}, 0)}
         });
 		//* added
         classical(o.selectors.animConnect, {

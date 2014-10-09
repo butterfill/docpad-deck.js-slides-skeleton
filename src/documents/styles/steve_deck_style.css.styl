@@ -121,14 +121,22 @@ blur()
   font-style: italic
 .grey-text
   color grey
+.lightgrey-text
+  color lightgrey
 .line-through
   text-decoration line-through
+
 .brightness-150
-  filter brightness(150%)
+  filter_fn unquote('brightness(150%)')
 .bw
-  filter unquote('saturate(0)')
+  filter_fn unquote('saturate(0)')
 .contrast-150
-  filter contrast(1.5)
+  filter_fn unquote('contrast(1.5)')
+.blur
+  filter_fn unquote('blur(1.5px)')
+.blur-5px
+  filter_fn unquote('blur(5px)')
+
 .display-none
   display none
 
@@ -148,6 +156,7 @@ blur()
   width 450px
 .width-350
   width 350px
+
 
 .deck-container
   .hem-above
