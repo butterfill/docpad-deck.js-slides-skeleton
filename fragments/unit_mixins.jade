@@ -24,42 +24,45 @@
 //- mixins to create slides
 //- -------------
 
-mixin _slide(p)
-  if p && p.bkg
+mixin _slide_inner(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if ('bkg' in p)
     img.bkg(src='/img/#{p.bkg}')
   .words
     .container_12: .grid_12
       block
-mixin slide(p)
-  section.slide
-    +_slide(p)
-      block
-mixin slide_(p)
-  section.slide.anim-continue
-    +_slide(p)
-      block
 
+mixin slide(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if ('id' in p)
+    section.slide(id="#{p.id}")
+      +_slide_inner(p)
+        block
+  else
+    section.slide
+      +_slide_inner(p)
+        block
+    
 mixin middle(p)
   .container_12
     - var width = 12;
-    if p && p.width
+    if typeof(p) === 'undefined'
+      - p = {}
+    if ('width' in p)
       width = p.width
     div(class="grid_#{width} #{width<12 ? 'push_'+((12-width)/2) : ''}")
       .words: .middle
         block
 
-mixin _slide_middle(p)
-  if p && p.bkg
-    img.bkg(src='/img/#{p.bkg}')
-  +middle
-    block
 mixin slide_middle(p)
   section.slide
-    +_slide_middle(p)
-      block
-mixin slide_middle_(p)
-  section.slide.anim-continue
-    +_slide_middle(p)
+    if typeof(p) === 'undefined'
+      - p = {}
+    if ('bkg' in p)
+      img.bkg(src='/img/#{p.bkg}')
+    +middle
       block
 
 //- don't use: pass img as param bkg to +slide({bkg:'file.jpg'})
@@ -75,54 +78,59 @@ mixin slide_reset()
 mixin reset()
   div(style='position: absolute; top:0; left:0; width:100%; height:100%;')
     block
+mixin clear-slide()
+  div(style='position: absolute; top:0; left:0; width:100%; height:100%').background-color
+    block
 
 //- This sequence creates rh_white slides
 mixin left_half()
   .grid_6.words.left-half
     div(style='padding-right:1em;')
       block
-
 mixin right_half(p)
-  - p = p || {step:false}
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('step' in p)
+    - p.step = false
   .grid_6.words.invert.right-half(class="#{ p.step ? 'hide' : '' }")
     div(style='padding-left:1em;')
       if p.step
         +show('.right-half-white, .right-half')
       block
-
 mixin run_across()
   .clear
   //- .container_12: .grid_12: .words
   .words
     block
   .container_12
-
-
 mixin slide_rh_white(p)
-  - p = p || {step:false}
+  if typeof(p) === 'undefined' 
+    - p = {}
+  if !('step' in p)
+    - p.step = false
   section.slide
     .right-half-white(style="z-index:-22;", class="#{ p.step ? 'hide' : '' }")
     .container_12
       block
 
-mixin slide_lh_white(p)
-  - p = p || {step:false}
-  section.slide
-    .left-half-white(style="z-index:-22;", class="#{ p.step ? 'hide' : '' }")
-    .container_12
-      block
-
+            
+      
 //- create a sequence of slides from a list of images
 mixin slides_from_img(filenames)
   each filename in filenames
     .slide.nodim
       img.bkg.nodim(src="/img/#{filename}")
 
-//- render images associated with a unit as slides
-mixin display_images_as_slides(unit)
-  each f in getFilesAtPath('img/'+unit.basename+'/',[{basename:1}]).toJSON()
+//- create a sequence of slides from images in a folder
+//- nb: this will work *only* if img files for unit are in files/ rather than raw/ directory!
+mixin slides_from_img_folder(folder_name)
+  each f in getFilesAtPath('img/'+folder_name+'/',[{basename:1}]).toJSON()
     section.slide
       img(src=f.url)
+
+//- render images associated with a unit as slides
+mixin display_images_as_slides(unit)
+  +slides_from_img_folder(unit.basename)
 
 
 
@@ -134,6 +142,8 @@ mixin display_images_as_slides(unit)
 
 //- see also +clip to modify the clip as an animation
 mixin img_clip(filename, theClip)
+  if typeof(theClip) === 'undefined'
+    - theClip = 'auto' //- i.e. no clip
   div(style='position:relative;')
     img(src='/img/#{filename}', style="clip: #{theClip}; position: absolute; max-width:720px; max-height:550px;")
 
@@ -163,14 +173,22 @@ mixin clip(what, theClip)
 
 //- draw a connector between elements
 mixin connect(p)
-  .slide.anim-connect(data-from='#{p.from}', data-to='#{p.to}', data-from-anchor="#{p.fromAnchor||'LeftMiddle'}",data-to-anchor='#{p.toAnchor || "RightMiddle"}',data-color="#{p.color || 'hotpink'}")
+  if !('fromAnchor' in p)
+    - p. fromAnchor = 'LeftMiddle'
+  if !('toAnchor' in p)
+    - p.toAnchor = "RightMiddle"    
+  if !('color' in p)
+    - p.color = 'hotpink'
+  .slide.anim-connect(data-from='#{p.from}', data-to='#{p.to}', data-from-anchor="#{p.fromAnchor}",data-to-anchor='#{p.toAnchor}',data-color="#{p.color}")
 
 //- todo : temporary measure!
-mixin blur2_(what)
+mixin blur2_(what, amount)
   if typeof(what)==='string'
     - what = [what]
+  if typeof(amount) === 'undefined'
+    - amount = '2px'
   each thing in what
-    .slide.anim-continue.anim-attribute(data-what="#{thing}",data-attr="-webkit-filter:blur(2px)")
+    .slide.anim-continue.anim-attribute(data-what="#{thing}",data-attr="-webkit-filter:blur(#{amount})")
 mixin blur2(what)
   +blur2_(what)
   +anim_end()
@@ -275,38 +293,31 @@ mixin dim(what)
   +dim_(what)
   +anim_end()
 
-mixin undim_(what)
+mixin undim(what)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
     .slide.anim-continue.anim-removeclass(data-what="#{thing}",data-class="dim")
-mixin undim(what)
-  +undim_(what)
   +anim_end()
 
-mixin nodim_(what)
+mixin nodim(what)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
     .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="nodim")
-mixin nodim(what)
-  +nodim_(what)
   +anim_end()
 
 
-mixin fade_(what, dur, opacity)
+mixin fade_(what, dur)
   if typeof(what)==='string'
     - what = [what]
   each thing in what
-    if opacity || opacity === 0 || opacity === "0"
-      .slide.anim-continue.anim-fade(data-what="#{thing}", data-dur="#{dur}", data-opacity="#{opacity}")
+    if dur
+      .slide.anim-continue.anim-fade(data-what="#{thing}", data-dur="#{dur}")
     else
-      if dur || dur === 0 || dur === "0"
-        .slide.anim-continue.anim-fade(data-what="#{thing}", data-dur="#{dur}")
-      else
-        .slide.anim-continue.anim-fade(data-what="#{thing}")
-mixin fade(what, dur, opacity)
-  +fade_(what, dur, opacity)
+      .slide.anim-continue.anim-fade(data-what="#{thing}")
+mixin fade(what, dur)
+  +fade_(what, dur)
   +anim_end()
 
 mixin unfade_(what, dur)
@@ -347,7 +358,8 @@ mixin uninvert(what, container)
 mixin highlight_(what, color, container)
   if typeof(what)==='string'
     - what = [what]
-  color = color || 'pink'
+  if typeof(color) === 'undefined'
+    - color = 'pink'
   each thing in what
     .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-#{color}")
 mixin highlight(what, color, container)
@@ -357,7 +369,8 @@ mixin highlight(what, color, container)
 mixin highlight-faint_(what, color, container)
   if typeof(what)==='string'
     - what = [what]
-  color = color || 'pink'
+  if typeof(color) === 'undefined'
+    - color = 'pink'
   each thing in what
     .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-faint-#{color}")
 mixin highlight-faint(what, color, container)
@@ -377,7 +390,8 @@ mixin unhighlight-all_(what, container)
 mixin highlight-remove_(what, color, container)
   if typeof(what)==='string'
     - what = [what]
-  color = color || 'pink'
+  if typeof(color) === 'undefined'
+    - color = 'pink'
   each thing in what
     .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-#{color}")
 mixin highlight-remove(what, color, container)
@@ -402,7 +416,8 @@ mixin highlight-remove-all(what, container)
 mixin highlight-row_(what, color, container)
   if typeof(what)==='string'
     - what = [what]
-  color = color || 'grey'
+  if typeof(color) === 'undefined'
+    - color = 'grey'
   each thing in what
     .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-#{color}-row")
     if color=='white'
@@ -414,7 +429,8 @@ mixin highlight-row(what, color, container)
 mixin highlight-row-remove_(what, color, container)
   if typeof(what)==='string'
     - what = [what]
-  color = color || 'grey'
+  if typeof(color) === 'undefined'
+    - color = 'grey'
   each thing in what
     .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-#{color}-row")
     if color=='white'
@@ -422,6 +438,10 @@ mixin highlight-row-remove_(what, color, container)
 mixin highlight-row-remove(what, color, container)
   +highlight-row-remove_(what, color, container)
   +anim_end()
+mixin unhighlight-row(what, color, container)
+  +highlight-row-remove(what, color, container)
+mixin unhighlight-row_(what, color, container)
+  +highlight-row-remove_(what, color, container)
 
 
 //

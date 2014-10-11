@@ -34,15 +34,26 @@ default_text_shadow()
 default_text_shadow_invert()
   text-shadow: 0 0 2px white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white, 0 0 5px white, 0 0 5px white
 
+
+background_color()
+  black
+text_color()
+  white
+
+.background-color
+  background-color background_color()
+.text-color
+  color text_color()
+
 /**
  * overwrite core defaults
  */
 noinvert_text()
-  color: white
+  color text_color()
   default_text_shadow()
 
 invert_text()
-  color: black
+  color background_color()
   default_text_shadow_invert()
 
 .deck-container
@@ -117,8 +128,10 @@ blur()
 /**
  * classes that map directly to css styles
  */
-.italic
-  font-style: italic
+.deck-container .italic
+  font-style italic
+.deck-container .bold
+  font-weight bold
 .grey-text
   color grey
 .lightgrey-text
@@ -145,8 +158,8 @@ blur()
 .right
   text-align: right
 
-.indent
-  padding-left: 1em
+.deck-container .indent
+  padding-left 1em
 
 .width-720
   width 720px
@@ -384,6 +397,9 @@ div.container_12
     position absolute
     bottom 0px
 
+  .small-text
+    font-size 66%
+    
   .source
     text-align right
     font-size 66%
@@ -398,30 +414,30 @@ div.container_12
 
   .half-above
     padding-top: 0.5em
-   
+ 
   .em-above-p p
     padding-top: 1em
-  
+
   .em-around-p p
     padding-top: 0.5em
     padding-bottom: 0.5em
-  
+
   .no-below-p p
     padding-bottom: 0
     margin-bottom: 0
-  
+
   .em-after
     padding-bottom: 1em
-  
+
   .pad-left
     padding-left: 0.66em
-  
+
   .pad-right
     padding-right: 0.66em
 
   .pad-1
     padding 1em
-  
+
   img.float-right 
     float: right
     margin-left: 1em
@@ -511,7 +527,7 @@ table.truth-table
   tr td
     padding 0em 0.3em //less vertical and horizontal spacing for all lines
 
- 
+
 table.fitch-proof
   border-collapse: collapse
   tr td
@@ -553,7 +569,7 @@ table.data
       border-bottom 3px solid white
     tr.even td
       background-color: rgba(255,255,255,0.1)
-    
+  
 
 /**
  * dim, invisible
@@ -617,15 +633,17 @@ btm-white(height,top)
   btm-X(height,top)
   invert_text()
   box-shadow: 0px -8px 8px 0 rgba(255,255,255,0.5)
+  z-index -99
 
-.deck-container .bottom-white
-  btm-white 225px, 375px
- 
-.deck-container .bottom-half-white
-  btm-white 300px, 300px
+.deck-container 
+  .bottom-white
+    btm-white 225px, 375px
 
-.deck-container .bottom-third-white
-  btm-white 200px, 400px
+  .bottom-half-white
+    btm-white 300px, 300px
+
+  .bottom-third-white
+    btm-white 200px, 400px
 
 
 btm-black(height,top)
@@ -634,6 +652,7 @@ btm-black(height,top)
   //background linear-gradient(top, rgba(0,0,0,0), 20% rgba(0,0,0,1), rgba(0,0,0,1))
   background-color: black
   box-shadow: 0px -8px 8px 0 rgba(0,0,0,0.5)
+  z-index -99
 
 top-black(height)
   top-X height
@@ -642,7 +661,7 @@ top-black(height)
 .deck-container .slide
   .bottom-black
     btm-black 225px, 375px
- 
+
   .bottom-half-black
     btm-black 300px, 300px
 
@@ -662,6 +681,7 @@ top-black(height)
   width: 400px
   left: 400px
   invert_text()
+  z-index -99
 
 .deck-container .left-half-white
   background-color: white
@@ -672,6 +692,7 @@ top-black(height)
   width: 400px
   left: 0px
   invert_text()
+  z-index -99
 
 
 /**
@@ -737,7 +758,7 @@ make-row-bkg('faint-blueviolet', rgba(138,43,226,0.3))
 .deck-container  .bkg-black-33
   background: rgba(0,0,0,0.33)
   box-shadow: 0 0 15px 64px rgba(0,0,0,0.33)
-  
+
 
 
 
@@ -899,11 +920,11 @@ make-bkg-words('faint-blueviolet', rgba(138,43,226,0.3))
   margin-bottom: 0
   margin-right: 30pt
   default_text_shadow()
-  
+
 .deck-container  .title-block
   background: linear-gradient(left, black, transparent)
   box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33)
-  
+
 .deck-container  .title-container
   padding-left: 2em
   padding-top: 0.25em
@@ -1030,9 +1051,9 @@ p.speech-right:after
   height: 1em;
   overflow: hidden;
   margin: 50px 0 70px 65px;
-  
-  
-  
+
+
+
 
 
 /**
