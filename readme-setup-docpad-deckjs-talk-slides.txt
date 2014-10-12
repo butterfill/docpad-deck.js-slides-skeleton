@@ -1,7 +1,7 @@
 1. copy the files in this directory (EXCEPT the .git subfolder) into a new blank directory where you want to create the slides.
 
 
-2. run:
+2. [NO LONGER NECESSARY] run:
 
 npm install
 
@@ -10,7 +10,7 @@ npm install
 
 3. create:
 
-docpad generate
+docpad generate --env static
 
 
 3b. [optional] to update local version docpad and plugins (CAUTION: may not work)
@@ -28,16 +28,21 @@ serve.sh
 (i.e. python -m SimpleHTTPServer 8080)
 
 
-5. upload specifying ***SUBDOMAIN***
+5. specify path in for absouluteurl plugin in docpad.coffee
+  absolutepath:
+    url: "/"
 
-s3cmd sync --delete-removed out/ s3://***SUBDOMAIN***.butterfill.com/ --add-header "Cache-Control: max-age=86400"
+
+6. create s3sync.sh to upload specifying ***SUBDIR***
+
+s3cmd sync out/ s3://www.butterfill.com/talk-slides/*SUBDIR*/ --add-header "Cache-Control: max-age=86400"
 
 
-6. nb for watching
+7. nb for watching
 
-docpad watch
+docpad watch --env static
 
-6b sometimes generates 	EMFILE error, in that case:
+7b sometimes generates 	EMFILE error, in that case:
 
 ulimit -n 8192
 

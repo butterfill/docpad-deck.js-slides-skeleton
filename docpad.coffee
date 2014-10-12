@@ -17,16 +17,27 @@ plugins:
       # -u skip file if the destination file is newer
       # -l copy any links over as well
       command: ['rsync', '-rul', 'src/raw/', 'out/' ]
-  #
-  # raw:
-  #   commands:
-  #     # rsync
-  #     # -r recursive
-  #     # -u skip file if the destination file is newer
-  #     # -l copy any links over as well
-  #     raw  : ['rsync', '-rul', 'src/raw/', 'out/' ]
 
 
+  absolutepath:
+    url: "http://butterfill.com/talk-slides/joint_action_without_mindreading/"
+   cleanurls:
+      getRedirectTemplate: (document) ->
+        absolutepath = docpadConfig.plugins.absolutepath.url.slice(0, - 1) 
+        """
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <meta charset="utf-8">
+            <title>#{document.get('title') or 'Redirect'}</title>
+            <meta http-equiv="REFRESH" content="0;url=#{absolutepath + document.get('url')}">
+          </head>
+          <body>
+            This page has moved. You will be automatically redirected to its new location. If you aren't forwarded to the new page, <a href="#{absolutepath + document.get('url')}">click here</a>.
+          </body>
+        </html>
+        """
+        
 	#renderPasses : 1
 
 	# =================================
