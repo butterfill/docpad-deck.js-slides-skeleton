@@ -59,6 +59,15 @@ To edit these slides and make them your own, go to the folder called `test_prese
 The file testing.html.jade, which is also in the `documents` folder, has some examples in it.  You can view the slides defined in this file  by opening [http://0.0.0.0:9778/testing.html](http://0.0.0.0:9778/testing.html) in a web browser.
 
 
+Examples
+========
+
+Here's [a talk](www.butterfill.com/talk-slides/presenting_your_research) and the [source files](https://github.com/butterfill/lectures_presenting_your_research) for it.
+
+Here's [a series of lectures](http://origins-of-mind.butterfill.com/) and the [source files](https://github.com/butterfill/lectures_origins_of_mind_warwick_2014_15) for them.
+
+
+
 What Is It?
 ===========
 
