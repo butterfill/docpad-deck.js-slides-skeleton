@@ -62,7 +62,7 @@ The file testing.html.jade, which is also in the `documents` folder, has some ex
 Examples
 ========
 
-Here's [a talk](www.butterfill.com/talk-slides/presenting_your_research) and the [source files](https://github.com/butterfill/lectures_presenting_your_research) for it.
+Here's [a talk](http://www.butterfill.com/talk-slides/presenting_your_research) and the [source files](https://github.com/butterfill/lectures_presenting_your_research) for it.
 
 Here's [a series of lectures](http://origins-of-mind.butterfill.com/) and the [source files](https://github.com/butterfill/lectures_origins_of_mind_warwick_2014_15) for them.
 
