@@ -20,7 +20,9 @@ plugins:
 
 
   absolutepath:
-    url: "http://butterfill.com/talk-slides/joint_action_without_mindreading/"
+    # put the url of the site you are uploading to here, including any subdirectories. 
+    #  e.g. I might use "www.butterfill.com/talk-slides/joint_action_without_mindreading/"
+    url: "/"
    cleanurls:
       getRedirectTemplate: (document) ->
         absolutepath = docpadConfig.plugins.absolutepath.url.slice(0, - 1) 

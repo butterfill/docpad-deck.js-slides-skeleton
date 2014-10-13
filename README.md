@@ -63,7 +63,7 @@ What Is It?
 
 The files here comprise a [docpad](https://docpad.org/) project that combines a lightly modified version of [deck.js](https://github.com/imakewebthings/deck.js) with a few other javascript and css components and a collection of jade mixins to make writing slides simple.
 
-[docpad](https://docpad.org/) is a static site builder; it creates a bunch of template and source files and makes web pages from them.
+[docpad](https://docpad.org/) is a static site builder; it takes a bunch of template and source files and makes web pages from them.
 
 [deck.js](https://github.com/imakewebthings/deck.js) is some javascript and css that allows you to make slide show presentations using HTML instead of having to mess with things like powerpoint.
 
@@ -71,7 +71,7 @@ The files here comprise a [docpad](https://docpad.org/) project that combines a 
 Why?
 ====
 
-It's quicker to create and update slide shows this way.  Suppose you want a slide with some text in the middle:
+It's quicker to create and update slide shows this way.  Suppose you want a slide with some centered text in the middle:
 
 ```jade
 +slide_middle
@@ -127,6 +127,23 @@ Add some notes (which you can view by pressing `n` while looking at the slides, 
     +right_half
       p Another type of answer.
 ```
+
+
+How Do I Change the Title Page?
+===============================
+
+Edit the file `docpad.coffee` in a text editor.
+
+
+How Do I Put My Slideshow Online?
+=================================
+
+Because your slideshow is entirely static documents (html plus css and javascript), you can use any web server at all.  
+
+Run `docpad generate --env static` and then upload the files in the `out` directory onto
+your web server using whatever method you would normally use to upload a directory of static files.
+
+Note: If you are uploading to a subfolder, be sure to modify `url` immediately under `absolutepath` in the file `docpad.coffee`.
 
 
 Support
