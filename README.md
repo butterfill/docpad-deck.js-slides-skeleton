@@ -73,29 +73,36 @@ Why?
 
 It's quicker to create and update slide shows this way.  Suppose you want a slide with some text in the middle:
 
-`+slide_middle
-  p.center This is a message in the middle of a slide.`
+```jade
++slide_middle
+  p.center This is a message in the middle of a slide.
+```
 
 Do the same but with an image as background
 
-`+slide_middle({img:'flowers.png'})
-  p.center This is a message in the middle of a slide.`
+```jade
++slide_middle({img:'flowers.png'})
+  p.center This is a message in the middle of a slide.
+```
 
 where `flowers.png` is the name of a file in `src/raw/img`.
 
 Create a two column layout:
 
-`+slide_rh_white
+```jade
++slide_rh_white
   +run_across
     p What is this question?
   +left_half
     p One type of answer.
   +right_half
-    p Another type of answer.`
+    p Another type of answer.
+```
 
 Do the same but use three slides, where the sentence are added to the slides in turn:
 
-`+slide_rh_white
+```jade
++slide_rh_white
   +run_across
     p What is this question?
   .slide
@@ -103,11 +110,13 @@ Do the same but use three slides, where the sentence are added to the slides in 
       p One type of answer.
   .slide
     +right_half
-      p Another type of answer.`
+      p Another type of answer.
+```
 
 Add some notes (which you can view by pressing `n` while looking at the slides, and export for use with a latex template by pressing `N`):
 
-`+slide_rh_white
+```jade
++slide_rh_white
   +run_across
     p What is this question?
     .notes This issue goes back at least as far as Plato, who said ... Consider two answers.
@@ -116,7 +125,8 @@ Add some notes (which you can view by pressing `n` while looking at the slides, 
       p One type of answer.
   .slide
     +right_half
-      p Another type of answer.`
+      p Another type of answer.
+```
 
 
 Support
