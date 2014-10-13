@@ -81,13 +81,13 @@ It's quicker to create and update slide shows this way.  Suppose you want a slid
 Do the same but with an image as background
 
 ```jade
-+slide_middle({img:'flowers.png'})
++slide_middle({bkg:'flowers.png'})
   p.center This is a message in the middle of a slide.
 ```
 
 where `flowers.png` is the name of a file in `src/raw/img`.
 
-Create a two column layout:
+Create a slide with a two column layout:
 
 ```jade
 +slide_rh_white
@@ -99,7 +99,7 @@ Create a two column layout:
     p Another type of answer.
 ```
 
-Do the same but use three slides, where the sentence are added to the slides in turn:
+Do the same but use three slides and have the sentence added to the slides in turn:
 
 ```jade
 +slide_rh_white
