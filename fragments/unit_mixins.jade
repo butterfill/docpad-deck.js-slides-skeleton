@@ -504,3 +504,32 @@ mixin colour-ball(colour, size)
 
 
 
+
+//- ----------
+//- a simple timer; use as part of a slide
+//- param duration can be 30s, 60s, 120s etc see steve_deck_style.css.styl
+//- use like this
+//-  +timer-element('timer1','60s')
+//-    p.center some text in the timer
+//-  +start-timer('timer1')
+//- ----------
+
+mixin timer-element(id, duration, p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('hide' in p)
+    - p.hide = false
+  .timer-outer(id='#{id}')
+    .timer.center(class="timer-#{duration} #{p.hide ? 'hide' : ''}")
+      .mask
+    div(class='timer-#{duration}-block-wrapper')
+      div(class='timer-#{duration}-block')
+        block
+
+mixin show-timer(id)
+  +show("#"+id+" .timer")
+
+mixin start-timer(id)
+  +show_("#"+id+" .timer.hide")
+  .slide.anim-addclass(data-what="##{id} .timer", data-class="running")
+

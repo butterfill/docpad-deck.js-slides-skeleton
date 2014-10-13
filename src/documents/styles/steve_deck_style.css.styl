@@ -1070,3 +1070,76 @@ p.speech-right:after
 
 .flex-start
   justify-content flex-start
+
+
+
+
+/**
+ * timer
+ * the function can create timers with different durations and sizes
+ * use like this:
+    .timer-60s.center
+      .mask
+    .timer-60s-block-wrapper
+      .timer-60s-block
+        p.center text to appear on the timer
+ */
+timer-color = white
+timer-background-color = black
+timer-size = 400px
+timer-duration = 60s 
+
+timer(class-name, timer-color, timer-background-color, timer-size, timer-duration)
+  .deck-container 
+    {class-name}
+      background: linear-gradient(left, timer-color 50%, timer-background-color 50%)
+      border-radius: 100%
+      height: timer-size
+      position: relative
+      width: timer-size
+      box-shadow 0 0 40px white, 0 0 20px white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white
+    {class-name}.running
+      animation: time timer-duration steps(60, start) 1 normal forwards
+    {class-name}.running .mask
+      animation: mask timer-duration steps(30, start) 1 normal forwards
+    {class-name}:not(.running) .mask
+      background timer-background-color
+    {class-name} .mask 
+      border-radius: 100% 0 0 100% / 50% 0 0 50%;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 50%;
+      transform-origin: 100% 50%;
+    {class-name}-block-wrapper
+      {class-name}-block
+        position: absolute
+        left: 0
+        right: 0
+        top: (timer-size / 2)
+        transform translate3d(0, -50%, 0)
+  @keyframes time 
+    100%
+      transform rotate(360deg)
+  @keyframes mask 
+    0%
+      background: timer-background-color
+      transform: rotate(0deg)
+    50% 
+      background: timer-background-color
+      transform: rotate(-180deg)
+    50.01% 
+      background: timer-color
+      transform: rotate(0deg)
+    100% 
+      background: timer-color;
+      transform: rotate(-180deg)
+
+timer(".timer-30s", timer-color, timer-background-color, timer-size, 30s)
+timer(".timer-60s", timer-color, timer-background-color, timer-size, 60s)
+timer(".timer-120s", timer-color, timer-background-color, timer-size, 120s)
+timer(".timer-180s", timer-color, timer-background-color, timer-size, 120s)
+timer(".timer-300s", timer-color, timer-background-color, timer-size, 300s)
+
+

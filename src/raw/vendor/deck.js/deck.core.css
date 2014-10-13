@@ -1,3 +1,6 @@
+/**
+ * modified by Steve Butterfill 2014
+ */
 html, body {
   height: 100%;
   padding: 0;
@@ -176,15 +179,6 @@ body.deck-container {
 }
 .deck-container, .deck-container select, .deck-container input, .deck-container textarea {
   color: #444;
-}
-.deck-container a {
-  color: #607890;
-}
-.deck-container a:hover, .deck-container a:focus {
-  color: #036;
-}
-.deck-container a:link {
-  -webkit-tap-highlight-color: #fff;
 }
 .deck-container.deck-loading {
   display: none;
