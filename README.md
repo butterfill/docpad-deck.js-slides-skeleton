@@ -29,9 +29,10 @@ Install [docpad](https://docpad.org/docs/install) by opening a terminal and typi
 
 `npm install -g npm; npm install -g docpad`
 
-Now download the files here and put them into a new folder (you can use the 'download ZIP' button that's usually somewhere on the right).
+Now download the files here and put them into a new folder
+called `test_presentation` (say).  (To download the files you can use the 'download ZIP' button that's usually somewhere on the right.)
 
-Open a terminal and navigate to the folder where you put the files.
+Open a terminal and navigate to `test_presentation`, which is the folder where you put the files.
 
 Type and run this command:
 
@@ -53,9 +54,9 @@ Now open [http://0.0.0.0:9778/](http://0.0.0.0:9778/) in a web browser and you s
 What you're looking at are slides on your local machine, not the web.
 If you see some slides, it works!
 
-To edit these slides and make them your own, navigate into the `src` director, then `documents` and open the file index.html.jade in a text editor.
+To edit these slides and make them your own, go to the folder called `test_presentation` where you put all the files.  Now navigate into the `src` sub-folder, then into the `documents` sub-sub-folder, and then open the file index.html.jade in a text editor.
 
-The file testing.html.jade, which is also in the `document` folder, has some examples in it.  You can view this file by opening [http://0.0.0.0:9778/testing.html](http://0.0.0.0:9778/testing.html) in a web browser.
+The file testing.html.jade, which is also in the `documents` folder, has some examples in it.  You can view the slides defined in this file  by opening [http://0.0.0.0:9778/testing.html](http://0.0.0.0:9778/testing.html) in a web browser.
 
 
 What Is It?
@@ -138,10 +139,10 @@ Edit the file `docpad.coffee` in a text editor.
 How Do I Put My Slideshow Online?
 =================================
 
-Because your slideshow is entirely static documents (html plus css and javascript), you can use any web server at all.  
+Because your slideshow is entirely static documents (html plus css and javascript), you can use any web server you like.  
 
 Run `docpad generate --env static` and then upload the files in the `out` directory onto
-your web server using whatever method you would normally use to upload a directory of static files.
+your web server; you can use whatever method you would normally use to upload a directory of static files.
 
 Note: If you are uploading to a subfolder, be sure to modify `url` immediately under `absolutepath` in the file `docpad.coffee`.
 
@@ -150,3 +151,5 @@ Support
 =======
 
 Sorry, you're on your own.
+
+
