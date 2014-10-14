@@ -36,9 +36,9 @@ Open a terminal and navigate to `test_presentation`, which is the folder where y
 
 Type and run this command:
 
-`npm install`
+`npm install; npm rebuild`
 
-to check everything you need for this presentation is installed.
+to check everything you need for this presentation is correctly installed.
 
 Also type and run:
 
@@ -68,18 +68,8 @@ Here's [a series of lectures](http://origins-of-mind.butterfill.com/) and the [s
 
 
 
-What Is It?
-===========
-
-The files here comprise a [docpad](https://docpad.org/) project that combines a lightly modified version of [deck.js](https://github.com/imakewebthings/deck.js) with a few other javascript and css components and a collection of jade mixins to make writing slides simple.
-
-[docpad](https://docpad.org/) is a static site builder; it takes a bunch of template and source files and makes web pages from them.
-
-[deck.js](https://github.com/imakewebthings/deck.js) is some javascript and css that allows you to make slide show presentations using HTML instead of having to mess with things like powerpoint.
-
-
-Why?
-====
+Why Create Slides This Way?
+===========================
 
 It's quicker to create and update slide shows this way.  Suppose you want a slide with some centered text in the middle:
 
@@ -136,7 +126,23 @@ Add some notes (which you can view by pressing `n` while looking at the slides, 
   .slide
     +right_half
       p Another type of answer.
+      .notes Text in notes won't be displayed on the slide.
 ```
+
+
+
+
+
+
+What Is It?
+===========
+
+The files here comprise a [docpad](https://docpad.org/) project that combines a lightly modified version of [deck.js](https://github.com/imakewebthings/deck.js) with a few other javascript and css components and a collection of jade mixins to make writing slides simple.
+
+[docpad](https://docpad.org/) is a static site builder; it takes a bunch of template and source files and makes web pages from them.
+
+[deck.js](https://github.com/imakewebthings/deck.js) is some javascript and css that allows you to make slide show presentations using HTML instead of having to mess with things like powerpoint.
+
 
 
 How Do I Change the Title Page?
