@@ -1,7 +1,7 @@
 What It Does
 ============
 
-This is a collection of files for creating slideshow presentations using html.
+This is a collection of files for creating slideshow presentations in html.
 
 Status
 ======
