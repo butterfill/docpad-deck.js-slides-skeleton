@@ -127,7 +127,26 @@ Add some notes (which you can view by pressing `n` while looking at the slides, 
     +right_half
       p Another type of answer.
       .notes Text in notes won't be displayed on the slide.
+      p.notes.show (Unless you specify that a note should be displayed by appending '.show', as I've done here.)
 ```
+
+Show and hide different bits of text on successive slides:
+
+```jade
++slide
+  p.question What is the Question?
+  p
+    span.answer1.hide This is the answer!  
+    span.answer2.hide Or maybe it isn't.
+  p.evidence-for.hide Some evidence points to one answer.
+  p.evidence-against.hide But other evidence points to a conflicting answer.
+  +show('.evidence-for')
+  +show('.answer1')
+  +show('.evidence-against')
+  +show('.answer2')
+  +hide('.evidence-for, .evidence-against')
+```
+
 
 Display a quote and then, on the next side, apply a nice highlight effect to any part of the text:
 
@@ -143,15 +162,75 @@ Display a quote and then, on the next side, apply a nice highlight effect to any
   .notes The +highlight command creates a slide.  On this slide the text is highlighted.
   
   +unhighlight('.this-matters', 'pink')
-  .notes It's easy to get rid of the highlighting.
+  .notes It's easy to remove the highlighting.
+  
+  +blur('span:not(.this-matters)')
+  .notes We can also create emphasis by blurring things.
 ```
 
 
+What Does the Code in the Samples above Mean?
+=============================================
 
-What Is It?
-===========
+Take the first example.  This line:
 
-The files here comprise a [docpad](https://docpad.org/) project that combines a lightly modified version of [deck.js](https://github.com/imakewebthings/deck.js) with a few other javascript and css components and a collection of jade mixins to make writing slides simple.
+`p.center This is a message in the middle of a slide.` 
+
+will be translated into this html fragment:
+
+`<p class="center">This is a message in the middle of a slide.</p>` 
+
+As you can see, Jade uses indentation to save typing tags.  This is one reason for using jade.  The other reason is that Jade allows us to use mixins.   Take the other line of the first example above:
+
+`+slide_middle`
+
+Here we call a mixin, `slide_middle`.  This is equivalent to writing:
+
+```jade
+section.slide
+  .container_12
+    .grid_12
+      .words
+        .middle
+```
+(`+slide_middle` is defined in the file `unit_mixins.jade` in the `fragments` folder.)
+
+The examples will compile to a html fragment with this kind of form:
+
+```html
+<section class="slide">
+  <div class="formatting-stuff">
+    <p>Text to appear on a slide</p>
+    <!-- we can have nested slides -->
+    <div class="slide">
+      <p>More text to appear on a slide</p>
+    </div>
+  </div>
+</section>
+```
+
+The `deck.js` scripts and css turn a series of fragments like this into a slideshow: they ensure that one `<section class="slide">` is displayed at a time, and allow you to control which slide is displayed using the arrow keys.
+  
+What about animations---for example, showing or hiding elements on slide, or highlighting elements?  Take the line `+blur('.this-matters')`.  This is roughly equivalent to:
+
+`.slide.anim-addclass(data-what=".this-matters",data-class="blur-text")`
+
+in jade, which translates into:
+
+```html
+<div class="slide anim-addclass" data-what=".this-matters" data-class="blur-text">
+</div>
+```
+
+When this slide becomes current, `deck.js` notices that the slide has the `anim-addclass` class and runs some javascript to add the class `blur-text` to any elements on the slide which have the `this-matters` class.  (You can see how it works in the file `deck.anim.js`.  Note that we depend on jQuery being present; the javascript for adding a class is just `$(selector).addClass(class)`.)
+
+
+
+
+What Are the Components?
+========================
+
+The files here comprise a [docpad](https://docpad.org/) project containing  [deck.js](https://github.com/imakewebthings/deck.js), a few other javascript and css components and a collection of jade mixins to make writing slides simple.
 
 [docpad](https://docpad.org/) is a static site builder; it takes a bunch of template and source files and makes web pages from them.
 
