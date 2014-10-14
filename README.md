@@ -99,7 +99,7 @@ Create a slide with a two column layout:
     p Another type of answer.
 ```
 
-Do the same but use three slides and have the sentence added to the slides in turn:
+Do the same but use three slides and have the sentences added to the slides in turn:
 
 ```jade
 +slide_rh_white
@@ -129,8 +129,22 @@ Add some notes (which you can view by pressing `n` while looking at the slides, 
       .notes Text in notes won't be displayed on the slide.
 ```
 
+Display a quote and then, on the next side, apply a nice highlight effect to any part of the text:
 
-
+```jade
++slide
+  p 
+    span 'Sometimes it is nice to 
+    span.this-matters highlight
+    span  text on a slide.'
+  .notes On this slide the quote is displayed with no highlighting.
+  
+  +highlight('.this-matters', 'pink')
+  .notes The +highlight command creates a slide.  On this slide the text is highlighted.
+  
+  +unhighlight('.this-matters', 'pink')
+  .notes It's easy to get rid of the highlighting.
+```
 
 
 
