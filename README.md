@@ -140,11 +140,16 @@ Show and hide different bits of text on successive slides:
     span.answer2.hide Or maybe it isn't.
   p.evidence-for.hide Some evidence points to one answer.
   p.evidence-against.hide But other evidence points to a conflicting answer.
-  +show('.evidence-for')
-  +show('.answer1')
-  +show('.evidence-against')
-  +show('.answer2')
-  +hide('.evidence-for, .evidence-against')
+  .slide
+    +show('.evidence-for')
+  .slide
+    +show('.answer1')
+  .slide
+    +show('.evidence-against')
+  .slide
+    +show('.answer2')
+  .slide
+    +fade('.evidence-for, .evidence-against')
 ```
 
 
@@ -158,14 +163,17 @@ Display a quote and then, on the next side, apply a nice highlight effect to any
     span  text on a slide.'
   .notes On this slide the quote is displayed with no highlighting.
   
-  +highlight('.this-matters', 'pink')
-  .notes The +highlight command creates a slide.  On this slide the text is highlighted.
+  .slide
+    +highlight('.this-matters', 'pink')
+    .notes The +highlight command creates a slide.  On this slide the text is highlighted.
   
-  +unhighlight('.this-matters', 'pink')
-  .notes It's easy to remove the highlighting.
+  .slide
+    +unhighlight('.this-matters', 'pink')
+    .notes It's easy to remove the highlighting.
   
-  +blur('span:not(.this-matters)')
-  .notes We can also create emphasis by blurring things.
+  .slide
+    +blur('span:not(.this-matters)')
+    .notes We can also create emphasis by blurring things.
 ```
 
 
@@ -255,9 +263,5 @@ your web server; you can use whatever method you would normally use to upload a 
 Note: If you are uploading to a subfolder, be sure to modify `url` immediately under `absolutepath` in the file `docpad.coffee`.
 
 
-Support
-=======
-
-Sorry, you're on your own.
 
 
