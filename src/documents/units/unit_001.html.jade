@@ -29,7 +29,8 @@ section.slide
           span.blur1 ?’
           span.handout \citep[p.\ 104]{Locke:1975qo} 
         p.blur1.right (Locke 1689)
-    mixin blur('.blur1')
+    .slide
+      +blur('.blur1')
     .kludge
       .step2.hide
         p.handout.show
@@ -40,8 +41,10 @@ section.slide
           span.blur2 ?’
           span.handout \citep[p.\ 12]{Dewey:1938yp}
         p.blur2.right (Dewey 1938, p. 12)
-    mixin show('.step2')
-    mixin blur('.blur2')
+    .slide
+      +show('.step2')
+    .slide
+      +blur('.blur2')
     .kludge
       .step3.hide  
         p.handout.show
@@ -52,13 +55,17 @@ section.slide
           span.blur3 .’
           span.handout \citep[p.\ 198]{Fodor:1975pb}
         p.blur3.right (Fodor 1975, p.\ 198)
-    mixin show('.step3')
-    mixin blur('.blur3')
-    mixin unblur('.unblur3')
-    mixin invert('.unblur3')
+    .slide
+      +show('.step3')
+    .slide
+      +blur('.blur3')
+    .slide
+      +unblur('.unblur3')
+      +invert('.unblur3')
     .notes Fodor mentions cognitive psychologists rather than philosophers.  We will need to face up to the question of why philosophers are asking this question about the origins of knowledge, why is isn't just a scientific question.  But that's something for later.
-    mixin uninvert('.unblur3')
-    mixin blur('.unblur3')
+    .slide
+      +uninvert('.unblur3')
+      +blur('.unblur3')
 
 
 

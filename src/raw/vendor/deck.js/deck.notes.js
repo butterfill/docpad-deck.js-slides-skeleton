@@ -589,7 +589,11 @@ only toggle the notes panel for this cloned window.
     $notesEl = $("."+$[deck]('getOptions').classes.notes);
     $notesEl.show();
     $('.notes-header-tex', $notesEl).hide();
-    $('.deck-container').css({transform:'translate(150px)'});
+    if( $notesEl.hasClass('large-format')) {
+      $('.deck-container').css({transform:'translate(300px,-200px) scale(0.5,0.5)'});
+    } else {
+      $('.deck-container').css({transform:'translate(150px)'});
+    }
   });
     
   $[deck]('extend', 'showNotesExport', function() {
@@ -659,10 +663,25 @@ only toggle the notes panel for this cloned window.
   $d.bind('deck.init', function() {
     var opts = $[deck]('getOptions');
     var container = $[deck]('getContainer');
-      
+    
+    // notes can be specified in the url
+    var show_notes = (window.location.search.search(/[\?&]notes([&=]|$)/) != -1);
+    var large_notes = (window.location.search.search(/[\?&]largenotes([&=]|$)/) != -1);
+    if( large_notes ) {
+      $notesEl = $("."+$[deck]('getOptions').classes.notes);
+      $notesEl.toggleClass('large-format');
+    }
+    if( show_notes || large_notes) {
+      $[deck]('toggleNotes');
+    }
+    
     // Bind key events 
     $d.unbind('keydown.decknotes').bind('keydown.decknotes', function(e) {
       if (e.which === opts.keys.notes || $.inArray(e.which, opts.keys.notes) > -1) {
+        if (e.altKey) {
+          $notesEl = $("."+$[deck]('getOptions').classes.notes);
+          $notesEl.toggleClass('large-format');
+        }
         if (e.shiftKey) {
           $[deck]('toggleNotesExport');
         } else {

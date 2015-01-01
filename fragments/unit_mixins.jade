@@ -1,7 +1,4 @@
 //-
-//- (c) Stephen A. Butterfill 2014
-//-
-//-
 //- unit_mixins version 0.2
 //- upgrading from slide_mixins:
 //-  - remove recall and unrecall (use the new slide-clone plugin instead)
@@ -59,14 +56,25 @@ mixin middle(p)
       .words: .middle
         block
 
+mixin _slide_middle_inner(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if ('bkg' in p)
+    img.bkg(src='/img/#{p.bkg}')
+  +middle
+    block
+
 mixin slide_middle(p)
-  section.slide
-    if typeof(p) === 'undefined'
-      - p = {}
-    if ('bkg' in p)
-      img.bkg(src='/img/#{p.bkg}')
-    +middle
-      block
+  if typeof(p) === 'undefined'
+    - p = {}
+  if ('id' in p)
+    section.slide(id="#{p.id}")
+      +_slide_middle_inner(p)
+        block
+  else
+    section.slide
+      +_slide_middle_inner(p)
+        block
 
 //- don't use: pass img as param bkg to +slide({bkg:'file.jpg'})
 mixin slide_img(filename)
@@ -143,6 +151,11 @@ mixin display_images_as_slides(unit)
 //- mixins to create elements
 //- -------------
 
+mixin img(filename,style)
+  if typeof(style) === 'undefined'
+    - style = ''
+  img(src='/img/#{filename}',style=style)
+
 //- see also +clip to modify the clip as an animation
 mixin img_clip(filename, theClip)
   if typeof(theClip) === 'undefined'
@@ -156,347 +169,6 @@ mixin question_mark()
     p.center.huge-glow(style="font-size:300px")  ?
 
 
-//- -------------
-//- animations: show, hide, blur, steps, ... 
-//- -------------
-
-//- use this after applying one or more of the proof animation mixins (because they use anim-continue)
-mixin anim_end()
-  .slide.anim-addclass(data-what="#notanelement", data-class="")
-
-
-//- clip an image
-mixin clip(what, theClip)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-attribute(data-what="#{thing}", data-attr="clip:#{theClip}")
-  +anim_end()
-
-
-//- draw a connector between elements
-mixin connect(p)
-  if !('fromAnchor' in p)
-    - p. fromAnchor = 'LeftMiddle'
-  if !('toAnchor' in p)
-    - p.toAnchor = "RightMiddle"    
-  if !('color' in p)
-    - p.color = 'hotpink'
-  .slide.anim-connect(data-from='#{p.from}', data-to='#{p.to}', data-from-anchor="#{p.fromAnchor}",data-to-anchor='#{p.toAnchor}',data-color="#{p.color}")
-
-//- todo : temporary measure!
-mixin blur2_(what, amount)
-  if typeof(what)==='string'
-    - what = [what]
-  if typeof(amount) === 'undefined'
-    - amount = '2px'
-  each thing in what
-    .slide.anim-continue.anim-attribute(data-what="#{thing}",data-attr="-webkit-filter:blur(#{amount})")
-mixin blur2(what)
-  +blur2_(what)
-  +anim_end()
-
-//- todo : temporary measure!
-mixin unblur2_(what)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-attribute(data-what="#{thing}",data-attr="-webkit-filter:blur(0)")
-mixin unblur2(what)
-  +unblur2_(what)
-  +anim_end()
-
-
-mixin blur_(what)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="blur-text")
-mixin blur(what)
-  +blur_(what)
-  +anim_end()
-
-mixin unblur_(what)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-removeclass(data-what="#{thing}",data-class="blur-text")
-mixin unblur(what)
-  +unblur_(what)
-  +anim_end()
-
-
-mixin line-through_(what)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-attribute(data-what="#{thing}", data-attr="text-decoration:line-through")
-mixin line-through(what)
-  +line-through_(what)
-  +anim_end()
-
-//- show something(s)
-//- param what is a string or an array of jquery identifiers
-//- param scope (optional) is a seclector that specifies where to look for the what
-mixin show_(what,scope)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-removeclass(data-what="#{thing}",data-class="hide",data-scope="#{scope ? scope : ''}")
-
-mixin show(what,scope)
-  +show_(what,scope)
-  +anim_end()
-  
-mixin hide_(what)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="hide")
-mixin hide(what)
-  +hide_(what)
-  +anim_end()
-
-mixin collapse_(what, speed)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    if speed
-      .slide.anim-continue.anim-collapse(data-what="#{thing}",data-dur="#{speed}")
-    else
-      .slide.anim-continue.anim-collapse(data-what="#{thing}")
-mixin collapse(what, speed)
-  +collapse_(what, speed)
-  +anim_end()
-
-
-mixin remove_(what)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="remove-me")
-mixin remove(what)
-  +remove_(what)
-  +anim_end()
-
-
-mixin unremove(what)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-removeclass(data-what="#{thing}",data-class="remove-me")
-  +anim_end()
-
-mixin dim_(what)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="dim")
-mixin dim(what)
-  +dim_(what)
-  +anim_end()
-
-mixin undim(what)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-removeclass(data-what="#{thing}",data-class="dim")
-  +anim_end()
-
-mixin nodim(what)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-addclass(data-what="#{thing}",data-class="nodim")
-  +anim_end()
-
-
-mixin fade_(what, dur)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    if dur
-      .slide.anim-continue.anim-fade(data-what="#{thing}", data-dur="#{dur}")
-    else
-      .slide.anim-continue.anim-fade(data-what="#{thing}")
-mixin fade(what, dur)
-  +fade_(what, dur)
-  +anim_end()
-
-mixin unfade_(what, dur)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    if dur
-      .slide.anim-continue.anim-show(data-what="#{thing}", data-dur="#{dur}")
-    else
-      .slide.anim-continue.anim-show(data-what="#{thing}")
-mixin unfade(what, dur)
-  +unfade_(what, dur)
-  +anim_end()
-
-
-//- ******************
-//- invert and highlight
-
-
-mixin invert_(what, container)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-invert")
-mixin invert(what, container)
-  +invert_(what, container)
-  +anim_end()
-
-mixin uninvert_(what, container)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}", data-class="bkg-words-highlight-invert")
-mixin uninvert(what, container)
-  +uninvert_(what, container)
-  +anim_end()
-
-mixin highlight_(what, color, container)
-  if typeof(what)==='string'
-    - what = [what]
-  if typeof(color) === 'undefined'
-    - color = 'pink'
-  each thing in what
-    .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-#{color}")
-mixin highlight(what, color, container)
-  +highlight_(what, color, container)
-  +anim_end()
-
-mixin highlight-faint_(what, color, container)
-  if typeof(what)==='string'
-    - what = [what]
-  if typeof(color) === 'undefined'
-    - color = 'pink'
-  each thing in what
-    .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-faint-#{color}")
-mixin highlight-faint(what, color, container)
-  +highlight-faint_(what, color, container)
-  +anim_end()
-
-//- should've named these better
-mixin unhighlight(what, color, container)
-  +highlight-remove(what, color, container)
-mixin unhighlight_(what, color, container)
-  +highlight-remove_(what, color, container)
-mixin unhighlight-all(what, container)
-  +highlight-remove-all(what,container)
-mixin unhighlight-all_(what, container)
-  +highlight-remove-all_(what, container)
-
-mixin highlight-remove_(what, color, container)
-  if typeof(what)==='string'
-    - what = [what]
-  if typeof(color) === 'undefined'
-    - color = 'pink'
-  each thing in what
-    .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-#{color}")
-mixin highlight-remove(what, color, container)
-  +highlight-remove_(what, color, container)
-  +anim_end()
-
-mixin highlight-remove-all_(what, container)
-  if typeof(what)==='string'
-    - what = [what]
-  each thing in what
-    .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-words-highlight-*")
-mixin highlight-remove-all(what, container)
-  +highlight-remove-all_(what, container)
-  +anim_end()
-
-
-
-//- ********************
-//- row highlighting
-
-
-mixin highlight-row_(what, color, container)
-  if typeof(what)==='string'
-    - what = [what]
-  if typeof(color) === 'undefined'
-    - color = 'grey'
-  each thing in what
-    .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-#{color}-row")
-    if color=='white'
-      .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} #{thing}", data-class="invert")
-mixin highlight-row(what, color, container)
-  +highlight-row_(what, color, container)
-  +anim_end()
-
-mixin highlight-row-remove_(what, color, container)
-  if typeof(what)==='string'
-    - what = [what]
-  if typeof(color) === 'undefined'
-    - color = 'grey'
-  each thing in what
-    .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}",data-class="bkg-#{color}-row")
-    if color=='white'
-      .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}", data-class="invert")
-mixin highlight-row-remove(what, color, container)
-  +highlight-row-remove_(what, color, container)
-  +anim_end()
-mixin unhighlight-row(what, color, container)
-  +highlight-row-remove(what, color, container)
-mixin unhighlight-row_(what, color, container)
-  +highlight-row-remove_(what, color, container)
-
-
-//
-// short form:
-//  remove_class('.blur')
-// long forms:
-//  remove_class('.elements', 'blur')
-//  remove_class(['.el1', '.el_group_2'], 'blur')
-//
-mixin remove-class_(what, theClass, container)
-  if typeof(what)==='string'
-    - what = [what]
-    // for the short form
-    if !theClass
-      theClass = what[0].substring(1)
-  each thing in what
-    .slide.anim-continue.anim-removeclass(data-what="#{container ? container : ''} #{thing}",data-class="#{theClass}")
-mixin remove-class(what, theClass, container)
-  +remove-class_(what, theClass, container)
-  +anim_end()
-  
-
-//- *******************
-//- steps
-
-//- add a slide for the specified step
-mixin step(num, container)
-  //- uses deck.anim extension to unhide elements
-  .slide.anim-removeclass(data-what="#{container ? container : ''} .step#{num}",data-class="hide")
-
-//- create a slide with .step2.hide, .step3.hide and then call +steps(3) to reveal them slide by slide
-//- add slides for num steps, where @param num is the total number of steps 
-mixin steps(start_num, end_num, container)
-  //- sort out params
-  if !end_num
-    - end_num = start_num
-    - start_num = 2
-  if typeof(end_num) == typeof('')
-    - container = end_num
-    - end_num = start_num
-    - start_num = 2
-  //- do it
-  - var counter = start_num //start at slide 2
-  while counter <= end_num
-    +step(counter, container)
-    - counter += 1
-
-
-
-//- ----------
-//- draw things
-//- ----------
 mixin colour-box(colour, size)
   .box(style="background-color:#{colour};width:#{size}px;height:#{size}px;margin-left:auto;margin-right:auto;border:#{size/5}px solid grey;")
     block
@@ -507,14 +179,204 @@ mixin colour-ball(colour, size)
 
 
 
+//- -------------
+//- animations: show, hide, blur, steps, ... 
+//- -------------
+
+//- anim core
+//- -------------
+
+
+mixin add-class(what, cls)
+  .dv.dv-addclass(data-what='#{what}', data-cls='#{cls}')
+
+mixin remove-class(what, cls)
+  .dv.dv-removeclass(data-what='#{what}', data-cls='#{cls}')
+  
+//- modify a html attribute (e.g. src on an img element)
+mixin attr(what, theAttr, theValue)
+  .dv.dv-attr(data-what='#{what}', data-attr='#{theAttr}',  data-value='#{theValue}')
+
+// param @cls and param @options should be objects
+mixin anim(what, theCSS, options)
+  - theCSS_str = JSON.stringify(theCSS)
+  - options_str = ''
+  if options
+    - options_str = JSON.stringify(options)
+  .dv.dv-velocity(data-what='#{what}', data-css='#{theCSS_str}', data-options='#{options_str}')
+
+//- edit inline style
+mixin style(what, theCSS)
+  - theCSS_str = JSON.stringify(theCSS)
+  .dv.dv-style(data-what='#{what}', data-css='#{theCSS_str}')
+
+
+
+//- draw a connector between elements
+mixin connect(p)
+  if !('fromAnchor' in p)
+    - p. fromAnchor = 'LeftMiddle'
+  if !('toAnchor' in p)
+    - p.toAnchor = "RightMiddle"    
+  if !('color' in p)
+    - p.color = 'hotpink'
+  .dv.dv-connect(data-from='#{p.from}', data-to='#{p.to}', data-from-anchor="#{p.fromAnchor}",data-to-anchor='#{p.toAnchor}',data-color="#{p.color}")
+
+
+
+//- anim convenience
+//- -------------
+
+
+
+//- clip an image
+mixin clip(what, theClip)
+  if typeof(theClip) === 'undefined'
+    - theClip = 'auto'
+  +style(what, {"clip":theClip})
+
+
+mixin blur(what, amount, duration)
+  if typeof(amount) === 'undefined'
+    - amount = '2px'
+  if typeof(duration) === 'undefined'
+    - duration = 400
+  +anim(what, {"blur":amount}, {duration:duration})
+
+mixin unblur(what, duration)
+  if typeof(duration) === 'undefined'
+    - duration = 400
+  +anim(what, {"blur":0}, {duration:duration})
+
+
+
+mixin line-through(what)
+  +style(what, {"text-decoration":"line-through"})
+
+
+//- show something(s)
+//- param what is a string or an array of jquery identifiers
+//- param scope (optional) is a seclector that specifies where to look for the what
+mixin show(what, duration)
+  if typeof(duration) === 'undefined'
+    - duration = 400
+  +anim(what, {opacity:1}, {visibility:'visible', duration:duration})
+  
+mixin hide(what, duration)
+  if typeof(duration) === 'undefined'
+    - duration = 400
+  +anim(what, {opacity:0}, {visibility:'hidden', duration:duration})
+
+mixin collapse(what, duration)
+  if typeof(duration) === 'undefined'
+    - duration = 400
+  +anim(what, {opacity:0,"font-size":0}, {display:'none',duration:duration})
+
+mixin uncollapse(what, duration)
+  if typeof(duration) === 'undefined'
+    - duration = 400
+  +anim(what, {opacity:1,"font-size":'100%'}, {display:'auto',duration:duration})
+
+
+
+mixin remove(what)
+  +add-class(what, "remove-me")
+
+mixin unremove(what)
+  +remove-class(what, "remove-me")
+
+
+
+mixin fade(what, duration)
+  if typeof(duration) === 'undefined'
+    - duration = 400
+  +anim(what, {opacity:0.3},{duration:duration})
+
+mixin unfade(what, duration)
+  if typeof(duration) === 'undefined'
+    - duration = 400
+  +anim(what, {opacity:1},{duration:duration})
+
+
+//- ******************
+//- invert and highlight
+
+
+mixin invert(what, duration)
+  if typeof(duration) === 'undefined' || ( duration !== '0'  && duration !== 0 )
+    +add-class(what, "transition-04")
+  +add-class(what,"bkg-invert")
+
+mixin uninvert(what)
+  +remove-class(what,"bkg-invert")
+
+//- duration can only be 0 or 0.4s
+mixin highlight(what, color, duration)
+  if typeof(color) === 'undefined'
+    - color = 'pink'
+  if typeof(duration) === 'undefined' || ( duration !== '0'  && duration !== 0 )
+    +add-class(what, "transition-04")
+  +add-class(what, "bkg-"+color)
+
+//- should've named these better
+mixin unhighlight(what, color)
+  if typeof(color) === 'undefined'
+    - color = 'pink'
+  +remove-class(what, "bkg-"+color)
+
+mixin unhighlight-all(what)
+  +remove-class(what, "bkg-*")
+
+
+mixin flash(what, color, duration)
+  if typeof(color) === 'undefined'
+    - color = 'rgba(255, 111, 207,0.66)'
+  if typeof(duration) === 'undefined'
+    - duration = 1000
+  +style(what, {"box-shadow": "0 0 8px 8px "+color, "background-color":color,'border-radius':'5px'})
+  +anim(what, {boxShadowBlur:400, backgroundColorAlpha:0},{duration:duration})
+  +anim(what, {"boxShadowSpread":"0",'border-radius':'0'},{duration:0})
+
+mixin glow(what, duration)
+  if typeof(duration) === 'undefined' || ( duration !== '0'  && duration !== 0 )
+    +add-class(what, "transition-04")
+  +add-class(what, 'glow')
+
+mixin unglow(what)
+  +remove-class(what, "glow")
+
+
+
+//- ********************
+//- row highlighting
+
+
+mixin highlight-row(what, color)
+  if typeof(color) === 'undefined'
+    - color = 'grey'
+  - cls = "bkg-"+color+"-row "+ (color=='white' ? invert : '')
+  +add-class(what, cls)
+
+mixin unhighlight-row(what, color)
+  if typeof(color) === 'undefined'
+    - color = 'grey'
+  - cls = "bkg-"+color+"-row "+ (color=='white' ? invert : '')
+  +remove-class(what, cls)
+
+
+
+
+
+
 
 //- ----------
 //- a simple timer; use as part of a slide
 //- param duration can be 30s, 60s, 120s etc see steve_deck_style.css.styl
 //- use like this
-//-  +timer-element('timer1','60s')
-//-    p.center some text in the timer
-//-  +start-timer('timer1')
+//-   +slide_middle
+//-     +timer-element('timer1','60s')
+//-     p.center some text in the timer
+//-   +start-timer('timer1')
 //- ----------
 
 mixin timer-element(id, duration, p)
@@ -530,9 +392,11 @@ mixin timer-element(id, duration, p)
         block
 
 mixin show-timer(id)
-  +show("#"+id+" .timer")
+  .slide
+    +show("#"+id+" .timer")
 
 mixin start-timer(id)
-  +show_("#"+id+" .timer.hide")
-  .slide.anim-addclass(data-what="##{id} .timer", data-class="running")
+  .slide
+    +show("#"+id+" .timer.hide",0)
+    +add-class("#"+id+" .timer", "running")
 

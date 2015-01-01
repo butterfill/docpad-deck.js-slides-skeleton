@@ -60,24 +60,6 @@ body.deck-container {
   content: "";
   content: none;
 }
-.deck-container ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none;
-}
-.deck-container mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-.deck-container del {
-  text-decoration: line-through;
-}
-.deck-container abbr[title], .deck-container dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
-}
 .deck-container table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -188,88 +170,6 @@ body.deck-container {
   width: auto;
   min-height: 100%;
   position: relative;
-}
-.slide h1 {
-  font-size: 4.5em;
-}
-.slide h1, .slide .vcenter {
-  font-weight: bold;
-  text-align: center;
-  padding-top: 1em;
-  max-height: 100%;
-}
-.csstransforms .slide h1, .csstransforms .slide .vcenter {
-  padding: 0 48px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-}
-.slide .vcenter h1 {
-  position: relative;
-  top: auto;
-  padding: 0;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
-}
-.slide h2 {
-  font-size: 2.25em;
-  font-weight: bold;
-  padding-top: .5em;
-  margin: 0 0 .66666em 0;
-  border-bottom: 3px solid #888;
-}
-.slide h3 {
-  font-size: 1.4375em;
-  font-weight: bold;
-  margin-bottom: .30435em;
-}
-.slide h4 {
-  font-size: 1.25em;
-  font-weight: bold;
-  margin-bottom: .25em;
-}
-.slide h5 {
-  font-size: 1.125em;
-  font-weight: bold;
-  margin-bottom: .2222em;
-}
-.slide h6 {
-  font-size: 1em;
-  font-weight: bold;
-}
-.slide img, .slide iframe, .slide video {
-  display: block;
-  max-width: 100%;
-}
-.slide video, .slide iframe, .slide img {
-  display: block;
-  margin: 0 auto;
-}
-.slide p, .slide blockquote, .slide iframe, .slide img, .slide ul, .slide ol, .slide pre, .slide video {
-  margin-bottom: 1em;
-}
-.slide pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  padding: 1em;
-  border: 1px solid #888;
-}
-.slide em {
-  font-style: italic;
-}
-.slide li {
-  padding: .25em 0;
-  vertical-align: middle;
 }
 
 .deck-before, .deck-previous, .deck-next, .deck-after {

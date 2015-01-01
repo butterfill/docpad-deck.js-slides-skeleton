@@ -27,6 +27,9 @@
   width: 800px;
   white-space: pre-wrap;
 }
+.deck-notes.large-format {
+  width: 500px;
+}
 .deck-notes .deck-notes-header {
   width: 100%;
   font-size: 1.5em;
@@ -44,6 +47,9 @@
   font-size: 16px;
   font-family: sans-serif;
 }
+.deck-notes.large-format .deck-notes-container {
+  font-size: 22px;
+}  
 .deck-notes .notes, .deck-handout .handout {
   display: block;
   white-space: pre-wrap;

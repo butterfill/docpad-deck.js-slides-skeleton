@@ -2,156 +2,208 @@
  *
  * (c) Stephen A. Butterfill 2014
  *
- * presentation style for steve presentations
- * based on deck.js neon style.
+ * presentation style for deck.js presentations
  * assumes 800px wide design width
  */
 @import nib
 
 filter(what)
-  filter what
   -webkit-filter what
   -moz-filter what
   -o-filter what
   -ms-filter what
+  filter what
+
+
+font_size = 19pt
+background_color = black
+text_color = white
+
+
+default_text_shadow()
+  text-shadow: 0 0 2px background_color, 1px 1px 2px background_color, 1px -1px 2px background_color, -1px 1px 2px background_color, -1px -1px 2px background_color, 0 0 5px background_color, 0 0 5px background_color
+default_text_shadow_invert()
+  text-shadow: 0 0 2px text_color, 1px 1px 2px text_color, 1px -1px 2px text_color, -1px 1px 2px text_color, -1px -1px 2px text_color, 0 0 5px text_color, 0 0 5px text_color
+
+.background-color
+  background-color background_color
+.text-color
+  color text_color
+
+noinvert_text()
+  color text_color
+  default_text_shadow()
+
+invert_text()
+  color background_color
+  default_text_shadow_invert()
+
   
 
 html
   overflow: hidden
+  body
+    font-kerning normal
+    font-variant-ligatures common-ligatures
 
-
-
-.spotlight {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 200%;
-    background: -moz-radial-gradient(center 45deg, circle closest-side, transparent 0%, black 60%);
-    background: -webkit-gradient(radial, center center, 0, center center, 250, from(rgba(0,0,0,0)), to(rgba(0,0,0,.8)));
-}
-
-
-default_text_shadow()
-  text-shadow: 0 0 2px black, 1px 1px 2px black, 1px -1px 2px black, -1px 1px 2px black, -1px -1px 2px black, 0 0 5px black, 0 0 5px black
-default_text_shadow_invert()
-  text-shadow: 0 0 2px white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white, 0 0 5px white, 0 0 5px white
-
-
-background_color()
-  black
-text_color()
-  white
-
-.background-color
-  background-color background_color()
-.text-color
-  color text_color()
-
-/**
- * overwrite core defaults
- */
-noinvert_text()
-  color text_color()
-  default_text_shadow()
-
-invert_text()
-  color background_color()
-  default_text_shadow_invert()
-
-.deck-container
-  font-size: 19pt
-  padding: 0
+.deck-container 
+  font-family: "Lato", sans-serif;
+  font-size: font_size
   noinvert_text()
+  color: text_color;
+  background: background_color;
+  padding: 0
+  
+.deck-container 
+  .slide
+    background: transparent
 
-.deck-container .slide
-  background: transparent
+.deck-container.deck-menu 
+  .slide
+    background background_color
 
-.deck-container p
-  margin-bottom: 0.3em
+.boxshadow .deck-container.deck-menu .deck-current 
+  box-shadow 0 0 20px #f0a, 0 0 5px text_color
 
-.deck-container .invert
-  invert_text()
+.no-touch .deck-container.deck-menu .slide:hover 
+  background #444
+
+.no-touch.boxshadow .deck-container.deck-menu .slide:hover 
+  box-shadow: 0 0 20px #f0a, 0 0 5px text_color
+
+
+
+.deck-container 
+  .slide
+    a,
+    a:active, 
+    a:visited 
+      text-decoration: none
+    a:hover, 
+    a:focus 
+      text-decoration  underline
+
+.deck-container 
+  p
+    margin-bottom: 0.3em
+  .invert
+    invert_text()
+  .indent
+    padding-left 1em
+  
+  .transition-04
+    // transition background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease
+    transition all 0.4s ease
 
 .deck-container .noinvert
   noinvert_text()
+
+
+
 
 blur()
   animation-name anim_blur
   animation-duration 1s
   animation-fill-mode: forwards
   .invert
-    color: rgba(0,0,0,0.2)
-    text-shadow: 0 0 5px rgba(0,0,0,1);
+    color: alpha(background_color,0.2)
+    text-shadow: 0 0 5px alpha(background_color,1);
   .white-box
     background-color rgba(125, 125, 125,1)
     border none
     box-shadow 0 0 24px 16px rgba(125, 125, 125,1)
-    color: rgba(0,0,0,0.2)
-    text-shadow: 0 0 5px rgba(0,0,0,1);
-  span[class*='bkg-words-']
+    color: alpha(background_color,0.2)
+    text-shadow: 0 0 5px alpha(background_color,1);
+  span[class*='bkg-']
     opacity 0.4
   .blur-except, span.blur-except
     opacity 1
     animation-name anim_unblur
-    color: rgba(255,255,255,1)
+    color: alpha(text_color,1)
     default_text_shadow()
 
 .deck-container
   .blur-text 
-    //color: rgba(255,255,255,0.2)
-    //text-shadow: 0 0 5px rgba(255,255,255,1);
     blur()
-
 
 @keyframes anim_blur
   0%
-    color: rgba(255,255,255,1)
-    text-shadow: 0 0 0px rgba(255,255,255,1);
+    color: alpha(text_color,1)
+    text-shadow: 0 0 0px alpha(text_color,1);
   100%
-    color: rgba(255,255,255,0.2)
-    text-shadow: 0 0 5px rgba(255,255,255,1);
-
+    color: alpha(text_color,0.2)
+    text-shadow: 0 0 5px alpha(text_color,1);
 
 @keyframes anim_unblur
   0%
-    color: rgba(255,255,255,0.2)
-    text-shadow: 0 0 5px rgba(255,255,255,1);
+    color: alpha(text_color,0.2)
+    text-shadow: 0 0 5px alpha(text_color,1);
   100%
-    color: rgba(255,255,255,1)
-    text-shadow: 0 0 0px rgba(255,255,255,1);
+    color: alpha(text_color,1)
+    text-shadow: 0 0 0px alpha(text_color,1);
 
-/*
+
 .deck-container
-  .notes
-    display: none
-*/
+  .deck-current 
+    .fade-in
+      animation FadeIn2 20s
 
+    .delay-0
+      animation-delay 0
+    .delay-5s
+      animation-delay 5s
+    .delay-10s
+      animation-delay 10s
+    .delay-15s
+      animation-delay 15s
+    .delay-20s
+      animation-delay 20s
+
+@keyframes FadeIn 
+  0% 
+    opacity: 0.1;
+  100% 
+    opacity: 1;
+
+@keyframes FadeIn2
+  0% 
+    opacity: 0.1;
+    text-shadow: 0 0 150px text_color, 0 0 50px text_color, 0 0 5px background_color
+    color black
+  50%
+    color black
+    opacity 0.8
+    text-shadow: 0 0 50px text_color, 0 0 5px text_color, 0 0 2px background_color
+  100%
+    color white
+    opacity: 1;
+    text-shadow: 0 0 50px text_color, 0 0 5px background_color, 0 0 5px background_color
 
 /**
  * classes that map directly to css styles
  */
-.deck-container .italic
-  font-style italic
-.deck-container .bold
-  font-weight bold
-.grey-text
-  color grey
-.lightgrey-text
-  color lightgrey
-.line-through
-  text-decoration line-through
+.deck-container 
+  .italic
+    font-style italic
+  .bold
+    font-weight bold
+  .grey-text
+    color grey
+  .lightgrey-text
+    color lightgrey
+  .line-through
+    text-decoration line-through
 
 .brightness-150
-  filter_fn unquote('brightness(150%)')
+  filter unquote('brightness(150%)')
 .bw
-  filter_fn unquote('saturate(0)')
+  filter unquote('saturate(0)')
 .contrast-150
-  filter_fn unquote('contrast(1.5)')
+  filter unquote('contrast(1.5)')
 .blur
-  filter_fn unquote('blur(1.5px)')
+  filter unquote('blur(2px)')
 .blur-5px
-  filter_fn unquote('blur(5px)')
+  filter unquote('blur(5px)')
 
 .display-none
   display none
@@ -161,8 +213,6 @@ blur()
 .right
   text-align: right
 
-.deck-container .indent
-  padding-left 1em
 
 .width-720
   width 720px
@@ -179,6 +229,11 @@ blur()
     padding-top: 0.5em
   .em-above
     padding-top: 1em
+  .em-after
+    padding-bottom: 1em
+  .em-around
+    padding-top: 0.5em
+    padding-bottom: 0.5em
   .em-above-each-td td
     padding-top: 1em
 
@@ -199,32 +254,6 @@ blur()
   .up-125
     margin-top -125px
   
-/**
- * Allow slides to be recalled by adding a class
- * the .slide sub-part makes sub-slides visisble
- */ 
-.deck-before.recall, .deck-previous.recall, .deck-next.recall, .deck-after.recall
-  left 0
-  top 0
-  .slide
-    visibility visible
-
-/**
- * supposed to prevent reduced opacity for previous slide
- */
-.deck-container > .slide .deck-before .nodim, .deck-container > .slide .deck-previous .nodim 
-  opacity 1
-
-
-.deck-container .slide .dim
-  opacity 0.4
-
-.deck-container .slide .nodim
-  opacity 1
-
-.deck-container .slide .nodim .dim
-  opacity 1
-
 
 /**
  * avoid deck.core.css overwriting our 960 grid css
@@ -257,137 +286,12 @@ div.container_12
 
 
 /**
- * modifications to what happens when the slide changes
- */
-// blur after you have been on the current slide
-.deck-before .blur-after:not(.deck-current), .deck-previous .blur-after:not(.deck-current)
-  blur()
-
-// fade out after you have been on the current slide
-.deck-before .fade-after:not(.deck-current), .deck-previous .fade-after:not(.deck-current)
-  animation-name FadeOut
-  animation-duration 1s
-  animation-fill-mode forwards
-
-
-@keyframes FadeOut
-  0%
-    opacity 1
-  100%
-    opacity 0
-
-// move left 270px after you have been on the current slide
-.deck-before .move-left-after:not(.deck-current), .deck-previous .move-left-after:not(.deck-current)
-  animation-name MoveLeft
-  animation-duration 2s
-  animation-fill-mode forwards
-
-@keyframes MoveLeft
-  100%
-    transform translateX(-270px)
-
-// vanish after you have been on the current slide
-.deck-before .vanish:not(.deck-current), .deck-previous .vanish:not(.deck-current)
-  //display none
-  overflow hidden
-  animation-name anim_vanish
-  animation-duration 1s
-  animation-fill-mode: forwards
-
-@keyframes anim_vanish
-  0%
-    opacity 1
-    max-height 400px
-    max-width 800px
-  50%
-    opacity 0.4
-  100%
-    opacity 0
-    max-height 0
-    max-width 0
-    font-size 0
-
-.deck-current .fade-in
-  animation FadeIn2 20s
-
-.deck-current
-  .delay-0
-    animation-delay 0
-  .delay-5s
-    animation-delay 5s
-  .delay-10s
-    animation-delay 10s
-  .delay-15s
-    animation-delay 15s
-  .delay-20s
-    animation-delay 20s
-
-@keyframes FadeIn 
-  0% 
-    opacity: 0.1;
-  100% 
-    opacity: 1;
-
-@keyframes FadeIn2
-  0% 
-    opacity: 0.1;
-    text-shadow: 0 0 150px white, 0 0 50px white, 0 0 5px black
-    color black
-  50%
-    color black
-    opacity 0.8
-    text-shadow: 0 0 50px white, 0 0 5px white, 0 0 2px black
-  100%
-    color white
-    opacity: 1;
-    text-shadow: 0 0 50px white, 0 0 5px black, 0 0 5px black
-
-.scale080
-  transform scale(.8)
-
-.scale120
-  transform scale(1.2)
-
-.scale130
-  transform scale(1.3)
-
-.scale140
-  transform scale(1.4)
-
-.scale150
-  transform scale(1.5)
-
-
-.scale-2
-  transform scale(2)
-
-.deck-before .scale-out-after:not(.deck-current)
-  animation AnimScaleOut 3s forwards
-
-.zoom
-  animation Zoom2 3s forwards
-
-@keyframes AnimScaleOut 
-  0%
-    transform scale(2)
-  100%
-    transform scale(1)
-
-
-
-/**
  * layout
  */
 /* use div.words to wrap the text of every slide (but don't wrap background images) */
 .deck-container
-  .vspace-em
-    padding-top 1em
-  .vspace-em:before
-    content ''
-
-.deck-container
- div.words
-  padding-top: 40px
+  div.words
+    padding-top: 40px
 
   .middle
     position: absolute
@@ -414,33 +318,9 @@ div.container_12
     content 'source: '
     font-style italic
 
-
   .half-above
     padding-top: 0.5em
  
-  .em-above-p p
-    padding-top: 1em
-
-  .em-around-p p
-    padding-top: 0.5em
-    padding-bottom: 0.5em
-
-  .no-below-p p
-    padding-bottom: 0
-    margin-bottom: 0
-
-  .em-after
-    padding-bottom: 1em
-
-  .pad-left
-    padding-left: 0.66em
-
-  .pad-right
-    padding-right: 0.66em
-
-  .pad-1
-    padding 1em
-
   img.float-right 
     float: right
     margin-left: 1em
@@ -450,14 +330,6 @@ div.container_12
 /**
  * fonts 
  */
-.deck-container .small
-  font-size: 12pt
-
-.deck-container .big
-  font-size: 30pt
-
-.deck-container .huge
-  font-size: 50pt
 
 f_scale(x,y)
   transform:scale(x,y) // W3C 
@@ -473,8 +345,7 @@ f_scale(x,y)
 
 .stretch-3
   display: inline-block
-  f_scale(3,3)
-
+  f_scale(2,3)
 
 .stretch-5
   display: inline-block
@@ -487,28 +358,15 @@ f_scale(x,y)
 /*
  * tables
  */
-.deck-container table
-  noinvert_text()
-td, .deck-container td 
-  vertical-align: middle
-
-.deck-container .invert table
-  invert_text()
-
-
-/**
- * lists
- */
-.deck-container ul
-  margin-left: 2em
-
-.deck-container ul li
-  display: list-item
-  list-style: circle
-  padding-bottom: 0.1em
-
-.deck-container .center table
- margin 0 auto
+.deck-container 
+  table
+    noinvert_text()
+  td, .deck-container td 
+    vertical-align: middle
+  .invert table
+    invert_text()
+  .center table
+     margin 0 auto
 
 table.truth-table
   border-collapse: collapse
@@ -516,15 +374,15 @@ table.truth-table
     padding 0.1em 0.6em //increase vertical and horizontal spacing for all lines
     text-align: center
   tr:first-child td
-    border-bottom: 2px solid white  //left border for proof
+    border-bottom: 2px solid text_color  //left border for proof
   td.result-col
-    border-left 2px solid white //horizontal line after premises
+    border-left 2px solid text_color //horizontal line after premises
 
 .invert table.truth-table
   tr:first-child td
-    border-bottom: 2px solid black  //left border for proof
+    border-bottom: 2px solid background_color  //left border for proof
   td.result-col
-    border-left 2px solid black //horizontal line after premises
+    border-left 2px solid background_color //horizontal line after premises
 
 .compress table.truth-table
   tr td
@@ -536,20 +394,20 @@ table.fitch-proof
   tr td
     padding 0.3em 0 //increase vertical spacing for all lines
   tr td:first-child
-    border-left: 4px solid white  //left border for proof
+    border-left: 4px solid text_color  //left border for proof
     width: 20px
   tr td:nth-child(2)    //increase width of line numbers
     padding-right: 1em
   tr td:nth-child(4)
     padding-left: 2em   //space before rule of proof
   td.last-premise
-    border-bottom 4px solid white //horizontal line after premises
+    border-bottom 4px solid text_color //horizontal line after premises
 
 .invert table.fitch-proof
   tr td:first-child
-    border-left: 4px solid black //left border for proof
+    border-left: 4px solid background_color //left border for proof
   td.last-premise
-    border-bottom 4px solid black //horizontal line after premises
+    border-bottom 4px solid background_color //horizontal line after premises
 
 .compress table.fitch-proof
   tr td
@@ -561,37 +419,42 @@ table.data
     padding 5px 20px 5px 20px
   thead
     td
-      border-top 3px solid white
-      border-bottom 1px solid white
+      border-top 3px solid text_color
+      border-bottom 1px solid text_color
       text-align center
       vertical-align middle
   tbody
     td
       vertical-align top
     tr:last-child td
-      border-bottom 3px solid white
+      border-bottom 3px solid text_color
     tr.even td
-      background-color: rgba(255,255,255,0.1)
+      background-color: alpha(text_color,0.1)
   
+
+
+/**
+ * lists
+ */
+.deck-container 
+  ul
+    margin-left: 2em
+    li
+      display: list-item
+      list-style: circle
+      padding-bottom: 0.1em
+
 
 /**
  * dim, invisible
  */
 
-.deck-container .dim
-  opacity: 0.33
 
-.deck-container .dim-very
-  opacity: 0.16
-
-.deck-container .invisible
-  opacity: 0
-
-.deck-container .hide
-  visibility hidden
-
-.deck-container .remove-me
-  display none
+.deck-container 
+  .hide
+    visibility hidden
+  .remove-me
+    display none
 
 /**
  * boxes for putting photos in
@@ -632,10 +495,10 @@ top-X(height)
  * make part of the screen white (with black text)
  */
 btm-white(height,top) 
-  background-color: white
+  background-color: text_color
   btm-X(height,top)
   invert_text()
-  box-shadow: 0px -8px 8px 0 rgba(255,255,255,0.5)
+  box-shadow: 0px -8px 8px 0 alpha(text_color,0.5)
   z-index -99
 
 .deck-container 
@@ -653,13 +516,13 @@ btm-black(height,top)
   btm-X height, top
   //no idea why this isn't working (nib issue?)
   //background linear-gradient(top, rgba(0,0,0,0), 20% rgba(0,0,0,1), rgba(0,0,0,1))
-  background-color: black
-  box-shadow: 0px -8px 8px 0 rgba(0,0,0,0.5)
+  background-color: background_color
+  box-shadow: 0px -8px 8px 0 alpha(background_color,0.5)
   z-index -99
 
 top-black(height)
   top-X height
-  background linear-gradient(top, rgba(0,0,0,1), 80% rgba(0,0,0,1), rgba(0,0,0,0))
+  background linear-gradient(top, alpha(background_color,1), 80% alpha(background_color,1), alpha(background_color,0))
 
 .deck-container .slide
   .bottom-black
@@ -676,7 +539,7 @@ top-black(height)
 
 
 .deck-container .right-half-white
-  background-color: white
+  background-color: text_color
   float: right
   position: absolute
   top:0px
@@ -687,7 +550,7 @@ top-black(height)
   z-index -99
 
 .deck-container .left-half-white
-  background-color: white
+  background-color: text_color
   float: left
   position: absolute
   top:0px
@@ -710,17 +573,17 @@ make-row-bkg(name,color)
       margin-right: -80em
       border-right: solid 80em color
       text-outline: 1px 2px red
-      box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33)
+      box-shadow: 0px 4px 2px -2px alpha(text_color,0.33), 0px -4px 2px -2px alpha(text_color,0.33)
       position relative
       z-index -20
     .invert
       .bkg-{name}-row
-        box-shadow: 0 0 1px white, 0 0 0.5em black
+        box-shadow: 0 0 1px text_color, 0 0 0.5em background_color
 
 make-row-bkg('grey', rgba(125,125,125,1))
 make-row-bkg('faint-grey', rgba(125,125,125,0.3))
-make-row-bkg('white', rgba(255,255,255,1))
-make-row-bkg('faint-white', rgba(255, 255, 255, 0.3))
+make-row-bkg('white', alpha(text_color,1))
+make-row-bkg('faint-white', alpha(text_color, 0.3))
 make-row-bkg('blue', rgba(0, 128, 255,1))
 make-row-bkg('faint-blue', rgba(0, 128, 255, 0.3))
 make-row-bkg('pink', rgba(255, 111, 207,1))
@@ -754,51 +617,38 @@ make-row-bkg('faint-blueviolet', rgba(138,43,226,0.3))
 
 
 
-
 /**
- * transparent backgrounds
- */
-.deck-container  .bkg-black-33
-  background: rgba(0,0,0,0.33)
-  box-shadow: 0 0 15px 64px rgba(0,0,0,0.33)
-
-
-
-
-/**
- * highlight words -- permanent
+ * highlight words 
  */
 
 .deck-container
-  span.bkg-words-highlight-invert
+  span.bkg-invert
     position relative
     z-index -1
-  .bkg-words-highlight-invert
+  .bkg-invert
     invert_text()
-    background-color white
-    box-shadow 0 0 8px 8px white
+    background-color text_color
+    box-shadow 0 0 8px 8px text_color
     border-radius 5px
-    span.bkg-words-highlight-invert
+    span.bkg-invert
       position relative
       z-index -2
-    p.bkg-words-highlight-invert
+    p.bkg-invert
       position relative
       top 0
       left 0
       z-index -3
   .invert
-    .bkg-words-highlight-invert
+    .bkg-invert
       noinvert_text()
-      background-color black
-      box-shadow 0 0 8px 8px black
+      background-color background_color
+      box-shadow 0 0 8px 8px background_color
 
 make-bkg-words(name,color)
   .deck-container
-    span.bkg-words-highlight-{name}
     span.bkg-{name}
       position relative
       z-index -1
-    .bkg-words-highlight-{name}
     .bkg-{name}
       background-color color
       box-shadow 0 0 8px 8px color
@@ -809,11 +659,9 @@ make-bkg-words(name,color)
       //margin-right: -10px
       //border-right: solid 10px  rgba(255,0,0,0.8)
       //outline: 5px solid rgba(255,0,0,0.8)
-    span.bkg-words-highlight-{name}
     span.bkg-{name}
       position relative
       z-index -2
-    p.bkg-words-highlight-{name}
     p.bkg-{name}
       position relative
       top 0
@@ -852,11 +700,11 @@ make-bkg-words('faint-blueviolet', rgba(138,43,226,0.3))
  * boxes
  */
 .white-box
-  background-color: white
+  background-color: text_color
   invert_text()
   padding: .25em !important
   border-radius: 5px
-  box-shadow 0 0 4px 4px black
+  box-shadow 0 0 4px 4px background_color
 
 .glow-border-red
   box-shadow: 0 0 15px 8px rgba(255,0,0,1), 0 0 18px 9px rgba(255,255,102,0.5)
@@ -864,25 +712,26 @@ make-bkg-words('faint-blueviolet', rgba(138,43,226,0.3))
 /**
  * borders & rotation
  */
-.deck-container .border-right
-  border-right: 1px dotted white
+.deck-container 
+  .border-right
+    border-right: 1px dotted text_color
 
-.deck-container .rotate-1
-  -moz-transform: rotate(1deg)
-  -webkit-transform: rotate(1deg)
+  .rotate-1
+    -moz-transform: rotate(1deg)
+    -webkit-transform: rotate(1deg)
 
-.deck-container .rotate--2
-  -moz-transform: rotate(-2deg)
-  -webkit-transform: rotate(-2deg)
+  .rotate--2
+    -moz-transform: rotate(-2deg)
+    -webkit-transform: rotate(-2deg)
 
-.deck-container .circle_word
-  border-radius: 1200px
-  height: 120px
-  max-width: 120px
-  min-width: 120px
-  border: 3px solid white
-  text-align: center
-  vertical-align: middle
+  .circle_word
+    border-radius: 1200px
+    height: 120px
+    max-width: 120px
+    min-width: 120px
+    border: 3px solid text_color
+    text-align: center
+    vertical-align: middle
 
 
 /**
@@ -895,6 +744,7 @@ make-bkg-words('faint-blueviolet', rgba(138,43,226,0.3))
   top: 0
   left: 0
   z-index: -1
+  max-width 100%
 
 
 /**
@@ -904,7 +754,7 @@ make-bkg-words('faint-blueviolet', rgba(138,43,226,0.3))
 .csstransforms .deck-container h2
   position: relative
   text-align: left
-  color: white
+  color: text_color
   font-size: 45pt
   font-weight: 900
   top: auto
@@ -925,8 +775,8 @@ make-bkg-words('faint-blueviolet', rgba(138,43,226,0.3))
   default_text_shadow()
 
 .deck-container  .title-block
-  background: linear-gradient(left, black, transparent)
-  box-shadow: 0px 4px 2px -2px rgba(255,255,255,0.33), 0px -4px 2px -2px rgba(255,255,255,0.33)
+  background: linear-gradient(left, background_color, transparent)
+  box-shadow: 0px 4px 2px -2px alpha(text_color,0.33), 0px -4px 2px -2px alpha(text_color,0.33)
 
 .deck-container  .title-container
   padding-left: 2em
@@ -964,10 +814,10 @@ make-huge-glow(class-name, size)
   .deck-container 
     {class-name}
       font-size: size
-      color: black
-      text-shadow: 0 0 (size/2) white, 0 0 (size/4) white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white
-      -webkit-text-shadow: 0 0 (size/2) white, 0 0 (size/4) white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white
-      -moz-text-shadow: 0 0 (size/2) white, 0 0 (size/4) white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white
+      color: background_color
+      text-shadow: 0 0 (size/2) text_color, 0 0 (size/4) text_color, 1px 1px 2px text_color, 1px -1px 2px text_color, -1px 1px 2px text_color, -1px -1px 2px text_color
+      -webkit-text-shadow: 0 0 (size/2) text_color, 0 0 (size/4) text_color, 1px 1px 2px text_color, 1px -1px 2px text_color, -1px 1px 2px text_color, -1px -1px 2px text_color
+      -moz-text-shadow: 0 0 (size/2) text_color, 0 0 (size/4) text_color, 1px 1px 2px text_color, 1px -1px 2px text_color, -1px 1px 2px text_color, -1px -1px 2px text_color
 
 make-huge-glow('.huge-glow', 90pt)
 make-huge-glow('.huge-glow-90', 90pt)
@@ -975,6 +825,12 @@ make-huge-glow('.huge-glow-120', 120pt)
 make-huge-glow('.huge-glow-150', 150pt)
 make-huge-glow('.huge-glow-180', 180pt)
 make-huge-glow('.huge-glow-210', 210pt)
+make-huge-glow('.huge-glow-240', 240pt)
+make-huge-glow('.huge-glow-270', 270pt)
+make-huge-glow('.huge-glow-300', 300pt)
+
+make-huge-glow('.glow', font_size)
+
 
 .deck-container .under-huge-glow
   padding-top: 0
@@ -990,18 +846,18 @@ p.speech-left, p.speech-right
   width: 200px;
   height: 120px;
   padding 5px
-  background: #000;
+  background: background_color;
   border-radius: 10px;
   border-style solid
   border-width 2px
-  border-color white
+  border-color text_color
 
 p.speech-left:before
   content: '';
   position: absolute;
   border-style: solid;
   border-width: 24px 15px 0;
-  border-color: #000 transparent;
+  border-color: background_color transparent;
   display: block;
   width: 0;
   z-index: 1;
@@ -1014,7 +870,7 @@ p.speech-left:after
   position: absolute;
   border-style: solid;
   border-width: 25px 16px 0;
-  border-color: #fff transparent;
+  border-color: text_color transparent;
   display: block;
   width: 0;
   z-index: 0;
@@ -1028,7 +884,7 @@ p.speech-right:before
   position: absolute;
   border-style: solid;
   border-width: 24px 15px 0;
-  border-color: #000 transparent;
+  border-color: background_color transparent;
   display: block;
   width: 0;
   z-index: 1;
@@ -1041,7 +897,7 @@ p.speech-right:after
   position: absolute
   border-style: solid
   border-width: 25px 16px 0
-  border-color: #fff transparent
+  border-color: text_color transparent
   display: block;
   width: 0;
   z-index: 0;
@@ -1100,8 +956,8 @@ p.speech-right:after
       .timer-60s-block
         p.center text to appear on the timer
  */
-timer-color = white
-timer-background-color = black
+timer-color = text_color
+timer-background-color = background_color
 timer-size = 400px
 timer-duration = 60s 
 
@@ -1113,7 +969,9 @@ timer(class-name, timer-color, timer-background-color, timer-size, timer-duratio
       height: timer-size
       position: relative
       width: timer-size
-      box-shadow 0 0 40px white, 0 0 20px white, 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white
+      box-shadow 0 0 40px text_color, 0 0 20px text_color, 1px 1px 2px text_color, 1px -1px 2px text_color, -1px 1px 2px text_color, -1px -1px 2px text_color
+      margin-left auto
+      margin-right auto
     {class-name}.running
       animation: time timer-duration steps(60, start) 1 normal forwards
     {class-name}.running .mask

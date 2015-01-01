@@ -90,31 +90,34 @@ mixin title_slide(p)
         - low = true
     .fade-in
       .title-block(style="#{low ? 'position:relative; top:325px' : ''}"): .title-container
+        h1.title1.fade-in #{p.document.title}
         if p.document.subtitle
-          h1.title1.fade-in #{p.document.title}
           h1.title2.fade-in #{p.document.subtitle}
+        if p.document.email
+          h3.email.fade-in #{p.document.email}
         else
-          h1.title1.fade-in #{site.title}
-          if site.title != p.document.title
-            h1.title2.fade-in #{p.document.title}
-        h3.email.fade-in s.butterfill@warwick.ac.uk
+          h3.email.fade-in s.butterfill@warwick.ac.uk
     if p.document.weburl
       .words
         span(style="position:relative;top:250px;left:450px;").white-box.big.center #{p.document.weburl}
+    .handout \def \ititle {#{p.document.title}}
     if p.document.subtitle
-      .handout \def \ititle {#{p.document.title}}
       .handout \def \isubtitle {#{p.document.subtitle}}
-    else
-      .handout \def \ititle {#{site.title}}
-      .handout \def \isubtitle {#{p.document.title}}
     .handout \begin{center}
     .handout {\Large
-    .handout \textbf{\ititle}: \isubtitle
+    if p.document.subtitle
+      .handout \textbf{\ititle}: \isubtitle
+    else
+      .handout \textbf{\ititle}
     .handout }
     .handout &nbsp;
-    .handout \iemail %<s.butterfill@warwick.ac.uk>
+    if p.document.email
+      .handout \iemail %<#{p.document.email}>
+    else
+      .handout \iemail %<s.butterfill@warwick.ac.uk>
     .handout \end{center}
-    .handout Readings refer to sections of the course textbook, \emph{Language, Proof and Logic}.
+    if p.document.title === 'Logic I'
+      .handout Readings refer to sections of the course textbook, \emph{Language, Proof and Logic}.
     block
 
 //- title slides for subsections

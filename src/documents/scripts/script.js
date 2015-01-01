@@ -88,11 +88,3 @@ scaleDeck = function(baseHeight) {
         });
     });
 }
-
-/**
- * work in progress
- */
-displayNotes = function() {
-  $('.deck-container').width(700);
-  $('.deck-container').before("<div style='deck-notes'>hello</div>");
-}

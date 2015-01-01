@@ -21,7 +21,7 @@ plugins:
 
   absolutepath:
     # put the url of the site you are uploading to here, including any subdirectories. 
-    #  e.g. I might use "www.butterfill.com/talk-slides/joint_action_without_mindreading/"
+    #  e.g. I might use "http://www.butterfill.com/talk-slides/joint_action_without_mindreading/"
     url: "/"
    cleanurls:
       getRedirectTemplate: (document) ->

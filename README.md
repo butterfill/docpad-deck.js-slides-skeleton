@@ -7,7 +7,7 @@ Status
 ======
 
 I'm not ready to share this work, it's only here as my personal backup.  But if you
-really wanted to try it out you could.  Be warned that it's temperamental and when things go wrong, as they often do, the error messages are hard to decode.  Most likely it won't work at all.
+really wanted to try it out you could.  Be warned that it's temperamental. When things go wrong, as they often do, the error messages are hard to decode.  Most likely it won't work at all.
 
 
 Requirements

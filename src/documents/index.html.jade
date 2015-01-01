@@ -1,6 +1,8 @@
 ---
 layout: 'default2'
-title: 'Lecture 01'
+title: 'Making slides with deck.js'
+subtitle: 'A quick introduction'
+email: 's.butterfill@warwick.ac.uk'
 weburl: ''
 units: []
 lecture_date: '2013/10/3'
@@ -14,7 +16,7 @@ include ../../fragments/lecture_mixins
 
 - var images = get_images('bees')
 
-mixin title_slide({document:document, images:images})
++title_slide({document:document, images:images})
 
 // the question
-mixin insert_unit({unit:'001', title_slide:false, images:images, handout:true})
++insert_unit({unit:'001', title_slide:false, images:images, handout:true})

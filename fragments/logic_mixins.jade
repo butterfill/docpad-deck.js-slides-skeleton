@@ -1,6 +1,8 @@
 //-
 //- (c) Stephen A. Butterfill 2014
 //-
+//- depends on unit_mixins (for +show, +add-class etc)
+//- 
 //- update if moving from slide_mixins.jade
 //-   rename:
 //-     highlight-row to highlight-proof-row_
@@ -10,7 +12,7 @@
 //- logically valid df
 //- -------------
 mixin df_valid(p)
-  if !p
+  if typeof(p) === 'undefined'
     - p = {}
   div.white-box(style="width:230px;position:absolute;top:20px;left:500px;")
     p(style="padding: 0 0.3em;") An argument is 
@@ -23,7 +25,8 @@ mixin df_valid(p)
         span and 
         span.conclusion-false the conclusion false.
   if p.reveal
-    .slide.anim-show(data-what=".the_df")
+    .slide
+      +show(".the_df")
 
 //- sound df
 mixin df_sound_argument(p)
@@ -74,15 +77,15 @@ mixin truth-table(sentences, values)
           td.result-col
             span(class='result-col-#{i3+1}') #{value_set[i]}
 
-mixin tt-highlight-cols(cols, color, container)
+mixin tt-highlight-cols(cols, color)
+  if typeof(color) === 'undefined'
+    - color = 'grey'
   each col in cols
-    div.slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} table.truth-table tr td:nth-child(#{col})",data-class="bkg-words-highlight-#{color}")
-  mixin anim_end()
+    +add-class("table.truth-table tr td:nth-child(#{col})", "bkg-"+color)
 
-mixin tt-highlight-rows(rows, container)
+mixin tt-highlight-rows(rows)
   each row in rows
-    .slide.anim-continue.anim-addclass(data-what="#{container ? container : ''} .truth-table .row-#{row} .highlight-hook", data-class="bkg-grey-row")
-  mixin anim_end()
+    +add-class(".truth-table .row-#{row} .highlight-hook", "bkg-grey-row")
 
 
 
@@ -151,27 +154,23 @@ mixin fitch_proof(prf,start_line)
 //- nb: these use anim-continue so you can do several highlights in one slide
 //- nb: after calling one or more of these highlights, use mixin anim_end
 
+
+
 //- highlight a row of a proof
-mixin highlight-proof-row_(row_num)
-  .slide.anim-addclass.anim-continue(data-what=".fitch-proof .row-#{row_num} .highlight-hook", data-class="bkg-grey-row")
 mixin highlight-proof-row(row_num)
-  +highlight-proof-row_(row_num)
-  +anim_end
-mixin unhighlight-proof-row_(row_num)
-  .slide.anim-removeclass.anim-continue(data-what=".fitch-proof .row-#{row_num} .highlight-hook", data-class="bkg-grey-row")
+  +add-class(".fitch-proof .row-"+row_num+" .highlight-hook", "bkg-grey-row")
 mixin unhighlight-proof-row(row_num)
-  +unhighlight-proof-row_(row_num)
-  +anim_end
+  +remove-class(".fitch-proof .row-"+row_num+" .highlight-hook", "bkg-grey-row")
 
 //- highlights just one of the numbers in a rule of proof
 mixin highlight_citation(row_num, citation_num)
-  .slide.anim-addclass.anim-continue(data-what=".fitch-proof .row-#{row_num} .citation-#{citation_num}", data-class="bkg-words-highlight-red")
+  +add-class(".fitch-proof .row-"+row_num+" .citation-"+citation_num, "bkg-red")
 mixin unhighlight_citation(row_num, citation_num)
-  .slide.anim-removeclass.anim-continue(data-what=".fitch-proof .row-#{row_num} .citation-#{citation_num}", data-class="bkg-words-highlight-red")
+  +remove-class(".fitch-proof .row-"+row_num+" .citation-"+citation_num, "bkg-red")
 
 //- highlights the specified line as a line highlighted
 mixin highlight_cited_sentence(row_num)
-  .slide.anim-addclass.anim-continue(data-what=".fitch-proof .row-#{row_num} .sentence", data-class="bkg-words-highlight-red")
+  +add-class(".fitch-proof .row-"+row_num+" .sentence", "bkg-red")
 mixin unhighlight_cited_sentence(row_num)
-  .slide.anim-removeclass.anim-continue(data-what=".fitch-proof .row-#{row_num} .sentence", data-class="bkg-words-highlight-red")
+  +remove-class(".fitch-proof .row-"+row_num+" .sentence", "bkg-red")
 
