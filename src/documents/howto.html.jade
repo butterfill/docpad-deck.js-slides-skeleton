@@ -1,0 +1,63 @@
+---
+layout: 'default2'
+title: 'How to write dj-deck slides'
+weburl: ''
+---
+
+//-
+//- (c) Stephen A. Butterfill 2014
+//-
+
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+
+- var images = get_images('bees')
+
++title_slide({document:document, images:images})
+
++slide
+  .step1
+    p dj-deck is a system for creating beautiful presentation slides.
+    p.em-above In this guide I'll show you how to write dj-deck slides.
+    p.em-above Hit the right arrow or swipe left for the next slide.
+  .slide
+    +blurfade('.step1')
+    p.em-above  Hit the 'n' key to see the notes.
+    .notes: :t()
+      I'll use the notes to explain how to write the slides.
+      On the slides themselves you'll see the results illustrated.
+    .notes: :t()
+      Hit the right arrow or swipe left for the next slide.
+
++slide
+  .step1
+    p Use '+slide' to create a new slide.
+    p Use 'p' to create a paragraph.
+  .notes: :t()
+    Here's the source for this slide (minus the notes, which we'll come to later):
+  .notes: :t()
+    ````jade
+    +slide
+      p Use '+slide' to create a new slide.
+      p Use 'p' to create a paragraph.
+    ````
+  .slide
+    +blurfade('.step1')
+    p.em-above The 'p's are indented under '+slide'.
+    p 'p' stands for paragraph.
+    .notes: :t()
+      Here's the source for this slide (minus the notes, which we'll come to later):
+    .notes: :t()
+      ````jade
+      +slide
+        p Use '+slide' to create a new slide.
+        p Use 'p' to create a paragraph.
+      ````
+
+
+
+
+
+
+

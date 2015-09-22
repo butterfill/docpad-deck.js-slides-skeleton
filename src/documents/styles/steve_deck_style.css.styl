@@ -708,6 +708,9 @@ make-bkg-words('faint-blueviolet', rgba(138,43,226,0.3))
 
 .glow-border-red
   box-shadow: 0 0 15px 8px rgba(255,0,0,1), 0 0 18px 9px rgba(255,255,102,0.5)
+  
+.glow-border
+  box-shadow 0 0 40px #FFF, 0 0 4px #FFF
 
 /**
  * borders & rotation
@@ -820,6 +823,11 @@ make-huge-glow(class-name, size)
       -moz-text-shadow: 0 0 (size/2) text_color, 0 0 (size/4) text_color, 1px 1px 2px text_color, 1px -1px 2px text_color, -1px 1px 2px text_color, -1px -1px 2px text_color
 
 make-huge-glow('.huge-glow', 90pt)
+make-huge-glow('.huge-glow-40', 40pt)
+make-huge-glow('.huge-glow-50', 50pt)
+make-huge-glow('.huge-glow-60', 60pt)
+make-huge-glow('.huge-glow-70', 70pt)
+make-huge-glow('.huge-glow-80', 80pt)
 make-huge-glow('.huge-glow-90', 90pt)
 make-huge-glow('.huge-glow-120', 120pt)
 make-huge-glow('.huge-glow-150', 150pt)
@@ -1017,3 +1025,11 @@ timer(".timer-180s", timer-color, timer-background-color, timer-size, 120s)
 timer(".timer-300s", timer-color, timer-background-color, timer-size, 300s)
 
 
+
+.columns-2
+  -webkit-column-count: 2;
+  -webkit-column-rule: 1px dashed #AAA;
+  -webkit-column-gap: 2.5em;
+
+.dont-break-paragraphs p
+  -webkit-column-break-inside avoid

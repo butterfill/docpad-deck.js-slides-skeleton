@@ -20,5 +20,5 @@
     "peerDependencies": {
         "docpad": "6"
     },
-    "main": "./src/absolutepath.plugin.coffee"
+    "main": "./src/absolutepath.plugin.js"
 }
