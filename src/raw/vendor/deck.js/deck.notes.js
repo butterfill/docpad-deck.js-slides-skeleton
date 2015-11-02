@@ -853,6 +853,6 @@ only toggle the notes panel for this cloned window.
 		var slide_id = $(slideTo).attr('id');
 		var $notes = $('.for-'+slide_id, $notesContainer).not('.notes-header-tex');
 		$notes.show();
-    });
+  });
 
 })(jQuery, 'deck');

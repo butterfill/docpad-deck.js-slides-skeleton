@@ -104,6 +104,12 @@ mixin left_half()
   .grid_6.words.left-half
     div(style='padding-right:1em;')
       block
+
+mixin left_half_lh_white()
+  .grid_6.words.invert.left-half
+    div(style='padding-right:1em;')
+      block
+
 mixin right_half(p)
   if typeof(p) === 'undefined' 
     - p = {}
@@ -117,6 +123,15 @@ mixin right_half(p)
           block
       else
         block
+
+mixin right_half_lh_white(p)
+  - p = p || {step:false}
+  .grid_6.words.right-half(class="#{ p.step ? 'hide' : '' }")
+    div(style='padding-left:1em;')
+      if p.step
+        +show('.right-half-white, .right-half')
+      block
+
 mixin run_across()
   .clear
   //- .container_12: .grid_12: .words
@@ -133,6 +148,12 @@ mixin slide_rh_white(p)
     .container_12
       block
 
+mixin slide_lh_white(p)
+  - p = p || {step:false}
+  section.slide
+    .left-half-white(style="z-index:-22;", class="#{ p.step ? 'hide' : '' }")
+    .container_12
+      block
             
       
 //- create a sequence of slides from a list of images
