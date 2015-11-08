@@ -69,6 +69,8 @@ mixin title_slide(p)
     .fade-in
       .title-block(style="#{low ? 'position:relative; top:325px' : ''}"): .title-container
         h1.title1.fade-in #{p.document.title}
+          if p.document.subtitle
+            span :
         if p.document.subtitle
           h1.title2.fade-in #{p.document.subtitle}
         if p.document.email
