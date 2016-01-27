@@ -227,8 +227,14 @@ blur()
 .deck-container
   .hem-above
     padding-top: 0.5em
+  .hem-around
+    padding-top: 0.5em
+    padding-bottom: 0.5em
   .em-above
     padding-top: 1em
+  .em-around
+    padding-top: 1em
+    padding-bottom: 1em
   .em-after
     padding-bottom: 1em
   .em-around
@@ -239,6 +245,10 @@ blur()
 
   .up-10
     margin-top -10px
+  .up-12
+    margin-top -12px
+  .up-16
+    margin-top -16px
   .up-20
     margin-top -20px
   .up-30
@@ -464,8 +474,8 @@ table.data
   .photobox-bottom-right
     float: right
     position: absolute
-    top: 400px
-    left: 600px 
+    top: 300px
+    left: 500px 
     height:150px
     width: 150px
   .photobox-bottom-left
@@ -573,7 +583,7 @@ make-row-bkg(name,color)
       margin-right: -80em
       border-right: solid 80em color
       text-outline: 1px 2px red
-      box-shadow: 0px 4px 2px -2px alpha(text_color,0.33), 0px -4px 2px -2px alpha(text_color,0.33)
+      box-shadow: 0px 4px 2px -2px alpha(color,0.5), 0px -4px 2px -2px alpha(color,0.5)
       position relative
       z-index -20
     .invert
@@ -692,6 +702,8 @@ make-bkg-words('orange', rgba(255,165,0,1))
 make-bkg-words('faint-orange', rgba(255,165,0,0.3))
 make-bkg-words('blueviolet', rgba(138,43,226,1))
 make-bkg-words('faint-blueviolet', rgba(138,43,226,0.3))
+make-bkg-words('grey', rgba(125,125,125,1))
+make-bkg-words('faint-grey', rgba(125,125,125,0.3))
 
 
 
@@ -708,9 +720,6 @@ make-bkg-words('faint-blueviolet', rgba(138,43,226,0.3))
 
 .glow-border-red
   box-shadow: 0 0 15px 8px rgba(255,0,0,1), 0 0 18px 9px rgba(255,255,102,0.5)
-  
-.glow-border
-  box-shadow 0 0 40px #FFF, 0 0 4px #FFF
 
 /**
  * borders & rotation
@@ -790,8 +799,7 @@ make-bkg-words('faint-blueviolet', rgba(138,43,226,0.3))
   default_text_shadow()
 
 .csstransforms .deck-container .title2
-  margin-top: -0.3em
-  line-height: 40px
+  margin-top: -0.5em
   default_text_shadow()
 
 .deck-container .email, .deck-container .slide h3
@@ -843,7 +851,7 @@ make-huge-glow('.glow', font_size)
 
 .deck-container .under-huge-glow
   padding-top: 0
-  margin-top: -1em
+  margin-top: -1.4em
 
 
 /**
@@ -1026,11 +1034,3 @@ timer(".timer-180s", timer-color, timer-background-color, timer-size, 120s)
 timer(".timer-300s", timer-color, timer-background-color, timer-size, 300s)
 
 
-
-.columns-2
-  -webkit-column-count: 2;
-  -webkit-column-rule: 1px dashed #AAA;
-  -webkit-column-gap: 2.5em;
-
-.dont-break-paragraphs p
-  -webkit-column-break-inside avoid

@@ -98,6 +98,9 @@ mixin clear-slide()
 mixin clear-slide-escape-inner()
   div(style='position: absolute; top:-40px; left:-50px; width:800px; height:600px').background-color
     block
+mixin clear-slide-escape-inner-rh-white()
+  div(style='position: absolute; top:0px; left:0px; width:800px; height:600px').background-color
+    block
 
 //- This sequence creates rh_white slides
 mixin left_half()
@@ -194,9 +197,11 @@ mixin img_clip(filename, theClip)
     img(src='/img/#{filename}', style="clip: #{theClip}; position: absolute; max-width:720px; max-height:550px;")
 
 
-mixin question_mark()
-  div(style="position:absolute;top:0px;left:0;z-index:-30;width:100%;margin-top:-150px;")
-    p.center.huge-glow(style="font-size:300px")  ?
+mixin question_mark(p)
+  - p = p || {}
+  - p.marginTop = p.marginTop || '-150px'
+  div(style="position:absolute;top:0px;left:0;z-index:-30;width:100%;margin-top:#{p.marginTop};")
+    p.center.question-mark.huge-glow(style="font-size:300px")  ?
 
 
 mixin colour-box(colour, size)
