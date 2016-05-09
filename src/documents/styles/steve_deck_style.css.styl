@@ -720,6 +720,9 @@ make-bkg-words('faint-grey', rgba(125,125,125,0.3))
 
 .glow-border-red
   box-shadow: 0 0 15px 8px rgba(255,0,0,1), 0 0 18px 9px rgba(255,255,102,0.5)
+  
+.glow-border
+  box-shadow 0 0 40px #FFF, 0 0 4px #FFF
 
 /**
  * borders & rotation
@@ -756,6 +759,13 @@ make-bkg-words('faint-grey', rgba(125,125,125,0.3))
   top: 0
   left: 0
   z-index: -1
+  max-width 100%
+.deck-container img.fill
+  float: left
+  height: auto
+  position: absolute
+  top: 0
+  left: 0
   max-width 100%
 
 
@@ -1032,5 +1042,19 @@ timer(".timer-60s", timer-color, timer-background-color, timer-size, 60s)
 timer(".timer-120s", timer-color, timer-background-color, timer-size, 120s)
 timer(".timer-180s", timer-color, timer-background-color, timer-size, 120s)
 timer(".timer-300s", timer-color, timer-background-color, timer-size, 300s)
+timer(".timer-480s", timer-color, timer-background-color, timer-size, 480s)
+timer(".timer-600s", timer-color, timer-background-color, timer-size, 600s)
 
 
+.columns-2
+  -webkit-column-count: 2;
+  -webkit-column-rule: 1px dashed #AAA;
+  -webkit-column-gap: 2.5em;
+
+.dont-break-paragraphs p
+  -webkit-column-break-inside avoid
+
+
+.deck-container .invert-text-grey
+  color background_color()
+  text-shadow: 0 0 2px #949494, 1px 1px 2px #949494, 1px -1px 2px #949494, -1px 1px 2px #949494, -1px -1px 2px #949494, 0 0 5px #949494, 0 0 5px #949494

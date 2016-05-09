@@ -19,7 +19,7 @@ docpad update
 
 
 3c. You may also get the latest deck.core.js (but don't upgrade deck.core.css)
-
+[check you don’t override the fix for large files]
 
 4. serve
 

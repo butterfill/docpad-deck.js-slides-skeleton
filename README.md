@@ -6,8 +6,7 @@ This is a collection of files for creating slideshow presentations in html.
 Status
 ======
 
-I'm not ready to share this work, it's only here as my personal backup.  But if you
-really wanted to try it out you could.  Be warned that it's temperamental. When things go wrong, as they often do, the error messages are hard to decode.  Most likely it won't work at all.
+I'm not ready to share this work, it's only here as my personal backup.  But if you really wanted to try it out you could.  Be warned that it's temperamental. When things go wrong, as they often do, the error messages are hard to decode.  Most likely it won't work at all.
 
 
 Requirements
@@ -23,7 +22,7 @@ It helps to understand basic CSS and javascript too.
 Getting Started
 ===============
 
-Install [node](http://nodejs.org/download/); this is a javascript runtime a tiny bit like java.
+Install [node](http://nodejs.org/download/).  I currently use version 0.12.x; it should work with higher versions too.  (Use [nvm](https://github.com/creationix/nvm) if you need multiple versions of node.)
 
 Install [docpad](https://docpad.org/docs/install) by opening a terminal and typing:
 
