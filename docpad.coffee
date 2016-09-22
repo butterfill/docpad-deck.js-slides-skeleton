@@ -40,7 +40,7 @@ docpadConfig = {
         </html>
         """
         
-  #renderPasses : 1
+  renderPasses : 2
 
   # =================================
   # Template Data
