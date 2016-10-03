@@ -198,6 +198,8 @@ blur()
   filter unquote('brightness(150%)')
 .bw
   filter unquote('saturate(0)')
+.contrast-120
+  filter unquote('contrast(1.2)')
 .contrast-150
   filter unquote('contrast(1.5)')
 .blur
@@ -212,6 +214,8 @@ blur()
   text-align: center
 .right
   text-align: right
+  .float-right
+    float right
 
 
 .width-720
@@ -857,6 +861,33 @@ make-huge-glow('.huge-glow-270', 270pt)
 make-huge-glow('.huge-glow-300', 300pt)
 
 make-huge-glow('.glow', font_size)
+
+
+make-huge-glow-invert(class-name, size)
+  .deck-container 
+    {class-name}
+      font-size: size
+      color: text_color
+      text-shadow: 0 0 (size/2) background_color, 0 0 (size/4) background_color, 1px 1px 2px background_color, 1px -1px 2px background_color, -1px 1px 2px background_color, -1px -1px 2px background_color
+      -webkit-text-shadow: 0 0 (size/2) background_color, 0 0 (size/4) background_color, 1px 1px 2px background_color, 1px -1px 2px background_color, -1px 1px 2px background_color, -1px -1px 2px background_color
+      -moz-text-shadow: 0 0 (size/2) background_color, 0 0 (size/4) background_color, 1px 1px 2px background_color, 1px -1px 2px background_color, -1px 1px 2px background_color, -1px -1px 2px background_color
+
+make-huge-glow-invert('.huge-glow-invert', 90pt)
+make-huge-glow-invert('.huge-glow-invert-40', 40pt)
+make-huge-glow-invert('.huge-glow-invert-50', 50pt)
+make-huge-glow-invert('.huge-glow-invert-60', 60pt)
+make-huge-glow-invert('.huge-glow-invert-70', 70pt)
+make-huge-glow-invert('.huge-glow-invert-80', 80pt)
+make-huge-glow-invert('.huge-glow-invert-90', 90pt)
+make-huge-glow-invert('.huge-glow-invert-120', 120pt)
+make-huge-glow-invert('.huge-glow-invert-150', 150pt)
+make-huge-glow-invert('.huge-glow-invert-180', 180pt)
+make-huge-glow-invert('.huge-glow-invert-210', 210pt)
+make-huge-glow-invert('.huge-glow-invert-240', 240pt)
+make-huge-glow-invert('.huge-glow-invert-270', 270pt)
+make-huge-glow-invert('.huge-glow-invert-300', 300pt)
+
+make-huge-glow-invert('.glow-invert', font_size)
 
 
 .deck-container .under-huge-glow
