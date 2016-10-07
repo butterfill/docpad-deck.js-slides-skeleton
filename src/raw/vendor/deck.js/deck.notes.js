@@ -764,8 +764,9 @@ only toggle the notes panel for this cloned window.
 				//var $caption = $handout.next('.caption');
 				//var caption_txt = $caption.length ? $caption.html() : '';
 				var file = $handout.attr('src') || $handout.attr('data-src');
+        var scale = $handout.attr('data-scale') || $handout.attr('scale') || '0.3';
 				$.each(['\\begin{center}',
-						'\\includegraphics[scale=0.3]{'+img_path+file+'}',
+						'\\includegraphics[scale='+scale+']{'+img_path+file+'}',
 						// '\\caption{'+caption_txt+'}',
 						'\\end{center}',
 						], function(idx,txt){
