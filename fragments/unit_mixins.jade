@@ -1,5 +1,5 @@
 //-
-//- unit_mixins version 0.2
+//- unit_mixins version 0.3
 //- upgrading from slide_mixins:
 //-  - remove recall and unrecall (use the new slide-clone plugin instead)
 //-  - replace showhide and showremove with show_ hide_ etc
@@ -32,10 +32,17 @@ mixin _photo(p)
 mixin _slide_inner(p)
   if typeof(p) === 'undefined'
     - p = {}
+  if !('style' in p)
+    - p.style = ''
+  if ('blend' in p)
+    - p.style += "; mix-blend-mode:"+p.blend
   if ('bkg' in p)
-    img.bkg(src='/img/#{p.bkg}', width='1024px')
+    - bkgStyle = ''
+    if ('bkgFilter' in p)
+      - bkgStyle += 'filter:'+p.bkgFilter+';'
+    img.bkg(src='/img/#{p.bkg}', width='1024px', style=bkgStyle)
   +_photo(p)
-  .words
+  .words(style="#{p.style}")
     .container_12: .grid_12
       block
 
@@ -44,7 +51,6 @@ mixin slide(p)
     - p = {}
   if !('style' in p)
     - p.style = ''
-    
   if ('id' in p)
     section.slide(id="#{p.id}", style="#{p.style}")
       +_slide_inner(p)
@@ -56,7 +62,11 @@ mixin slide(p)
     
     
 mixin middle(p)
-  .container_12
+  if !('style' in p)
+    - p.style = ''
+  if ('blend' in p)
+    - p.style += "; mix-blend-mode: "+p.blend+";"
+  .container_12(style="#{p.style}")
     - var width = 12;
     if typeof(p) === 'undefined'
       - p = {}
@@ -69,10 +79,16 @@ mixin middle(p)
 mixin _slide_middle_inner(p)
   if typeof(p) === 'undefined'
     - p = {}
+  if !('style' in p)
+    - p.style = ''
+  - bkgStyle = ''
   if ('bkg' in p)
-    img.bkg(src='/img/#{p.bkg}', width='1024px')
+    - bkgStyle = ''
+    if ('bkgFilter' in p)
+      - bkgStyle += 'filter:'+p.bkgFilter+';'
+    img.bkg(src='/img/#{p.bkg}', width='1024px', style=bkgStyle)
   +_photo(p)
-  +middle
+  +middle(p)
     block
 
 mixin slide_middle(p)
@@ -339,7 +355,7 @@ mixin unremove(what)
 mixin fade(what, duration)
   if typeof(duration) === 'undefined'
     - duration = 400
-  +anim(what, {opacity:0.3},{duration:duration})
+  +anim(what, {opacity:0.5},{duration:duration})
 
 mixin unfade(what, duration)
   if typeof(duration) === 'undefined'
