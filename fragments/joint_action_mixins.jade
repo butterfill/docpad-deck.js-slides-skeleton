@@ -79,6 +79,26 @@ mixin simple_account()
     span  to their actions.
 
 
+mixin slide_interconnected_parallel(p)
+  section.slide
+    if p && p.bkg
+      img.bkg(src='/img/#{p.bkg}', class='p.hide-bkg ? "hide" : ""')
+    .words: .container_12
+      div(style="margin-top:200px;")
+        .grid_6
+          .interconnected-quote
+            +interconnected-quote({final:true})
+            +interconnected-def
+        .grid_6.step2
+          p(style="margin-top:2.5em;")
+            span.parallel.bkg-words-highlight-invert parallel
+            span  planning
+          div(style="margin-top:3em")
+            p(style="margin-left:1em; padding-left:1em; border-left:3px solid white; margin-top:-3em; padding-top:3em;") You plan my actions as well as yours, and I do likewise.
+    block
+
+
+
 
 
 mixin diagram_action_goal(p)

@@ -592,7 +592,7 @@ only toggle the notes panel for this cloned window.
     if( $notesEl.hasClass('large-format')) {
       $('.deck-container').css({transform:'translate(300px,-200px) scale(0.5,0.5)'});
     } else {
-      $('.deck-container').css({transform:'translate(150px)'});
+      $('.deck-container').css({transform:'translate(250px)'});
     }
   });
     
