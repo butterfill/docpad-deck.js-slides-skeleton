@@ -62,6 +62,8 @@ mixin slide(p)
     
     
 mixin middle(p)
+  if typeof(p) === 'undefined'
+    - p = {}
   if !('style' in p)
     - p.style = ''
   if ('blend' in p)
