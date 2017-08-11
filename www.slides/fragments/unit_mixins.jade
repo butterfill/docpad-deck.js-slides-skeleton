@@ -52,6 +52,7 @@ mixin rain(p)
             opacity: 1
         @engine.rain( [ [0, 2, 100], [3, 3, 1] ], 100 )
     
+      doAfter : () -> @engine?.pause()
       undoit : () -> @engine?.pause()
 
 

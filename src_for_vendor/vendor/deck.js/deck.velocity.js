@@ -419,6 +419,7 @@
  * Example of use:
  *   var action = {
  *     doit : function(){console.log('doit');},
+ *     doAfter : function(){ console.log('optional cleanup on moving to next slide')}
  *     undoit : function(){console.log('undoit');}
  *   };
  *   var addCustomActions = function() {
@@ -485,20 +486,40 @@
     
     
     $d.bind('deck.change', function(event, from, to) {
+      
       if(to-from === 1) {
+        // exec doAfter functions for previous slide
+        if( to > 0) {
+          var prevSlideActions = slideActions[to-1] || [];
+          $.each(prevSlideActions, function(i, action) {
+            if( typeof action.doAfter !== 'undefined') {
+              action.doAfter();
+            }
+          });
+        }
+        // exec doIt functions for this slide
         var actions = slideActions[to] || [];
         $.each(actions, function(i, action) {
           action.doit();
         });
       } 
+      
       if(to-from > 1) {
         for( var idx = from+1; idx<=to; idx++) {
+          var prevSlideActions = slideActions[idx-1] || [];
+          $.each(prevSlideActions, function(i, action) {
+            if( typeof action.doAfter !== 'undefined') {
+              action.doAfter();
+            }
+          });
+          
           var actions = slideActions[idx] || [];
           $.each(actions, function(i, action) {
             action.doit();
           });
         }
       }
+      
       if(to-from < 0 ){
         for( var idx = to+1; idx<=from; idx++) {
           var actions = slideActions[idx] || [];
