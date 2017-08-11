@@ -1,6 +1,6 @@
 {
   "name": "slides-skeleton.docpad",
-  "version": "0.2.1",
+  "version": "0.3.1",
   "description": "New DocPad project with deck.js for a talk",
   "engines": {
     "node": "0.10",
@@ -21,7 +21,8 @@
     "docpad-plugin-text": "~2.3.3",
     "docpad-plugin-uglify": "~2.4.0",
     "eventemitter3": "^1.1.1",
-    "docpad-plugin-moment": "~2.0.2"
+    "docpad-plugin-moment": "~2.0.2",
+    "jstransformer-coffee-script": "^1.1.0"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {

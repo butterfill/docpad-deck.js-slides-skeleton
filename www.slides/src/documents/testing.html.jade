@@ -25,6 +25,26 @@ include ../../fragments/logic_mixins
       span(style="position:relative;top:250px;left:450px;").white-box.big.center #{document.weburl}
 
 
+
+//- new way of creating title slides.
+section.slide
+  div
+    img#titleImg.bkg(src='/img/20170719_091420.jpg')
+  +_slide_middle_inner({blend:'overlay'})
+    .huge-glow-invert-90.center(style="line-height:.7em;")
+      p.center.firsttitle
+        span.cooperation Cooperation 
+      p
+        span &
+      p
+        span.motor-representation Motor Representation
+  +reset
+    +_slide_inner
+      p.right(style="margin-top:500px;").invert.signature s.butterfill@warwick.ac.uk
+
+  +rain({img:'#titleImg'})
+
+
 +slide
   p Some of this stuff is old, not the best way to do it.
   p I try to keep the newer (better) stuff at the start.
@@ -501,73 +521,43 @@ include ../../fragments/logic_mixins
 .slide#connect_slide
   .words
     .container_12: .grid_12
-      p test connectors
-      p
+      p.em-above test connectors
+      p.em-above
         span#origin2.white-box from here (2)
-      p (gap)
-      p
+      p.em-above (gap)
+      p.em-above
         span#dest2.white-box  to here (2)
-      p (gap)
+      p &nbsp;
+      p &nbsp;
+      
+    .reset
     .container_12#jcont
       .grid_2
       .grid_2.skip_3
         span#origin from here
       .grid_2.skip_3
         span#dest to here
-      
-  script(src="/vendor/jquery.min.js")
-  script.
-    $(document).ready(function(){
-      $('#connect_slide').bind('deck.becameCurrent', function(ev, direction){
-        
-        //- be sure to disable scale before adding connectors, otherwise positioning is off
-        $.deck('disableScale')
-        
-        jsPlumb.connect({
-          source : $('#origin2'),
-          target : $('#dest2'),
-          anchors : ["RightMiddle","RightMiddle"],
-          container: $('#connect_slide')
-        });
+  
+  +connect({from:'#origin2', to:'#dest2', fromAnchor:"RightMiddle",toAnchor:"RightMiddle"})
+  +connect({from:'#origin', to:'#dest', fromAnchor:"TopCenter",toAnchor:"BottomCenter"})
 
-        jsPlumb.connect({
-          source : $('#origin'),
-          target : $('#dest'),
-          endpoint : ["Dot", {radius:3}],
-          anchors : ["TopCenter","BottomCenter"],
-          overlays : [
-            // ["PlainArrow", {length:50, width:20, location:0.95}]
-          ],
-          container: $('#connect_slide')
-        });
 
-        //- re-enable scale afer adding connectors
-        $.deck('enableScale')
-        
-      });
-    });
-
-.slide#connect-anim-slide
-  .words
-    .container_12: .grid_12
-      p test connectors with deck.velocity plugin
-      p.em-above
-        span#origin-b2.white-box from here (2)
-      p.em-above
-        span#dest-b2.white-box  to here (2)
-      .slide
-        +connect({from:'#origin-b2', to:'#dest-b2', fromAnchor:"LeftMiddle",color:"hotpink"})
-
-.slide#connect-anim-mixin-slide
-  .words
-    .container_12: .grid_12
-      p test connectors with mixin that uses deck.velocity plugin
-      p.em-above from here  
-        span#origin-c (1)
-      p.em-above to here  
-        span#dest-c (2)
-      .slide
-        +connect({from:'#origin-c', to:'#dest-c', fromAnchor:'BottomCenter', color:'turquoise'})
++slide
+  p test connectors with deck.velocity plugin
+  p.em-above
+    span#origin-b2.white-box from here (2)
+  p.em-above
+    span#dest-b2.white-box  to here (2)
+  .slide
+    +connect({from:'#origin-b2', to:'#dest-b2', fromAnchor:"LeftMiddle",color:"hotpink"})
+    
+  .slide
+    p.em-above from here  
+      span#origin-c (1)
+    p.em-above to here  
+      span#dest-c (2)
+  .slide
+    +connect({from:'#origin-c', to:'#dest-c', fromAnchor:'BottomCenter', color:'turquoise'})
 
         
 
@@ -604,28 +594,9 @@ include ../../fragments/logic_mixins
         td 5.
         td P ∧ R
         td ∧Intro: 3,4
-  script(src="/vendor/jquery.min.js")
-  script.
-    $(document).ready(function(){
-      $('#fitch1').bind('deck.becameCurrent', function(ev, direction){
-        
-        //- be sure to disable scale before adding connectors, otherwise positioning is off
-        $.deck('disableScale')
-        
-        console.log('connecting bits of proof together')
-        jsPlumb.connect({
-          source : $('#fitch1 .the-source'),
-          target : $('#fitch1 .target'),
-          anchors : ["RightMiddle","RightMiddle"],
-          container: $('#fitch1')
-        });
-
-        //- re-enable scale afer adding connectors
-        $.deck('enableScale')
-        
-      });
-    });
-
+  
+  +connect({from:'#fitch1 .the-source', to:'#fitch1 .target', fromAnchor:'RightMiddle', toAnchor:'RightMiddle', color:'turquoise'})
+  
 
 
 

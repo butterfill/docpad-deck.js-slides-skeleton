@@ -46,3 +46,4 @@ docpad watch --env static
 
 ulimit -n 8192
 
+8. If you want to modify something like deck.notes.js, you need the src_for_vendor directory

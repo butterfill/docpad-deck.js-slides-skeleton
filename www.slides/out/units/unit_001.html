@@ -1,23 +1,18 @@
 
 
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
 <html>
   <head>
     <!-- (c) copyright 2013 Stephen A. Butterfill-->
     <meta charset="utf-8"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>The Question | A Talk</title>
+    <title>The Question | Cooperation and Motor Representation</title>
     <meta name="description" content="Introduces the question around which this module is organised"/>
     <meta name="keywords" content="philosophy, psychology, development, action, joint action, mindreading, motor representation, thought"/>
     <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
     <meta name="viewport" content="width=device-width"/>
-    <!-- - lato font-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
+    
     <!--if lt IE 9
     script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
     
@@ -25,7 +20,7 @@
 	cursor: wait !important;
 	opacity: 0;
 	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+}</style><link  rel="stylesheet" href="/vendor/for.slides.all.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" />
   </head>
   <body><script >(function(){
 	/* Did we just livereload? */
@@ -72,7 +67,7 @@ var inject = function(){
 	} else {
 		inject();
 	}
-})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+})();</script><script defer="defer"  src="/vendor/for.slides.all.min.js"></script>
     <div id="helpUnderlay" class="help-underlay">
       <div id="helpModal" class="help-modal">
         <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
@@ -90,16 +85,10 @@ var inject = function(){
               <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
               <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
             </ul>
-            <!-- .help-list-->
           </div>
-          <!-- .help-list-wrap-->
         </div>
-        <!-- .help-modal-content-->
       </div>
-      <!-- .help-modal-->
     </div>
-    <!-- .help-underlay-->
-    
     <div class="deck-notes">
       <div class="deck-notes-container"></div>
     </div>
@@ -119,7 +108,6 @@ var inject = function(){
         </div>
       </section>
       <section class="slide">
-        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
         <div class="words">
           <div class="container_12">
             <div class="grid_12">
@@ -140,6 +128,15 @@ var inject = function(){
           </div>
         </div>
       </section>
+
+<script>window.deckSlideActions = [];
+addAction = function(o) {
+  var scripts = document.getElementsByTagName( 'script' );
+  var thisScriptEl = scripts[ scripts.length - 1 ];
+  o.scriptEl = thisScriptEl;
+  deckSlideActions.push(o);
+}
+</script>
 
 <!-- param @cls and param @options should be objects-->
 

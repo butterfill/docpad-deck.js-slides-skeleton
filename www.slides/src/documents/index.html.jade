@@ -1,11 +1,10 @@
 ---
 layout: 'default2'
-title: 'Making slides with deck.js'
-subtitle: 'A quick introduction'
+title: 'Cooperation and Motor Representation'
 email: 's.butterfill@warwick.ac.uk'
 weburl: ''
 units: []
-lecture_date: '2013/10/3'
+lecture_date: '2017/08/31'
 ---
 
 //-
@@ -13,10 +12,56 @@ lecture_date: '2013/10/3'
 //-
 
 include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
 
 - var images = get_images('bees')
 
-+title_slide({document:document, images:images})
 
-// the question
-+insert_unit({unit:'001', title_slide:false, images:images, handout:true})
+//- +title_slide({document:document, images:images})
+
+
+//-
+  What grounds our thinking about shared agency?
+  
+  Maybe start with collective goals and distinguishing the thing to be explained from the thing
+  that explains it.
+  
+  Then use this to talk about shared agency too.
+  
+  Examples aren’t enough.
+  
+  Do we want to start with philosophical/commonsense notions? Do these provide a foundation for a theory?
+  
+  I. Cooperation
+  
+  II. Motor Representation
+  
+    Why think about motor representations?
+    Challenges to starting from Intention, Knowledge etc
+      - Very small scale cases
+      - A model with no clear link to mechanisms (vs a model with at least tentative connections to the brain)
+      - Hard to create testable hypotheses with readily testable predictions (and no alternative way to verify theories)
+  
+
+section.slide
+  div
+    img#titleImg.bkg(src='/img/20170719_091420.jpg')
+  +_slide_middle_inner({blend:'overlay'})
+    .huge-glow-invert-90.center(style="line-height:.7em;")
+      p.center.firsttitle
+        span.cooperation Cooperation 
+      p
+        span &
+      p
+        span.motor-representation Motor Representation
+  +reset
+    +_slide_inner
+      p.right(style="margin-top:500px;").invert.signature s.butterfill@warwick.ac.uk
+
+  +rain({img:'#titleImg'})
+
+
++slide_middle
+  p.center hi
+  .slide
+    +hide('p')

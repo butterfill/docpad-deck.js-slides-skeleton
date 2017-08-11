@@ -1,23 +1,16 @@
 
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.velocity.js"])-->
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg">
   <head>
-    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <!-- (c) copyright 2013-7 Stephen A. Butterfill-->
     <meta charset="utf-8"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>How to write dj-deck slides | A Talk</title>
+    <title>How to write dj-deck slides | Cooperation and Motor Representation</title>
     <meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/>
     <meta name="keywords" content="philosophy, psychology, development, action, joint action, mindreading, motor representation, thought"/>
     <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
     <meta name="viewport" content="width=device-width"/>
-    <!-- - fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
     <!--if lt IE 9
     script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
     
@@ -25,7 +18,7 @@
 	cursor: wait !important;
 	opacity: 0;
 	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+}</style><link  rel="stylesheet" href="/vendor/for.slides.all.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" />
   </head>
   <body><script >(function(){
 	/* Did we just livereload? */
@@ -72,7 +65,7 @@ var inject = function(){
 	} else {
 		inject();
 	}
-})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+})();</script><script defer="defer"  src="/vendor/for.slides.all.min.js"></script>
     <div id="helpUnderlay" class="help-underlay">
       <div id="helpModal" class="help-modal">
         <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
@@ -90,18 +83,10 @@ var inject = function(){
               <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
               <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
             </ul>
-            <!-- .help-list-->
           </div>
-          <!-- .help-list-wrap-->
         </div>
-        <!-- .help-modal-content-->
       </div>
-      <!-- .help-modal-->
     </div>
-    <!-- .help-underlay-->
-    
-    
-    
     <div class="deck-notes">
       <div class="deck-notes-container"></div>
     </div>
@@ -121,7 +106,6 @@ var inject = function(){
         </div>
       </section>
       <section class="slide">
-        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
         <div class="words">
           <div class="container_12">
             <div class="grid_12">
@@ -137,12 +121,21 @@ var inject = function(){
 
 
 
+<script>window.deckSlideActions = [];
+addAction = function(o) {
+  var scripts = document.getElementsByTagName( 'script' );
+  var thisScriptEl = scripts[ scripts.length - 1 ];
+  o.scriptEl = thisScriptEl;
+  deckSlideActions.push(o);
+}
+</script>
+
 <!-- param @cls and param @options should be objects-->
 
 
 
 
-<div class="notes notes-header-tex">\title {A Talk \\ How to write dj-deck slides}</div>
+<div class="notes notes-header-tex">\title {Cooperation and Motor Representation \\ How to write dj-deck slides}</div>
 <div class="notes notes-header-tex">&nbsp;</div>
 <div class="notes notes-header-tex">\maketitle</div>
 <div id="title-slide" class="slide"><img src="/img/bkg/bees/ADSC_0172_crop.jpg" class="bkg"/>

@@ -1,56 +1,16 @@
 //-
-//- (c) Stephen A. Butterfill 2014
+//- (c) Stephen A. Butterfill 2014-7
 //-
 
 
 - var scripts = getBlock('scripts')
 - var styles = getBlock('styles')
 
-//- jQuery
-- scripts.add(["/vendor/jquery.min.js"])
-- scripts.add(["/vendor/jquery-svgfix.js"])
-- scripts.add(["/vendor/velocity.min.js"])
+- scripts.add(["/vendor/for.slides.all.min.js"])
 
-//- Other Scripts
-- scripts.add(["/vendor/modernizr.custom.01932.js"])
+- styles.add(["/vendor/for.slides.all.css"])
 
-//- html5 boilerplate (not sure why the first isn't under vendor)
-- styles.add(["/vendor/boilerplate.min.css"])
-- styles.add(["/vendor/normalize.min.css"])
-
-//- deck.js
-// - scripts.add(["/vendor/deck.js/deck.core.js"])
-// - scripts.add(["/vendor/deck.js/deck.menu.js"])
-// - scripts.add(["/vendor/deck.js/deck.hash.js"])
-// - scripts.add(["/vendor/deck.js/deck.notes.js"])
-//- - scripts.add(["/vendor/deck.js/deck.slide-clone.js"])
-//- - scripts.add(["/vendor/deck.js/deck.fit.js"])
-//- - scripts.add(["/vendor/deck.js/deck.step.js"])
-//- - scripts.add(["/vendor/deck.js/deck.events.js"])
-//- - scripts.add(["/vendor/deck.js/deck.velocity.js"])
-- scripts.add(["/vendor/deck.js/deck.all.min.js"])
-
-//- deck.js css
-//- - styles.add(["/vendor/deck.js/deck.core.css"])
-//- - styles.add(["/vendor/deck.js/deck.menu.css"])
-//- - styles.add(["/vendor/deck.js/deck.hash.css"])
-//- - styles.add(["/vendor/deck.js/deck.notes.css"])
-- styles.add(["/vendor/deck.js/deck.all.min.css"])
-
-//- effects 
-- scripts.add(["/vendor/jquery.jsPlumb-1.3.16-all-min.js"])
-
-//- 960 for grids
-- styles.add(['/vendor/960_12_col_custom.min.css'])
-
-//- User
-- scripts.add(["/scripts/script.js"])
 - styles.add(["/styles/steve_deck_style.css"])
-
-
-//- keyboard shortcut helper
-- scripts.add(["/vendor/questionmark.js/question.mark.min.js"])
-- styles.add(["/vendor/questionmark.js/question.mark.css"])
 
 
 html
@@ -78,17 +38,16 @@ html
     meta(name="viewport", content="width=device-width")
 
     //- Icons
-    //- disabled
-        //- link(rel="shortcut icon", href="ico/favicon.ico")
-        //- link(rel="apple-touch-icon-precomposed", sizes="144x144", href="ico/apple-touch-icon-144-precomposed.png")
-        //- link(rel="apple-touch-icon-precomposed", sizes="114x114", href="ico/apple-touch-icon-114-precomposed.png")
-        //- link(rel="apple-touch-icon-precomposed", sizes="72x72", href="ico/apple-touch-icon-72-precomposed.png")
-        //- link(rel="apple-touch-icon-precomposed", href="ico/apple-touch-icon-57-precomposed.png")
+      //- link(rel="shortcut icon", href="ico/favicon.ico")
+      //- link(rel="apple-touch-icon-precomposed", sizes="144x144", href="ico/apple-touch-icon-144-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", sizes="114x114", href="ico/apple-touch-icon-114-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", sizes="72x72", href="ico/apple-touch-icon-72-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", href="ico/apple-touch-icon-57-precomposed.png")
 
 
-    // - lato font
+    //- fonts
     link(href='https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic',rel='stylesheet',type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=The+Girl+Next+Door',rel='stylesheet',type='text/css')
+    //- link(href='https://fonts.googleapis.com/css?family=The+Girl+Next+Door',rel='stylesheet',type='text/css')
 
 
     //- Shims: IE6-8 support of HTML5 elements
@@ -157,13 +116,6 @@ html
                   span N
                 span.help-key-def Show talk notes latex source
 
-            // .help-list
-          // .help-list-wrap
-        // .help-modal-content
-      // .help-modal
-    // .help-underlay
-    
-            
     .deck-notes
       .deck-notes-container
     
@@ -177,7 +129,6 @@ html
           .middle
             p.center Click here and press the right key for the next slide (or swipe left)
       section.slide
-        // .notes You won't believe how many people emailed me to say the slides don't work.
         .words: .container_12: .grid_12
           p also ...
           p Press the left key to go backwards (or swipe right)

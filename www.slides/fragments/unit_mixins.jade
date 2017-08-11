@@ -20,6 +20,40 @@
 
 
 
+
+
+//- -------------
+//- javascript functions available in all slides and mixins
+//- -------------
+
+
+script: :t
+  window.deckSlideActions = [];
+  addAction = function(o) {
+    var scripts = document.getElementsByTagName( 'script' );
+    var thisScriptEl = scripts[ scripts.length - 1 ];
+    o.scriptEl = thisScriptEl;
+    deckSlideActions.push(o);
+  }
+
+
+//- Add rain to an image
+//- Ensure that the image is wrapped in a div.
+mixin rain(p)
+  script: :coffee-script
+    imgName = '#{p.img}'
+    addAction 
+      doit : () ->
+        @engine ?= new RainyDay
+            image: $(imgName)[0]
+            parentElement: $(imgName).parent()[0]
+            blur: 0
+            opacity: 1
+        @engine.rain( [ [0, 2, 100], [3, 3, 1] ], 100 )
+    
+      undoit : () -> @engine?.pause()
+
+
 //- -------------
 //- mixins to create slides
 //- -------------
@@ -42,7 +76,7 @@ mixin _slide_inner(p)
       - bkgStyle += 'filter:'+p.bkgFilter+';'
     img.bkg(src='/img/#{p.bkg}', width='1024px', style=bkgStyle)
   +_photo(p)
-  .words(style="#{p.style}")
+  .words(style=p.style)
     .container_12: .grid_12
       block
 
@@ -52,11 +86,11 @@ mixin slide(p)
   if !('style' in p)
     - p.style = ''
   if ('id' in p)
-    section.slide(id="#{p.id}", style="#{p.style}")
+    section.slide(id=p.id, style=p.style)
       +_slide_inner(p)
         block
   else
-    section.slide(style="#{p.style}")
+    section.slide(style=p.style)
       +_slide_inner(p)
         block
     
@@ -68,7 +102,7 @@ mixin middle(p)
     - p.style = ''
   if ('blend' in p)
     - p.style += "; mix-blend-mode: "+p.blend+";"
-  .container_12(style="#{p.style}")
+  .container_12(style=p.style)
     - var width = 12;
     if typeof(p) === 'undefined'
       - p = {}
@@ -99,11 +133,11 @@ mixin slide_middle(p)
   if !('style' in p)
     - p.style = ''
   if ('id' in p)
-    section.slide(id="#{p.id}", style="#{p.style}")
+    section.slide(id=p.id, style=p.style)
       +_slide_middle_inner(p)
         block
   else
-    section.slide(style="#{p.style}")
+    section.slide(style=p.style)
       +_slide_middle_inner(p)
         block
 
@@ -150,7 +184,7 @@ mixin right_half(p)
     - p = {}
   if !('step' in p)
     - p.step = false
-  .grid_6.words.invert.right-half(class="#{ p.step ? 'hide' : '' }")
+  .grid_6.words.invert.right-half(class=(p.step ? 'hide' : '') )
     div(style='padding-left:1em;')
       if p.step
         .slide
@@ -161,7 +195,7 @@ mixin right_half(p)
 
 mixin right_half_lh_white(p)
   - p = p || {step:false}
-  .grid_6.words.right-half(class="#{ p.step ? 'hide' : '' }")
+  .grid_6.words.right-half(class=(p.step ? 'hide' : '') )
     div(style='padding-left:1em;')
       if p.step
         +show('.right-half-white, .right-half')
@@ -179,14 +213,14 @@ mixin slide_rh_white(p)
   if !('step' in p)
     - p.step = false
   section.slide
-    .right-half-white(style="z-index:-22;", class="#{ p.step ? 'hide' : '' }")
+    .right-half-white(style="z-index:-22;", class=(p.step ? 'hide' : '') )
     .container_12
       block
 
 mixin slide_lh_white(p)
   - p = p || {step:false}
   section.slide
-    .left-half-white(style="z-index:-22;", class="#{ p.step ? 'hide' : '' }")
+    .left-half-white(style="z-index:-22;", class=(p.step ? 'hide' : '') )
     .container_12
       block
             
@@ -287,7 +321,7 @@ mixin connect(p)
     - p.toAnchor = "RightMiddle"    
   if !('color' in p)
     - p.color = 'hotpink'
-  .dv.dv-connect(data-from='#{p.from}', data-to='#{p.to}', data-from-anchor="#{p.fromAnchor}",data-to-anchor='#{p.toAnchor}',data-color="#{p.color}")
+  .dv.dv-connect(data-from='#{p.from}', data-to='#{p.to}', data-from-anchor=p.fromAnchor,data-to-anchor=p.toAnchor,data-color=p.color)
 
 
 

@@ -21,8 +21,7 @@ docpadConfig = {
 
     absolutepath:
       # put the url of the site you are uploading to here, including any subdirectories. 
-      #  e.g. I might use "http://www.butterfill.com/talk-slides/joint_action_without_mindreading/"
-      url: "/"
+      url: "https://www.butterfill.com/talk-slides/cooperation_motor_representation/"
     cleanurls:
       getRedirectTemplate: (document) ->
         absolutepath = docpadConfig.plugins.absolutepath.url.slice(0, - 1) 
@@ -55,7 +54,7 @@ docpadConfig = {
       url: "http://butterfill.com"
 
       # The default title of our website
-      title: "A Talk"
+      title: "Cooperation and Motor Representation"
 
       # The website description (for SEO)
       description: """
@@ -107,6 +106,12 @@ docpadConfig = {
         console.log(' ')
         console.log('*** missing unit: '+unitNum)
       return unit
+
+  collections:
+    lectures: -> @getCollection('documents').findAll({basename:/^(fast)?lecture_/}, [basename:1])
+    units: -> @getCollection('documents').findAll({url:/\/units\/unit_/}, [sequence:1])
+      
+  
       
 }
 
