@@ -39,6 +39,7 @@ script: :t
 
 //- Add rain to an image
 //- Ensure that the image is wrapped in a div.
+//- NB: will not work with Pug 2.0 because of the interpolation (see Pug migrating docs)
 mixin rain(p)
   script: :coffee-script
     imgName = '#{p.img}'
