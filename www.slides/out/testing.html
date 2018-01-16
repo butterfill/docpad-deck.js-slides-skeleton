@@ -146,6 +146,93 @@ addAction = function(o) {
     </div>
   </div>
 </div>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p id="ct" class="center">♦ Is this a circle?</p>
+          <script defer="defer">(function() {
+  var selector, theAction;
+
+  selector = '#ct';
+
+  theAction = function() {
+    return setTimeout(function() {
+      var el, elements, i, len, results;
+      if (typeof $ !== "undefined" && $ !== null) {
+        elements = $(selector);
+        results = [];
+        for (i = 0, len = elements.length; i < len; i++) {
+          el = elements[i];
+          results.push(new CircleType(el));
+        }
+        return results;
+      } else {
+        return theAction();
+      }
+    }, 25);
+  };
+
+  theAction();
+
+}).call(this);
+
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center ct">♦ Is this an inner circle?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="" class="container_12">
+      <div class="grid_12 ">
+        <div class="words">
+          <div class="middle">
+            <p class="center ct">♦ And is this a larger, outer inner circle?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script defer="defer">(function() {
+  var selector, theAction;
+
+  selector = '.ct';
+
+  theAction = function() {
+    return setTimeout(function() {
+      var el, elements, i, len, results;
+      if (typeof $ !== "undefined" && $ !== null) {
+        elements = $(selector);
+        results = [];
+        for (i = 0, len = elements.length; i < len; i++) {
+          el = elements[i];
+          results.push(new CircleType(el));
+        }
+        return results;
+      } else {
+        return theAction();
+      }
+    }, 25);
+  };
+
+  theAction();
+
+}).call(this);
+
+  </script>
+</section>
 <section class="slide">
   <div><img id="titleImg" src="/img/20170719_091420.jpg" class="bkg"/></div>
   <div style="; mix-blend-mode: overlay;" class="container_12">
@@ -187,6 +274,10 @@ addAction = function(o) {
       }
       return this.engine.rain([[0, 2, 100], [3, 3, 1]], 100);
     },
+    doAfter: function() {
+      var ref;
+      return (ref = this.engine) != null ? ref.pause() : void 0;
+    },
     undoit: function() {
       var ref;
       return (ref = this.engine) != null ? ref.pause() : void 0;
@@ -203,6 +294,33 @@ addAction = function(o) {
       <div class="grid_12">
         <p>Some of this stuff is old, not the best way to do it.</p>
         <p>I try to keep the newer (better) stuff at the start.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p>You should see some test messages in the console</p>
+          <script>(function() {
+  addAction({
+    doit: function() {
+      return console.log('testSlideActions action performed');
+    },
+    doAfter: function() {
+      return console.log('testSlideActions doAfter');
+    },
+    undoit: function() {
+      return console.log('testSlideActions undoit');
+    }
+  });
+
+}).call(this);
+
+          </script>
+        </div>
       </div>
     </div>
   </div>

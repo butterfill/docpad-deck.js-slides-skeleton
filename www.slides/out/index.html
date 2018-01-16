@@ -176,6 +176,10 @@ addAction = function(o) {
       }
       return this.engine.rain([[0, 2, 100], [3, 3, 1]], 100);
     },
+    doAfter: function() {
+      var ref;
+      return (ref = this.engine) != null ? ref.pause() : void 0;
+    },
     undoit: function() {
       var ref;
       return (ref = this.engine) != null ? ref.pause() : void 0;

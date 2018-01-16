@@ -29,7 +29,7 @@ $(function() {
     $.each(deckSlideActions, function(i, action){
       // work out which slide to attach the action to
       var scriptEl = action.scriptEl;
-      $slide = $(scriptEl).parent('.slide');
+      $slide = $(scriptEl).parents('.slide');
       var slideIdx = $.deck('getSlideIndex', $slide);
       
       $.deck('addSlideAction', slideIdx, action);

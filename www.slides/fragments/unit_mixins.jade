@@ -42,7 +42,7 @@ script: :t
 //- NB: will not work with Pug 2.0 because of the interpolation (see Pug migrating docs)
 mixin rain(p)
   script: :coffee-script
-    imgName = '#{p.img}'
+    imgName = '#{p.img}'  # Uses interpolation to pass the mixin parameter into the script.
     addAction 
       doit : () ->
         @engine ?= new RainyDay
@@ -55,6 +55,32 @@ mixin rain(p)
       doAfter : () -> @engine?.pause()
       undoit : () -> @engine?.pause()
 
+
+mixin testSlideActions(p)
+  script: :coffee-script
+    addAction 
+      doit : () ->
+        console.log 'testSlideActions action performed'
+      doAfter : () -> 
+        console.log 'testSlideActions doAfter'
+      undoit : () -> 
+        console.log 'testSlideActions undoit'
+
+//- NB: will not work with Pug 2.0 because of the interpolation (see Pug migrating docs)
+mixin circleType(selector)
+  script(defer=true): :coffee-script
+    selector = '#{selector}'
+    theAction = () ->
+      setTimeout () ->
+        if $?
+          elements = $(selector)
+          for el in elements
+            new CircleType(el)
+        else
+          # try again later
+          theAction()
+      , 25
+    theAction()
 
 //- -------------
 //- mixins to create slides

@@ -18,6 +18,7 @@ uglifyjs  \
   velocity.min.js \
   marked.min.js \
   rainyday.js \
+  circletype.js \
   modernizr.custom.01932.js \
   jquery.jsPlumb-1.3.16-all-min.js \
   questionmark.js/question.mark.js \

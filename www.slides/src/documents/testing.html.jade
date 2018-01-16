@@ -25,6 +25,19 @@ include ../../fragments/logic_mixins
       span(style="position:relative;top:250px;left:450px;").white-box.big.center #{document.weburl}
 
 
++slide_middle
+  p.center#ct ♦ Is this a circle?
+  +circleType('#ct')
+
+section.slide
+  +_slide_middle_inner
+    p.center.ct ♦ Is this an inner circle?
+  +reset
+    +_slide_middle_inner
+      p.center.ct ♦ And is this a larger, outer inner circle?
+  +circleType('.ct')
+
+
 
 //- new way of creating title slides.
 section.slide
@@ -48,6 +61,10 @@ section.slide
 +slide
   p Some of this stuff is old, not the best way to do it.
   p I try to keep the newer (better) stuff at the start.
+
++slide_middle
+  p You should see some test messages in the console
+  +testSlideActions
 
 
 
