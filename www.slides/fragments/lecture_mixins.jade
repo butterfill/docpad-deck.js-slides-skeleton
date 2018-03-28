@@ -139,3 +139,21 @@ mixin insert_unit(p)
     +render_unit(d)
 
 
+
+mixin conclusion(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  section.slide
+    img.bkg(src='/img/PA301239.JPG', style="filter:contrast(1.5)")
+    +_slide_inner({blend:'overlay'})
+      p.conclusion-title.center.huge-glow-110(style='margin-top:350px;') conclusion
+      .notes: :t
+        In conclusion, ...
+      .slide
+        +style('img.bkg, .conclusion-title', {filter:'contrast(1.5) blur(4px)'})
+        div(style='margin-top:-550px;')
+          if p.objectives
+            p.handout.show Objectives for this lecture:
+          ul.handout.show.hem-around-children
+            block
+
