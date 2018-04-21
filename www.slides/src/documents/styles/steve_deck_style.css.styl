@@ -230,6 +230,8 @@ blur()
   text-align: center
 .right
   text-align: right
+.left
+  text-align: left
 .float-right
   float right
 
@@ -404,6 +406,13 @@ table.truth-table
   tr td
     padding 0.1em 0.6em //increase vertical and horizontal spacing for all lines
     text-align: center
+  tr td.left
+    padding 0.1em 0.6em //increase vertical and horizontal spacing for all lines
+    text-align: left
+  tr td.right
+    padding 0.1em 0.6em //increase vertical and horizontal spacing for all lines
+    text-align: right
+    
   tr:first-child td
     border-bottom: 2px solid text_color  //left border for proof
   td.result-col
@@ -454,6 +463,11 @@ table.data
       border-bottom 1px solid text_color
       text-align center
       vertical-align middle
+    td.left
+      text-align left
+    td.right
+      text-align right
+      
   tbody
     td
       vertical-align top

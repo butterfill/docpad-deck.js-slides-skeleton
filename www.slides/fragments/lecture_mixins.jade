@@ -140,6 +140,7 @@ mixin insert_unit(p)
 
 
 
+
 mixin conclusion(p)
   if typeof(p) === 'undefined'
     - p = {}
@@ -149,11 +150,15 @@ mixin conclusion(p)
       p.conclusion-title.center.huge-glow-110(style='margin-top:350px;') conclusion
       .notes: :t
         In conclusion, ...
+    if p.list || p.objectives
       .slide
-        +style('img.bkg, .conclusion-title', {filter:'contrast(1.5) blur(4px)'})
-        div(style='margin-top:-550px;')
-          if p.objectives
-            p.handout.show Objectives for this lecture:
-          ul.handout.show.hem-around-children
-            block
+        +_slide_inner
+          //- +style('img.bkg, .conclusion-title', {filter:'contrast(1.5) blur(10px)'})
+          div(style='margin-top:-550px')
+            if p.objectives
+              p.handout.show Objectives for this lecture:
+            ul.handout.show.hem-around-children
+              block
+    else
+      block
 
