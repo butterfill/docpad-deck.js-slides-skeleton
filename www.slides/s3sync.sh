@@ -4,4 +4,4 @@ docpad clean
 
 docpad generate --env static
 
-s3cmd sync out/ s3://www.butterfill.com/talk-slides/cooperation_motor_representation/ --add-header "Cache-Control: max-age=86400"
+s3cmd sync out/ s3://www.butterfill.com/talk-slides/mindreading_ww/ --add-header "Cache-Control: max-age=86400"

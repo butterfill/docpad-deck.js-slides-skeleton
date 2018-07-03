@@ -264,6 +264,9 @@ html body {
 .right {
   text-align: right;
 }
+.left {
+  text-align: left;
+}
 .float-right {
   float: right;
 }
@@ -485,6 +488,14 @@ table.truth-table tr td {
   padding: 0.1em 0.6em;
   text-align: center;
 }
+table.truth-table tr td.left {
+  padding: 0.1em 0.6em;
+  text-align: left;
+}
+table.truth-table tr td.right {
+  padding: 0.1em 0.6em;
+  text-align: right;
+}
 table.truth-table tr:first-child td {
   border-bottom: 2px solid #fff;
 }
@@ -536,6 +547,12 @@ table.data thead td {
   border-bottom: 1px solid #fff;
   text-align: center;
   vertical-align: middle;
+}
+table.data thead td.left {
+  text-align: left;
+}
+table.data thead td.right {
+  text-align: right;
 }
 table.data tbody td {
   vertical-align: top;

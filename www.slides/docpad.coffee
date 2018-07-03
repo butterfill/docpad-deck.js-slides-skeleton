@@ -21,7 +21,7 @@ docpadConfig = {
 
     absolutepath:
       # put the url of the site you are uploading to here, including any subdirectories. 
-      url: "https://www.butterfill.com/talk-slides/cooperation_motor_representation/"
+      url: "https://www.butterfill.com/talk-slides/mindreading_ww/"
     cleanurls:
       getRedirectTemplate: (document) ->
         absolutepath = docpadConfig.plugins.absolutepath.url.slice(0, - 1) 
@@ -51,7 +51,7 @@ docpadConfig = {
     # Specify some site properties
     site:
       # The production url of our website
-      url: "http://butterfill.com"
+      url: "https://www.butterfill.com/talk-slides/mindreading_ww/"
 
       # The default title of our website
       title: "Cooperation and Motor Representation"
@@ -85,6 +85,8 @@ docpadConfig = {
     getPreparedDescription: ->
       # if we have a document description, then we should use that, otherwise use the site's description
       @document.description or @site.description
+    
+    getURL : () -> @document.weburl or @site.url
 
     # Get the prepared site/document keywords
     getPreparedKeywords: ->
