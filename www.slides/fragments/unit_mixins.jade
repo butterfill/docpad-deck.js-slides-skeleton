@@ -533,9 +533,10 @@ mixin timer-element(id, duration, p)
 mixin show-timer(id)
   .slide
     +show("#"+id+" .timer")
+    block
 
 mixin start-timer(id)
   .slide
     +show("#"+id+" .timer.hide",0)
     +add-class("#"+id+" .timer", "running")
-
+    block
