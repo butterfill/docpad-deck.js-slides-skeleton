@@ -24,7 +24,6 @@ font_size = 19pt
 background_color = black
 text_color = white
 
-
 default_text_shadow()
   text-shadow: 0 0 2px background_color, 1px 1px 2px background_color, 1px -1px 2px background_color, -1px 1px 2px background_color, -1px -1px 2px background_color, 0 0 5px background_color, 0 0 5px background_color
 default_text_shadow_invert()
@@ -54,6 +53,10 @@ html
 
 .deck-container 
   font-family: "Lato", sans-serif;
+  .lato
+    font-family Lato,
+  .libertine
+    font-family Linux Libertine
   font-size: font_size
   noinvert_text()
   color: text_color;
@@ -871,8 +874,12 @@ make-bkg-words('faint-grey', rgba(125,125,125,0.3))
  */
 make-huge-glow(class-name, size)
   .deck-container 
+    {class-name}.lato
+      font-family Lato
     {class-name}
       font-family: Linux Libertine
+      .lato
+        font-family Lato,
       font-size: size
       color: background_color
       text-shadow: 0 0 (size/2) text_color, 0 0 (size/4) text_color, 1px 1px 2px text_color, 1px -1px 2px text_color, -1px 1px 2px text_color, -1px -1px 2px text_color
@@ -903,8 +910,12 @@ make-huge-glow('.glow', font_size)
 
 make-huge-glow-invert(class-name, size)
   .deck-container 
+    {class-name}.lato
+      font-family Lato
     {class-name}
       font-family: Linux Libertine
+      .lato
+        font-family Lato,
       font-size: size
       color: text_color
       text-shadow: 0 0 (size/2) background_color, 0 0 (size/4) background_color, 1px 1px 2px background_color, 1px -1px 2px background_color, -1px 1px 2px background_color, -1px -1px 2px background_color
