@@ -540,3 +540,16 @@ mixin start-timer(id)
     +show("#"+id+" .timer.hide",0)
     +add-class("#"+id+" .timer", "running")
     block
+
+
+mixin slide_timer(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('duration' in p)
+    - p.duration = '90s'
+  section.slide
+    +_slide_middle_inner
+      +timer-element('timer1', p.duration, p)
+    +reset
+      +_slide_middle_inner
+        block
