@@ -32,6 +32,12 @@ html body {
   background: #000;
   padding: 0;
 }
+.deck-container .lato {
+  font-family: Lato;
+}
+.deck-container .libertine {
+  font-family: Linux Libertine;
+}
 .deck-container .slide {
   background: transparent;
 }
@@ -1900,6 +1906,9 @@ table.data tbody tr.even td {
 /**
  * huge-glow classes
  */
+.deck-container .huge-glow.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow {
   font-family: Linux Libertine;
   font-size: 90pt;
@@ -1907,6 +1916,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 45pt #fff, 0 0 22.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -webkit-text-shadow: 0 0 45pt #fff, 0 0 22.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 45pt #fff, 0 0 22.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.deck-container .huge-glow .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-40.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-40 {
   font-family: Linux Libertine;
@@ -1916,6 +1931,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 20pt #fff, 0 0 10pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 20pt #fff, 0 0 10pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
+.deck-container .huge-glow-40 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-50.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow-50 {
   font-family: Linux Libertine;
   font-size: 50pt;
@@ -1923,6 +1944,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 25pt #fff, 0 0 12.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -webkit-text-shadow: 0 0 25pt #fff, 0 0 12.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 25pt #fff, 0 0 12.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.deck-container .huge-glow-50 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-60.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-60 {
   font-family: Linux Libertine;
@@ -1932,6 +1959,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 30pt #fff, 0 0 15pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 30pt #fff, 0 0 15pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
+.deck-container .huge-glow-60 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-70.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow-70 {
   font-family: Linux Libertine;
   font-size: 70pt;
@@ -1939,6 +1972,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 35pt #fff, 0 0 17.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -webkit-text-shadow: 0 0 35pt #fff, 0 0 17.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 35pt #fff, 0 0 17.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.deck-container .huge-glow-70 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-80.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-80 {
   font-family: Linux Libertine;
@@ -1948,6 +1987,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 40pt #fff, 0 0 20pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 40pt #fff, 0 0 20pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
+.deck-container .huge-glow-80 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-90.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow-90 {
   font-family: Linux Libertine;
   font-size: 90pt;
@@ -1955,6 +2000,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 45pt #fff, 0 0 22.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -webkit-text-shadow: 0 0 45pt #fff, 0 0 22.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 45pt #fff, 0 0 22.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.deck-container .huge-glow-90 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-100.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-100 {
   font-family: Linux Libertine;
@@ -1964,6 +2015,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 50pt #fff, 0 0 25pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 50pt #fff, 0 0 25pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
+.deck-container .huge-glow-100 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-110.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow-110 {
   font-family: Linux Libertine;
   font-size: 110pt;
@@ -1971,6 +2028,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 55pt #fff, 0 0 27.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -webkit-text-shadow: 0 0 55pt #fff, 0 0 27.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 55pt #fff, 0 0 27.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.deck-container .huge-glow-110 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-120.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-120 {
   font-family: Linux Libertine;
@@ -1980,6 +2043,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 60pt #fff, 0 0 30pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 60pt #fff, 0 0 30pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
+.deck-container .huge-glow-120 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-130.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow-130 {
   font-family: Linux Libertine;
   font-size: 130pt;
@@ -1987,6 +2056,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 65pt #fff, 0 0 32.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -webkit-text-shadow: 0 0 65pt #fff, 0 0 32.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 65pt #fff, 0 0 32.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.deck-container .huge-glow-130 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-140.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-140 {
   font-family: Linux Libertine;
@@ -1996,6 +2071,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 70pt #fff, 0 0 35pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 70pt #fff, 0 0 35pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
+.deck-container .huge-glow-140 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-150.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow-150 {
   font-family: Linux Libertine;
   font-size: 150pt;
@@ -2003,6 +2084,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 75pt #fff, 0 0 37.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -webkit-text-shadow: 0 0 75pt #fff, 0 0 37.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 75pt #fff, 0 0 37.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.deck-container .huge-glow-150 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-180.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-180 {
   font-family: Linux Libertine;
@@ -2012,6 +2099,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 90pt #fff, 0 0 45pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 90pt #fff, 0 0 45pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
+.deck-container .huge-glow-180 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-210.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow-210 {
   font-family: Linux Libertine;
   font-size: 210pt;
@@ -2019,6 +2112,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 105pt #fff, 0 0 52.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -webkit-text-shadow: 0 0 105pt #fff, 0 0 52.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 105pt #fff, 0 0 52.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.deck-container .huge-glow-210 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-240.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-240 {
   font-family: Linux Libertine;
@@ -2028,6 +2127,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 120pt #fff, 0 0 60pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 120pt #fff, 0 0 60pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
+.deck-container .huge-glow-240 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-270.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow-270 {
   font-family: Linux Libertine;
   font-size: 270pt;
@@ -2035,6 +2140,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 135pt #fff, 0 0 67.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -webkit-text-shadow: 0 0 135pt #fff, 0 0 67.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 135pt #fff, 0 0 67.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.deck-container .huge-glow-270 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-300.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-300 {
   font-family: Linux Libertine;
@@ -2044,6 +2155,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 150pt #fff, 0 0 75pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 150pt #fff, 0 0 75pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
+.deck-container .huge-glow-300 .lato {
+  font-family: Lato;
+}
+.deck-container .glow.lato {
+  font-family: Lato;
+}
 .deck-container .glow {
   font-family: Linux Libertine;
   font-size: 19pt;
@@ -2051,6 +2168,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 9.5pt #fff, 0 0 4.75pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -webkit-text-shadow: 0 0 9.5pt #fff, 0 0 4.75pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 9.5pt #fff, 0 0 4.75pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.deck-container .glow .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-invert {
   font-family: Linux Libertine;
@@ -2060,6 +2183,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 45pt #000, 0 0 22.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 45pt #000, 0 0 22.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
 }
+.deck-container .huge-glow-invert .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert-40.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow-invert-40 {
   font-family: Linux Libertine;
   font-size: 40pt;
@@ -2067,6 +2196,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 20pt #000, 0 0 10pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -webkit-text-shadow: 0 0 20pt #000, 0 0 10pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 20pt #000, 0 0 10pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-40 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert-50.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-invert-50 {
   font-family: Linux Libertine;
@@ -2076,6 +2211,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 25pt #000, 0 0 12.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 25pt #000, 0 0 12.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
 }
+.deck-container .huge-glow-invert-50 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert-60.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow-invert-60 {
   font-family: Linux Libertine;
   font-size: 60pt;
@@ -2083,6 +2224,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 30pt #000, 0 0 15pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -webkit-text-shadow: 0 0 30pt #000, 0 0 15pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 30pt #000, 0 0 15pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-60 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert-70.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-invert-70 {
   font-family: Linux Libertine;
@@ -2092,6 +2239,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 35pt #000, 0 0 17.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 35pt #000, 0 0 17.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
 }
+.deck-container .huge-glow-invert-70 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert-80.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow-invert-80 {
   font-family: Linux Libertine;
   font-size: 80pt;
@@ -2099,6 +2252,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 40pt #000, 0 0 20pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -webkit-text-shadow: 0 0 40pt #000, 0 0 20pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 40pt #000, 0 0 20pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-80 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert-90.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-invert-90 {
   font-family: Linux Libertine;
@@ -2108,6 +2267,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 45pt #000, 0 0 22.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 45pt #000, 0 0 22.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
 }
+.deck-container .huge-glow-invert-90 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert-100.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow-invert-100 {
   font-family: Linux Libertine;
   font-size: 100pt;
@@ -2115,6 +2280,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 50pt #000, 0 0 25pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -webkit-text-shadow: 0 0 50pt #000, 0 0 25pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 50pt #000, 0 0 25pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-100 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert-110.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-invert-110 {
   font-family: Linux Libertine;
@@ -2124,6 +2295,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 55pt #000, 0 0 27.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 55pt #000, 0 0 27.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
 }
+.deck-container .huge-glow-invert-110 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert-120.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow-invert-120 {
   font-family: Linux Libertine;
   font-size: 120pt;
@@ -2131,6 +2308,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 60pt #000, 0 0 30pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -webkit-text-shadow: 0 0 60pt #000, 0 0 30pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 60pt #000, 0 0 30pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-120 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert-130.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-invert-130 {
   font-family: Linux Libertine;
@@ -2140,6 +2323,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 65pt #000, 0 0 32.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 65pt #000, 0 0 32.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
 }
+.deck-container .huge-glow-invert-130 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert-140.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow-invert-140 {
   font-family: Linux Libertine;
   font-size: 140pt;
@@ -2147,6 +2336,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 70pt #000, 0 0 35pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -webkit-text-shadow: 0 0 70pt #000, 0 0 35pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 70pt #000, 0 0 35pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-140 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert-150.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-invert-150 {
   font-family: Linux Libertine;
@@ -2156,6 +2351,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 75pt #000, 0 0 37.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 75pt #000, 0 0 37.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
 }
+.deck-container .huge-glow-invert-150 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert-180.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow-invert-180 {
   font-family: Linux Libertine;
   font-size: 180pt;
@@ -2163,6 +2364,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 90pt #000, 0 0 45pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -webkit-text-shadow: 0 0 90pt #000, 0 0 45pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 90pt #000, 0 0 45pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-180 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert-210.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-invert-210 {
   font-family: Linux Libertine;
@@ -2172,6 +2379,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 105pt #000, 0 0 52.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 105pt #000, 0 0 52.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
 }
+.deck-container .huge-glow-invert-210 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert-240.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow-invert-240 {
   font-family: Linux Libertine;
   font-size: 240pt;
@@ -2179,6 +2392,12 @@ table.data tbody tr.even td {
   text-shadow: 0 0 120pt #000, 0 0 60pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -webkit-text-shadow: 0 0 120pt #000, 0 0 60pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 120pt #000, 0 0 60pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-240 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert-270.lato {
+  font-family: Lato;
 }
 .deck-container .huge-glow-invert-270 {
   font-family: Linux Libertine;
@@ -2188,6 +2407,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 135pt #000, 0 0 67.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 135pt #000, 0 0 67.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
 }
+.deck-container .huge-glow-invert-270 .lato {
+  font-family: Lato;
+}
+.deck-container .huge-glow-invert-300.lato {
+  font-family: Lato;
+}
 .deck-container .huge-glow-invert-300 {
   font-family: Linux Libertine;
   font-size: 300pt;
@@ -2196,6 +2421,12 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 150pt #000, 0 0 75pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 150pt #000, 0 0 75pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
 }
+.deck-container .huge-glow-invert-300 .lato {
+  font-family: Lato;
+}
+.deck-container .glow-invert.lato {
+  font-family: Lato;
+}
 .deck-container .glow-invert {
   font-family: Linux Libertine;
   font-size: 19pt;
@@ -2203,6 +2434,9 @@ table.data tbody tr.even td {
   text-shadow: 0 0 9.5pt #000, 0 0 4.75pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -webkit-text-shadow: 0 0 9.5pt #000, 0 0 4.75pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 9.5pt #000, 0 0 4.75pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .glow-invert .lato {
+  font-family: Lato;
 }
 .deck-container .under-huge-glow {
   padding-top: 0;
