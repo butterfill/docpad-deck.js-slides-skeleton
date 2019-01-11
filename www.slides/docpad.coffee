@@ -94,10 +94,7 @@ docpadConfig = {
       @site.keywords.concat(@document.keywords or []).join(', ')
   
     get_unit : (unitNum) ->
-      extract = (unitNum+'').match(/^unit_([0-9]*)/)
-      if extract
-        unitNum = extract[1]
-      d = @getCollection("documents").findAll({url:'/units/unit_'+unitNum+'.html'},[{year:-1,sort_order:1}]).toJSON()
+      d = @getCollection("documents").findAll({url:'/units/'+unitNum+'.html'},[{year:-1,sort_order:1}]).toJSON()
       if d?[0]?
         if @document.units?.indexOf(unitNum) is -1
           @document.units.push(unitNum)
