@@ -271,23 +271,40 @@ mixin run_across()
   .words.run-across
     block
   .container_12
+
 mixin slide_rh_white(p)
   if typeof(p) === 'undefined' 
-    - p = {}
+    - p = p || {step:false, timer:false}
   if !('step' in p)
     - p.step = false
   section.slide
     .right-half-white(style="z-index:-22;", class=(p.step ? 'hide' : '') )
-    .container_12
-      block
+    if p.timer
+      div(style='mix-blend-mode:difference')  
+        +middle
+          +timer-element('timer1','90s',{hide:true})
+      +reset
+        .container_12
+          block
+    else
+      .container_12
+        block
 
 mixin slide_lh_white(p)
-  - p = p || {step:false}
+  - p = p || {step:false, timer:false}
   section.slide
     .left-half-white(style="z-index:-22;", class=(p.step ? 'hide' : '') )
-    .container_12
-      block
-            
+    if p.timer
+      div(style='mix-blend-mode:difference')  
+        +middle
+          +timer-element('timer1','90s',{hide:true})
+      +reset
+        .container_12
+          block
+    else
+      .container_12
+        block
+ 
       
 //- create a sequence of slides from a list of images
 mixin slides_from_img(filenames)
