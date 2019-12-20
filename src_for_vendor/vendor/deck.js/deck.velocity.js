@@ -530,7 +530,7 @@
           // actions is an array; perform actions undo in reverse order
           for( var idx2 = actions.length-1; idx2 >= 0; idx2 = idx2-1 ) {
             var action = actions[idx2];
-            if( typeof action.doAfter !== 'undefined') {
+            if( typeof action.undoit !== 'undefined') {
               action.undoit();
             }
           }
