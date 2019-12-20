@@ -66,7 +66,18 @@ section.slide
   p You should see some test messages in the console
   +testSlideActions
 
-
++slide_middle
+  p#el1 el1
+  script: :coffee-script
+    addAction 
+      doit : () ->
+        console.log(' el1 action ')
+  .slide
+    p#el2 el2
+    script: :coffee-script
+      addAction 
+        doit : () ->
+          console.log(' el2 action ')
 
 +slide
   p Sometimes it's good to indicate where new elements have appeared, so 
