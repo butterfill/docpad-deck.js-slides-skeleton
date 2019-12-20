@@ -22,6 +22,7 @@ uglifyjs  \
   modernizr.custom.01932.js \
   jquery.jsPlumb-1.3.16-all-min.js \
   questionmark.js/question.mark.js \
+  screenfull.js \
   deck.js/deck.core.js \
   deck.js/deck.events.js \
   deck.js/deck.fit.js \
