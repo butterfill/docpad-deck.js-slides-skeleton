@@ -1,5 +1,5 @@
 //-
-//- unit_mixins version 0.3
+//- unit_mixins version 0.4
 //- upgrading from slide_mixins:
 //-  - remove recall and unrecall (use the new slide-clone plugin instead)
 //-  - replace showhide and showremove with show_ hide_ etc
@@ -96,6 +96,8 @@ mixin _slide_inner(p)
     - p = {}
   if !('style' in p)
     - p.style = ''
+  if !('timer' in p)
+    - p.timer = false
   if ('blend' in p)
     - p.style += "; mix-blend-mode:"+p.blend
   if ('bkg' in p)
@@ -105,8 +107,16 @@ mixin _slide_inner(p)
     img.bkg(src='/img/#{p.bkg}', width='1024px', style=bkgStyle)
   +_photo(p)
   .words(style=p.style)
-    .container_12: .grid_12
-      block
+    if p.timer
+      div(style='mix-blend-mode:difference')  
+        +middle
+          +timer-element('timer1','90s',{hide:true})
+      +reset
+        .container_12: .grid_12
+          block
+    else
+      .container_12: .grid_12
+        block
 
 mixin slide(p)
   if typeof(p) === 'undefined'
@@ -145,6 +155,8 @@ mixin _slide_middle_inner(p)
     - p = {}
   if !('style' in p)
     - p.style = ''
+  if !('timer' in p)
+    - p.timer = false
   - bkgStyle = ''
   if ('bkg' in p)
     - bkgStyle = ''
@@ -152,8 +164,16 @@ mixin _slide_middle_inner(p)
       - bkgStyle += 'filter:'+p.bkgFilter+';'
     img.bkg(src='/img/#{p.bkg}', width='1024px', style=bkgStyle)
   +_photo(p)
-  +middle(p)
-    block
+  if p.timer
+    div(style='mix-blend-mode:difference')  
+      +middle
+        +timer-element('timer1','90s',{hide:true})
+    +reset
+      +middle(p)
+        block
+  else
+    +middle(p)
+      block
 
 mixin slide_middle(p)
   if typeof(p) === 'undefined'
