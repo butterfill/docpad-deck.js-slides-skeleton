@@ -28,7 +28,7 @@
 
 
 script: :t
-  window.deckSlideActions = [];
+  window.deckSlideActions = window.deckSlideActions || [];
   addAction = function(o) {
     var scripts = document.getElementsByTagName( 'script' );
     var thisScriptEl = scripts[ scripts.length - 1 ];

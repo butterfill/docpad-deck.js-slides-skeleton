@@ -306,7 +306,11 @@ html body {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-.deck-container .em-after,
+.deck-container .hem-after,
+.deck-container .hem-after-children > * {
+  padding-bottom: 0.5em;
+}
+.deck-container .after,
 .deck-container .em-after-children > * {
   padding-bottom: 1em;
 }
@@ -777,6 +781,22 @@ table.data tbody tr.even td {
   z-index: -20;
 }
 .deck-container .invert .bkg-white-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+}
+.deck-container .bkg-black-row {
+  background-color: #000;
+  margin-left: -80em;
+  border-left: solid 80em #000;
+  margin-right: -80em;
+  border-right: solid 80em #000;
+  text-outline: 1px 2px #f00;
+  -webkit-box-shadow: 0px 4px 2px -2px rgba(0,0,0,0.5), 0px -4px 2px -2px rgba(0,0,0,0.5);
+  box-shadow: 0px 4px 2px -2px rgba(0,0,0,0.5), 0px -4px 2px -2px rgba(0,0,0,0.5);
+  position: relative;
+  z-index: -20;
+}
+.deck-container .invert .bkg-black-row {
   -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
   box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
