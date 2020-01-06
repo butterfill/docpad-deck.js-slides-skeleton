@@ -11,9 +11,8 @@
     "docpad-plugin-autoprefix": "~2.0.0",
     "docpad-plugin-cleancss": "~2.1.0",
     "docpad-plugin-coffeescript": "~2.5.0",
-    "docpad-plugin-eco": "~2.1.0",
     "docpad-plugin-jade": "~2.10.0",
-    "docpad-plugin-livereload": "~2.7.1",
+    "docpad-plugin-livereload": "~2.10.0",
     "docpad-plugin-marked": "~2.3.0",
     "docpad-plugin-raw": "~2.4.1",
     "docpad-plugin-sass": "~2.7.4",
@@ -22,7 +21,8 @@
     "docpad-plugin-uglify": "~2.4.0",
     "eventemitter3": "^1.1.1",
     "docpad-plugin-moment": "~2.0.2",
-    "jstransformer-coffee-script": "^1.1.0"
+    "jstransformer-coffee-script": "^1.1.0",
+    "ws": "^7.2.1"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
