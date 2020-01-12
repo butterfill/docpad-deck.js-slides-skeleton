@@ -292,6 +292,7 @@ mixin run_across()
     block
   .container_12
 
+
 mixin slide_rh_white(p)
   if typeof(p) === 'undefined' 
     - p = p || {step:false, timer:false}
@@ -299,6 +300,8 @@ mixin slide_rh_white(p)
     - p.step = false
   section.slide
     .right-half-white(style="z-index:-22;", class=(p.step ? 'hide' : '') )
+    if ('bkg' in p)
+      img.bkg(src='/img/#{p.bkg}', width='1024px', style='mix-blend-mode:hard-light; opacity:0.5')
     if p.timer
       div(style='mix-blend-mode:difference')  
         +middle
@@ -314,6 +317,8 @@ mixin slide_lh_white(p)
   - p = p || {step:false, timer:false}
   section.slide
     .left-half-white(style="z-index:-22;", class=(p.step ? 'hide' : '') )
+    if ('bkg' in p)
+      img.bkg(src='/img/#{p.bkg}', width='1024px', style='mix-blend-mode:hard-light; opacity:0.5')
     if p.timer
       div(style='mix-blend-mode:difference')  
         +middle
@@ -324,6 +329,7 @@ mixin slide_lh_white(p)
     else
       .container_12
         block
+ 
  
       
 //- create a sequence of slides from a list of images
@@ -591,7 +597,10 @@ mixin unhighlight-row(what, color)
 //-   +start-timer('timer1')
 //- ----------
 
+
 mixin timer-element(id, duration, p)
+  if typeof(id) === 'undefined'
+    - id = 'timer1'
   if typeof(p) === 'undefined'
     - p = {}
   if !('hide' in p)
@@ -604,18 +613,31 @@ mixin timer-element(id, duration, p)
         block
 
 mixin show-timer(id)
+  if typeof(id) === 'undefined'
+    - id = 'timer1'
   .slide
     +show("#"+id+" .timer")
+    +remove-class("#"+id+" .timer", "running")
+    block
+
+mixin hide-timer(id)
+  if typeof(id) === 'undefined'
+    - id = 'timer1'
+  .slide
+    +hide("#"+id+" .timer")
     block
 
 mixin start-timer(id)
+  if typeof(id) === 'undefined'
+    - id = 'timer1'
   .slide
     +show("#"+id+" .timer.hide",0)
     +add-class("#"+id+" .timer", "running")
     block
 
-
 mixin slide_timer(p)
+  if typeof(id) === 'undefined'
+    - id = 'timer1'
   if typeof(p) === 'undefined'
     - p = {}
   if !('duration' in p)
