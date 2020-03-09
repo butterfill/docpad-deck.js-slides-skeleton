@@ -1,219 +1,146 @@
+//-
+//- (c) Stephen A. Butterfill 2014
+//-
 
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg">
-  <head>
-    <!-- (c) copyright 2013-7 Stephen A. Butterfill-->
-    <meta charset="utf-8"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>How to write dj-deck slides | Cooperation and Motor Representation</title>
-    <meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/>
-    <meta name="keywords" content="philosophy, psychology, development, action, joint action, mindreading, motor representation, thought"/>
-    <meta name="author" content=""/>
-    <meta name="url" content="https://www.butterfill.com/talk-slides/mindreading_ww/"/><meta name="generator" content="DocPad v6.78.4" />
-    <meta name="viewport" content="width=device-width"/>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
-    <!--if lt IE 9
-    script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
+- var scripts = getBlock('scripts')
+- var styles = getBlock('styles')
+
+- scripts.add(["/vendor/for.slides.all.min.js"])
+- scripts.add(["/vendor/deepstream.js"])
+- scripts.add(["/scripts/remote.js"])
+
+- styles.add(["/vendor/for.slides.all.css"])
+
+- styles.add(["/styles/steve_deck_style.css"])
+
+
+//- deckjs-remote (you can safely remove these if you don't use deckjs-remote)
+  //- deck js extension to help with deckjs-remote (this extension just triggers the main extension)
+  - scripts.add(["/vendor/deck.js/deck.remote.js"])
+  - styles.add(["http://obscure-stream-2511.herokuapp.com/deckjs-remote.css"])
+  - scripts.add(["http://obscure-stream-2511.herokuapp.com/deckjs-remote.js"])
+
+
+html(xmlns="http://www.w3.org/1999/xhtml",  xmlns:svg="http://www.w3.org/2000/svg")
+  head
+    // (c) copyright 2013-7 Stephen A. Butterfill
+    //- Meta
+    meta(charset="utf-8")
+    meta(http-equiv="content-type", content="text/html; charset=utf-8")
+
+    //-
+      Use the .htaccess and remove these lines to avoid edge case issues.
+      More info: h5bp.com/i/378
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+
+    //- Our site title and description
+    title= getPreparedTitle()
+    meta(name="description", content=getPreparedDescription())
+    meta(name="keywords", content=getPreparedKeywords())
+    meta(name="author", content=site.author || '')
+    meta(name="url", content=getURL())
+
+    //- Output DocPad produced meta elements
+    != getBlock('meta').toHTML()
+
+    //- Mobile viewport optimized: h5bp.com/viewport
+    meta(name="viewport", content="width=device-width")
+
+    //- Icons
+    //- disabled
+        //- link(rel="shortcut icon", href="ico/favicon.ico")
+        //- link(rel="apple-touch-icon-precomposed", sizes="144x144", href="ico/apple-touch-icon-144-precomposed.png")
+        //- link(rel="apple-touch-icon-precomposed", sizes="114x114", href="ico/apple-touch-icon-114-precomposed.png")
+        //- link(rel="apple-touch-icon-precomposed", sizes="72x72", href="ico/apple-touch-icon-72-precomposed.png")
+        //- link(rel="apple-touch-icon-precomposed", href="ico/apple-touch-icon-57-precomposed.png")
+
+    //- fonts
+    link(href='https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic',rel='stylesheet',type='text/css')
+    //- link(href='https://fonts.googleapis.com/css?family=The+Girl+Next+Door',rel='stylesheet',type='text/css')
+    //- Shims: IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
+
+    //- Styles
+    != styles.toHTML()
+
     
-    --><style >html.wait {
-	cursor: wait !important;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/for.slides.all.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" />
-  </head>
-  <body><script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
-}
 
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/docpad-livereload/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script><script defer="defer"  src="/vendor/for.slides.all.min.js"></script><script defer="defer"  src="/vendor/deepstream.js"></script><script defer="defer"  src="/scripts/remote.js"></script>
-    <div id="helpUnderlay" class="help-underlay">
-      <div id="helpModal" class="help-modal">
-        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
-        <div id="helpClose" class="help-close">×</div>
-        <!-- .help-close-->
-        <div id="helpModalContent" class="help-modal-content">
-          <div id="helpListWrap" class="help-list-wrap">
-            <ul class="help-list">
-              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="deck-notes">
-      <div class="deck-notes-container"></div>
-    </div>
-    <div class="deck-handout">
-      <div class="deck-handout-container"></div>
-    </div>
-    <div class="deck-container">
-      <section id="instructions" class="slide">
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <div class="middle">
-                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slide">
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <p>also ...</p>
-              <p>Press the left key to go backwards (or swipe right)</p>
-              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
-              <p>Press m or double tap to slide thumbnails (menu)</p>
-              <p>Press ? at any time to show the keyboard shortcuts</p>
-            </div>
-          </div>
-        </div>
-      </section>
+  body
+    //- Scripts
+    != scripts.toHTML()
 
+    //- keyboard shortcuts modal
+    #helpUnderlay.help-underlay
+      #helpModal.help-modal
+        h1
+          | Keyboard Shortcuts
+          kbd.help-key
+            span ?
+        #helpClose.help-close ×
+        // .help-close
+        #helpModalContent.help-modal-content
+          #helpListWrap.help-list-wrap
+            //-
+               Each <ul> below creates a column, as long as each has a class of
+               "help-list". Each <li> is a single key/definition pair.
+               The extra nested <span> is to help keep the definitions lined up
+               vertically, for aesthetic reasons.
+               If you hate the extra <span>, just remove it from each key/def pair.
+                  
+            ul.help-list
+              li.help-key-unit
+                kbd.help-key
+                  span →
+                span.help-key-def Next step
+              li.help-key-unit
+                kbd.help-key
+                  span ←
+                span.help-key-def Previous step
+              li.help-key-unit
+                kbd.help-key
+                  span ↓
+                span.help-key-def Skip this slide
+              li.help-key-unit
+                kbd.help-key
+                  span ↑
+                span.help-key-def Previous slide
+                
+              li.help-key-unit
+                kbd.help-key
+                  span m
+                span.help-key-def Show slide thumbnails
+              li.help-key-unit
+                kbd.help-key
+                  span n
+                span.help-key-def Show notes
+              li.help-key-unit
+                kbd.help-key
+                  span h
+                span.help-key-def Show handout latex source
+              li.help-key-unit
+                kbd.help-key
+                  span N
+                span.help-key-def Show talk notes latex source
 
-
-<script>window.deckSlideActions = [];
-addAction = function(o) {
-  var scripts = document.getElementsByTagName( 'script' );
-  var thisScriptEl = scripts[ scripts.length - 1 ];
-  o.scriptEl = thisScriptEl;
-  deckSlideActions.push(o);
-}
-</script>
-
-<!-- param @cls and param @options should be objects-->
-
-
-
-
-<div class="notes notes-header-tex">\title {Cooperation and Motor Representation \\ How to write dj-deck slides}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\maketitle</div>
-<div id="title-slide" class="slide"><img src="/img/bkg/bees/ADSC_0172_crop.jpg" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div class="fade-in">
-    <div style="" class="title-block">
-      <div class="title-container">
-        <h1 class="title1 fade-in">How to write dj-deck slides
-        </h1>
-        <h3 class="email fade-in">s.butterfill@warwick.ac.uk</h3>
-      </div>
-    </div>
-  </div>
-  <div class="handout">\def \ititle {How to write dj-deck slides}</div>
-  <div class="handout">\begin{center}</div>
-  <div class="handout">{\Large</div>
-  <div class="handout">\textbf{\ititle}</div>
-  <div class="handout">}</div>
-  <div class="handout">&nbsp;</div>
-  <div class="handout">\iemail %<s.butterfill@warwick.ac.uk></div>
-  <div class="handout">\end{center}</div>
-</div>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="step1">
-          <p>dj-deck is a system for creating beautiful presentation slides.</p>
-          <p class="em-above">In this guide I'll show you how to write dj-deck slides.</p>
-          <p class="em-above">Hit the right arrow or swipe left for the next slide.</p>
-        </div>
-        <div class="slide">
-          <div data-what=".step1" data-css="{&quot;blur&quot;:&quot;1.5px&quot;,&quot;opacity&quot;:0.6}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-          <p class="em-above"> Hit the 'n' key to see the notes.</p>
-          <div class="notes">I'll use the notes to explain how to write the slides.
-On the slides themselves you'll see the results illustrated.
-          </div>
-          <div class="notes">Hit the right arrow or swipe left for the next slide.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="step1">
-          <p>Use '+slide' to create a new slide.</p>
-          <p>Use 'p' to create a paragraph.</p>
-        </div>
-        <div class="notes">Here's the source for this slide (minus the notes, which we'll come to later):
-        </div>
-        <div class="notes">````jade
-+slide
-  p Use '+slide' to create a new slide.
-  p Use 'p' to create a paragraph.
-````
-        </div>
-        <div class="slide">
-          <div data-what=".step1" data-css="{&quot;blur&quot;:&quot;1.5px&quot;,&quot;opacity&quot;:0.6}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-          <p class="em-above">The 'p's are indented under '+slide'.</p>
-          <p>'p' stands for paragraph.</p>
-          <div class="notes">Here's the source for this slide (minus the notes, which we'll come to later):
-          </div>
-          <div class="notes">````jade
-+slide
-  p Use '+slide' to create a new slide.
-  p Use 'p' to create a paragraph.
-````
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    </div>
-  </body>
-</html>
+    .deck-notes
+      .deck-notes-container
+    
+    .deck-handout
+      .deck-handout-container
+    
+    .deck-container
+      
+      section.slide#instructions
+        .words: .container_12: .grid_12
+          .middle
+            p.center Click here and press the right key for the next slide (or swipe left)
+      section.slide
+        .words: .container_12: .grid_12
+          p also ...
+          p Press the left key to go backwards (or swipe right)
+          p Press n to toggle whether notes are shown (or add '?notes' to the url before the #)
+          p Press m or double tap to slide thumbnails (menu)
+          p Press ? at any time to show the keyboard shortcuts
+  
+      != content

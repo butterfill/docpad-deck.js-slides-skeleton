@@ -1,137 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Meta-->
-    <meta charset="utf-8">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Joint Action | Cooperation and Motor Representation</title>
-    <meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk">
-    <meta name="keywords" content="philosophy, psychology, development, action, joint action, mindreading, motor representation, thought">
-    <meta name="author" content=""><meta name="generator" content="DocPad v6.78.4" />
-    <meta name="viewport" content="width=device-width">
-    <!--if lt IE 9
-    script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
-    
-    -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css">
-    <!-- Styles--><style >html.wait {
-	cursor: wait !important;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/for.frontpage.all.css" /><link  rel="stylesheet" href="/styles/frontpage.css" />
-  </head>
-  <body>
-    <div class="container">
-      <section id="content" class="content">
-<html>
-  <body>
-    <div class="hero-unit fade-in">
-      <h1>Joint Action:
-        <!--
-        span.l1 O
-        span.l2 r
-        span.l3 i
-        span.l4 g
-        span.l5 i
-        span.l6 n
-        span.l7 s
-        span  of Mind:
-        -->
-      </h1>
-      <h2>Which forms of shared agency underpin our social nature?</h2>
-      <p>--- by s.butterfill@warwick.ac.uk</p>
-      <p>A course at the University of Warwick.</p>
-    </div>
-    <div class="row">
-      <div class="span4">
-        <div id="before_taking" style="padding-right:1em;">
-          <h2>Before deciding whether to take the module</h2>
-          <ul>
-            <li><a href="/pdf/joint_action_lecture_outline.pdf" target="_blank">About this course (a handout)</a></li>
-          </ul>
-        </div>
-      </div>
-      <div style="border-left: 1px dotted grey; border-right: 1px dotted grey;margin-right: -1px;margin-left: -1px;" class="span4">
-        <div id="essays" style="padding-right:1em;padding-left:1em">
-          <h2>Essays, readings and tasks for seminars</h2>
-          <ul>
-            <li> <a href="/pdf/seminar_tasks.md.pdf" target="_blank">Seminar tasks --- undergraduates</a></li>
-            <li> <a href="/pdf/essay_questions.md.pdf" target="_blank">Essay questions for assessed work --- undergraduates</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="span4">
-        <div id="practical_info">
-          <h2>Practical Info</h2>
-          <p>For timings, past exam papers, permission to the take module as an unusual option and everything else, please see:</p>
-          <ul>
-            <li><a target="_blank" href="http://www2.warwick.ac.uk/fac/soc/philosophy/undergraduate/modules/ph359">for PH359</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="span9">
-        <div id="slides_and_handouts">
-          <h2>Slides and Handouts</h2>
-          <p>You can find slides and handout below, together with an outline of each lecture.</p>
-          <p>Please note that these may be continuously revised.</p>
-        </div>
-      </div>
-    </div>
-  </body>
-</html></section>
-      <hr>
-      <footer style="padding-bottom: 30px;">
-        <div style="font-style:italic; font-size: 12px">Last updated at Fri Dec 20 2019 16:10:58 GMT+0000 (Greenwich Mean Time)</div>
-      </footer>
-    </div>
-    <!-- Scripts--><script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
-}
+//-
+//- (c) Stephen A. Butterfill 2014
+//-
 
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/docpad-livereload/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script><script defer="defer"  src="/vendor/for.frontpage.all.min.js"></script>
-  </body>
-</html>
+- var scripts = getBlock('scripts')
+- var styles = getBlock('styles')
+
+//- jQuery
+- scripts.add(["/vendor/for.frontpage.all.min.js"])
+
+//- Bootstrap
+- styles.add(["/vendor/for.frontpage.all.css"])
+
+//- User
+- styles.add(["/styles/frontpage.css"])
+
+doctype html
+html(lang="en")
+  head
+
+    // Meta
+    meta(charset="utf-8")
+    meta(http-equiv="content-type", content="text/html; charset=utf-8")
+
+    //-
+      Use the .htaccess and remove these lines to avoid edge case issues.
+      More info: h5bp.com/i/378
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+
+    //- Our site title and description
+    title= getPreparedTitle()
+    meta(name="description", content=getPreparedDescription())
+    meta(name="keywords", content=getPreparedKeywords())
+    meta(name="author", content=site.author || '')
+
+    //- Output DocPad produced meta elements
+    != getBlock('meta').toHTML()
+
+    //- Mobile viewport optimized: h5bp.com/viewport
+    meta(name="viewport", content="width=device-width")
+
+    //- Icons
+      //- link(rel="shortcut icon", href="ico/favicon.ico")
+      //- link(rel="apple-touch-icon-precomposed", sizes="144x144", href="ico/apple-touch-icon-144-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", sizes="114x114", href="ico/apple-touch-icon-114-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", sizes="72x72", href="ico/apple-touch-icon-72-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", href="ico/apple-touch-icon-57-precomposed.png")
+
+    //- Shims: IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
+
+    //- lato font
+    link(href='https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic',rel='stylesheet',type='text/css')
+
+    // Styles
+    != styles.toHTML()
+
+  body
+
+    .container
+      section#content.content!= content
+      hr
+      footer(style="padding-bottom: 30px;")
+        div(style="font-style:italic; font-size: 12px") Last updated at #{site.date}
+
+    // Scripts
+    != scripts.toHTML()
