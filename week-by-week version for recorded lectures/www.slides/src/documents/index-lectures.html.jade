@@ -1,0 +1,46 @@
+---cson
+layout: 'frontpage'
+title: 'Moral Psychology: Index of Lectures'
+---
+include ../../fragments/outline_mixins
+
+html
+  body(style='background-color:#f5f5f5')
+
+    .hero-unit
+      h1: a(href='/') Moral Psychology
+      h2 The science of good and evil?
+      p --- lecturer: s.butterfill@warwick.ac.uk
+      p A course at the University of Warwick.
+  
+    h1 Outline of lectures
+
+  
+    .row
+      //- main content: lecture outlines &c
+      .span9 
+        #slides_and_handouts
+          p These may be revised until the date given (and sometimes after).
+
+        //- now do a section for each lecture
+        each lecture in getCollection("lectures").toJSON()
+          if lecture.hidden && getEnvironment() === 'static'
+            //- pass
+          else
+            div(style='border:1px solid black; background-color:white; padding:15px;margin-bottom:1em;')
+              +show_lecture(lecture)
+
+      .span3
+        h4 Not what you were looking for?
+        p There is also ...
+        ul
+          li: a(href='index.html') a complete week-by-week guide;  
+          li: a(href='index-list-of-weeks.html') an index of weeks;
+          li: a(href='seminar_links.html') links for online seminars;
+          li: a(href='https://yyrama.butterfill.com/course/view/moralPsychology' target='_blank') a list of seminar tasks on yyrama; and
+          li: a(href='https://ex.zoxiy.xyz/course/UK_W20_Mind_and_Reality/exerciseSet/2020_21' target='_blank')  the in-lecture micro tasks on zoxiy.
+        p ... or go to
+        +list_lectures
+
+
+

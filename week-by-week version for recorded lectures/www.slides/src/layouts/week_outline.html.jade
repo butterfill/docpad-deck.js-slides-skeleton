@@ -1,0 +1,102 @@
+//-
+//- (c) Stephen A. Butterfill 2020
+//-
+
+include ../../fragments/outline_mixins
+
+- var scripts = getBlock('scripts')
+- var styles = getBlock('styles')
+
+//- jQuery
+- scripts.add(["/vendor/for.frontpage.all.min.js"])
+
+//- Bootstrap
+- styles.add(["/vendor/for.frontpage.all.css"])
+
+//- User
+- styles.add(["/styles/frontpage.css"])
+
+doctype html
+html(lang="en")
+  head
+
+    // Meta
+    meta(charset="utf-8")
+    meta(http-equiv="content-type", content="text/html; charset=utf-8")
+
+    //-
+      Use the .htaccess and remove these lines to avoid edge case issues.
+      More info: h5bp.com/i/378
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+
+    //- Our site title and description
+    title= getPreparedTitle()
+    meta(name="description", content=getPreparedDescription())
+    meta(name="keywords", content=getPreparedKeywords())
+    meta(name="author", content=site.author || '')
+
+    //- Output DocPad produced meta elements
+    != getBlock('meta').toHTML()
+
+    //- Mobile viewport optimized: h5bp.com/viewport
+    meta(name="viewport", content="width=device-width")
+
+    //- Icons
+      //- link(rel="shortcut icon", href="ico/favicon.ico")
+      //- link(rel="apple-touch-icon-precomposed", sizes="144x144", href="ico/apple-touch-icon-144-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", sizes="114x114", href="ico/apple-touch-icon-114-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", sizes="72x72", href="ico/apple-touch-icon-72-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", href="ico/apple-touch-icon-57-precomposed.png")
+
+    //- Shims: IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
+
+    //- lato font
+    link(href='https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic',rel='stylesheet',type='text/css')
+
+    // Styles
+    != styles.toHTML()
+
+
+  body(style='background-color:#f5f5f5'): .container: section#content.content
+    .hero-unit
+      h1: a(href='/') Moral Psychology
+      h2 The science of good and evil?
+      p --- lecturer: s.butterfill@warwick.ac.uk
+      p A course at the University of Warwick.
+
+    - week = document    
+    .row
+      .span9: div(id='#{week.basename}', style='border:1px solid black; background-color:white; padding:15px;margin-bottom:1em;')
+
+        h1 #{week.title}
+          if week.theme
+            span : #{week.theme}
+        if week.start_date
+          p Commencing #{moment(week.start_date).format('dddd Do MMMM YYYY')}
+
+        hr
+
+        +show_week(week)
+
+      .span3
+        h4 Not what you were looking for?
+        p There is also ...
+        ul
+          li: a(href='index.html') a complete week-by-week guide;
+          li: a(href='index-lectures.html') an outline of lectures;
+          li: a(href='index-list-of-weeks.html') an index of weeks;  
+          li: a(href='seminar_links.html') links for online seminars;
+          li: a(href='https://yyrama.butterfill.com/course/view/moralPsychology' target='_blank') a list of seminar tasks on yyrama; and
+          li: a(href='https://ex.zoxiy.xyz/course/UK_W20_Mind_and_Reality/exerciseSet/2020_21' target='_blank')  the in-lecture micro tasks on zoxiy.
+        p ... or go to
+        +list_weeks
+
+    
+    hr
+    footer(style="padding-bottom: 30px;")
+      div(style="font-style:italic; font-size: 12px") Last updated at #{site.date}
+
+    // Scripts
+    != scripts.toHTML()

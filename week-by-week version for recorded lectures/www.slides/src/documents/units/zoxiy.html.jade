@@ -1,0 +1,29 @@
+---cson
+layout: 'deck_unit'
+title: "zoxiy In-Lecture Micro-Tasks"
+tags: []
+description: """
+  Watch the lectures with a friend (or several) that you can 
+  talk to as they go on.
+  Answer the questions on zoxiy together, or after debating them.
+  """
+streamId: 'c6d930b8-4cdf-48ea-8f93-606872f3c3f7'
+youtubeId: 'KeQNJnLtxcY'
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+include ../../../fragments/central_themes_mixins
+
++slide_middle
+  p.hem-around.center 
+    +blur('p:eq(0)')
+    p.hem-around.center Watch lectures with a friend, and talk.
+  .slide
+    +blur('p:eq(1)')
+    p.center Answer the questions on zoxiy together, or after debating them.
+
++slide_middle({bkg:'zoxiy-microtask.jpg'})
+
++slide_middle
+  p.center.huge-glow ex.zoxiy.xyz

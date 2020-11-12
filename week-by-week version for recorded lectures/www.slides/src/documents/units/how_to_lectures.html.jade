@@ -1,0 +1,29 @@
+---cson
+layout: 'deck_unit'
+title: "How to Use the Online Lectures"
+tags: []
+description: """
+  Watch with a friend, and talk. Take notes. Use the 2x speed option. Skip around. Ask questions.
+  """
+exercises : [
+]
+streamId:'67304e63-4c70-497a-9fcb-eea862e3c0b8'
+youtubeId: '4pjwl1ieVGc'
+---
+
+include ../../../fragments/unit_mixins
+
++slide_middle
+  .hem-around-children
+    p Watch with a friend, and talk
+    p Take notes
+    p Speed it up
+    p Skip around
+    p Ask questions
+
+
++slide_middle({timer:true})
+  .hem-around-children
+    p about the circles
+  +show-timer
+  +start-timer

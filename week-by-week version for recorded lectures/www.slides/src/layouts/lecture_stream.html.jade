@@ -1,0 +1,114 @@
+include ../../fragments/outline_mixins
+
+- var scripts = getBlock('scripts')
+- var styles = getBlock('styles')
+
+//- jQuery
+- scripts.add(["/vendor/for.frontpage.all.min.js"])
+
+//- Bootstrap
+- styles.add(["/vendor/for.frontpage.all.css"])
+
+//- User
+- styles.add(["/styles/frontpage.css"])
+
+doctype html
+html(lang="en")
+  head
+    // Meta
+    meta(charset="utf-8")
+    meta(http-equiv="content-type", content="text/html; charset=utf-8")
+
+    //-
+      Use the .htaccess and remove these lines to avoid edge case issues.
+      More info: h5bp.com/i/378
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+
+    //- Our site title and description
+    - lectureBasename = document.basename.replace(/_stream$/,'')
+    - lecture = get_lecture(lectureBasename)
+    title= getPreparedTitle() + " : " + lecture.title
+    title= getPreparedTitle()
+    meta(name="description", content=getPreparedDescription())
+    meta(name="keywords", content=getPreparedKeywords())
+    meta(name="author", content=site.author || '')
+
+    //- Output DocPad produced meta elements
+    != getBlock('meta').toHTML()
+
+    //- Mobile viewport optimized: h5bp.com/viewport
+    meta(name="viewport", content="width=device-width")
+
+    //- Icons
+      //- link(rel="shortcut icon", href="ico/favicon.ico")
+      //- link(rel="apple-touch-icon-precomposed", sizes="144x144", href="ico/apple-touch-icon-144-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", sizes="114x114", href="ico/apple-touch-icon-114-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", sizes="72x72", href="ico/apple-touch-icon-72-precomposed.png")
+      //- link(rel="apple-touch-icon-precomposed", href="ico/apple-touch-icon-57-precomposed.png")
+
+    //- Shims: IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
+
+    //- lato font
+    link(href='https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic',rel='stylesheet',type='text/css')
+
+    // Styles
+    != styles.toHTML()
+  body: .container
+    section#content.content
+
+      .hero-unit
+        h1: a(href='/') Moral Psychology
+        h2 The science of good and evil?
+        p --- lecturer: s.butterfill@warwick.ac.uk
+        p A course at the University of Warwick.
+    
+      .row
+        .span9
+          - lectureBasename = document.basename.replace(/_stream$/,'')
+          - lecture = get_lecture(lectureBasename)
+          h1 #{lecture.title}
+          if lecture.lecture_date
+            p Date given: #{moment(lecture.lecture_date).format('dddd Do MMMM YYYY')}
+
+          p
+            | This is the main page for #{lecture.title}. 
+            | I have also put 
+            a(href='/#{lectureBasename}_tube.html' target='_blank') backup recordings here
+            span .  
+            span Or, if you prefer, you can see 
+            a(href='/#{lectureBasename}.html' target='_blank') the slides with no audio or video here
+            span .  
+
+          each p in lecture.recordings
+            - unit = get_unit(p.unitName)
+            h3(id="#{p.unitName}") #{unit.title}
+              //- span(style="font-size:50%;color:grey;")  (#{unit_num})
+            if unit.tags && unit.tags.length && unit.tags.length > 0
+              p(style="text-align:right;margin:0;padding:0;margin-top:-2.5em;") 
+                each t in unit.tags
+                  span.label.label-info #{t}
+                  | 
+            .aUnit(style='border-left: 1px dotted grey;margin-left: -1px;')
+              div(style="padding-left:2em;")
+                p #{unit.description}
+                if p.streamId
+                  iframe(sandbox="allow-same-origin allow-scripts allow-popups allow-forms" width="800", height="450", src="https://web.microsoftstream.com/embed/video/#{p.streamId}?autoplay=false&amp;showinfo=true", allowfullscreen, style="border:none;")
+                else
+                  p(style='color:red'): :t
+                    Sorry, there is no known streams source for this section.
+                +thanks(lecture, unit)
+                +book_and_exercises(lecture, unit)
+
+        .span3
+          h4 Other lectures
+          +list_lectures
+
+
+    hr
+    footer(style="padding-bottom: 30px;")
+      div(style="font-style:italic; font-size: 12px") Last updated at #{site.date}
+
+    // Scripts
+    != scripts.toHTML()

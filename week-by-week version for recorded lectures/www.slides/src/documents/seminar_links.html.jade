@@ -1,0 +1,50 @@
+---cson
+layout: 'frontpage'
+title: 'Moral Psychology: Links for Online Seminars'
+---
+
+include ../../fragments/outline_mixins
+include ../../fragments/unit_mixins
+
+
+html: body(style='background-color:#f5f5f5')
+  //- div(style="background-image:url('/img/bkg/mix/bkg02.jpg');background-position:center center; background-repeat:no-repeat; background-size:contain;width:100vw;height:100vh; position:absolute; left:0;top:0;opacity:.5;z-index:-1")
+  //- img(src='/img/bkg/mix/bkg02.jpg', style='position:absolute; left:0;top:0;width:100%;height:auto;opacity:.5;z-index:-1')
+  //- .mix-container(style='mix-blend-mode:overlay')
+
+  .hero-unit
+    h1: a(href='/')  Moral Psychology
+    h2 
+    p --- lecturer: s.butterfill@warwick.ac.uk
+    p A course at the University of Warwick.
+  
+  .row
+    .span9
+      h2 Links for Online Seminars
+      p If you are attending one of the online seminars, you can find the invitation links below.
+
+
+    .span3
+      h4 Not what you were looking for?
+      p There is also ...
+      ul
+        li: a(href='index.html') a complete week-by-week guide;  
+        li: a(href='index-lectures.html') an outline of lectures;
+        li: a(href='index-list-of-weeks.html') an index of weeks; 
+        li: a(href='https://yyrama.butterfill.com/course/view/moralPsychology' target='_blank') a list of seminar tasks on yyrama; and
+        li: a(href='https://ex.zoxiy.xyz/course/UK_W20_Mind_and_Reality/exerciseSet/2020_21' target='_blank')  the in-lecture micro tasks on zoxiy.
+      p ... or go to
+      +list_weeks
+      h4 Other Courses I teach
+      ul
+        li
+          a(target='_blank',href="https://moral-psychology.butterfill.com/") Moral Psychology
+        li
+          a(target='_blank',href="https://origins-of-mind.butterfill.com/") Origins of Mind
+        li
+          a(target='_blank',href="https://joint-action.butterfill.com/") Joint Action
+        li
+          a(target='_blank',href="https://philosophical-psychology-bochum.butterfill.com/") Philosophical Psychology
+        li
+          a(target='_blank',href="https://www.butterfill.com/#teaching") ... and some older ones.
+          
