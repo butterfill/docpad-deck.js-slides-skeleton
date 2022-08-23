@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=http://localhost:8080/schema-project.json
+
+id: c0tpPCvT4IKQbhdZ1m440
+title: Docpad Deck.js Slides Skeleton
+description:
+  This is the main project for my `deck.js` slide creator.
+  It includes the code for animations.
+
+  The mixins (fragments) are in a subproject.
+
+  The `deck.js` code is now used as `pugdeck` as part of the rmx project.
+  (That project does not rely on docpad any more.)
+
+  This code remains the canonical source for my customised version of `deck.js`
+  along with the custom deck.js css and the plugins (especially the animation plugin).
+git-remote:
+  - git@github.com:butterfill/docpad-deck.js-slides-skeleton
+type: programming
+location: 
+authors: 
+  - Stephen A. Butterfill
+status: complete
+subprojects:
+  - 8ZWHXyB9jhSb-Re_iM66y
+  - wkN3MJlqQBI6sl9gky2q7
