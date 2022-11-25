@@ -46,6 +46,7 @@
             $slide.width(sdw);
             $slide.height(sdh);
             $.each('Webkit Moz O ms Khtml'.split(' '), function(i, prefix) {
+                // console.log(`scale = ${scale}, addMarginX = ${addMarginX}, addMarginX = ${addMarginX} `)
                 if (scale == 1) {
                     $slide.css(prefix + 'Transform', '');
                 } else {
