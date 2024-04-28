@@ -1,16 +1,14 @@
 /*
     QuestionMark.js by Louis Lazaris
-    http://impressivewebs.github.io/QuestionMark.js/
+    https://github.com/impressivewebs/QuestionMark.js
     License: http://creativecommons.org/licenses/by/2.0/, no credit needed.
-    This script should work everywhere, including IE8+.
-    If you want IE8 support, include the following 
-    polyfill for addEventListener() at the top:
-    https://gist.github.com/jonathantneal/2415137
-    (included in the repo as attachevent.js).
-    Doesn't work in IE6/7, but feel free to fork and fix.
 
     Modified by Steve Butterfill 2014 -- cut the  Ajax thing,
     (requires that shortcut keys are specifed in the html file itself)
+
+    ‘When the user pushes the ? key, QuestionMark.js triggers a modal window 
+    that displays keyboard shortcuts for your app’. I use this for the help
+    window.
 */
 
 (function () {

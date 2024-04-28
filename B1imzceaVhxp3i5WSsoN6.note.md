@@ -9,10 +9,9 @@ projects:
 
 
 
-
 * [ ] Better highlights 
   1. (dim everything and just highlight one element, allowing a pop-up window):
-     * Could use \ref{url:https://kamranahmed.info/driver.js/}
+     * Could use \ref{url:https://github.com/kamranahmedse/driver.js}
   1. use rough notation \ref{url:https://github.com/rough-stuff/rough-notation}
      * need to work around the fact that slides use css scale, see \ref{url:https://github.com/rough-stuff/rough-notation/issues/75}
        * fix =
@@ -21,6 +20,8 @@ projects:
          const scale = Number(/scale\((\d+\.?\d*)\)/.exec(scaler.style.transform)[1]);
          annotation._svg.style.transform = `scale(${1/scale})`;
          ```
+
+* [ ] title page cloud animation with `Vanta.js` \ref{url:https://www.vantajs.com/?effect=fog#(backgroundAlpha:1,baseColor:16772075,blurFactor:0.54,gyroControls:!f,highlightColor:16118508,lowlightColor:0,midtoneColor:7039851,minHeight:200,minWidth:200,mouseControls:!t,scale:2,scaleMobile:4,speed:0.30000000000000004,touchControls:!t,zoom:1.9000000000000001)}
 
 * [ ] Enable use of tailwindcss in writing slides?
 
@@ -45,4 +46,6 @@ projects:
 * [x] Images for section title slides (use `title_image` property)
 
 * [x] when making lectures, do not show section title slides if `title_slide: false` is set
+
+* [ ] [no—requires a link to the author!] simple title slide animations \ref{url:https://neat.camberi.com/} = \ref{url:https://github.com/FireCMSco/neat}
 

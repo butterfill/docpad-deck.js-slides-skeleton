@@ -1,3 +1,15 @@
+UPDATE 
+======
+
+Although you can use this standalone, it is mainly used with my `rmx.js` project.
+
+The sources you need are in `src_for_vendor/vendor` (not quite the right labels now I know).
+
+The js and css files are compiled from the sources and then copied into
+`~/programming/git/rmx-raw-for-handouts`. These then become the raw files for rmx.js projects.
+(There is a readme in `src_for_vendor/vendor` which explains how this works.)
+
+
 What It Does
 ============
 
