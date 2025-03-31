@@ -7,6 +7,9 @@
 }
 
 
+.deck-container .transcript:not(.show) {
+  display: none;
+}
 
 .deck-notes, .deck-handout {
   position: absolute;

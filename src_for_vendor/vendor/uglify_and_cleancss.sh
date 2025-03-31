@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "you may need to install some things"
+echo "uglifyjs: npm install uglify-js -g"
+echo "cleancss: npm install clean-css-cli -g"
+
 uglifyjs  \
   jquery.min.js \
   jquery-svgfix.js \
