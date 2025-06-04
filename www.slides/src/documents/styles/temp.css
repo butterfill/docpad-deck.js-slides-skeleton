@@ -4645,6 +4645,21 @@ p.speech-right:after {
 .deck-container table td .xplayer {
   margin-left: 1em;
 }
+.fade {
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  -webkit-filter: alpha(opacity=50);
+  -moz-filter: alpha(opacity=50);
+  -o-filter: alpha(opacity=50);
+  -ms-filter: alpha(opacity=50);
+  filter: alpha(opacity=50);
+}
+.cite {
+  font-size: 0.6em !important;
+  color: #808080;
+  padding-top: 0;
+  margin-top: -0.2em !important;
+}
 @-moz-keyframes anim_blur {
   0% {
     color: #fff;
