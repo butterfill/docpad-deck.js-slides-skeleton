@@ -41,14 +41,14 @@ slide.
 			var hash = '#' + $el.attr('id');
 
 			/* Deep link to slides on init */
-			if (window && window.location && hash === window.location.hash) {
+			if (window.location && hash === window.location.hash) {
 				setTimeout(function() {
 					$[deck]('go', i);
 				}, 1);
 			}
 
 			/* Add internal links to this slide */
-			if (window && window.location) {
+			if (window.location) {
 				$internals = $internals.add('a[href="' + hash + '"]');
 			}
 		});
@@ -97,4 +97,4 @@ slide.
 			$[deck]('getContainer').scrollLeft(0).scrollTop(0);
 		}
 	});
-})(jQuery, 'deck', (typeof window !== "undefined" ? window : undefined));
+})(jQuery, 'deck', window);
