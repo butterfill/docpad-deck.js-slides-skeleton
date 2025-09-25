@@ -11,29 +11,29 @@ if (!window.Modernizr) {
   };
 }
 
-import '../../deck.core.css';
-import '../../deck.menu.css';
-import '../../deck.hash.css';
-import '../../deck.notes.css';
+import '@deck/deck.core.css';
+import '@deck/deck.menu.css';
+import '@deck/deck.hash.css';
+import '@deck/deck.notes.css';
 import './styles.css';
 
 const deckModules = [
-  '../../deck.core.js',
-  '../../deck.events.js',
-  '../../deck.fit.js',
-  '../../deck.menu.js',
-  '../../deck.hash.js',
-  '../../deck.notes.js',
-  '../../deck.remote.js',
-  '../../deck.clone.js',
-  '../../deck.slide-clone.js',
-  '../../deck.step.js',
-  '../../deck.velocity.js',
-  '../../deck.init.js'
+  () => import('@deck/deck.core.js'),
+  () => import('@deck/deck.events.js'),
+  () => import('@deck/deck.fit.js'),
+  () => import('@deck/deck.menu.js'),
+  () => import('@deck/deck.hash.js'),
+  () => import('@deck/deck.notes.js'),
+  () => import('@deck/deck.remote.js'),
+  () => import('@deck/deck.clone.js'),
+  () => import('@deck/deck.slide-clone.js'),
+  () => import('@deck/deck.step.js'),
+  () => import('@deck/deck.velocity.js'),
+  () => import('@deck/deck.init.js')
 ];
 
 (async () => {
-  for (const modulePath of deckModules) {
-    await import(modulePath);
+  for (const load of deckModules) {
+    await load();
   }
 })();
