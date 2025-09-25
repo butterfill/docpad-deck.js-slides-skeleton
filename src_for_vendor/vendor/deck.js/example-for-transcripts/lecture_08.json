@@ -1,0 +1,374 @@
+[
+  {
+    "transcript_id": "8c55816e-d9ed-44eb-b52d-d7c358dd0a2d",
+    "transcript_text": "Good morning. Welcome back to our lectures in moral psychology. Marvellous to have you here this morning."
+  },
+  {
+    "transcript_id": "b556aefa-64ee-470e-9a03-afd0de17d733",
+    "transcript_text": "Generally, I'm trying to make these lectures self-contained. I apologise if you weren't here last time, because this really is a continuation of the previous lecture (Lecture 07). While I hope some of the material will make sense standing alone, the significance of it requires you to think a little bit about what we did last time, particularly the loose reconstruction of Greene's argument \\citep{greene:2014_pointandshoot}."
+  },
+  {
+    "transcript_id": "dcc5d769-e4bc-4266-a210-b30bf41eb2d2",
+    "transcript_text": "Here we are in Part Three of the course, which is about whether discoveries in moral psychology are significant for ethics. We are in Phase Two of Part Three, attempting to identify general arguments against the use of intuitions in doing ethics. Remember, 'intuition' means something specific here: an intuition is a claim that you accept independently of having inferential justification for it. For example, if I show you a picture of somebody beating a baby seal, and you say, 'Steve, that's wrong,' your acceptance of that claim might be independent of any argument or inferential justification you could provide. Even if you couldn't give a good argument, you might still insist, 'No, sorry, this is wrong.' That claim—'It is wrong to beat the baby seal'—counts as one of your intuitions because your acceptance is independent of inferential justification.\n\nOur goal in Phase Two is to argue there's a problem with relying on such intuitions in ethics, particularly concerning their reliability outside familiar contexts. We are also considering implications for methods like Rawls' reflective equilibrium."
+  },
+  {
+    "transcript_id": "912c4c4f-9210-42ca-998d-8be0ddba3135",
+    "transcript_text": "The gist of the argument against relying on intuitions is nicely put by Peter Railton, who is actually a leading opponent of this type of argument, making him a good source for characterising how it's supposed to work. He writes: 'a better understanding of the [...] origin of “intuitive” moral judgments might show them to be something other than manifestations of underlying moral competencies or principles. “moral intuitions” might therefore deserve less deference [...] than they characteristically receive in philosophical [...] moral thought' \\citep[p. 832]{railton:2014_affective}.\n\nThis captures the argument I presented last week. However, we should refine two points. First, the argument doesn't necessarily deny that intuitions manifest an underlying moral competence. Rather, the claim is that this competence, likely based on *fast* processes (see glossary), has limits, similar to our competencies for tracking physical objects or quantities. These *fast* processes trade accuracy for speed, making them reliable mainly in familiar, high-stakes situations, but not necessarily outside that range. So, the issue isn't the absence of competence, but the nature and limits of the competence derived from *fast* processes.\n\nSecond, 'less deference' is tricky. In one sense, philosophers might give intuitions *too little* deference by treating them as black boxes and ignoring questions about their origins and variability. In another sense, if these intuitions stem from processes reliable only in limited contexts, they deserve *less* deference as guides to truth in novel or unfamiliar situations, which are often the focus of ethical theorising. Railton captures the core idea, but these nuances are important."
+  },
+  {
+    "transcript_id": "a8fdab80-2c8e-4aeb-9c65-be5dc19d0daf",
+    "transcript_text": "So what if intuitions are unreliable outside familiar contexts? Why should we care? One response has been to deny that philosophers rely on intuitions at all \\citep{cappelen:2012_philosophy}, but that's not a widely held view, and deeper objections exist. The reason to care is how central intuitions are often claimed to be in ethical methodology."
+  },
+  {
+    "transcript_id": "558546bb-f465-4c98-b680-cb180172a073",
+    "transcript_text": "If we turn to how people often do ethics, we see that a great deal of stress is put on intuition. Robert Audi states, 'Intuition is a resource in all of philosophy, but perhaps nowhere more than in ethics' \\citep[p. 57]{audi:2015_intuition}. He suggests, like others, that 'Episodic intuitions [...] can serve as data [...] beliefs that derive from them receive prima facie justification' \\citep[p. 65]{audi:2015_intuition}. \n\nWhen encountering philosophers discussing 'intuition,' we must clarify their meaning, as they lack our glossary definition (a claim accepted independently of inferential justification). Audi clarifies his meaning by linking intuition to *self-evident propositions*: truths meeting two conditions: '(1) in virtue of adequately understanding them, one has justification for believing them [...]; and (2) believing them on the basis of adequately understanding them entails knowing them' \\citep[p. 65]{audi:2015_intuition}. One might see parallels in basic mathematics or logic, where understanding seems sufficient for justification and knowledge (though this is debatable).\n\nBut how could there be self-evident propositions in ethics? What would make them so? My sense is the only plausible explanation involves *fast* cognitive processes (see glossary). In familiar, high-stakes situations, *fast* processes can be highly reliable. The judgments they produce might lead to propositions that *seem* self-evident in Audi's sense *within those specific contexts*. If this is right, however, it severely limits the role of intuition. These 'self-evident' propositions would only hold reliably in familiar situations, undermining their usefulness for the novel and complex cases ethics often tackles. Thus, even accepting Audi's framework potentially leads back to the conclusion that intuitions derived from *fast* processes have limited applicability in ethical theorising about unfamiliar problems."
+  },
+  {
+    "transcript_id": "14f993cf-6ad9-49a7-b6b1-b02b69d2f754",
+    "transcript_text": "Previously, I offered an argument concluding that *not-justified-inferentially* premises about particular moral scenarios cannot be used in ethical arguments aiming for knowledge. \n\nToday's plan is threefold:\n1.  Present evidence *for* the first premise of that argument – the claim that ethical judgements are explained by a *dual-process theory* distinguishing *faster* from *slower* processes.\n2.  Present evidence *against* that first premise.\n3.  Examine the significance of our argument's conclusion, focusing initially on its implications for Rawls' method of *reflective equilibrium*."
+  },
+  {
+    "transcript_id": "af2aa977-1810-42b8-a3f0-b42e635484d7",
+    "transcript_text": "Here is the argument again, aiming for the conclusion that you cannot rely on *not-justified-inferentially* premises (about particular moral scenarios or debatable principles) in ethical arguments if your aim is knowledge:\n\n1.  Ethical judgements are explained by a *dual-process theory*, which distinguishes *faster* from *slower* processes.\n2.  *Faster* processes are unreliable in *unfamiliar* situations.\n3.  Therefore, we should not rely on *faster* processes in *unfamiliar* situations.\n4.  When philosophers rely on *not-justified-inferentially* premises, they are relying (in the long run) on *faster* processes.\n5.  The moral scenarios and principles philosophers consider often involve *unfamiliar* situations.\n6.  Therefore, *not-justified-inferentially* premises about particular moral scenarios, and debatable principles, cannot be used in ethical arguments where the aim is knowledge.\n\nToday, we focus primarily on evaluating the evidence for and against Premise 1."
+  },
+  {
+    "transcript_id": "b3be9d51-9790-4840-b72f-67333a049db9",
+    "transcript_text": "Thinking about *dual-process theory*, we must be careful because people say all sorts of things, sometimes adding unnecessary complexity. Our theory is extremely simple, a minimal take: Ethical responses typically result from two or more processes. These processes differ in the outputs they might generate and how contextual factors (like cognitive load) affect them. That's the core idea.\n\nCrucially, we use the terminology *fast* vs *slow*. A process is *faster* than another if it makes fewer demands on scarce cognitive resources like attention, inhibitory control, and working memory (see glossary: `fast`, `cognitively-efficient`). It's not strictly about timing. \n\nAvoid adding extra claims about emotion, consciousness, automaticity etc., unless necessary and justified. Combining multiple, independent claims is like a parlay bet – exciting if it works, but theoretically less sound than testing simpler components first. Stick to the stripped-down theory: two or more distinct processes, one *faster* than the other."
+  },
+  {
+    "transcript_id": "b0d290fe-8088-4c21-a7df-826850302483",
+    "transcript_text": "We have some experience from the first part of the course in evaluating individual studies. The first rule: never trust a philosopher (including me!) without checking the source. Philosophers sometimes misrepresent or misconstrue studies. \n\nTo assess if a study provides real evidence:\n1.  Look for systematic reviews that include the study. Do they broadly support its findings?\n2.  Look for similar studies. Are the findings convergent across different research groups or methods?\n3.  Look for replications. Has the study been successfully replicated?\n\nBefore relying on a study's findings for knowledge, aim for supportive answers to at least one, preferably more, of these questions. Reading one study doesn't mean you *know* something. This applies in everyday life too."
+  },
+  {
+    "transcript_id": "e04a5021-6d8a-4905-ad9a-128e1fb99103",
+    "transcript_text": "This procedure was for evaluating a single study. Now we need to evaluate a theory – our *dual-process theory* of ethical abilities. How do we adapt the steps?\n\n1.  Still, never trust a philosopher's summary without checking.\n2.  Assess the overall evidence for the theory:\n    a.  Has the theory featured in a review? Does the review broadly support its main claims? (For our theory, \\citet{greene:2014_pointandshoot} serves as a relevant review, examining studies designed *after* the theory was proposed, which is a strength.)\n    b.  Is there a variety of studies from different labs, using different methods, supporting the theory's various predictions?\n    c.  Crucially, are there studies whose results appear to falsify the theory's predictions?\n\nWe need to consider both supporting and potentially falsifying evidence."
+  },
+  {
+    "transcript_id": "c29a2db4-8b78-4ef7-afd8-31753dfeb206",
+    "transcript_text": "Let's start with step (b): looking for a variety of supporting studies. \\citet{greene:2014_pointandshoot} cites many; I've picked three examples he uses:\n\n*   \\citet{suter:2011_time}\n*   \\citet{tremoliere:2014_efficient}\n*   \\citet{conway:2013_deontological}\n\n(I am setting aside neuroscience evidence for now, which could be important eventually but seems less persuasive currently.)"
+  },
+  {
+    "transcript_id": "3202f12d-76cf-41bf-a57a-a3baca2b02b4",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "eb40cb8c-02c7-4442-9465-f18beedb9fa6",
+    "transcript_text": "The core *dual-process theory* (distinct *fast*/*slow* processes) doesn't make specific predictions about observable responses without an auxiliary hypothesis linking the processes to response types. Greene's auxiliary hypothesis (see handout: Appendix: Dual Process Theory and Auxiliary Hypotheses, candidates 1 & 2) is often interpreted as: the *slow* process is responsible for *characteristically consequentialist* responses, while the *fast* process leads to other responses (often labelled *characteristically deontological*).\n\nPrediction 1, derived from this: Limiting the time available for a decision (increasing time pressure) should favour the *fast* process, thus reducing *characteristically consequentialist* responses (e.g., being less likely to say 'yes' to sacrificing one to save five)."
+  },
+  {
+    "transcript_id": "50b91bef-14c3-49e2-83c4-119b1fb55bfc",
+    "transcript_text": "Let's look at \\citet{suter:2011_time}. They varied time pressure and observed responses to moral dilemmas. Their Figure 1 shows the average proportion of *characteristically deontological* responses (i.e., refusing the sacrifice) under different conditions. Focusing on 'high-conflict personal dilemmas' (where harm is a direct means to an end), they found that participants under time pressure ('fast' conditions combined) gave significantly more deontological responses compared to those with no time pressure ('slow' conditions combined). This appears to support Prediction 1."
+  },
+  {
+    "transcript_id": "fb3c9563-87ae-4dac-8fdd-6486f3521000",
+    "transcript_text": "However, the results are more complex. \\citet{suter:2011_time} also looked at 'low-conflict' dilemmas, where harm was depicted as a side-effect rather than an intended means \\citep[p. 465]{suter:2011_time}. The effect of time pressure was significant only for the high-conflict dilemmas. This suggests an interaction: time pressure doesn't simply make people less consequentialist across the board; the effect depends on features like whether the harm is direct or indirect."
+  },
+  {
+    "transcript_id": "4a708475-cba9-452c-a2c7-5ac7698ad659",
+    "transcript_text": "It's actually even more complex because there's another interaction with whether the dilemma is 'personal' or 'impersonal'. Personal dilemmas supposedly engage emotional processing more (e.g., pushing someone) than impersonal ones (e.g., hitting a switch) \\citep[p. 455]{suter:2011_time}. They found the time pressure effect (more 'no' responses in high-conflict dilemmas) was present for personal dilemmas but not impersonal ones. \n\nSo, while the headline finding \\citep['participants in the time-pressure condition... were more likely to give ‘‘no’’ responses in high-conflict dilemmas', p. 456]{suter:2011_time} seems to support the prediction, the interactions with conflict type and personal/impersonal nature show the reality is nuanced. We should be cautious about taking this as simple, strong confirmation."
+  },
+  {
+    "transcript_id": "79d2038f-1dd0-46bf-abda-7cbb40bdf866",
+    "transcript_text": "This is one data point. It's not the worst result, but we're not strongly moved yet. We need to see the range of evidence. Are there other studies? Perhaps later studies controlled for these factors better."
+  },
+  {
+    "transcript_id": "b43790d5-efd6-423d-b1bf-0033c5807874",
+    "transcript_text": "Let's look at the other studies Greene cites as evidence: \\citet{tremoliere:2014_efficient} and \\citet{conway:2013_deontological}."
+  },
+  {
+    "transcript_id": "35ccfa2a-d6bc-4666-bcfe-5c0223f7a93f",
+    "transcript_text": "The second study is \\citet{tremoliere:2014_efficient}, another time pressure study testing the same auxiliary hypothesis (slow = consequentialist, fast = other) and the same Prediction 1: Limiting time will reduce consequentialist responses. You saw this study last week."
+  },
+  {
+    "transcript_id": "d5699a1e-e5b2-4815-b31a-f5f3bf5db327",
+    "transcript_text": "Looking at Figure 4 from \\citet{tremoliere:2014_efficient}, they manipulated time pressure and varied the kill-save ratio in sacrificial dilemmas. They report a significant effect of time pressure \\citep[p. 927]{tremoliere:2014_efficient}. Participants under time pressure gave fewer utilitarian/consequentialist responses than controls when the kill-save ratio was low (e.g., 1 vs 5), but the difference disappeared at very high ratios (e.g., 1 vs 1000). This, again, seems broadly consistent with Prediction 1, though with nuances related to the stakes involved. (Note: An alternative interpretation of this data exists, which we'll discuss later \\citep{gawronski:2017_what})."
+  },
+  {
+    "transcript_id": "2e4c5323-3520-42ce-8711-1c2692eba917",
+    "transcript_text": "The third key study cited by Greene is \\citet{conway:2013_deontological}."
+  },
+  {
+    "transcript_id": "c3a11373-411f-408e-a43d-ce3437d1b715",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "6df098db-7d06-4c10-8461-e51279dc49f1",
+    "transcript_text": "Now we consider \\citet{conway:2013_deontological}, which uses the process dissociation method. This is methodologically the most complex but potentially most powerful study we'll look at. Instead of time pressure, they manipulate cognitive load. \n\nUsing the same auxiliary hypothesis (slow = consequentialist, fast = other), the prediction (Prediction 3) is: higher cognitive load will impair the *slower*, resource-dependent process, thus reducing the dominance of the process sensitive to outcomes (i.e., reducing consequentialist inclinations)."
+  },
+  {
+    "transcript_id": "f61a6152-0d50-4c41-860a-a12d54045d48",
+    "transcript_text": "Here's a bare outline of the process dissociation method used by \\citet{conway:2013_deontological}. The idea is to estimate the strength of two underlying tendencies independently: a utilitarian/consequentialist inclination (parameter 'U') and a deontological inclination (parameter 'D'). The probability of *not* following the U inclination is (1-U), and *not* following D is (1-D). \n\nTo estimate U and D separately requires observing responses across different types of dilemmas. Conway & Gawronski used 'incongruent' dilemmas (where U and D conflict, e.g., kill 1 to save 5; U says yes, D says no) and 'congruent' dilemmas (where U and D agree, e.g., kill 1 to prevent minor property damage; both U and D say no). By analyzing patterns of responses across both dilemma types for many participants, they could statistically estimate the average strength of U and D in their sample. This method is powerful because it moves beyond simply classifying a response as 'utilitarian' or 'deontological'. It's complex, requiring multiple trials per participant, and the number of trials needed grows exponentially with the number of parameters in the model. I highly recommend reading the paper for a full understanding."
+  },
+  {
+    "transcript_id": "3ae66184-e998-48cc-a9ba-dcc9304dc7ca",
+    "transcript_text": "The results from \\citet{conway:2013_deontological} (Figure 3) are striking. They compared estimates of the U and D parameters under low cognitive load (control) versus high cognitive load. Cognitive load had almost no effect on the estimated strength of the deontological inclination (D parameter). However, it caused a large and significant decrease in the estimated strength of the utilitarian/consequentialist inclination (U parameter). \n\nThis is perhaps the best single piece of evidence supporting the *dual-process theory* combined with the auxiliary hypothesis linking the *slow* process to consequentialist reasoning. The prediction was that cognitive load (which impairs *slow*, resource-intensive processes) would reduce utilitarian inclinations, and that's exactly what they found, while deontological inclinations remained unaffected."
+  },
+  {
+    "transcript_id": "aa0047e9-8d90-4aa0-88a1-8964a1cf4b5f",
+    "transcript_text": "So, we've looked at three studies cited by \\citet{greene:2014_pointandshoot} as evidence: \\citet{suter:2011_time}, \\citet{tremoliere:2014_efficient}, and \\citet{conway:2013_deontological}."
+  },
+  {
+    "transcript_id": "06b21333-af04-46bf-8a02-f8511f0e940e",
+    "transcript_text": "This evidence primarily supports Premise 1 of our main argument: Ethical judgements are explained by a *dual-process theory*, distinguishing *faster* from *slower* processes."
+  },
+  {
+    "transcript_id": "80fab1c5-b58e-4fa2-a8f1-068032c769c7",
+    "transcript_text": "Let's review our theory evaluation checklist:\na. Has the theory featured in a review supporting its claims? Yes, \\citet{greene:2014_pointandshoot}.\nb. Is there a variety of studies (labs, methods, predictions) supporting it? Yes, we've seen examples using time pressure and cognitive load, with different response measures, broadly supporting predictions derived from a common auxiliary hypothesis.\n\nSo far, the evidence looks quite positive. But we're not done yet. We must consider step (c): Are there studies which falsify the theory's predictions?"
+  },
+  {
+    "transcript_id": "8475311e-150b-4888-a6a7-b74877267122",
+    "transcript_text": "Now we turn to conflicting evidence – studies that seem to challenge the *dual-process theory*, particularly when combined with the common auxiliary hypothesis that the *slow* process yields *characteristically consequentialist* responses and the *fast* process yields others."
+  },
+  {
+    "transcript_id": "ac1d6057-fec0-40dc-8161-47e9a6fd08c2",
+    "transcript_text": "Recall Prediction 1: Limiting time (favouring the *fast* process) should reduce consequentialist responses. \\citet{suter:2011_time} seemed to support this (finding more deontological responses under time pressure). \n\nHowever, \\citet{bago:2019_intuitive} used a different method and found conflicting results."
+  },
+  {
+    "transcript_id": "9b991c4a-b5fd-4e69-a6f5-04c51dbb313c",
+    "transcript_text": "\\citet{bago:2019_intuitive} used a two-response paradigm. Participants first responded to a dilemma (like their Submarine example) under time pressure and cognitive load (*fast* response). Immediately after, they responded to the same dilemma again with no pressure or load (*slow* response). They varied factors like the number saved/sacrificed and whether a relative was involved to create scenarios eliciting different baseline levels of consequentialist responding."
+  },
+  {
+    "transcript_id": "9443a8ab-f79f-4504-9142-fbbe437b4ec2",
+    "transcript_text": "What should we predict based on the auxiliary hypothesis (slow = consequentialist)? If the *slow* process drives consequentialist judgments, we'd expect the *first* response (under time pressure/load) to be less influenced by outcomes, and therefore less consequentialist, than the *second* (deliberative) response. We should see a significant number of people switching from an initial non-consequentialist response to a consequentialist one after deliberation."
+  },
+  {
+    "transcript_id": "70d6b1ad-f787-42c4-b148-60fc3bef75a6",
+    "transcript_text": "Here's a visual representation I created from the data in \\citet{bago:2019_intuitive} (Table 1). 'UU' means the first and second responses were both utilitarian/consequentialist; 'DD' means both were deontological/non-consequentialist; 'UD' means utilitarian first, then deontological; 'DU' means deontological first, then utilitarian. \n\nIn Study 1 (where consequentialism was common initially), most people were UU. There was very little switching overall. While slightly more people switched DU than UD, this comparison is misleading because so many started as U. A better measure is the 'non-correction rate' for U responses (UU / (UU + DU)), which was about 87%. This means 87% of those who ended up U were already U in the first response. This doesn't look good for the prediction that deliberation *causes* the U response."
+  },
+  {
+    "transcript_id": "77271524-9d25-41f7-8241-dd37199b1c56",
+    "transcript_text": "Let's look more closely at the table data from \\citet{bago:2019_intuitive}. Study 1 had many initial U responses. Study 2 used scenarios designed to elicit fewer initial U responses (e.g., involving family). \n\nAcross multiple studies (Table 2 summarises these), the pattern was consistent. UU: Utilitarian first, utilitarian second. DD: Deontological first, deontological second. UD: Utilitarian first, then switched to deontological. DU: Deontological first, then switched to utilitarian. \n\nThe key finding is that DU switches (the pattern predicted by the auxiliary hypothesis if deliberation drives utilitarianism) were rare. The UD switches (opposite of prediction) were also rare, but sometimes almost as frequent or even slightly more frequent than DU switches. \n\nBago & De Neys calculate an overall 'non-correction rate' for utilitarian responses (across all their studies) of 84.5%. This means that for people whose final response was utilitarian, 84.5% had already given that response under time pressure and cognitive load. Switching *to* utilitarianism after deliberation was uncommon."
+  },
+  {
+    "transcript_id": "958f1328-f247-48f9-a44f-01b99bf6e4b1",
+    "transcript_text": "The authors conclude: 'Our critical finding is that although there were some instances in which deliberate correction occurred, these were the exception rather than the rule. Across the studies, results consistently showed that in the vast majority of cases in which people opt for a [consequentialist] response after deliberation, the [consequentialist] response is already given in the initial phase' \\citep[p. 1794]{bago:2019_intuitive}.\n\nCould consistency effects explain this (people sticking with their first answer)? Bago & De Neys argue against this, citing pilot data where single, slow responses yielded similar rates of consequentialism as the second response in their main two-response studies \\citep[supplementary materials]{bago:2019_intuitive}. \n\nAnother potential objection: Maybe the time pressure wasn't effective because participants had ample time to decide *while reading* the lengthy dilemmas. This seems plausible. However, if this objection holds, it should also apply to \\citet{suter:2011_time}, whose results *appeared* to show an effect of time pressure. So, if we use this objection to dismiss Bago & De Neys, we also undermine the evidence from Suter & Hertwig. This doesn't help salvage the original prediction."
+  },
+  {
+    "transcript_id": "d434bd89-5bb9-4ebd-8ab8-6f0c13bbf178",
+    "transcript_text": "So, for the prediction that time pressure reduces consequentialist responses (derived from the aux. hypothesis: slow = consequentialist), we have \\citet{suter:2011_time} saying yes, but \\citet{bago:2019_intuitive} saying no.\n\nThe picture gets even messier. \\citet{rosas:2020_extreme} used extreme time pressure and found the *converse* effect: time pressure *increased* consequentialist responses. This aligns with ideas like those of \\citet{kurzban:2012_hamilton} suggesting fast processes might favour group welfare (a consequentialist consideration). Furthermore, \\citet{vega:2021_metacognition} found opposite patterns in two studies attempting to replicate the same effect: faster responses were linked to deontological judgments in Study 1, but to utilitarian judgments in Study 2.\n\nConclusion: Evidence from time pressure manipulations regarding the link between speed and consequentialism is contradictory and unreliable. Citing only \\citet{suter:2011_time} as support would be misleading given these subsequent conflicting findings."
+  },
+  {
+    "transcript_id": "d9b30aaf-aa20-4db6-9440-eb6aa2f46d59",
+    "transcript_text": "We are evaluating the core *dual-process theory* (distinct *fast*/*slow* processes) and the common auxiliary hypothesis linking *slow* processes to *characteristically consequentialist* responses."
+  },
+  {
+    "transcript_id": "9a6927fa-2ce6-49e0-8157-53cc12626ca4",
+    "transcript_text": "Revisiting our theory evaluation checklist:\na. Review supporting claims? Yes.\nb. Variety of supporting studies? Yes.\nc. Studies which falsify predictions? Yes. We've now seen significant conflicting evidence regarding the predictions derived from the common auxiliary hypothesis, particularly concerning time pressure.\n\nKnocking down one prediction or one study isn't enough to reject the whole theory, especially if other evidence supports it. But the conflicting nature of the evidence regarding this auxiliary hypothesis is problematic. We need to investigate further."
+  },
+  {
+    "transcript_id": "16a83f31-fe87-4550-b802-1fa59fa66bf7",
+    "transcript_text": "Let's revisit the evidence cited by Greene: \\citet{suter:2011_time}, \\citet{tremoliere:2014_efficient}, and \\citet{conway:2013_deontological}."
+  },
+  {
+    "transcript_id": "d39c8c9f-d9ab-4412-ae45-1327b2070595",
+    "transcript_text": "We initially tested Prediction 1 (less time -> less consequentialism) using the auxiliary hypothesis (slow = consequentialist). \n\nLet's consider a related but distinct prediction (Prediction 2*), also derivable from the same auxiliary hypothesis: If the *slow* process drives consequentialism (which is sensitive to aggregate outcomes), then limiting time (favouring the *fast*, supposedly less outcome-sensitive process) should reduce sensitivity to differences in outcomes. For example, the difference between saving 5 vs 5000 lives should matter less under time pressure. As \\citet{conway:2018_sacrificial} note, sensitivity to aggregate consequences is seen as characteristic of utilitarian judgment \\citep[p. 243]{conway:2018_sacrificial}. Can we test this using the existing data?"
+  },
+  {
+    "transcript_id": "88cd4d8c-2803-4ad0-8851-1238ba17f301",
+    "transcript_text": "We can look again at the data from \\citet{tremoliere:2014_efficient} (Figure 4). They varied the kill-save ratio, which is a manipulation of *outcomes*. Prediction 2* states that time pressure should *reduce* sensitivity to this variation."
+  },
+  {
+    "transcript_id": "385ffe3b-55b1-4c14-a960-dd46d79a2578",
+    "transcript_text": "\\citet{gawronski:2017_what} re-plotted the \\citet{tremoliere:2014_efficient} data specifically to examine sensitivity to outcomes (comparing responses at the lowest vs highest kill-save ratios) under different load/pressure conditions (see their Figure 1). Their analysis suggests the opposite of Prediction 2*: sensitivity to outcomes (the difference in responding between low and high ratios) was *greater* under time pressure and cognitive load (conditions favouring *fast* processes) than under low load/no pressure (*slow* conditions). \n\nThis interpretation, which is consistent with Trémolière & Bonnefon's own report but contrasts with Greene's use of the study, suggests that *faster* processes might actually be *more*, not less, sensitive to outcome variations in these tasks. This directly contradicts Prediction 2* derived from the standard auxiliary hypothesis."
+  },
+  {
+    "transcript_id": "1aed6607-4b6a-430e-b422-747594a6fdd2",
+    "transcript_text": "Now let's reconsider the process dissociation study by \\citet{conway:2013_deontological}."
+  },
+  {
+    "transcript_id": "6e2a6edd-6718-403d-b4b3-f54a78946022",
+    "transcript_text": "The brilliant thing about the \\citet{conway:2013_deontological} process dissociation approach is that it recognizes that not giving a utilitarian response doesn't automatically mean giving a deontological one; there could be other factors. Their initial model estimated parameters for utilitarianism (U) and deontology (D). By using congruent and incongruent dilemmas, they could separate these influences. However, their initial model implicitly lumped other possibilities (like general inaction or even malice) into the (1-U) and (1-D) components."
+  },
+  {
+    "transcript_id": "c8a77570-75d2-49c3-842b-75a6e67383fa",
+    "transcript_text": "A reasonable thought arises: maybe people under cognitive load or time pressure aren't becoming less utilitarian *per se*, but are simply developing a general preference *not to act* when faced with a difficult, high-stakes choice? They might just hold back and do nothing."
+  },
+  {
+    "transcript_id": "530949c9-ffe1-41f2-9a97-4e64ed04533f",
+    "transcript_text": "[Reiteration of Conway & Gawronski 2013 model structure]"
+  },
+  {
+    "transcript_id": "b2b5c25e-e282-40eb-a47a-ac7d4de02658",
+    "transcript_text": "Gawronski and colleagues (including Conway initially, but later pursued by Gawronski with others) developed this idea. They proposed the CNI model \\citep{gawronski:2017_consequences}, which extends the process dissociation framework. It keeps parameters for sensitivity to Consequences (C, similar to U) and sensitivity to Norms (N, similar to D), but adds a third parameter: a general preference for Inaction (I). To estimate these three parameters, the number of dilemma types needed increases (from 2 to 4 in their design), making the study more complex."
+  },
+  {
+    "transcript_id": "31229010-92f6-4a51-a273-634e5ab46dfc",
+    "transcript_text": "Gawronski and colleagues then re-tested the effect of cognitive load using this more advanced CNI model \\citep{gawronski:2017_consequences}. The results (their Figure 4) looked entirely different from the original \\citet{conway:2013_deontological} findings. Under high cognitive load, there was no significant change in sensitivity to consequences (C parameter) or sensitivity to norms (N parameter). However, there *was* a significant increase in the preference for inaction (I parameter). \n\nThis suggests the original finding (load reduces U) might have been an artifact of the simpler model. The CNI model suggests load doesn't make people less sensitive to outcomes (less utilitarian); it makes them more likely to choose the passive or inaction option."
+  },
+  {
+    "transcript_id": "bd6d0c27-cc9f-47f2-99e5-795c082736d6",
+    "transcript_text": "As \\citet{gawronski:2017_consequences} put it: 'The only significant effect in these studies was a significant increase in participants’ general preference for inaction as a result of cognitive load. Cognitive load did not affect participants’ sensitivity to morally relevant consequences' \\citep[p. 363]{gawronski:2017_consequences}. They conclude: 'cognitive load influences moral dilemma judgments by enhancing the omission bias, not by reducing sensitivity to consequences in a utilitarian sense' \\citep[p. 363]{gawronski:2017_consequences}. This is a powerful refutation of the interpretation of the earlier \\citet{conway:2013_deontological} study and highlights how process dissociation results depend crucially on the underlying model."
+  },
+  {
+    "transcript_id": "b5ce5160-84c4-4b8f-a391-2cc23262ffdc",
+    "transcript_text": "So, the evidence from \\citet{suter:2011_time}, \\citet{tremoliere:2014_efficient}, and \\citet{conway:2013_deontological}, initially presented as support by \\citet{greene:2014_pointandshoot}, appears less convincing upon closer examination and in light of subsequent research."
+  },
+  {
+    "transcript_id": "c4f23c98-8707-4dc4-9360-bd56e7296864",
+    "transcript_text": "Updating our theory evaluation checklist:\na. Review supporting claims? Yes.\nb. Variety of supporting studies? Yes.\nc. Studies which falsify predictions? Yes, we now have significant evidence challenging the predictions derived from the common auxiliary hypothesis.\n\nThis is interesting! We seem to have genuinely conflicting evidence, not just isolated anomalies. But it's not quite so simple..."
+  },
+  {
+    "transcript_id": "6eb086b3-c727-461f-a74f-1f773aa888bf",
+    "transcript_text": "The situation is more complex because the studies *conflicting* with the original predictions also appear to conflict *with each other*. \n\nConsider \\citet{bago:2019_intuitive} versus \\citet{gawronski:2017_consequences}. Bago & De Neys found minimal effect of load/pressure on utilitarian responding. But if Gawronski et al. are right that load increases a preference for inaction, and if inaction corresponds to the non-utilitarian response in Bago & De Neys's dilemmas (which seems likely), then Bago & De Neys *should* have found that load made people appear *less* utilitarian. Their finding of minimal effect contradicts what the CNI model's finding about inaction preference would predict for their paradigm.\n\nWe cannot simply accept all the 'falsifying' evidence together, because it contains internal contradictions. This suggests a deeper issue, perhaps with the theoretical framework (like the auxiliary hypotheses) or the experimental designs."
+  },
+  {
+    "transcript_id": "95a26e05-2647-4ce4-bf3e-2729bbfbd86b",
+    "transcript_text": "It's too early to abandon the core *dual-process theory* altogether; we lack a better account. However, we should definitely not be confident in the commonly used auxiliary hypothesis linking *slow* processes exclusively to consequentialism and *fast* processes to deontology."
+  },
+  {
+    "transcript_id": "6a20a801-47a7-4b3e-8fc9-c911f0104057",
+    "transcript_text": "This conflicting evidence presents challenges and opportunities. Key questions emerge:\n1.  What, if anything, can we reliably conclude despite the mixed evidence?\n2.  Why is there such an apparently conflicting pattern of findings?\n\nThis is where philosophers can contribute. Avoid the simplistic conclusion that 'more research is needed.' Everyone knows that. Your task, potentially for an essay, is to offer insight. Can you propose a theoretical refinement, identify a methodological flaw common across studies, or suggest a way to reconcile the apparent contradictions? That would be a valuable contribution."
+  },
+  {
+    "transcript_id": "b0f03a68-f8ad-4a69-a42d-48ae815ba76e",
+    "transcript_text": "Why the conflicting results? Perhaps the standard *dual-process theory* applied to morality is too simplistic compared to theories in other domains like judgment and decision-making (e.g., regarding risk). Those theories often posit multiple heuristics within the *fast* system and don't assume a single, simple limit (like 'insensitive to *distal outcomes*'). Maybe moral cognition also involves multiple *fast* heuristics, and different dilemmas or experimental setups tap into them differently? \n\nPerhaps the link between moral cognition and general judgment processes needs closer examination. Could the moral DPT just be an instance of a broader DPT of judgment? While tempting, the DPT of judgment (popularized by \\citet{kahneman:2013_thinking}) is itself often vaguely specified, making this connection difficult to operationalize clearly. If you pursue this, explain *how* connecting to judgment DPT helps resolve the specific conflicts in the moral evidence.\n\nAlso, maybe the timing manipulations aren't effectively isolating *fast* processes if people make decisions while reading the dilemmas."
+  },
+  {
+    "transcript_id": "711a10ef-0139-48fb-a8dd-8e3350b57245",
+    "transcript_text": "These questions – what can we conclude, and why the conflict? – offer potentially great essay opportunities. Your goal is not just to state uncertainty but to try and make progress in understanding the situation."
+  },
+  {
+    "transcript_id": "54afff46-1ebe-4089-b09c-36ef01694eef",
+    "transcript_text": "So, what's my personal take on what we can conclude despite the mixed evidence? On balance, it seems reasonable to deviate from the mainstream view in *not* accepting any specific auxiliary hypothesis (like the simple fast=deontological, slow=consequentialist one) as firmly established."
+  },
+  {
+    "transcript_id": "d09b2684-5437-4127-9007-3d14e989a4f2",
+    "transcript_text": "This is the auxiliary hypothesis (slow process responsible for *characteristically consequentialist* responses; *fast* for others) that the evidence reviewed makes difficult to accept with confidence."
+  },
+  {
+    "transcript_id": "654bef3d-af31-4ead-86e6-8d243785f135",
+    "transcript_text": "However, while rejecting the specific auxiliary hypotheses, it seems reasonable to provisionally accept, in line with the mainstream, that the *stripped-down dual-process theory* itself (the core idea of distinct *fast* and *slow* processes operating) is likely to be true, perhaps because it fits within a broader pattern of dual-process accounts across cognition. The challenge lies in correctly characterising *what* distinguishes the processes in the moral domain (see handout Appendix for alternatives)."
+  },
+  {
+    "transcript_id": "9db4afc9-75dc-43ad-a468-018dc27ac748",
+    "transcript_text": "So, the questions remain: What can we conclude? Why the conflict? These are open for you to explore, potentially making a real contribution."
+  },
+  {
+    "transcript_id": "accdf86f-11f9-4337-902f-b8c98e086eca",
+    "transcript_text": "Now, let's turn to the significance of our main argument (against relying on intuitions from *fast* processes in *unfamiliar* situations). If that argument holds, what are its implications? We're returning to Phase Two of our project: identifying general arguments against using intuitions in ethics and considering the consequences, particularly for Rawls' method of *reflective equilibrium*."
+  },
+  {
+    "transcript_id": "bfcc9839-4e38-4747-b7af-ef94fdccf0cd",
+    "transcript_text": "How do philosophers approach ethics? One dominant strategy is captured by Rawls' idea of *reflective equilibrium*. He writes: 'one may think of moral theory at first [...] as the attempt to describe our moral capacity [...] what is required is a formulation of a set of principles which, when conjoined to our beliefs and knowledge of the circumstances, would lead us to make these judgments with their supporting reasons were we to apply these principles conscientiously and intelligently' \\citep[p. 41]{rawls:1999_theory}. \n\nInitially, this sounds like moral psychology – describing a capacity. But Rawls' method isn't empirical psychology; it involves identifying principles that match our *considered judgments* after reflection."
+  },
+  {
+    "transcript_id": "0b1c3dd2-6487-419b-afb8-8459521a39b9",
+    "transcript_text": "There are many approaches to ethics, but let's look at one influential candidate: reflective equilibrium."
+  },
+  {
+    "transcript_id": "294956f4-2713-40c5-8205-4802223e6011",
+    "transcript_text": "Why focus on *reflective equilibrium*? Because, as \\citet{knight:2023_reflective} states in the Stanford Encyclopedia of Philosophy, it 'is the dominant method in moral and political philosophy.' T. M. Scanlon goes further: 'this method, properly understood, is [...] the best way of making up one’s mind about moral matters [...]. Indeed, it is the only defensible method: apparent alternatives to it are illusory' \\citep[p. 149]{scanlon_2002}. (Though Scanlon might have a specific interpretation of RE in mind)."
+  },
+  {
+    "transcript_id": "024112e7-af9f-4ae7-8903-882c8f7e332d",
+    "transcript_text": "Similarly, \\citet{mcmahan:2013_moral} writes: 'To most moral philosophers who reason about substantive moral issues, it seems that the method of *reflective equilibrium*, or a process very similar to it, is the best or most fruitful method of moral inquiry. Of the known methods of inquiry, it is the one that seems most likely to lead to justified moral beliefs' \\citep[p. 111]{mcmahan:2013_moral}. Given this perceived importance, any challenge to RE from moral psychology would be significant."
+  },
+  {
+    "transcript_id": "834ff849-182d-4d49-82a5-5eda44f1022d",
+    "transcript_text": "Let's recall Rawls' description: 'one may think of moral theory at first [...] as the attempt to describe our moral capacity [...] what is required is a formulation of a set of principles which, when conjoined to our beliefs and knowledge of the circumstances, would lead us to make these judgments [...] were we to apply these principles' \\citep[p. 41]{rawls:1999_theory}. \n\nThe method involves starting with 'considered judgments' – judgments made reflectively, under favourable conditions, free from obvious biases, and ideally *not-justified-inferentially* (i.e., intuitive in our sense). Then, one proposes principles that could systematize these judgments. The process involves adjusting both the judgments and the principles until they cohere in a state of 'reflective equilibrium'. Examples like Foot and Thomson analysing trolley problems can be seen as engaging in this kind of process: starting with judgments about cases and seeking underlying principles.\n\nCan you see an argument against this method emerging from our discussion of *dual-process theory* and the origins of intuitions in *fast* processes?"
+  },
+  {
+    "transcript_id": "5803ec6b-2433-4793-bb54-345cc8b84366",
+    "transcript_text": "We are in Phase Two, considering general arguments against using intuitions and the implications for *reflective equilibrium*. We now understand roughly what RE involves."
+  },
+  {
+    "transcript_id": "3b77779c-e776-4b56-9a2b-a66b33707a3e",
+    "transcript_text": "Recall our main argument: \n1. Ethical judgements involve *fast*/*slow* processes.\n2. *Fast* processes are unreliable in *unfamiliar* situations.\n3. We shouldn't rely on them there.\n4. Intuitions (*not-justified-inferentially* premises) derive from *fast* processes.\n5. Philosophical ethics often considers *unfamiliar* scenarios/principles.\n6. Therefore, these intuitions can't be used in arguments aiming for knowledge.\n\nHow does this connect to an argument against *reflective equilibrium*?"
+  },
+  {
+    "transcript_id": "cac0fcbf-bccd-4ec5-b116-bb5c96390abb",
+    "transcript_text": "The core issue relates to speed-accuracy trade-offs."
+  },
+  {
+    "transcript_id": "f1a60e4f-c99f-4c05-a7e1-02093bef8b42",
+    "transcript_text": "*Fast* processes aren't magic; they gain speed by sacrificing accuracy or flexibility. This principle dates back over a century in psychology. Any cognitive process faces trade-offs between speed/efficiency and accuracy/generality."
+  },
+  {
+    "transcript_id": "7f77f40c-de3f-4531-8e17-61d87c8f989e",
+    "transcript_text": "Our *fast* ethical processes are fast because they trade off accuracy. Their 'job' is to provide reliably correct (or adaptive) answers in a limited range of situations – those that were familiar and high-stakes during personal, cultural, or evolutionary history."
+  },
+  {
+    "transcript_id": "9186df2b-c340-4b32-9629-2c65a307b151",
+    "transcript_text": "They achieve this by using relatively simple models or heuristics, fitting responses to that familiar zone. We wouldn't expect these simple models to be reliable outside that zone, although they might coincidentally give correct answers sometimes. Relying on them outside their design range is epistemically risky."
+  },
+  {
+    "transcript_id": "e4679fd6-176a-4c45-8839-07e21ef99d29",
+    "transcript_text": "This connects to Robin Hogarth's work on expertise and intuition \\citep{hogarth:2010_intuition}. He argues we can trust intuition only in 'kind' learning environments, where past experience is representative and supported by valid feedback \\citep[p. 343]{hogarth:2010_intuition}. \n\nPhilosophical thought experiments (trolley problems, etc.) and debates about abstract principles often concern *unfamiliar* situations, lacking the conditions Hogarth identifies. People may have strong intuitions, but these likely stem from *fast* processes operating outside their reliable domain. \n\nThis creates a dilemma for using intuitions (*not-justified-inferentially* judgments) in ethics: If they concern only familiar situations, ethical theory might not need them (we already manage). If they concern *unfamiliar* situations, we have reason to distrust them because the underlying *fast* processes are likely unreliable there. This applies to intuitions about principles too; *fast* processes shape these, and their reliability is context-dependent."
+  },
+  {
+    "transcript_id": "00f2ff94-1c26-444a-95ed-595dd709fdde",
+    "transcript_text": "Our argument concludes that *not-justified-inferentially* premises about particular moral scenarios, and debatable principles, cannot be used in ethical arguments aiming for knowledge, because they derive from *fast* processes unreliable in the *unfamiliar* situations philosophers often consider. Where does this leave *reflective equilibrium*?"
+  },
+  {
+    "transcript_id": "cb4bd3a2-3eaa-45ca-94b5-eeac264e8259",
+    "transcript_text": "Rawls' method aims to formulate principles that would lead us to make our considered judgments \\citep[p. 41]{rawls:1999_theory}. But if these considered judgments (our intuitions) are products of *fast* processes with limited reliability, what does this imply for the method?"
+  },
+  {
+    "transcript_id": "c69cb2c6-a802-4966-8452-2a735c515600",
+    "transcript_text": "Here's a dilemma for Rawls' *Reflective Equilibrium* (RE), stemming from our argument:\n\n*   **Horn 1:** If RE includes *not-justified-inferentially* judgements about (or with implications for) *unfamiliar* situations, the starting point is flawed. These judgments derive from *fast* processes operating outside their reliable domain, so we aren't justified in trusting them as input for deriving true ethical principles.\n*   **Horn 2:** If RE includes *only* *not-justified-inferentially* judgements about *familiar* situations (where *fast* processes are reliable), we face a problem of generalization. The principles derived might accurately capture how *fast* processes work in familiar contexts, but we are not justified in generalizing these principles to *unfamiliar* situations. Doing so is like trying to build Newtonian physics from Aristotelian intuitions about motion – the generalization fails because the underlying processes have inherent limitations.\n\nEither way, RE seems problematic as a method for discovering ethical truths applicable to novel or complex situations. It risks either starting with unreliable data or over-generalizing from a limited reliable base. It essentially codifies and generalizes the operations of *fast* processes, which we know trade accuracy for speed and are domain-limited."
+  },
+  {
+    "transcript_id": "a17ba21e-d0ae-4882-9fb1-ffc5e7139ee8",
+    "transcript_text": "So we have a tension. Our argument concludes: *Not-justified-inferentially* premises about particular moral scenarios (and debatable principles) cannot be used in ethical arguments where the aim is knowledge. Yet, proponents like \\citet{scanlon_2002} claim *Reflective Equilibrium*, which relies heavily on such judgments as starting points, 'is [...] the only defensible method' \\citep[p. 149]{scanlon_2002}. These positions seem incompatible. We might have to reject RE as a reliable method for gaining ethical knowledge, despite its prominence."
+  },
+  {
+    "transcript_id": "adaab0f2-1d57-40a5-91b6-a9f603703d68",
+    "transcript_text": "[Transition to concluding remarks]"
+  },
+  {
+    "transcript_id": "3d65357b-84c2-451e-b075-8a74e987e7c5",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "03f784c2-7d9e-4a54-b601-cbbb1075da7c",
+    "transcript_text": "One might object: Can ethical intuitions even *be* wrong? Rawls himself compares describing our moral capacity to describing our sense of grammaticalness, citing Chomsky \\citep[p. 41, footnote referencing Chomsky]{rawls:1999_theory}. He says 'a theory of justice is [...] a theory [...] setting out the principles governing our moral powers' \\citep[p. 44]{rawls:1999_theory}. If the goal is merely descriptive ('what principles govern *our* powers?'), perhaps intuitions, like grammatical judgments, define the target rather than aiming at an independent truth."
+  },
+  {
+    "transcript_id": "8460d800-9ae2-4857-a7c4-f75f27e46b55",
+    "transcript_text": "This raises a crucial contrast: Ethics vs. Physics vs. Linguistics.\n\n*   **Ethics vs. Physics:** Our main argument treats ethics like physics. Intuitions (*not-justified-inferentially* premises) come from *fast* processes. These processes, like those for intuitive physics, are unreliable outside familiar domains due to speed-accuracy trade-offs. Therefore, these intuitions can be wrong and cannot ground knowledge in *unfamiliar* ethical territory.\n*   **Ethics vs. Linguistics:** The comparison to grammar suggests a different model. Grammatical intuitions (about whether a sentence is acceptable in one's native language) are often seen as defining correctness; there isn't an independent 'grammatical truth' they could be wrong about. If ethical intuitions were like this, they couldn't be 'wrong' in the same way. The project would become descriptive: using empirical methods (experiments) to characterize the principles underlying people's actual judgments, rather than evaluating those judgments against an external standard. \n\nOur argument assumes the Ethics vs. Physics analogy is more appropriate for the goal of achieving ethical *knowledge* applicable beyond familiar cases."
+  },
+  {
+    "transcript_id": "6bcc8d9a-70ac-4318-86e6-497849f4c9da",
+    "transcript_text": "So, are you sure ethical intuitions can be wrong in the relevant sense? And even if they can, does our argument provide a *good* objection to *reflective equilibrium*? (Note: The handout discusses further potential objections to the argument against RE, e.g., based on different interpretations of RE or challenges to the reliability claims about *fast* processes)."
+  },
+  {
+    "transcript_id": "97c873a0-491d-46b1-8296-a249ea6eeda8",
+    "transcript_text": "In conclusion: This lecture continued the previous one, which developed an argument concluding that *not-justified-inferentially* premises about particular moral scenarios (and debatable principles) cannot be used in ethical arguments aiming for knowledge. Today, we focused on evaluating the first premise of that argument – the *dual-process theory* of ethical judgment. We found the evidence is complex: there's supporting evidence, but also significant conflicting evidence, and even conflicts *within* the conflicting evidence. This creates problems but also opportunities for philosophical analysis. Despite the uncertainty about specific auxiliary hypotheses, the core *dual-process* idea might still hold. Assuming it does, we explored the implications, arguing sketchily that it poses a significant challenge to the method of *reflective equilibrium*, a dominant approach in ethics. This suggests moral psychology could indeed be highly significant for ethical methodology."
+  },
+  {
+    "transcript_id": "8449c3c2-cb48-4ba3-9839-dbcd9f93141c",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "2201eb47-a24b-459f-964e-3839029f007a",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "9a465665-be19-45cd-8b36-86457a5e9c21",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "1c51e6c3-6987-4f28-bf58-675a5b815c61",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "a373b2cb-1849-46c1-9c9e-a2e95b6df65d",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "1e5a3991-6e8e-4865-9384-c5c9549802bc",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "730969ff-8519-439e-8e7a-f4d667292d4d",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "a3478320-709e-479d-8f54-063aeab9f4f0",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "2a85e409-9ced-42ad-b55b-2bd808be0faa",
+    "transcript_text": "[no transcript]"
+  }
+]

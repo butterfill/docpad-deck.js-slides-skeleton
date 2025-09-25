@@ -1,0 +1,454 @@
+[
+  {
+    "transcript_id": "114f7ffd-b799-4e2c-aa80-d124f4882e0c",
+    "transcript_text": "Welcome to our final lecture in moral psychology. Sadly for me, and I'm sure for you as well."
+  },
+  {
+    "transcript_id": "d296d0f6-9e52-4a58-9063-acd534b53968",
+    "transcript_text": "Let me finish where I started. At the beginning of the course, I asked: Why should we study moral psychology?"
+  },
+  {
+    "transcript_id": "fa73989d-775a-4c22-a038-1dd4d923e162",
+    "transcript_text": "I suggested three reasons. First, it tells you something about ethics. I think the arguments we've seen are compelling enough that you really shouldn't be doing ethics independently of doing moral psychology. Second, studying moral psychology helps us understand political conflict—why particular conflicts occur, like the one over climate change, and maybe how they might be overcome or their negative effects avoided. Third, human sociality. Our ethical abilities are the basis for human sociality. It's why humans can coexist in ways chimpanzees cannot, enabling complex cooperation like running airlines. This is super obvious in some ways, but we didn't study specific aspects like cooperative breeding, food sharing, or collective action in detail, as it's hard to frame sharp questions without straying far from moral psychology. So, I have a slightly bad conscience about not covering human sociality more, though I think interest in it is an excellent reason for studying moral psychology. However, today we'll see that thinking about moral psychology is vital for understanding how humans will live together in the future, given rapid societal changes."
+  },
+  {
+    "transcript_id": "3dd68c61-537a-47d5-a7d6-3263e26d4e15",
+    "transcript_text": "If you wanted a conclusion for the whole course, it's that we have limited ethical knowledge. Everything points in that direction. The main thing you learn from studying moral psychology is that we do not know much in the domain of ethics. This might seem like very little to take away from the course, but I think it's actually an enormous thing. Appreciating the limits on human ethical knowledge is fundamental to making progress in ethics, resolving political conflicts, and understanding human sociality. It requires a fundamental change to how most philosophers do ethics and holds the key to working around conflicts like climate change that threaten our future."
+  },
+  {
+    "transcript_id": "4caf99f8-fe7f-4614-9d3e-a9046208ae25",
+    "transcript_text": "There is a huge gap between the ethical abilities humans possess today and the progress made in physics, chemistry, biology, and their technological applications. To address this, we need three things: first, to be sure there is a gap; second, to understand why there's a gap; and third, to figure out what we can do about it. Let me start with the first point: why should we think there is a gap?"
+  },
+  {
+    "transcript_id": "2924b4e3-afe0-4d3d-afbe-e9fe32d47ac2",
+    "transcript_text": "Previously, I used an anecdote: an ethics head at a tech company discussing Aristotle wouldn't raise eyebrows, unlike an engineer ignorant of basic computing history. But let's look more carefully at ethical successes and failures. Humans have achieved ethical successes: ending government-sponsored slavery and serfdom (though progress fluctuates), reducing landmines, mitigating ozone depletion, and advancing vaccination (e.g., smallpox eradication). Vaccination is an ethical success because it requires individuals to accept a small cost for a large collective benefit, resisting the urge to freeride. The recent anti-vax movement highlights this ethical dimension \\citep[see][]{chazan:2025_political}. Anti-vax arguments often invoke ethical concerns like bodily autonomy, framing it as an ethical stance, even if we disagree profoundly with the outcomes. We must separate disagreeing with their actions (which I personally find harmful) from recognizing that their actions can be driven by ethical concerns and the exercise of their ethical abilities. However, there are also significant ethical failures, indicating a gap. Global poverty, nuclear deterrence, climate change, and perhaps even driving cars represent areas where we could achieve vastly better outcomes for almost everyone, yet fail to do so. Global poverty, for instance, affects perhaps 700 million people severely \\citep{worldbank:2024_poverty}. While some view it as natural or deserved, eliminating it is relatively inexpensive and would unlock immense human potential—a quicker path to realizing visions like Jeff Bezos's of 'hundreds of living Mozarts' than space colonization. The failure persists despite arguments showing that alleviating poverty aligns with diverse ethical viewpoints and practical goals. This gap between potential and reality, driven by ethical disagreements or inaction, points to the disparity between technological progress and ethical progress."
+  },
+  {
+    "transcript_id": "2a745a63-5b59-472b-a0e5-3a5f9c40f3d8",
+    "transcript_text": "So, why is there this gap between progress in technology and progress in ethics? Previously, I stressed it's because we've been doing ethics in an Aristotelian mode. But we can get an even clearer picture by looking at the main findings from moral psychology, which point to the limits on our ethical knowledge."
+  },
+  {
+    "transcript_id": "d95a6850-b45f-4cb9-a3c3-b173c7da835f",
+    "transcript_text": "Here are four main discoveries from the course that highlight these limits: 1. Ethical abilities are for solving specific problems (e.g., purity concerns balance pathogen risk against hunger; care aids cooperative breeding; authority balances group coherence and subordination costs). Ethical principles derived from these aren't absolute; they serve purposes, like how respect for authority is balanced by mechanisms to depose overly dominant leaders. 2. Descriptive moral pluralism is true: our ethical concerns span distinct domains (like harm, fairness, loyalty, authority, purity) not reducible to a single value \\citep[see][]{graham:2013_chapter}. This challenges ethical theories aiming to maximize a single quality, like many forms of consequentialism. 3. Cultural variation exists: groups weigh moral concerns differently, stemming from facing different historical problems. This challenges theories seeking universal agreement based on 'reasonableness', like contractualism, as what's 'reasonable' varies with moral foundations. 4. Faster processes (intuitions) are unreliable outside familiar situations—those lacking adequate evolutionary, cultural, or personal experience \\citep[see][]{greene:2014_pointandshoot}. Since many modern ethical problems (global poverty, climate change, bioethics) are *unfamiliar problems* in this sense, intuitions about them are unreliable bases for knowledge. Together, these discoveries challenge normative ethical theories aiming for universal, strongly justified moral principles (like consequentialism, Kantian ethics, perhaps contractualism). Yet, the major ethical problems we face *are* universal, requiring collective action. We need to solve for both the limits on our knowledge and the universality of the problems."
+  },
+  {
+    "transcript_id": "9cc25b1c-add2-46d5-9eaf-eb50d3677491",
+    "transcript_text": "So, what do these findings tell us about the limits of ethical knowledge? And am I right that they challenge these normative theories? While I haven't fully spelled out the arguments targeting each theory, I am convinced these findings show we have very little ethical knowledge. This matters because the challenges we face require using our ethical abilities. How can we make progress given these limits?"
+  },
+  {
+    "transcript_id": "2c39f795-1b4a-4523-8a86-d6f0d00d1b78",
+    "transcript_text": "We can look for inspiration in domains like finance, where knowledge is also limited, yet successful action (making money) is possible. Successful traders often don't rely on a single, 'correct' theory but combine approaches, hedge bets, and recognize uncertainty. They look for favourable risk-reward ratios. We can approach ethics similarly, making 'ethical bets'. Consider \\citet{pogge:2005_world}'s question: Do ‘the global poor have a much stronger moral claim to that 1 percent of the global product they need to meet their basic needs than we affluent have to take 81 rather than 80 percent for ourselves’? (p. 2). This looks like a good bet. The downside of acting (losing 1/81st of income) seems small, especially compared to routine economic fluctuations affecting the poor. The upside, if there *is* a strong moral claim, is enormous; failing to act if the claim exists is morally catastrophic. Furthermore, \\citet{pogge:2005_world} argues that a 'yes' answer follows from diverse, even conflicting, ethical perspectives, including libertarianism (which usually opposes redistribution). For an ethical gambler, such convergence from different starting points strengthens confidence in the bet. This approach focuses on identifying good bets, not on finding universally justified principles. It also requires humility—recognizing the limits of our own ethical knowledge. This is hard, especially when we feel strongly about issues like vaccination, social justice, or environmentalism. I feel strongly that anti-vaxxers cause harm, yet I must recognize they often act from *their* ethical viewpoint. Respecting differing ethical positions, even ones we find abhorrent, is crucial because ethical diversity is permanent. We won't achieve universal agreement before acting; progress requires working *with* this diversity and humility."
+  },
+  {
+    "transcript_id": "be62cb1d-e85b-4f64-abac-0dd7f7f26384",
+    "transcript_text": "Okay, now I come to the puzzles we encountered earlier. I suggested that the more sophisticated theories from the latter part of the course would allow us to resolve them. Let's see if we can."
+  },
+  {
+    "transcript_id": "4f736c3e-b4b5-4f79-8607-c8c7583de5b4",
+    "transcript_text": "Here’s the first puzzle: If the evidence for cultural variation in moral psychology is at best weak, and the theoretical argument for moral reframing is flawed, why does moral reframing seem to work? I'll do a quick recap of the background."
+  },
+  {
+    "transcript_id": "91ee3d28-9e43-4527-b2b1-f496a3ed42b4",
+    "transcript_text": "Recall the idea: discoveries, particularly using the Moral Foundations Questionnaire (MFQ), suggested cultural variation, specifically that liberals emphasize Care and Fairness, while conservatives give more weight to Loyalty, Authority, and Purity \\citep[e.g.,][]{graham:2009_liberals}. Combined with the observation that climate change appeals often stress harm and fairness, this seemed to explain why conservatives might be less motivated to act. This explanation then predicted that *moral reframing*—tailoring messages to resonate with specific moral foundations (e.g., framing climate action in terms of purity or authority for conservatives)—should increase motivation, which studies suggested it did."
+  },
+  {
+    "transcript_id": "5c700bb9-8915-4bb2-bf8c-c1f1858baebf",
+    "transcript_text": "So, why does moral reframing work? The initial hypothesis, the 'Match Hypothesis', is that reframing works because the message *matches* and engages the specific moral foundations prioritized by the target audience, influencing their attitudes and actions. However, there were two main objections to this."
+  },
+  {
+    "transcript_id": "3712cbd9-f050-4394-816e-bf113cf2ad64",
+    "transcript_text": "The first objection questioned the evidence for cultural variation from the original MFQ due to its lack of scalar invariance. The second, complementary objection (the Joan-Lars-Joseph objection) noted that even if the variation data \\citep[e.g., Figure 1 from][]{graham:2009_liberals} were accepted, it shows conservatives rating *all* foundations as roughly equally relevant. If so, why should reframing from harm (which they supposedly value) to purity (which they also value similarly) make a difference? The key insight is that how conservatives react should depend only on *their own* moral psychology, not how it compares to liberals'. To explain the reframing effect via matching, we'd need evidence that conservatives *themselves* rank, say, purity much higher than harm, which the data didn't clearly show."
+  },
+  {
+    "transcript_id": "68f8c072-20e6-4c92-b524-f6603988b839",
+    "transcript_text": "These objections create the puzzle: moral reframing seems effective, but the primary explanation (Match Hypothesis) rests on weak evidence and faces a theoretical challenge. We already saw some candidate explanations, but now, with process dissociation understood, we can add another compatible possibility."
+  },
+  {
+    "transcript_id": "02750ffa-f0a2-4d43-ab16-62e4db7fd861",
+    "transcript_text": "One attempt to resolve the puzzle involved the 'Source Hypothesis': reframing works not by matching content to values, but because the *style* of the message cues the audience about the source's group identity (e.g., emphasizing purity signals a conservative source). Identifying the source as 'in-group' might lead to a more favourable reception. While there's some evidence for the Source Hypothesis, strong evidence also supports the Match Hypothesis. So, the Source Hypothesis isn't a complete explanation. The puzzle remains: the Match Hypothesis seems partly true, but we don't understand how, given the objections."
+  },
+  {
+    "transcript_id": "dbe80166-577b-4026-93ac-a71fc18a461f",
+    "transcript_text": "So, the Match Hypothesis is reasonably well-supported by evidence, but we lack a clear understanding of its mechanism due to the aforementioned objections."
+  },
+  {
+    "transcript_id": "fc70c1b9-de8d-4f1e-b76c-7042c17a8ebb",
+    "transcript_text": "This brings us to process dissociation and the CNI model \\citep{gawronski:2017_consequences}. Recall that this method uses patterns of judgments across different dilemmas to estimate independent parameters reflecting sensitivity to consequences (C), sensitivity to norms/rules (N), and a general preference for inaction (I)."
+  },
+  {
+    "transcript_id": "41b2dc1d-c182-4ba5-8a4c-00f9b060c4e7",
+    "transcript_text": "\\citet{luke:2021_political} applied this method to study political ideology. Their key finding, shown here in part, relates political conservatism to the C parameter (sensitivity to consequences)."
+  },
+  {
+    "transcript_id": "be670ff6-92ce-4e68-9694-4ba4c9954c2d",
+    "transcript_text": "Specifically, they found that ‘on average, conservatives are less inclined to accept harmful actions for the greater good than liberals. [And] liberals are more sensitive to the consequences of a given action for the greater good than conservatives’ \\citep[p. 10]{luke:2021_political}. This suggests a difference not just in *which* foundations are valued, but in sensitivity to utilitarian trade-offs."
+  },
+  {
+    "transcript_id": "8fe7bee8-7723-44a0-b0ac-2dfadfac76c7",
+    "transcript_text": "How might this relate to moral reframing? Consider these examples used in reframing studies. The first appeals more to consequences ('allow the greatest good for society', 'reduce the harm'). The second appeals more to norms and duties ('do our civic duty', 'responsible thing to do', 'follow the advice of important leaders'). If conservatives are indeed less sensitive to consequences, as \\citet{luke:2021_political} suggest, then reframing away from consequence-based arguments towards norm-based ones might explain why it's more effective for them."
+  },
+  {
+    "transcript_id": "8fed1769-9ab7-4f3b-bfd5-0493e1974d4f",
+    "transcript_text": "So, how does this help with the objections? Problem 1 (lack of scalar invariance in MFQ-1): We now have converging evidence for cultural variation from different methods, including process dissociation \\citep{luke:2021_political} and the improved MFQ-2, strengthening the case that *some* relevant variation exists. Problem 2 (Lars-Joan-Joseph Objection): This finding suggests differences go beyond just the weighting of foundations like fairness and harm. If conservatives differ in their general sensitivity to consequences (the C parameter), this provides a potential mechanism for reframing effects that isn't solely about comparing foundation scores. However, a partial reply is needed. The key insight of the objection remains: explaining conservatives' reactions requires understanding *their* psychology, not just comparing them to liberals. The \\citet{luke:2021_political} study provides only comparative data. We'd ideally need to show that *within* conservatives, norm-based appeals are stronger than consequence-based ones, which this study doesn't directly demonstrate."
+  },
+  {
+    "transcript_id": "ce7b9cf3-2490-405a-95ea-582ee5b13510",
+    "transcript_text": "So, where are we? There appears to be some cultural variation relevant to moral reframing. It might not be precisely about the original five 'foundations', but perhaps involves factors like willingness to consider consequences, or other combinations. The Source Hypothesis likely explains some effects, but the Match Hypothesis, supported by various lines of evidence (including MFQ-2 and process dissociation findings), also seems operative, even if the exact mechanism (foundations vs. consequence sensitivity vs. other factors) remains somewhat uncertain."
+  },
+  {
+    "transcript_id": "2601cf84-75e6-4e0c-a241-d78041276308",
+    "transcript_text": "Returning to the puzzle: If the evidence for cultural variation was weak and the argument flawed, why does reframing work? My proposed solution is that the premise is less true now. While the initial evidence (MFQ-1) was weak, subsequent evidence (MFQ-2, process dissociation studies like \\citealp{luke:2021_political}) provides a sounder, albeit still developing, basis for believing relevant cultural variation exists, making the effectiveness of moral reframing less puzzling. It might have been a lucky guess initially, but now we have better reasons to think matching works. However, significant uncertainty remains about the precise nature of this cultural variation and whether Moral Foundations Theory is the best description."
+  },
+  {
+    "transcript_id": "09256742-da2b-40d4-9774-54e7b2198d4a",
+    "transcript_text": "I'm going to skip the next section on Moral Foundations Theory Reprise for today."
+  },
+  {
+    "transcript_id": "e005b733-c2b5-457e-93a1-c106421eb43c",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "5a07071d-5b75-444c-a66b-eb7e7337ccd3",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "531fc24f-0941-4564-8f1b-b7e1ac2e7d80",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "51786814-bc6a-49d7-834f-6b3020c06db8",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "c8cc1304-d82d-4b07-81d5-99cb13278870",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "ccd58dfd-e5dd-4213-8e4a-d43b86aeea73",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "a2b3dad3-ced7-4802-8813-36c2245d4cb7",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "9a79a16e-4224-468e-b51f-eea3dcd63023",
+    "transcript_text": "Let's start with the easier puzzle: Why are moral judgements *sometimes*, but *not always*, a consequence of reasoning from known principles? Moral disengagement shows the 'sometimes' part, while moral dumbfounding shows the 'not always' part."
+  },
+  {
+    "transcript_id": "6e4b7739-1e62-4c81-94fe-4e69ac1e2c49",
+    "transcript_text": "The dual-process theory offers a straightforward explanation: ethical responses involve multiple processes. Some ('slower' processes) involve what we loosely call reasoning, leading to judgements that sometimes follow from known principles. Other ('faster' processes) do not rely on such reasoning. The interplay between these processes explains why reasoning isn't always the determining factor. This isn't entirely satisfactory, as questions remain: How exactly do faster processes influence judgements (perhaps via heuristics)? Under what conditions does one type of process dominate? It's not simply a matter of time pressure applied *after* reading a dilemma."
+  },
+  {
+    "transcript_id": "2998c7ae-2ef4-48b2-841b-d3fdbef01461",
+    "transcript_text": "Now for the harder puzzle: Why do feelings of disgust influence moral intuitions? And why do we feel disgust in response to moral transgressions? The dual-process theory helps in two ways here. First, it resolves the reasoning-emotion puzzle (as just discussed). Second, as we saw earlier, it provides a powerful argument challenging many intuition-based ethical theories."
+  },
+  {
+    "transcript_id": "0db27cce-8df9-4581-a0c7-f7c682266d88",
+    "transcript_text": "Does manipulating participants’ feelings influence their moral judgements? There's evidence suggesting yes \\citep{tracy:2019_physiological, chapman:2013_things}. For example, \\citet[Study 3]{conway:2013_deontological} manipulated empathy."
+  },
+  {
+    "transcript_id": "eb8c9d08-e01d-491c-8cda-0d48f77cc273",
+    "transcript_text": "In that study, \\citet[p. 226]{conway:2013_deontological} ‘exposed half of the participants [...] to a photograph of the victim who would be harmed in case participants judge harmful action as acceptable. The rationale [...] was that photographs identify victims, thereby evoking increased empathy and more emotional distress’. They predicted, and found, that higher empathy would increase the dominance of the process leading to harm-averse (which they termed 'deontological') judgments."
+  },
+  {
+    "transcript_id": "4aada246-917a-4430-b1fb-6556e89e1981",
+    "transcript_text": "Here are the results from \\citet[Figure 3]{conway:2013_deontological}. Increased empathy significantly increased the 'Deontological' parameter (reflecting sensitivity to norms against harming) but did not significantly affect the 'Utilitarian' parameter (sensitivity to consequences). This selective effect is important: if manipulating emotion can selectively influence one process, it suggests emotion isn't just general noise but interacts with specific judgment components. It argues against models where emotion simply affects scenario analysis, question interpretation, or overall judgment strength, as none readily predict such selectivity. Further process dissociation work by \\citet{gawronski:2018_effects} found that incidental happiness reduced sensitivity to moral norms (the N parameter in their CNI model)."
+  },
+  {
+    "transcript_id": "28ad0c0e-a4db-4f92-ad03-4047dda47fa2",
+    "transcript_text": "So, yes, manipulating feelings can influence moral judgements \\citep{tracy:2019_physiological, chapman:2013_things, conway:2013_deontological}."
+  },
+  {
+    "transcript_id": "2f6d00fc-5201-4521-97fc-438ddc119cec",
+    "transcript_text": "And further research using process dissociation (the CNI model) confirms this. For instance, \\citet[p. 1003]{gawronski:2018_effects} found: ‘Our results suggest that incidental happiness influences moral dilemma judgments by reducing sensitivity to [deontological] moral norms.’"
+  },
+  {
+    "transcript_id": "a4835502-bbac-4df1-bb0a-e444e7069276",
+    "transcript_text": "So, we have evidence that manipulating feelings influences moral judgements \\citep{tracy:2019_physiological, chapman:2013_things, conway:2013_deontological, gawronski:2018_effects}. But, the crucial caveat remains: the effects are probably small \\citep{landy:2015_does}."
+  },
+  {
+    "transcript_id": "92ce2101-ff18-47b0-a63c-1967630ffeb8",
+    "transcript_text": "The puzzle 'Why do feelings of disgust influence moral intuitions?' is hard because we can't fully accept simple sentimentalist ideas (the effect seems too small and inconsistent), yet we also can't dismiss the influence of disgust as mere noise."
+  },
+  {
+    "transcript_id": "dadb2ec4-ae76-4c6e-bc13-69dbeae224be",
+    "transcript_text": "Consider the Affect Heuristic hypothesis: humans track wrongness by relying on the rule ‘if thinking about an act [...] makes you feel bad [...], then judge that it is morally wrong’ \\citep{sinnott:2010_moral}. This cannot be straightforwardly true, given the evidence. The effects of induced feelings on moral judgment are often small and variable \\citep{landy:2015_does}. Factors like individual differences in disgust sensitivity sometimes matter, sometimes not. If the Affect Heuristic were the primary mechanism, we'd expect larger, more consistent effects. Notably, the evidence for emotion's role in moral judgment seems weaker than for its role in judgments of risk \\citep[e.g.,][]{slovic:2007_affect}."
+  },
+  {
+    "transcript_id": "93eb0cda-5b3e-4a5b-b0fa-24df02362190",
+    "transcript_text": "How, then, could emotion influence moral judgement? Let's use two comparisons, drawing on the dual-process perspective. Comparison 1: Bitterness and toxicity judgments. Bitterness is a fundamental cue to potential toxicity, triggering rejection responses. It plays a strong role in judging food safety. However, it's not the *only* cue (visual appearance, smell, context also matter), many bitter things are safe, and many toxins aren't bitter. Relying solely on a 'bitterness heuristic' would be unwise. Similarly, the Affect Heuristic likely oversimplifies. Feelings might be one type of input or faster process among others influencing ethical responses, but not the sole determinant. The dual-process view makes it unsurprising that emotion is just one factor. But there's more..."
+  },
+  {
+    "transcript_id": "a2dcffd7-0fa3-4bf0-ab30-6e1022061668",
+    "transcript_text": "Comparison 2: Physical cognition. Why do people untrained in physics often predict a curved trajectory for an object exiting a spiral tube \\citep[Figure 2D]{mccloskey:1980_curvilinear}, even though this is physically impossible and never observed? The answer involves faster cognitive processes related to perceiving motion. These processes make it *appear* as though this should happen \\citep{kozhevnikov:2001_impetus}."
+  },
+  {
+    "transcript_id": "4add227d-17cb-45ba-b4be-8d4424b35b6f",
+    "transcript_text": "But does the fast process *directly* influence the slow, deliberative judgment made in the spiral tube task (where people have time to think)? Probably not significantly. Instead, the influence is likely indirect and asynchronous: Faster processes shape the *phenomenology* of experiencing and perceiving motion, filling in gaps in noisy visual input. This altered experience influences how we *imagine* objects moving. Thinking about these experiences (real and imagined) over time leads to forming intuitive, often tacit, beliefs or principles about motion. These beliefs then inform explicit judgments in specific cases like the spiral tube problem. So, the fast process provides phenomenal material that the slower judgment process incorporates over time, rather than exerting a direct influence at the moment of judgment."
+  },
+  {
+    "transcript_id": "249ebe12-0851-4b0b-9df9-02cf0f1c5465",
+    "transcript_text": "How is this relevant to moral judgment and emotion?"
+  },
+  {
+    "transcript_id": "2241d7af-7966-4001-8962-42cc88cc9d12",
+    "transcript_text": "Let's contrast two views. The Affect Heuristic \\citep{sinnott:2010_moral} implies emotion influences judgment *at the time it is made*. Its prediction is that manipulating emotion *now* will influence judgment *now*. The evidence, being weak and inconsistent, doesn't strongly support this direct, synchronous link. An alternative, inspired by the dual-process theory and the physical cognition analogy, suggests an indirect, asynchronous link: Faster processes generate feelings (like disgust). Thinking about these feelings over time leads to forming intuitive beliefs or principles (e.g., associating disgust with wrongness). These beliefs then inform explicit judgments later. On this view, the fast process provides *emotional material* for the slow judgment process over time. This view predicts that moral violations *will* evoke emotions like disgust (in those who have formed the association), but it *doesn't* strongly predict that manipulating emotion at the time of judgment will reliably alter the judgment itself (though it doesn't rule it out as an exception)."
+  },
+  {
+    "transcript_id": "33d9e939-97e0-4d74-8909-6fc44dc4fdfa",
+    "transcript_text": "So, the two comparisons suggest: 1. Like bitterness for toxicity, disgust is likely just one of several faster processes influencing moral intuition, not the whole story. 2. Like fast processes in physical cognition, disgust's influence on moral intuition may be primarily indirect and asynchronous, shaping our underlying moral beliefs over time, rather than directly determining judgments in the moment."
+  },
+  {
+    "transcript_id": "530a6141-0e5a-4f30-99a1-dbb14a4f7320",
+    "transcript_text": "I claim we've solved the puzzle: Why do feelings of disgust influence moral intuitions, and why do we feel disgust at transgressions? The dual-process theory allows for this influence without requiring the strong, direct link implied by the Affect Heuristic, which the evidence contradicts. Emotion, via faster processes, shapes our moral understanding over time. However, I acknowledge limitations. We've moved to a more complex theory (dual-process) but haven't fully specified it. What exactly are the fast vs. slow processes? How do they interact? How can we measure their separate contributions? The common idea that fast maps to deontological and slow to consequentialist is likely too simple and not well-supported. Answering these requires further work, including auxiliary hypotheses about neurophysiology, as raised in the question earlier. While research exists that can help, within the scope of these lectures, we haven't fully fleshed out the theory. But the dual-process framework itself provides the solution structure."
+  },
+  {
+    "transcript_id": "ae269bfa-3fe2-4b24-a5a3-7406c97844a1",
+    "transcript_text": "Before the break, please consider helping an undergraduate student from the University of Milan with their project survey: [URL provided]. They're looking for 'experts' in moral psychology, and I assured them you qualify! Let's take a 7-minute break."
+  },
+  {
+    "transcript_id": "5a6fe57d-ddd0-4c30-ae01-55baca42f528",
+    "transcript_text": "Let's consider objections to the argument derived from the dual-process theory—the argument concluding that we cannot rely on *not-justified-inferentially* ethical premises (intuitions) in unfamiliar situations when aiming for knowledge. One common response is that this conclusion is unacceptably sceptical, essentially making ethics impossible."
+  },
+  {
+    "transcript_id": "4048c1e5-b3be-4470-b982-0e46f3f6a518",
+    "transcript_text": "To understand this objection, let's revisit \\citet{kagan:2023_answering}, who argues that intuition opens the door to moral knowledge. He states: ‘When I have an intuition it seems to me that something is the case, and so I am defeasibly justified in believing that things are as they appear to me to be. That fact [...] opens the door to the possibility of moral knowledge’ \\citep[p. 167]{kagan:2023_answering}. Kagan considers intuitions about both abstract matters and particular cases, but often focuses on case-specific intuitions."
+  },
+  {
+    "transcript_id": "96a564cf-91e1-4673-be9a-857e7a7c1cda",
+    "transcript_text": "Kagan's view has two key parts: 1. ‘If I have the intuition that P, then [...] my belief that P [...] will be justified [until ...] I find reason to reject it’ \\citep[p. 166]{kagan:2023_answering}. Intuitions provide default justification. 2. ‘what it is to confirm an intuition: checking it against other intuitions to see if they harmonize in the appropriate ways’ \\citep[p. 172]{kagan:2023_answering}. This resembles the method of *reflective equilibrium* associated with Rawls. Kagan challenges the sceptic (like me, in this context) to show there is ‘something especially problematic about moral intuitions, as distinct from others’ \\citep[p. 170]{kagan:2023_answering}, particularly comparing them to observations in science."
+  },
+  {
+    "transcript_id": "df14f78d-49a7-4938-90f6-5d4562169c67",
+    "transcript_text": "Let's take Kagan's challenge comparing ethics and physics. In physical cognition: Intuitions (including observations) are largely consequences of faster processes. These are unreliable in *unfamiliar situations*. Therefore, we don't rely on them *in unfamiliar situations* (like predicting spiral trajectories). However, physics progresses because conjectures about the *unfamiliar* generate testable predictions about the *familiar*. We make observations in the familiar zone (e.g., meter readings, colour changes) where our perceptual intuitions *are* reliable. Theory bridges the gap, allowing knowledge of the unfamiliar via predictions confirmed in the familiar. In ethical cognition: Intuitions are also largely consequences of faster processes, unreliable in *unfamiliar situations*. So, we shouldn't rely on them *in unfamiliar situations*. But what's missing in ethics is the equivalent of that theoretical bridge. We lack well-established ethical theories that generate testable predictions about familiar cases from conjectures about unfamiliar moral territory. Harmonizing intuitions with each other (reflective equilibrium) doesn't provide this bridge."
+  },
+  {
+    "transcript_id": "2a1b5e77-16c8-4832-ac44-93e2f809325b",
+    "transcript_text": "Kagan argues intuitions provide justification, confirmed by harmonization, and challenges sceptics to show moral intuitions are uniquely problematic compared to, say, observations in physics. My response is that the comparison fails. Physics doesn't just harmonize observations; it uses theory to link conjectures about the unfamiliar to predictions in the familiar. Ethics lacks this robust theoretical structure. The problem isn't unique to moral intuitions *as intuitions*, but to the *domain* of ethics lacking this predictive theoretical framework connecting unfamiliar principles to reliable familiar judgments."
+  },
+  {
+    "transcript_id": "6cc7c623-b46a-46fc-a05d-ac3d8ac3652e",
+    "transcript_text": "So, the objection is: The loose reconstruction of Greene's argument implies we cannot use intuitive (not-justified-inferentially) ethical judgements, especially in unfamiliar situations. But ethics seems to depend on such judgements. Therefore, the argument implies ethics (at least as currently practiced, aiming for knowledge in novel domains) is impossible. My counter is that this isn't unacceptably sceptical; rather, it highlights a problem with current ethical methodology, much like how relying purely on naive physical intuitions became untenable in physics."
+  },
+  {
+    "transcript_id": "0d3b994a-423c-46c0-abb8-18055d2bf5f4",
+    "transcript_text": "Let's consider another type of objection, raised by \\citet{rini:2016_debunking}. She asserts: ‘To say that a particular psychological process does not track moral truth is to say that the process generates judgments which are not subjunctively sensitive to *certain* moral properties. We cannot say this without making some moral judgments ourselves’ \\citep[p. 682, emphasis mine]{rini:2016_debunking}. Rini argues that debunking arguments inevitably rely on substantive moral premises about which factors are morally relevant."
+  },
+  {
+    "transcript_id": "ade9800e-6e88-4f85-b16b-8c2a20fecaf9",
+    "transcript_text": "I reject this claim *as applied to the loose reconstruction* of Greene's argument."
+  },
+  {
+    "transcript_id": "0dd0eec1-1937-4c10-a79b-02861ddb076e",
+    "transcript_text": "Recall the argument's structure: 1. Ethical judgements involve distinct faster and slower processes (Dual-Process Theory). 2. Faster processes are unreliable in *unfamiliar situations*. 3. Therefore, we shouldn't rely on faster processes in unfamiliar situations. 4. Relying on *not-justified-inferentially* premises (intuitions) means relying on faster processes. 5. Philosophers often consider moral scenarios and principles involving *unfamiliar situations*. 6. Therefore, such not-justified-inferentially premises cannot be used in ethical arguments aiming for knowledge about these unfamiliar situations."
+  },
+  {
+    "transcript_id": "c2e6ba38-af60-4382-92ce-ade82d4effb6",
+    "transcript_text": "This argument's crucial premises (1-5) are about cognitive science and the nature of philosophical inquiry, not about substantive moral principles like 'distance is irrelevant' or 'personal force is irrelevant'. It relies on the general finding about the limits of fast processes, not specific moral evaluations."
+  },
+  {
+    "transcript_id": "e07ef660-a817-4a77-a18f-c2aad9b0df87",
+    "transcript_text": "Rini's claim that debunking requires judging sensitivity to *certain* moral properties \\citep[p. 682]{rini:2016_debunking} might apply to some specific debunking arguments, but not to this general argument based on the unreliability of a *type* of process (fast processes) in a *type* of situation (unfamiliar ones), regardless of the specific moral content."
+  },
+  {
+    "transcript_id": "d91c78b7-140a-4312-ada3-62cf54b53d5b",
+    "transcript_text": "Therefore, the loose reconstruction does not depend on accepting specific moral principles or evaluations."
+  },
+  {
+    "transcript_id": "a7ac2243-b86b-43cb-b0d3-37ac063636d4",
+    "transcript_text": "Rini also offers a regress objection: ‘nearly any attempt to debunk a particular moral judgment on grounds of its psychological cause risks triggering a regress, because a debunking argument must involve moral evaluation of the psychological cause—and this evaluation is itself then subject to psychological investigation and moral evaluation, and so on’ \\citep[p. 676]{rini:2016_debunking}."
+  },
+  {
+    "transcript_id": "4b9fd694-8b5e-4b58-86a3-23c158b095e3",
+    "transcript_text": "Consider a standard argument against a form of consequentialism: We judge we should not push the person in the 'Drop' (Footbridge) case. Consequentialism implies we *should* push. Therefore, consequentialism is wrong. Debunking arguments, like those from Greene or Singer, challenge the first premise ('We should not Drop') by questioning the reliability of the intuition supporting it."
+  },
+  {
+    "transcript_id": "fd6f52c2-cfe1-4431-a9d8-1c4458757391",
+    "transcript_text": "Our loose reconstruction aims to debunk the reliance on such intuitions (not-justified-inferentially premises) in unfamiliar scenarios generally."
+  },
+  {
+    "transcript_id": "2b1283ab-a5e6-4c71-8dce-3ada99694306",
+    "transcript_text": "Does Rini's regress objection apply? She claims the debunking involves *moral* evaluation of the psychological cause \\citep[p. 676]{rini:2016_debunking}. But the evaluation in our loose reconstruction isn't primarily moral; it's epistemic. Premise 2 states faster processes are *unreliable* (an epistemic evaluation) in unfamiliar situations. This claim comes from cognitive science findings about heuristics and biases, not from a moral judgment about the process."
+  },
+  {
+    "transcript_id": "b7f54ea6-4b36-41b9-95d0-68e81d9050b8",
+    "transcript_text": "Since the loose reconstruction relies on an epistemic evaluation (unreliability in certain conditions) rather than a moral evaluation of the psychological causes (the faster processes), Rini's regress objection, which hinges on the need for *moral* evaluation, does not apply."
+  },
+  {
+    "transcript_id": "957adb27-a31e-452b-a8bf-888bf45cbaa8",
+    "transcript_text": "We will skip Königs' objection for now."
+  },
+  {
+    "transcript_id": "0ffa7ea1-351a-4067-94c2-00bd66deb7dc",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "a89992ad-c15b-4acc-8401-68b63306f90e",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "0fd554ae-e5e2-4184-bee7-b0d3eae0f7f1",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "da0eee16-d140-4e75-9ac1-ec811b91e103",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "cfc60578-25c1-4ffd-afe3-2f0c433a80e8",
+    "transcript_text": "In summary, the loose reconstruction of Greene's argument, based on the dual-process theory: does not depend on specific moral principles (contra Rini's first point); does not trigger Rini's regress because its evaluation of processes is epistemic, not moral; is not limited only to intuitions about particular scenarios (it applies to any not-justified-inferentially premises about unfamiliar matters, including principles); and is not unacceptably sceptical, but rather points to limitations in certain ethical methodologies when dealing with unfamiliar problems."
+  },
+  {
+    "transcript_id": "34553ca0-d5ee-496e-821a-c559c0a16355",
+    "transcript_text": "In conclusion..."
+  },
+  {
+    "transcript_id": "8e464490-b22d-434c-9f0e-a51d327dbdd7",
+    "transcript_text": "Let me finish where I started: Why study moral psychology?"
+  },
+  {
+    "transcript_id": "b4b81ad8-28d6-42d5-9649-27363740249f",
+    "transcript_text": "I suggested three reasons: understanding ethics, human sociality, and political conflict."
+  },
+  {
+    "transcript_id": "cdf3f8eb-8f5b-4bfc-a93e-778222754d4a",
+    "transcript_text": "Here are the main findings relevant to the limits of our ethical knowledge: Much about our ethical abilities remains unknown, with puzzles remaining even for researchers at the frontier. Our ethical abilities evolved for solving specific problems encountered historically. Descriptive moral pluralism is true—we have multiple, sometimes conflicting, fundamental moral concerns, and cultural variation exists in how these are prioritized. Crucially, the dual-process theory indicates that faster processes, which shape our intuitions, are unreliable outside familiar situations."
+  },
+  {
+    "transcript_id": "75efd37b-d051-4207-91f0-82992549da6b",
+    "transcript_text": "In conclusion: Studying moral psychology reveals the *limits* of our ethical knowledge; much remains unknown about the processes involved. For *ethics*, this suggests a need for alternative approaches, like the 'ethical bets' idea, rather than seeking universal, strongly justified principles based on unreliable intuitions, especially for unfamiliar problems. Regarding *cultural variation*, while evidence was initially limited, rigorous study is possible (e.g., using MFQ-2, process dissociation), treating claims about foundations as testable hypotheses, not assumptions. For *politics*, recognizing these limits and variations necessitates humility. Tackling global issues like climate change requires working *with* ethical diversity, not assuming we can first bring everyone to our own ethical viewpoint. We might face a choice: stick rigidly to our own ethical convictions or tackle climate change effectively. We likely cannot do both without acknowledging uncertainty and embracing pragmatic approaches."
+  },
+  {
+    "transcript_id": "62612ea5-5548-4d14-9b54-6c9f4ebd80f5",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "a546a4b9-2cf4-4e13-b36c-cba55c0d6c33",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "59f5c248-4b1d-4f6c-869e-b7ac08055ba7",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "292f8936-f4ed-4692-b7c3-1aae297b79c9",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "a75dedb8-1860-4ce6-a371-5cf2667531db",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "56fc9165-3a3a-49fd-87df-0ce78be8bde8",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "213ad3be-89e1-4a96-a36c-290c7bcf80c2",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "fefeae49-ce1d-421f-9453-d2b1b2c0a979",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "4554e8d9-d256-4e81-af05-6666bceec028",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "5692e881-2fee-4058-ae2b-f0ad25c84d3a",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "28dd4355-a849-4dca-87e7-dea23ae3a386",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "cd198ecb-419a-45cd-bb04-51b8f1042004",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "7caa6c66-3897-43aa-85d1-c63c516c5f43",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "6d7b3683-d269-43e5-b8e7-d223f7ec6efb",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "319562b9-c8c6-45e2-86f5-b322d4e098cb",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "ca0218f4-e711-4de6-b303-e08a7b2b6346",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "b8ce6605-92f0-4fe4-ac87-7464c8f0e365",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "2d2b9fe9-b915-4eaa-8fe2-4ffd2446e372",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "a9166b48-edfd-432d-a935-37db1e1d802b",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "18163e1c-cad8-43d4-b354-b6abde43562f",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "84977083-bf48-41a3-a733-930f35a4932d",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "25739632-2c82-472d-8cf5-682f709a83d7",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "be3d1d9a-7b38-415b-93b7-85b659759bb6",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "7d777929-deeb-48b6-8a23-31f3f265ee41",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "6a1e6064-1732-4a9b-a76c-9552c4691065",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "37214f44-af5e-4402-b832-7acc36324345",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "6a656f9f-2aba-4c95-a4ea-cf6e7f719ffd",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "9c0f5e8d-d0ff-4dac-8e5f-297d362d1809",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "831d1970-dde3-42d6-9faf-073d112db309",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "611ad8b2-dc0a-4414-bcc9-fb6ae385192b",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "d20a39cd-b177-4fd0-a79a-7f8eb6978ac5",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "08823f11-9e6f-4187-93c2-ed1bc2e5a4f8",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "9dc16c4a-5cf4-45d0-b685-c78b1928c518",
+    "transcript_text": "[no transcript]"
+  }
+]

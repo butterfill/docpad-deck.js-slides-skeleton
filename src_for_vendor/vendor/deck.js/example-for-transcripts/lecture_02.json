@@ -1,0 +1,402 @@
+[
+  {
+    "transcript_id": "4eafbbca-2b78-4128-a93d-1c39dd894b33",
+    "transcript_text": "Good morning, and welcome to our second lecture in moral psychology."
+  },
+  {
+    "transcript_id": "0948136b-38fe-46a2-b30e-293b0b9e0c75",
+    "transcript_text": "I'm going to start by giving you a preview of the lecture, which centres around two puzzles."
+  },
+  {
+    "transcript_id": "830bb88c-d07a-4cfd-869a-b4470ee052e7",
+    "transcript_text": "First puzzle: Why is it that feelings of disgust sometimes influence moral intuitions? And why do we feel disgust in response to moral violations? One thing I want to do in this lecture is to continue exploring whether the presupposition of this puzzle is true. That's important because it's difficult to answer that question.\n\nSecond puzzle: In the last part of the lecture, I will show you some evidence that patterns in moral intuitions reflect legal principles that humans are typically unaware of, and that will create a second puzzle for us.\n\nI like this pair of puzzles because the theories we will consider are attempts to address one or the other. However, I think the challenge for you and for me is to address both puzzles simultaneously. An adequate theory has to solve both puzzles, not just one. That's a good challenge, suggesting we may need a deeper understanding than the theories considered today will offer."
+  },
+  {
+    "transcript_id": "100c90aa-f848-4d0a-a146-9b35ac3dcef2",
+    "transcript_text": "So that's a quick preview. Partly because I realise people are coming in at various times, which is great. It's wonderful to have you come in whenever you like. Don't worry about it at all. If you've missed the preview, you don't need to worry too much."
+  },
+  {
+    "transcript_id": "f389d8c4-f088-448c-8c15-1cfbc33e2fdb",
+    "transcript_text": "Moral psychology can distinguish actual motivation from avowed motivation. For example, I mentioned in the first lecture the scenario where somebody uses the carcass of a chicken for sexual pleasure and then serves it for dinner. Most people say that's wrong. If I ask you why, some of us, including me, might first try to talk about potential harms: it's disrespectful to the animal, maybe there's a risk of poisoning, etc. We look for harms. But it may be that what's really driving the response there is not concern about harm at all (the chicken's dead), but rather disgust.\n\nNow, that, of course, is speculation. One thing about moral psychology is that researchers have provided methods to successfully dissociate the reasons you *avow* for making a judgement from the factors which *actually explain* why you make that judgement. By distinguishing those, we can gain useful clues about how to make changes in our societies.\n\nLet me start by noting that there are at least three kinds of disgust which have been important for humans for a long time. \\citet{tybur:2009_microbes} distinguish pathogen disgust (germs, loosely speaking), sexual disgust, and injury disgust. They argue it's possible, using statistical methods, to show these are three separate factors explaining disgust responses. As you might imagine, back in the day, these forms of disgust were important for humans.\n\nToday we'll focus on pathogen disgust. You can see why that was important if you reflect on our history. A couple of million years ago, hominins were scavengers. Lions would kill an animal, have a go at it, then hyenas would come along. Humans are super well-adapted, compared to other mammals, to be out in the hottest part of the day. We're extremely good at dumping heat. This means we could get out there when other mammals were sleeping and have our fill on that carcass. The problem is, the carcass has been slobbered over by lions and hyenas. We had to approach it carefully. We tried to get there before the vultures. Vultures are efficient; they'll stick their head through the anus to feast on internal organs. As a human, you must not do that because you don't have the vulture's immune system. You're good at not getting too hot, but you lack the vulture's immunity (nor can you fly). Pathogen disgust is crucial; it's the adaptation that keeps you safe, keeping you away from disgusting things because they are generally dangerous.\n\nOf course, a lot has changed since then. Once fire came along, we could obtain food more effectively. Herman Pontzer, in his book \\citep{pontzer:2021_burn}, recalls visiting the Hadza, hunter-gatherers in Tanzania. He was terrified in his tent by lion sounds. At dawn, some Hadza men showed him an antelope they'd acquired. He asked how they got it so early. They replied, 'We took it from the lions.' Even today, human food practices involve scavenging and not always the cleanest food. Pathogen disgust remains useful. However, as we'll see, you can experience pathogen disgust in ways completely irrelevant to its historical benefits, potentially leading to maladaptive responses in modern contexts."
+  },
+  {
+    "transcript_id": "cb7e2627-2c06-4eb0-874f-81a51ba9974a",
+    "transcript_text": "One interesting, very recent innovation is the bathroom. In the United States, there's a culture war over bathroom policies. Some people, and I believe it's law in some places, think you need a birth certificate stating 'woman' or 'man' to use certain bathrooms. There are supporters and opponents of these laws, and I understand some UK politicians want a similar system here. So, it's a relevant issue.\n\nWe want to ask: which factors influence attitudes towards these policies? Why do some support restrictions, while others advocate for choosing the toilet one feels most comfortable with?\n\nTwo bits of background: First, if you survey the arguments from both sides, they often revolve around concerns about harm. The avowed motivation is harm reduction – claiming their preferred policy reduces harm. Second, in the US (we only have US samples), a large proportion, perhaps half, feel *pathogen disgust* when encountering a visibly trans person. This is widespread; you might have heard someone say, 'At some level, I feel disgust.'\n\nSo, \\citet{vanaman:2020_disgust} (Hannah Chapman is a brilliant researcher you'll encounter often) did something simple. They measured people's general views about harm, their sensitivity to pathogen disgust (people vary greatly), and then statistically determined to what extent harm concerns versus pathogen disgust sensitivity contribute to views on toilet access. This is brilliant because it questions whether people's avowed motivation (harm) is the actual driver."
+  },
+  {
+    "transcript_id": "7b25141a-747e-46bd-bcc7-03462f652c34",
+    "transcript_text": "To measure disgust sensitivity, \\citet{vanaman:2020_disgust} used items based on the three domains from \\citet{tybur:2009_microbes}: pathogen disgust, sexual disgust, and injury disgust. For pathogen disgust, they might ask: How disgusting is stepping in dog poo? Does it wreck your day, or do you just wipe it off? How disgusting is seeing mould on leftovers? Are you fascinated or repulsed? Finding a hair in your food at a hotel – do you pick it out or is breakfast ruined? People rate these on a scale from 'not at all disgusting' to 'extremely disgusting'. Personally, I was surprised these are disgusting to some, but people vary."
+  },
+  {
+    "transcript_id": "acd0d376-c571-4417-a71c-58a430d53b07",
+    "transcript_text": "Vanaman and Chapman considered various models linked to specific hypotheses. This particular model explores the effect of concerns about harm. The hypothesis is that pathogen disgust might make you more aware of harm issues, which then explains support for bathroom restrictions. The model tests the strength of different pathways: pathogen disgust directly influencing support, or indirectly via general purity concerns, or indirectly via general harm concerns.\n\nWhat they found using this model is interesting. There *is* an effect of harm sensitivity on support for restrictions, but it's only about one-third the strength of the effect mediated by purity concerns. When pathogen disgust is mediated by purity, it has a very large effect on willingness to impose restrictions, much larger than the indirect effect via harm concerns. (The handout notes this aligns with Moral Foundations Theory, where disgust sensitivity is primarily linked to purity-based moral judgments, see \\citet{wagemans:2018_disgust})."
+  },
+  {
+    "transcript_id": "809a8cf6-e081-4dc9-8e33-b95b04552d7e",
+    "transcript_text": "Overall, across various models, \\citet{vanaman:2020_disgust} found that attitudes towards policies limiting toilet choice are mainly a consequence of disgust (specifically pathogen disgust, often mediated by purity concerns), not primarily concern about harm. This finding has practical implications. If this debate comes to the UK and you want to make a difference, arguing about harms is unlikely to be effective because harm concerns aren't the main driver. The effective way, according to these findings, is to change how people *feel*. One way is by increasing familiarity with transgender people. As \\citet{vanaman:2020_disgust} suggest (p. 211), interventions targeting disgust and disgust-driven moral concerns are likely to have a larger impact than arguments about harm.\n\nThey draw a comparison to sushi, initially regarded as disgusting in some cultures due to unfamiliarity, but becoming delicious as it became familiar. Change happens not just by arguing, but by making the unfamiliar familiar. Then we can appreciate the benefits, like evolving ideas about gender.\n\nThis study has theoretical importance for us: it shows moral psychology methods can distinguish actual motivation from avowed motivation, and these can differ dramatically. It's evidence that disgust influences moral attitudes. And it illustrates the 'gap' I mentioned."
+  },
+  {
+    "transcript_id": "2551dcc8-17e4-4433-9cf4-36fea4adbc2a",
+    "transcript_text": "This illustrates the gap between actual and avowed motivation. It also highlights the gap between our ancient ethical responses and modern challenges. Pathogen disgust is an old ethical driver, evolved over hundreds of thousands, probably millions of years of scavenging. But the challenges we face involve recent technology and social changes. Bathrooms are maybe 200-300 years old, and still not universal. Contemporary ideas about gender are also relatively recent, especially considering large-scale farming and pastoralism (allowing novel patriarchal structures) are only about 10,000 years old. We have rapidly advancing technologies and social structures, but much of our ethics seems driven by older, slower-changing systems like pathogen disgust. This is the gap. Recognizing it is the first step. Many doing applied ethics might not consider the moral psychology of emotions, thus being blind to this gap and how it works. Understanding these drivers is crucial for addressing cultural disagreements and making progress."
+  },
+  {
+    "transcript_id": "0c3fa454-198a-4367-aeee-a2c26542a29a",
+    "transcript_text": "Jonathan Haidt, a psychologist we'll see more of later, claims 'the central phenomena [in morality] are moral emotions and intuitions' (\\citet{haidt:2008_moralitya}, p. 65). I think Haidt means these are foundational: moral emotions and intuitions can exist independently, but other moral abilities couldn't exist without them, practically speaking for humans.\n\nWe asked two key questions:\nQ1: How, if at all, do emotions influence moral intuitions?\nQ2: What do humans compute that enables them to track moral attributes?\n\nHaidt offers an answer to both. He thinks tracking moral attributes is mainly about responding to emotions (like pathogen disgust). Thus, emotions directly affect moral intuitions because intuitions *are*, in effect, emotional responses.\n\nThis idea is captured by Hypothesis 1, the 'Affect Heuristic', as described by \\citet{sinnott:2010_moral}: 'if thinking about an act [...] makes you feel bad [...], then judge that it is morally wrong'. (This is one hypothesis; we'll consider an incompatible one later).\n\nThe Affect Heuristic applies specifically to *moral intuitions*, which, following my definition (see glossary), are claims accepted independently of inferential justification. It's not about all moral judgements, which can involve reflection and principles. I want to spend a bit more time explaining what a heuristic is."
+  },
+  {
+    "transcript_id": "3ee24f05-b49e-4985-8f0e-5357c96fc1a0",
+    "transcript_text": "What is a heuristic?"
+  },
+  {
+    "transcript_id": "b14e6751-7c11-481e-a7d0-17597f78c5a9",
+    "transcript_text": "In this context, 'heuristic' has a special technical sense. A heuristic links an *inaccessible* attribute to an *accessible* attribute such that, within a limited but useful range of situations, someone could track the inaccessible attribute by computing the accessible attribute.\n\nWhat's an attribute? A feature of something. Being 178cm tall is an attribute of me. Being switched on is an attribute of your laptop. Kicking a baby seal is a bad action; badness is an attribute of the action.\n\nWhat about accessible/inaccessible? We follow \\citet{kahneman:2005_model} (p. 271): 'accessibility refers to the ease (or effort) with which particular mental contents come to mind.' If I ask the population of Sweden, that's inaccessible for most – hard to bring to mind without looking it up. If I ask how many people you know from Switzerland, that's relatively accessible – easier to bring to mind. Accessibility is a matter of degree; things are more or less accessible. We treat it as binary for simplicity in the definition, but it's a continuum. Recognizing this avoids uncharitable objections based on a strict binary view.\n\nHeuristics are important because, like all animals, we face trade-offs, often needing speed over accuracy. Computing inaccessible attributes is slow. Heuristics let us substitute an accessible attribute for an inaccessible one, trading accuracy for speed. This is also important because brain power is energetically expensive (about 20% of resting energy use, see \\citet{raichle:2002_appraising}). Using heuristics saves cognitive effort.\n\nExample: The poison detector. Deciding not to eat smelly leftovers uses a heuristic: the accessible attribute (how it smells/tastes/makes you feel) tracks the inaccessible attribute (toxicity, which requires lab tests). The Affect Heuristic hypothesis suggests we do something similar for morality: using accessible feelings (like disgust) to track inaccessible moral attributes (like rightness/wrongness)."
+  },
+  {
+    "transcript_id": "eea3490a-104c-42ad-8ed1-1fe42efa0cf3",
+    "transcript_text": "Philosophers often neglect heuristics because they focus less on how minds *actually* work. But the use of heuristics is a revealing feature of much cognition, human and otherwise."
+  },
+  {
+    "transcript_id": "a393233e-a16f-4186-9747-5b815b4789e0",
+    "transcript_text": "Let's look at a canonical example of heuristics in a non-moral case: judgements about the frequency and risk of causes of death, studied by \\citet{pachur:2012_how}."
+  },
+  {
+    "transcript_id": "e0699780-4a69-4281-9c3d-8040f0b6dbfb",
+    "transcript_text": "This is based on Experiment 2 in \\citet{pachur:2012_how}. Participants, who were North American and likely knew little about Switzerland, were asked about pairs of cancers. They had to judge: Frequency ('Which cause of death has a higher annual mortality rate [in Switzerland]?') and Risk ('Which cause of death represents a higher risk of dying from it [in Switzerland]?').\n\nNote: The attributes to be tracked (frequency and risk in Switzerland) were *inaccessible* to these participants. Furthermore, the correct answers for frequency and risk based on mortality rates are identical in this context. (The study also asked about Value of a Statistical Life, VSL, which I'm omitting for simplicity here)."
+  },
+  {
+    "transcript_id": "37cefd10-a743-4dd5-975f-7b148dce1bda",
+    "transcript_text": "Pachur et al.'s conjecture was that despite the normative equivalence, the different wording of the questions would lead participants to use different heuristics for frequency and risk judgements."
+  },
+  {
+    "transcript_id": "f8d5e729-bf63-4c21-8079-c3c795f43862",
+    "transcript_text": "Specifically, they hypothesised:\nFor *frequency* judgements, people use the **Availability Heuristic**: The more easily you can bring cases of the cause of death to mind, the more frequent it is judged to be.\n*Prediction*: Frequency judgements will correlate with the number of cases in the participant's social network (a measure of availability-by-recall).\n\nFor *risk* judgements, people use the **Affect Heuristic**: The more dread you feel when imagining the cause of death, the more risky it is judged to be. (Think of Obama's line: risk of dying from slipping in the bath vs. terrorism; the latter causes more dread).\n*Prediction*: Risk judgements will correlate with participants' own feelings of dread about that cause of death.\n\nThe results broadly confirmed these predictions. \\citet{pachur:2012_how} found that 'availability-by-recall offered a substantially better descriptive account than the affect heuristic when people judged deindividualized, statistical mortality rates. Affect, however, was at least on par with availability when people [...] were asked to indicate the perceived risk of dying' (p. 324). They also found dread could be gauged simply by asking how much dread a risk evokes.\n\nThis study provides a model: to show a heuristic is used, demonstrate that judgements are determined by an accessible attribute (like cases in social network, or feelings of dread/disgust)."
+  },
+  {
+    "transcript_id": "a893ff21-a8c6-4860-bc7d-9f82e42ade8c",
+    "transcript_text": "A heuristic links an inaccessible attribute to an accessible one, allowing tracking via computation of the accessible attribute. The cost is reduced accuracy and potential bias. For example, participants in the \\citet{pachur:2012_how} study wrongly thought dying from syphilis was about four times more likely than dying from a tornado in Switzerland, when the reverse is true (though both are very rare). This bias likely arises because syphilis evokes more dread than tornadoes for most people. Despite such biases, overall, people's rankings were relatively accurate given their limited information. The benefit is speed and reduced effort. This speed-accuracy trade-off is why heuristics are a key feature of cognition. Philosophers often focus on slow, deliberate thinking, but much of life requires fast responses, which heuristics enable."
+  },
+  {
+    "transcript_id": "a1a7975d-f7c8-44a2-b76b-6ac6c3647a75",
+    "transcript_text": "So, we understand heuristics and their significance (speed-accuracy trade-offs). But the Affect Heuristic in morality is claimed to be significant in further ways.\n\n*Implication 1: No Direct Insight.* \\citet{sinnott:2010_moral} argue, 'if moral intuitions result from heuristics, [... philosophers] must stop claiming direct insight into moral properties' (p. 268). They seem to target views like epistemological intuitionism, described by \\citet{stratton-lake:2002_ethical} as the view that some moral propositions are self-evident, known directly by intuition upon adequate understanding (p. 2). The challenge is: what feels like direct insight might just be the operation of an unconscious heuristic substituting feeling for moral truth. If this argument holds, it counters claims of self-evidence. However, we should examine if the consequence truly follows or if one could accept both the heuristic and intuitionism.\n\n*Implication 2: Don't Trust Intuitions (especially in novel situations).* 'Just as non-moral heuristics lack reliability in unusual situations, so do moral intuitions' (\\citet{sinnott:2010_moral}, p. 268). Heuristics are adapted to familiar environments (evolutionary, cultural, personal). In *unfamiliar problems* (situations 'with which we have inadequate evolutionary, cultural, or personal experience', \\citet{greene:2014_pointandshoot}, p. 714), their reliability is questionable. We shouldn't trust the availability heuristic about Swiss tornadoes; why trust the affect heuristic about novel ethical dilemmas?\n\n*Relevance to Consequentialism:* This implication helps defend consequentialism against objections based on counter-intuitive judgements. Example: 'Critics often argue that consequentialism can’t be accurate, because it implies moral judgments that are counter-intuitive, such as that we are morally permitted to punish an innocent person [Noah!] in the well-known example where this is necessary to stop riots and prevent deaths. With the heuristic model in hand, consequentialists can respond that the target attribute is having the best consequences, and any intuitions to the contrary result from substituting a heuristic attribute' (\\citet{sinnott:2010_moral}, p. 269). The intuition against punishing Noah might arise from a heuristic ill-suited to this complex, modern scenario involving large groups, communication, prisons – all recent developments. Thus, the intuition isn't a reliable guide and doesn't refute consequentialism.\n\n*Wilson's Stronger Claim:* E. O. Wilson suggested 'ethical philosophers intuit the deontological canons of morality by consulting the emotive centers of their own hypothalamic-limbic system... Only by interpreting the activity of the emotive centers as a biological adaptation can the meaning of the canons be deciphered' (\\citet{wilson:1975_sociobiology}, p. 563, quoted in \\citet{haidt:2008_moralitya}, p. 68). This implies understanding ethics requires knowing about emotions as biological adaptations."
+  },
+  {
+    "transcript_id": "d3f670c6-656d-412f-b3f2-9b91e36e90da",
+    "transcript_text": "Recall the illustration about gender identity and bathroom access policies."
+  },
+  {
+    "transcript_id": "1d213070-b636-4296-911b-640d89ee63bd",
+    "transcript_text": "So, the Affect Heuristic hypothesis, if true, appears rich in consequences for philosophical ethics and policy development, as illustrated by the bathroom example where disgust, not harm, seemed key. It challenges direct insight claims, questions the reliability of intuitions in novel situations, aids consequentialism, and potentially grounds ethics in biology via Wilson's view. But is the hypothesis actually true?"
+  },
+  {
+    "transcript_id": "eca62efb-8de9-4a6d-bf1d-950752d619dc",
+    "transcript_text": "Q: What do adult humans compute that enables their moral intuitions to track moral attributes (such as wrongness)?\nHypothesis: They rely on the Affect Heuristic: 'if thinking about an act [...] makes you feel bad [...], then judge that it is morally wrong'.\nBut is this hypothesis true?\nPrediction: If you experimentally induce negative feelings (like disgust) without participants realising the source is irrelevant, they will be harsher in their moral judgements.\nEvidence cited by \\citet{sinnott:2010_moral} includes \\citet{schnall:2008_disgust}. They 'probed subjects’ responses to moral scenarios [...] while priming subjects to feel disgusted. In one experiment, subjects filled out their questionnaires while seated at either a clean desk or a disgusting desk [...]. Subjects who were rated as highly sensitive to their own bodily state were more likely to condemn the actions when seated at the disgusting desk than at the clean desk.'\n\nLast time, I presented this as evidence. But we shouldn't rely on a single study. We need a rigorous evaluation procedure."
+  },
+  {
+    "transcript_id": "252a3822-8771-4c78-8ba3-78ba304059bd",
+    "transcript_text": "Step 1: Has the study featured in a review? If so, does the review broadly support the findings?"
+  },
+  {
+    "transcript_id": "b9682925-915a-42aa-b9cc-b22fd206d15c",
+    "transcript_text": "If you search, you'll find the \\citet{chapman:2013_things} review. It looked at 11 studies manipulating disgust or cleanliness. They concluded (in 2013): 'To date, almost all of the studies [...] have reported effects on moral judgment. These findings strengthen the case for a causal relationship [...] by showing that experimentally evoked disgust—or cleanliness [...]—can influence moral cognition' (p. 313). At that point, things looked good for \\citet{schnall:2008_disgust}.\n\nHowever, science moves fast. An update is needed. Chapman herself noted later \\citep{chapman:2018_component}, citing a meta-analysis by \\citet{landy:2015_does}, that 'incidental disgust has at best a small effect on moral judgment' (pp. 73-74). Landy and Goodwin's meta-analysis is excellent reading on this topic.\n\nWe need to distinguish statistical significance (confidence there *is* an effect) from effect size (how *much* of the variation the effect explains). We might be confident an effect exists, but find it's small, meaning emotions explain only a small part of why moral judgements vary. This update complicates things. The reviews suggest an effect likely exists, but it's small. What does this mean for the Affect Heuristic hypothesis? We'll consider that."
+  },
+  {
+    "transcript_id": "66064e3f-ed9d-4517-81b4-315164bb687a",
+    "transcript_text": "So, the review situation is mixed: initial support, later meta-analysis suggesting a small effect."
+  },
+  {
+    "transcript_id": "6bce3904-66cb-4412-839d-f11c83e143f9",
+    "transcript_text": "Step 2: Are there similar studies? If so, are the findings convergent? Never trust a single study."
+  },
+  {
+    "transcript_id": "7b46bac0-9938-483f-91d0-5f90e9a84a5f",
+    "transcript_text": "Yes, there are similar studies. For example, \\citet{eskine:2011_bad} had participants drink something sweet, neutral, or bitter, then make moral judgements on vignettes (some from \\citet{wheatley:2005_hypnotic}). They found significantly harsher moral judgements after the bitter drink compared to neutral or sweet. Since bitterness is related to disgust, this seems to provide convergent evidence: different manipulations (disgusting videos/desks in Schnall, bitter taste here) producing similar effects on moral judgement."
+  },
+  {
+    "transcript_id": "90028036-301b-4d3e-b7c3-3387cd6fb78d",
+    "transcript_text": "So, yes, there appear to be similar studies with convergent findings."
+  },
+  {
+    "transcript_id": "1cd5bb27-a353-4954-af3a-3c682840d4a3",
+    "transcript_text": "Step 3: Has the study been successfully replicated? Replication means attempting to repeat a study, perhaps exactly (direct replication) or with variations (conceptual replication), to see if the original findings hold.\n\nThe situation for \\citet{schnall:2008_disgust} is complicated:\n*   Experiment 1 is itself a successful conceptual replication of \\citet{wheatley:2005_hypnotic}, which is good.\n*   \\citet{ugazio:2012_role} reported a failure to replicate Experiment 1. However, they changed a critical aspect: asking for binary right/wrong judgements instead of using a scale. A binary measure is likely less sensitive, so this failed replication might not be very informative about the original finding.\n*   \\citet{johnson:2016_effects} reported a convincing failure to replicate Experiment 3 (where disgust was induced by having participants recall a disgusting event).\n*   Furthermore (relatedly), another study by Schnall's team on cleanliness \\citep{schnall:2008_clean} faced a replication attempt by \\citet{johnson:2014_does} which strongly suggested the original study lacked sufficient power to detect the claimed effect.\n\nOverall, the replication picture is mixed, leaning towards problematic, especially with the convincing failure for Experiment 3 and the related issues with the cleanliness study."
+  },
+  {
+    "transcript_id": "fbd08f8d-aa13-44ef-8b09-cab50cffa001",
+    "transcript_text": "So, we evaluated the evidence for the Affect Heuristic hypothesis based on \\citet{schnall:2008_disgust}. What should we conclude?\nMy personal journey went from thinking Schnall et al. was solid, encouraged by the initial \\citet{chapman:2013_things} review, to becoming doubtful after the \\citet{landy:2015_does} meta-analysis and the replication failures reported by \\citet{johnson:2016_effects} and \\citet{johnson:2014_does}. My current judgement is that I cannot confidently rely on the specific findings of \\citet{schnall:2008_disgust} as strong evidence.\n\nHowever, this doesn't mean emotions don't influence moral intuitions at all. There are other studies and other ideas about how disgust and feelings might play a role (e.g., \\citet{piazza:2018_what}). My own view is that Schnall et al.'s conclusion (that disgust influences moral judgement) is likely correct, but their specific studies aren't the strongest support now. We should be cautious about using Schnall et al. (2008) as primary evidence that *extraneous* induced disgust makes moral judgements harsher."
+  },
+  {
+    "transcript_id": "76f31dd1-a2a9-49e6-815d-2ccd00479fbf",
+    "transcript_text": "So, how to evaluate evidence from a study for this course:\n1.  Never trust secondary sources uncritically, especially philosophers summarizing science. Check the original research.\n2.  Apply the three-step procedure:\n    a.  Has it featured in a review? (Ideally, find *all* relevant reviews). What do they conclude?\n    b.  Are there similar studies? Are the findings convergent (coming from different labs, different methods)?\n    c.  Has the study been replicated? Were replications successful? Are there unexplained failures?\n\nTo claim knowledge based on a study, we ideally want positive answers here: convergent findings from other labs, and successful replication (or at least, no convincing, informative failures). Don't just cite one study and move on; that's low-quality reasoning."
+  },
+  {
+    "transcript_id": "4e017ddb-0619-48f8-a37c-2b9a8631a947",
+    "transcript_text": "Can we reject the Affect Heuristic hypothesis based on this evaluation?"
+  },
+  {
+    "transcript_id": "6267eb5c-84f2-4470-926a-24691d5e4a31",
+    "transcript_text": "Arguments for rejecting (Yes):\n*   It's not just a lack of evidence; there's positive evidence suggesting disgust has at most a *small* effect on moral judgements \\citep{landy:2015_does}. A small effect seems inconsistent with emotion being the primary driver of intuitions as the Affect Heuristic implies.\n\nArguments against rejecting (No):\n*   Small effect size doesn't mean zero effect. The influence might still exist.\n*   Crucially, there's a mismatch: The Affect Heuristic hypothesis is about *intuitions* (claims accepted without inference), but the evidence largely comes from studies measuring *judgements* made after reading vignettes (like the 'Resume' example from \\citet{schnall:2008_disgust}). Participants have time to reflect, apply principles, draw on experience. It's not clear these tasks directly tap intuitions in my defined sense. The link is indirect.\n*   The apparent small effect size might be due to insensitive measures in some studies. More sensitive measures could reveal a larger effect (or confirm it's small, or non-existent).\n*   Newer research, like \\citet{tracy:2019_physiological} (which we'll discuss in seminars), might provide stronger support for a link between disgust and moral judgement.\n\nSo, the situation is complex."
+  },
+  {
+    "transcript_id": "37990771-8ca3-4dca-8243-ddd7115ddfb5",
+    "transcript_text": "Following the evidence, especially in moral psychology, often takes us on a winding path. Almost every year, I update my convictions and lecture material substantially. It's easy to feel we'll never reach a clear conclusion.\n\nWhen you encounter conflicting evidence, please don't write essays concluding 'we do not have sufficient evidence'. I know that already. That's the minimally informative answer, the philosophical equivalent of 'What did you do today?' 'Stuff.' While always true for the complex questions we tackle, it doesn't contribute to our collective knowledge.\n\nYour job in an essay is harder than mine in a lecture. My job is to guide you through relevant terrain, presenting different findings and arguments. Your job is to evaluate this material and attempt to determine the truth, making a contribution. This requires grappling with the complexity, not simply stating that it exists. Of course, don't just ignore conflicting evidence either. Find a way to argue for a substantive conclusion while acknowledging the difficulties."
+  },
+  {
+    "transcript_id": "8676eefa-b185-480d-ac75-a198b7901c51",
+    "transcript_text": "So, for the rest of the lectures, I will assume the following (these are my working assumptions, open to revision):\n0.  For now, we cannot confidently rely on the specific results of \\citet{schnall:2008_disgust}.\n1.  Feelings of disgust *can*, and sometimes *do*, influence some moral intuitions. I believe there is sufficient evidence for this, e.g., from studies like \\citet{tracy:2019_physiological}.\n2.  We sometimes feel disgust in response to moral transgressions, even non-visceral ones."
+  },
+  {
+    "transcript_id": "29f3735f-9c9b-4ee3-bcaf-9d19c08da350",
+    "transcript_text": "As an aside, there are two related but distinct research questions here:\n*   Does experimentally manipulated disgust influence subsequent moral evaluations? (e.g., \\citet{tracy:2019_physiological})\n*   Are moral violations perceived as disgusting? Do they elicit physiological disgust responses? (e.g., \\citet{chapman:2009_bad}, who showed non-disgusting unfairness elicited facial expressions and physiological responses associated with basic disgust)."
+  },
+  {
+    "transcript_id": "59e3017d-8d6a-43a5-99a8-54dd2471ec8b",
+    "transcript_text": "Repeating my assumptions for the rest of the lectures:\n0.  Cannot rely on \\citet{schnall:2008_disgust} results for now.\n1.  Feelings of disgust can influence moral intuitions.\n2.  We feel disgust in response to moral transgressions.\nAlso: It seems we need a better theoretical framework than the simple Affect Heuristic hypothesis provides."
+  },
+  {
+    "transcript_id": "f01872c7-32fb-4e7c-ac00-f51b44d4f1d9",
+    "transcript_text": "While I don't fully accept the Affect Heuristic *hypothesis* as presented, I do accept the *puzzle* it attempts to address: Why do feelings of disgust sometimes influence moral intuitions? (And why do we feel disgust in response to moral transgressions?). This puzzle remains. Any adequate theory needs to address it. My conclusion is we need a better theory."
+  },
+  {
+    "transcript_id": "1350c447-2e41-4ca5-a4d5-58a833a90ddd",
+    "transcript_text": "Previously, we examined the hypothesis about the Affect Heuristic. Now, let's consider a radically opposed hypothesis."
+  },
+  {
+    "transcript_id": "52edfa8a-6c72-480f-901e-b0328bec5f0e",
+    "transcript_text": "We're still focused on moral intuitions, which \\citet{haidt:2008_moralitya} called central phenomena. We're still asking:\nQ2: What do humans compute that enables them to track moral attributes?\nQ1: How, if at all, do emotions influence moral intuitions?\nBut now, let's compare moral intuitions to *linguistic* intuitions."
+  },
+  {
+    "transcript_id": "05909ea8-d6b7-475a-856b-86c4a30f918c",
+    "transcript_text": "As fast as you can, which of these two is a grammatical sentence?\n[1] Many more people have been to Paris than I have.\n[2] Many more Paris than have to been people I have.\nTop or bottom?"
+  },
+  {
+    "transcript_id": "cab86f5b-e1ed-4d4a-bcb8-cad856c1aaba",
+    "transcript_text": "Top. Very good. Most people say top quickly and easily. This illustrates linguistic intuition.\nNow consider the questions again:\nQ2 (Moral): What do humans compute that enables them to track moral attributes?\nQ1 (Moral): How, if at all, do emotions influence moral intuitions?\n\nLet's ask the parallel question for language:\nQ2 (Linguistic): What do humans compute that enables them to track linguistic attributes (like grammaticality)?\nThe standard answer in linguistics is: they compute the *linguistic attributes themselves*, operating according to complex syntactic rules, irrespective of whether they can articulate those rules or truths about those attributes. This is surprising because..."
+  },
+  {
+    "transcript_id": "084add07-2cbb-4e4c-9c1e-042bfe1fa54a",
+    "transcript_text": "...most people haven't studied syntax. If you take a course, you often find your prior beliefs about grammar were wrong. Yet, your intuitions align with complex rules you're unaware of. How could linguistic intuitions involve computing linguistic attributes if we are entirely unable to articulate even basic facts about them—and are even often wrong about them when we try?"
+  },
+  {
+    "transcript_id": "7e0a732a-36b0-48e3-8d01-0bea6062ebcc",
+    "transcript_text": "The standard explanation for how we can track linguistic attributes despite being unaware of the rules is the hypothesis of a special-purpose language *module*. This module operates according to linguistic rules, allowing rule-governed intuitions without conscious access to the rules themselves. (See the handout appendix for more on modules, drawing on \\citet{Fodor:1983dg}).\n\nNow, the linguistic analogy for morality, proposed by researchers like \\citet{mikhail:2007_universal}, \\citet{roedder:2010_linguistics}, and \\citet{dwyer:2009_moral}, suggests a parallel. Mikhail argues 'the mind contains a moral grammar: a complex and possibly domain-specific set of rules [...] this system enables individuals to determine the deontic status of an infinite variety of acts and omissions' (\\citet{mikhail:2007_universal}, p. 144). The idea is: 1) There's a moral grammar (a set of rules). 2) This grammar resides in the mind, perhaps as a module.\n\nThis offers an alternative answer to our questions: We track moral attributes by computing them directly via a moral module, similar to how we handle language."
+  },
+  {
+    "transcript_id": "25be7b54-e8b7-430f-9120-e5ce90cabad3",
+    "transcript_text": "Note: There are many possible points of analogy between language and morality (see \\citet{roedder:2010_linguistics}). Here, we are focusing on just one specific analogy: the idea that there is a distinctive, special-purpose, and modular capacity underlying moral intuitions, akin to the linguistic capacity."
+  },
+  {
+    "transcript_id": "ee34733b-cd74-48a8-9fa3-c8879640bae9",
+    "transcript_text": "What evidence might indicate that humans have an ethics module, supporting this linguistic analogy? Researchers have suggested a few possibilities:\n*   The phenomenon of 'moral dumbfounding' \\citep{dwyer:2009_moral} (we'll discuss this later).\n*   The apparent resistance of some moral intuitions to revision.\n*   Evidence of complex, rule-like structure implicit in moral intuitions, even when people are unaware of the rules \\citep{mikhail:2014_any}."
+  },
+  {
+    "transcript_id": "eddf7a0a-8752-44e9-a513-a2dc617a705d",
+    "transcript_text": "Let's focus on the third point, which seems the most interesting evidence for Mikhail's view. Here's my reconstruction of his argument:\n1.  'Adequately specifying the kinds of harm that humans intuitively grasp requires a technical legal vocabulary' (e.g., concepts like battery, intent, means, side effect) \\citep{mikhail:2007_universal}, p. 146).\nTherefore:\n2.  The abilities underpinning unreflective ethical judgements (intuitions) involve analysis in accordance with rules.\n\n(From 2, combined with the observation that humans don't consciously know these rules, one might infer the analysis is done by a modular process).\n\nMy main concern now is: why accept premise 1?"
+  },
+  {
+    "transcript_id": "8efa4074-99e8-4a7e-9b28-87d08373511a",
+    "transcript_text": "Mikhail's approach involves analysing responses to moral dilemmas, like the famous Trolley problem. (Most people are familiar with trolley problems, but I'll briefly describe the standard 'Switch' case, also called 'Trolley'). A runaway trolley is about to kill five people. You can pull a lever to divert it onto another track where it will kill only one person. Is it okay to pull the lever?"
+  },
+  {
+    "transcript_id": "e4b59a9d-b9e5-494c-ae56-6828fa117e3b",
+    "transcript_text": "Compare the standard Trolley (Switch) dilemma with the Transplant dilemma: Five people need organs to live. You can save them by killing one healthy person and transplanting their organs. Is it okay to do this?\n\nA classic finding is that many people say 'yes' to pulling the lever in Trolley but 'no' to killing the person in Transplant. Philosophers like Foot and Thomson saw this pattern as posing a puzzle: why the different responses? Mikhail's answer \\citep{mikhail:2007_universal, mikhail:2014_any} is that the difference lies in a legal distinction involving *purposive battery*. Transplant involves intending harm to the one as a means to save the five (purposive battery), while Trolley involves harm to the one merely as a foreseen side effect of diverting the threat from the five. This distinction, he argues, explains the pattern of judgements, even though people aren't consciously aware of applying this principle."
+  },
+  {
+    "transcript_id": "29f944b1-f955-4e0d-bedb-473315f97588",
+    "transcript_text": "Mikhail provides a formal analysis, suggesting the structure of the action matters. In Transplant, the battery (harm) is intended as a means to the good outcome (saving five). In Trolley, the battery is a side effect of the action taken to achieve the good outcome. He argues 'the Transplant and Trolley findings can be partly explained in terms of the distinction between battery as a means and battery as a side effect' \\citep{mikhail:2007_universal}."
+  },
+  {
+    "transcript_id": "994239a7-87dd-4b8f-9692-f44e4405f4f4",
+    "transcript_text": "[This slide shows the full figure from Mikhail, 2007, illustrating the structural analysis of Trolley and Transplant scenarios.]"
+  },
+  {
+    "transcript_id": "7f75c73c-1feb-4c6a-b293-9eee8a8d398a",
+    "transcript_text": "If it were just one pair of dilemmas, the evidence would be weak. But \\citet{mikhail:2014_any} extends this analysis to many other pairs of dilemmas where philosophers and cognitive scientists found puzzling contrasts in judgements (see his Table 2). He argues that in these cases too, the patterns can be explained by appeal to legal distinctions like purposive battery, which people intuitively track without conscious awareness.\n\nMikhail's theses are:\n1.  The contrasting judgements make sense from a legal perspective (e.g., based on principles about battery), so we don't need to assume people apply incompatible ethical principles.\n2.  Our moral intuitions implicitly conform to these complex legal distinctions."
+  },
+  {
+    "transcript_id": "2c1cc5c4-aecb-44d0-b844-16ede07046ce",
+    "transcript_text": "So, that was the argument for Mikhail's premise 1: 'adequately specifying the kinds of harm that humans intuitively grasp requires a technical legal vocabulary'. If this premise holds, it supports the conclusion that 'The abilities underpinning unreflective ethical judgements involve analysis in accordance with rules'. This provides one line of reasoning for the linguistic analogy and the idea of an ethics module."
+  },
+  {
+    "transcript_id": "d39d26ad-d525-4ce3-9498-d7fc68116e24",
+    "transcript_text": "For me, the important takeaway isn't whether you find Mikhail's argument compelling right now (there's surely more to discuss). It's that his work motivates a good question, a puzzle: Why do patterns in humans' moral intuitions reflect legal principles they are typically unaware of? Any adequate theory of moral intuition needs to solve this puzzle. One possible answer is Mikhail's: we have a moral module operating with these principles."
+  },
+  {
+    "transcript_id": "ed4db2bc-2c1f-4dd8-8c55-8e964b970f22",
+    "transcript_text": "Recall the potential sources of evidence for an ethics module: dumbfounding, resistance to revisability, and the implicit structure in moral intuitions we just discussed."
+  },
+  {
+    "transcript_id": "6e154dfd-8a26-440d-a64f-696cd2c8a40d",
+    "transcript_text": "So, the linguistic analogy suggests that, like language, ethics involves a special-purpose module operating according to complex rules. Mikhail: 'the mind contains a moral grammar: a complex and possibly domain-specific set of rules [...] this system enables individuals to determine the deontic status of an infinite variety of acts and omissions' (\\citet{mikhail:2007_universal}, p. 144)."
+  },
+  {
+    "transcript_id": "840bbc73-d2ca-457d-a5f6-09e195e193cb",
+    "transcript_text": "So now we have two major, opposing theories:\n\nTheory 1: Affect Heuristic\n*   Q2 (What computed?): Felt emotional responses to situations.\n*   Q1 (Emotion's role?): Moral intuitions are *determined* by emotions.\n\nTheory 2: Linguistic Analogy (Moral Module)\n*   Q2 (What computed?): Moral attributes themselves.\n*   Q1 (Emotion's role?): Emotions do *not* influence moral intuitions at all (or play no fundamental role).\n\nImportantly, we have arguments for both. But here's a fun fact: the evidence seems to conflict with *both* views in their pure forms. Evidence of a *small but significant* effect of incidental disgust on moral judgement (as suggested by \\citet{landy:2015_does}) is problematic for both:\n*   It conflicts with the strong Linguistic Analogy view (which predicts no effect of incidental emotion).\n*   It conflicts with the strong Affect Heuristic view (which implies emotions are the *primary* determinant; a small effect suggests other factors are also crucial and perhaps dominant)."
+  },
+  {
+    "transcript_id": "66321f40-97e9-40c1-a335-ed90fc893bf1",
+    "transcript_text": "Why say the evidence conflicts with both views? Because of our twin puzzles:\n\nPuzzle 1: Why do feelings of disgust sometimes influence moral intuitions? (And why do we feel disgust in response to moral transgressions?)\nThis puzzle challenges the pure Linguistic Analogy (Mikhail's view), which doesn't easily accommodate emotional influence.\n\nPuzzle 2: Why do patterns in moral intuitions reflect legal principles humans are typically unaware of?\nThis puzzle challenges the pure Affect Heuristic view, which doesn't easily explain this complex, rule-like structure."
+  },
+  {
+    "transcript_id": "8a7e3fc0-c548-4355-9ea9-6788aae9e226",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "23b0b310-cc83-4c71-8eeb-c7fae6b565af",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "a989fe8f-adbb-4dba-844f-a0db232f7d9c",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "f0b26f75-6ed3-4caf-8d74-688f21e9e7bd",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "d085a7d9-dff5-44fa-8f05-103533d933ed",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "053ef9ee-5167-4d3d-bc18-aa5eedcef46d",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "98613e9b-92dd-48d0-a824-f1fafda5a747",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "75be195b-85e0-45df-babd-44bcb14ea84a",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "6fbe1cd4-dcdd-4f23-9771-00525bb0889e",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "0560de8e-c929-49d5-93ed-4e0e3615d285",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "24556233-a604-4d1d-81d3-904f6f0a331f",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "0969398b-0b3f-410a-8fcb-d91e030b3939",
+    "transcript_text": "In conclusion..."
+  },
+  {
+    "transcript_id": "1e910388-b4eb-4522-98f7-412b84b0fce7",
+    "transcript_text": "We asked: What do adult humans compute that enables their moral intuitions to track moral attributes (such as wrongness)?\nWe considered two main answers:\n1.  Their emotional responses, via the Affect Heuristic (\\citet{sinnott:2010_moral}).\n2.  The moral attributes themselves, via a moral module analogous to language (\\citet{mikhail:2007_universal, mikhail:2014_any}).\nEach view is a response to a different puzzle..."
+  },
+  {
+    "transcript_id": "5db17f81-4f0f-4e1d-be80-983a423a496a",
+    "transcript_text": "...the puzzle about emotional influence, and the puzzle about implicit structure reflecting legal principles. Neither view, in its simple form, seems fully able to explain *both* puzzles."
+  },
+  {
+    "transcript_id": "84171c98-0790-4ca7-8e7b-1785835351b1",
+    "transcript_text": "So, we have these two hypotheses, each responding to a different puzzle, but neither seems fully adequate on its own.\nOur task, then, is to develop a theory that *can* solve both puzzles – the puzzle about emotion/disgust and the puzzle about structure/rules. Such a theory needs to be theoretically coherent, empirically motivated, and ideally, generate novel testable predictions so we can evaluate its truth. This is the challenge as we move forward in the course: can we find or develop a framework that better integrates these seemingly disparate aspects of moral intuition? Thank you very much."
+  },
+  {
+    "transcript_id": "50002110-085f-4740-a99c-9fa993d2e366",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "6edaaf0a-059b-4178-9a54-6d80233eddf8",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "2d199afd-e617-47ff-a01e-ee02fa4d53a5",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "f854ccec-52ee-40b0-bf49-5236bbb1e897",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "ef723c8b-b2ae-4abc-8d1f-074ab9724e0a",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "ce739465-aa37-40e7-be7f-2c069820e4ac",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "526659ec-82bb-4509-9bf6-c0985ab8260e",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "a4ce0b4d-5970-4ea2-a7e4-905cbe9e1eb8",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "8308d94f-204f-4d90-90fc-c61054b07507",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "40ea0796-c05d-4958-aae7-84e856180c48",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "0d66e686-5b4b-49f0-9fef-e7ea850d7a0c",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "3fb47787-05b7-47fe-97b5-9fd2b9762da9",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "48a5fc19-9e8e-48ac-9864-eca587b3b2f0",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "5c3aa5df-d6e7-41d0-a7c4-af931327cd47",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "6ec1101f-fb9d-43f5-9e7f-88b693d3e3e9",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "177c0708-8b08-4686-b582-88f991e5271d",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "cf9aa6ac-b1e7-4db3-a1c8-ce737f757c42",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "efc8f138-f3c2-4407-9458-a5000df24781",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "56fd4cd0-314f-48a0-b342-a5d8a82be102",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "58887b95-2915-4905-a581-8b318a60af44",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "eca43fe5-c33e-4960-ba47-4e1a807edec5",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "a2ad04d3-b722-48a3-af67-cf544be1353f",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "4b2c0907-3265-472c-8a54-e133ad3d984a",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "da523fb6-c5e5-4057-8785-e2c8a8229faf",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "fe712e69-5f7a-4201-b2fa-80522fc08b59",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "c6e018c3-1fb2-4998-b173-08b7165d0a59",
+    "transcript_text": "[no transcript]"
+  }
+]

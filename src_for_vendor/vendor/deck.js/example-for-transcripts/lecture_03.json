@@ -1,0 +1,342 @@
+[
+  {
+    "transcript_id": "002306dd-3ef5-4e16-91ac-31e000416fe4",
+    "transcript_text": "Welcome back to our lectures in moral psychology."
+  },
+  {
+    "transcript_id": "40b550bb-cfe4-464d-9407-fcfc1a4d4abb",
+    "transcript_text": "As last time, I'm going to start with a preview of the lecture, which will spoil the elements of surprise. I'm going to suggest that there is a puzzle."
+  },
+  {
+    "transcript_id": "34bb64a2-0cc2-48dd-813b-a5de0b0bdf76",
+    "transcript_text": "The puzzle arises from evidence we will see that moral judgements are sometimes, but not always, a consequence of reasoning from known principles. If that's true, it's a good question for us to ask why. It turns out that that question is a puzzle because it is surprisingly difficult to answer. If you look at the leading theories in this domain, as we will do later and in future weeks, you will see that it's very hard to find a theory that can provide a good answer to the question: Why are moral judgements sometimes, but not always, a consequence of reasoning from known principles? My purpose today is mainly to provide you with good reasons for accepting the claim about reasoning, so that we can see that there is a puzzle later. \n\nWe're also making a transition. Previously, I was very much focussed on intuitions—that's to say, claims which you accept independently of whether or not you have any inferential justification for them. For example, I show you a picture of someone about to attack a baby seal, and you immediately say, 'That is wrong'. Many people will hold on to the idea that that is wrong, independently of whether or not they can justify that. So that claim for them is an intuition. But when I'm talking about judgements, I'm just talking about claims that you accept. This includes your intuitions, but much else besides. If you have an argument with someone and they persuade you that a certain proposition is true, then you make a judgement—you come to accept a claim—but it's clearly not an intuition if your acceptance depends on the inferential justification provided. We're switching from intuition to judgement today. If we were to say that intuitions are somehow a consequence of reasoning, that would seem very difficult to put together, a clear tension, because the whole point about intuition is it's a claim you accept independent of inferential justification, whereas the natural thought is that reasoning provides inferential justification."
+  },
+  {
+    "transcript_id": "56e95a49-8e38-4835-bae1-197895f0314b",
+    "transcript_text": "So here's the puzzle for today's lecture. But this is just a preview. So if you've just come in and you missed it, that's fine. Now I can start the lecture."
+  },
+  {
+    "transcript_id": "6b2229fe-636b-4c6c-b490-7f8aab5932f0",
+    "transcript_text": "Today's lecture is all about: How, if at all, does a person’s reasoning influence their moral judgements? When you read philosophers on this, they are pretty confident that reasoning influences moral judgements. But outside philosophy, people are much less confident. For example, here is Prinz: ‘If we ask people why they hold a particular moral view [their] reasons are often superficial and post hoc. [...] basic values are implemented in our psychology in a way that puts them outside certain practices of justification’ \\citep[p. 32]{prinz:2007_emotional}. So Prinz seems to be answering this question by saying 'barely at all'. Reasoning barely influences people's moral judgements. And here's Haidt & Bjorklund: ‘moral reasoning is [...] usually engaged in after a moral judgment is made, in which a person searches for arguments that will support an already-made judgment’ \\citep[p. 189]{haidt:2008_social}. I understand their picture to be something like this: emotion (or perhaps something else) gives rise to judgement, and the judgement then may trigger some reasoning later to search for justification. On this picture, reasoning is causally inefficacious; it doesn't play a causal role in the origin of your judgements in any direct way, though there may be indirect connections. What is the evidence for these bold claims? Is it correct that reasoning barely influences a person's moral judgements, and if it does, it does so really indirectly?"
+  },
+  {
+    "transcript_id": "9d4f3538-1bc2-4597-8576-7ee00b037818",
+    "transcript_text": "Today we are going to consider a piece of evidence which has been offered in support of these claims, perhaps the evidence most commonly offered: the phenomenon of moral dumbfounding. The quote from Prinz, for example, comes in the course of a discussion of this evidence. \n\nWhat is moral dumbfounding? To answer that question, we need to look quite carefully at the experimental paradigm which introduced it, because sometimes characterisations of moral dumbfounding are a little bit quick or sloppy, causing mistakes later. Moral dumbfounding is ‘the stubborn and puzzled maintenance of an [ethical] judgment without supporting reasons’ \\citep[p. 1]{haidt:2000_moral}."
+  },
+  {
+    "transcript_id": "0da999cb-51ea-46fb-9b00-acda1fd4267a",
+    "transcript_text": "To understand moral dumbfounding, we need to review the experiment that introduced the term. This is an unpublished study by \\citet{haidt:2000_moral}. I wouldn't normally discuss unpublished research, but this study is enormously influential. \n\nWhat did they do? They presented scenarios, including two which were morally provocative but harmless: the [Incest] scenario, depicting consensual incest between adult siblings, and the [Cannibal] scenario, where a woman eats flesh from a donated human cadaver. These were written to elicit intuitive moral condemnation but prevent easy justification based on harm \\citep{haidt:2000_moral}. They also used 'non-moral intuition' tasks like 'Roach' (drinking juice after a sterilized cockroach was dipped in it) and 'Soul' (signing a non-binding contract to sell one's soul for $2). \n\nCrucially, and often forgotten, the design involved comparing these morally provocative scenarios with a moral scenario involving harm: the [Heinz] dilemma (should Heinz steal a drug to save his dying wife?). This served as a control condition where reasoning was expected. \\citet{haidt:2000_moral} state: ‘Planned contrasts were performed between the Heinz task and each of the other four tasks, because we predicted that the Heinz task would be unique in encouraging analytical reasoning’ (p. 8).\n\nThe method involved: (1) asking whether the act was wrong (or if the participant would do it), (2) recording the answer and any arguments, (3) having the experimenter argue against the participant's position, and (4) administering a questionnaire after each task about confusion, irritation, confidence, and whether the judgment felt based on reasoning or a 'gut feeling'."
+  },
+  {
+    "transcript_id": "6e4dc0a9-373e-4060-8710-afac363c3e2e",
+    "transcript_text": "Let's look at their results (remembering this is unpublished data). Participants often made ‘unsupported declarations’, like “It’s just wrong to do that!” or “That’s terrible!” They made the fewest such declarations in the [Heinz] dilemma (the control involving harm) and significantly more in the [Incest] story \\citep{haidt:2000_moral}. Note the comparison with the control condition."
+  },
+  {
+    "transcript_id": "ff3dc14f-67df-452d-af19-ae61fb85dedc",
+    "transcript_text": "Continuing with the results (still unpublished data): The researchers informally observed that ‘participants often directly stated that they were dumbfounded, i.e., they made a statement to the effect that they thought an action was wrong but they could not find the words to explain themselves’ \\citep[p. 9]{haidt:2000_moral}. Participants made the fewest such statements in the [Heinz] dilemma (only 2 statements from 2 participants), while they made significantly more such statements in the [Incest] (38 statements from 23 participants), [Cannibal] (24 from 11), and Soul stories (22 from 13) \\citep{haidt:2000_moral}. \n\nWhat's important from my point of view is that the moral dumbfounding effect, according to the original study design, is a *comparison* between a scenario where people can reason about a judgement ([Heinz]) and scenarios where they struggle to reason ([Incest], [Cannibal]). The degree of dumbfounding is the difference between these scenarios. We wouldn't just say someone *is* dumbfounded in an absolute sense; rather, they are *more* dumbfounded by one dilemma than another. Dumbfounding is a matter of degree."
+  },
+  {
+    "transcript_id": "00301f07-5db9-401b-9b3b-907f78926d71",
+    "transcript_text": "In Study 2 (which sadly wasn't reported in the manuscript), they repeated the basic design while exposing half the subjects to a cognitive load. They found that 'this load increased the level of moral dumbfounding without changing subjects’ judgments or their level of persuadability' \\citep[p. 198]{haidt:2008_social}. This finding, if reliable, could be important later when considering dual-process theories."
+  },
+  {
+    "transcript_id": "7423744c-03fc-47a5-a1a3-64a8a7bc6565",
+    "transcript_text": "So, we've looked at an influential but unpublished study. Before relying on it, especially for essay writing, we should follow a three-step plan: (1) Has the study been replicated (successfully or unsuccessfully)? (2) Are there extensions or similar studies with converging results? (3) Are there review papers or meta-analyses featuring this study? Let's check."
+  },
+  {
+    "transcript_id": "5b2a895a-3747-4c34-9114-4192ed1c3713",
+    "transcript_text": "Looking for replications, we find a mixed picture. Fifteen years later, \\citet{royzman:2015_curious} published a study claiming not to find the dumbfounding effect. They concluded that ‘a definitionally pristine bout of MD is likely to be a extraordinarily rare find’ \\citep[p. 311]{royzman:2015_curious}. At this point, one might think we should ditch the concept. However, looking closely at their results, they report that only 3 out of 14 individuals (in one experiment) who lacked supporting reasons disapproved of the incest scenario, and only 1 of those 3 (1.9% of the relevant initial group) maintained disapproval in a 'stubborn and puzzled' manner \\citep[p. 309]{royzman:2015_curious}. \n\nTo me, this isn't compelling evidence against dumbfounding. If participants don't judge the act wrong initially, they can't be dumbfounded about why it's wrong. It seems their sample might not have been suitable for finding the effect. More importantly, unlike \\citet{haidt:2000_moral}, Royzman et al. did not include the comparison with a harm-based dilemma like [Heinz]. They treated dumbfounding as an absolute, binary state, whereas the original study measured it as a matter of degree relative to a control. Because they changed the design in a way that changes what's measured, I don't find this a particularly informative replication regarding the original claims, though it might suggest the effect is hard to elicit or varies across populations."
+  },
+  {
+    "transcript_id": "5ed189ca-97de-4512-9bf1-66a4e560a74d",
+    "transcript_text": "[Transition slide to next replication]"
+  },
+  {
+    "transcript_id": "88e15a93-1a14-47cc-8b68-af2dc85d5f4c",
+    "transcript_text": "Fortunately, from 2017 onwards, a lab led by McHugh has conducted a series of studies on dumbfounding and found strong effects. This figure shows results from Study 1 in \\citet{mchugh:2017_searching}. You can see the proportion of subjects exhibiting symptoms of dumbfounding was highest for [Incest], somewhat high for [Cannibal], and very low for the other dilemmas, including a harm-based control. They used the comparative design. \n\nI should note, this was a face-to-face study. In subsequent online studies reported in the same paper, they did not find significant differences between dilemmas. I'm focusing on Study 1 as I suspect the online method might be less effective for eliciting and measuring dumbfounding robustly in this paradigm."
+  },
+  {
+    "transcript_id": "a36c73c8-c9e6-49e6-ab13-487aa7d1c48d",
+    "transcript_text": "This replication by \\citet{mchugh:2017_searching} is encouraging. Furthermore, as noted on the handout, there are additional successful replications and extensions by this group \\citep{mchugh:2020_reasons, mchugh:2023_cognitive}, strengthening the case that the dumbfounding effect is real."
+  },
+  {
+    "transcript_id": "66f6dbb5-b677-4e2f-82b3-44051bed7d00",
+    "transcript_text": "[Transition slide to DIY approach]"
+  },
+  {
+    "transcript_id": "74cdc065-312a-420e-9be4-243a172ffd55",
+    "transcript_text": "Another approach is DIY! [Audio plays, speaker narrates over it] I want you to imagine, very unfortunately, that little Maya, who's a dog, gets run over outside our house. It's the neighbour's dog. Would it be okay to eat her? \nChild's voice: No.\nSpeaker: Why not?\nChild's voice: Because she's a dog. And, well, if you love something, then that accidentally gets killed... like, say, if you own a pig and you want to eat it, then I guess that's okay somehow. But then if you have, like, a pet who you love and then it accidentally dies, then it would be sad.\nSpeaker: And what if the neighbours ate it? Would that be okay for the neighbours to eat little Maya?\nChild's voice: Uh, well, not really, because that would make other people feel really sad.\nSpeaker: But if the neighbours were eating it, would you try some?\nChild's voice: Yeah.\nSpeaker: Would it be wrong to try some?\nChild's voice: Well... uh, kinda. Because it's wrong for the neighbours to be eating the dog. So if you try something, then it's wrong for you to try something.\n\nSpeaker: The thought here is that you can find some dumbfounding for yourself in everyday life if you look for it. That's perhaps encouraging and might explain why researchers have sometimes been casual about the original data. But we should be careful; measuring significance is hard."
+  },
+  {
+    "transcript_id": "506806cc-21ec-4557-a80d-15d5482afd4a",
+    "transcript_text": "[Transition slide]"
+  },
+  {
+    "transcript_id": "f7fe4b69-c1c1-4821-9833-dde31969fe21",
+    "transcript_text": "Looking at extensions, \\citet{mchugh:2023_just} investigated moral dumbfounding across different cultural regions. They found evidence for dumbfounding in samples from China, India, and the Middle East and North Africa (MENA), but the dilemmas evoking the *most* dumbfounding varied. As the table shows (based on \\citet[p. 1056]{mchugh:2023_just}), [Trolley] evoked the highest rates in the Indian and MENA samples, while [Cannibal] evoked the highest rates in the Chinese sample. This contrasts with WEIRD (Western, Educated, Industrialized, Rich, Democratic) samples, where [Incest] tends to be the most reliable trigger. \n\nThis pattern is perhaps expected; North American samples often rely heavily on harm-based reasoning, while other cultures might emphasize different moral concerns. However, we should treat these findings with extreme caution. 'India', 'China', and 'MENA' represent vast, diverse populations. It's unclear why we'd expect uniform ethical thinking within these broad categories. This study is interesting—it suggests cultural variation in what triggers dumbfounding—but I wouldn't rely heavily on these specific cross-cultural results without much more evidence."
+  },
+  {
+    "transcript_id": "ea13748e-907d-412a-a4fe-ca4bf3107b72",
+    "transcript_text": "[Transition slide]"
+  },
+  {
+    "transcript_id": "30bc58b0-97d3-45ce-acdb-7fdda793dc3c",
+    "transcript_text": "So, to summarize: We know the definition of moral dumbfounding—‘the stubborn and puzzled maintenance of an [ethical] judgment without supporting reasons’ \\citep[p. 1]{haidt:2000_moral}. We've seen some evidence for it. It's not rock solid, partly due to the original study being unpublished and some replication issues, but subsequent work, particularly by McHugh and colleagues, suggests it probably occurs, likely as a matter of degree and varying across contexts and cultures."
+  },
+  {
+    "transcript_id": "160ef587-fcd9-4e1f-aaca-35ede33e064a",
+    "transcript_text": "Why is moral dumbfounding relevant to us? How does it bear on the question of reasoning's role in moral judgement? Before addressing that directly, let's revisit the linguistic analogy from the previous lecture."
+  },
+  {
+    "transcript_id": "0ca16e0a-582e-4f2b-8c20-532577da0836",
+    "transcript_text": "The linguistic analogy, proposed by researchers like \\citet{mikhail:2007_universal}, suggests moral intuitions are like linguistic intuitions. Just as you can judge if a sentence is grammatical without knowing the explicit rules, Mikhail argues there's a 'moral grammar'—a complex set of rules, possibly innate and domain-specific—in the mind. This system, though inaccessible to conscious reflection, enables individuals to determine the moral status (permissible, obligatory, forbidden) of actions \\citep[p. 144]{mikhail:2007_universal}. Other researchers exploring linguistic analogies include \\citet{roedder:2010_linguistics} and \\citet{dwyer:2009_moral}. \n\nDwyer uses moral dumbfounding to support this analogy, noting that ‘linguistics—a domain in which ordinary human beings are also famously dumbfounded’ \\citep[p. 279]{dwyer:2009_moral}. They can make grammatical judgments but struggle to explain the underlying rules. Dwyer argues that moral dumbfounding similarly reflects judgments based on an internalized, inaccessible moral grammar."
+  },
+  {
+    "transcript_id": "99402653-dcdc-46bb-8a0d-6bf3ee9b76f8",
+    "transcript_text": "Here's Dwyer's argument more formally: ‘Moral Dumbfounding suggests two desiderata for an adequate account of moral judgment; namely, it: (a) must not entail what is patently false, namely, that such judgments are the conclusions of explicitly represented syllogisms, one or more premises of which are moral principles, that ordinary folk can articulate, and (b) must accommodate subjects’ grasp of the structure of the scenes they evaluate.’ She continues: ‘The Linguistic Analogy, which [... holds that [ethical] judgments are reflective of the structure of the Moral Faculty, satisfies these desiderata’ \\citep[p. 294]{dwyer:2009_moral}. Her argument is: dumbfounding shows A and B are requirements for a theory; the linguistic analogy meets these requirements; therefore, dumbfounding supports the linguistic analogy. \n\nIs this a good argument? Specifically, does moral dumbfounding establish desiderata (a) and (b)? Let's discuss."
+  },
+  {
+    "transcript_id": "7f62bad7-86a7-444e-982c-ace6f678a865",
+    "transcript_text": "How well does the evidence support Dwyer’s position? First, a minor point: Dwyer cites ‘Haidt’s (2001) study’ \\citep{dwyer:2009_moral}, but Haidt (2001) is a review paper discussing dumbfounding. There's no 2001 *study*. She probably intends to refer to the unpublished \\citet{haidt:2000_moral} manuscript. This might suggest carelessness, or perhaps not having read the original source directly. Never trust a philosopher (or any researcher!) without checking their sources."
+  },
+  {
+    "transcript_id": "b892bd26-36f6-49da-b4a6-60f7757e67a7",
+    "transcript_text": "Even if we assume Dwyer meant \\citet{haidt:2000_moral}, does the evidence support her desideratum (a)—that judgements are *not* conclusions of articulated reasoning? Let's look at the abstract of the original paper: ‘It was hypothesized that participants’ judgments would be highly consistent with their reasoning on the moral reasoning dilemma [Heinz], but that judgment would separate from reason and follow intuition in the other four tasks.’ This explicitly states that in the *control* dilemma (Heinz), judgement *was* expected to be consistent with reasoning. This contradicts Dwyer's claim that dumbfounding shows judgements are generally *not* based on articulated reasoning. The original study design *contrasts* cases where reasoning seems effective with cases where it doesn't."
+  },
+  {
+    "transcript_id": "30569549-7384-4771-86ac-ec333667a725",
+    "transcript_text": "[Repeating Dwyer's quote for emphasis during critique]"
+  },
+  {
+    "transcript_id": "f695984f-9e35-4edd-b56f-72fb07b27104",
+    "transcript_text": "So, does moral dumbfounding suggest desideratum (a)? I argue no. Moral dumbfounding, as originally studied, is about *differences* in the ability to provide reasons across dilemmas. It compares cases like [Incest] (where reasons are hard to find) with cases like [Heinz] (where reasons are readily available and consistent with judgements). This comparison undermines the claim that dumbfounding shows judgements are *generally* not based on articulated reasoning. At most, it shows this is true *sometimes*. Furthermore, desideratum (b) about structure seems unrelated to dumbfounding evidence; it comes from work like Mikhail's, as discussed last lecture. Therefore, Dwyer's argument using dumbfounding to support the linguistic analogy seems flawed because dumbfounding doesn't establish her key premise (a)."
+  },
+  {
+    "transcript_id": "8d788f1a-9191-4425-8636-661d0f8f700e",
+    "transcript_text": "Let's consider another way moral dumbfounding's significance has been interpreted, focusing on claims rejecting a role for reason."
+  },
+  {
+    "transcript_id": "11f5cbd3-9355-4c13-be87-f74920ee60aa",
+    "transcript_text": "Prinz draws this conclusion, explicitly referencing moral dumbfounding: ‘If we ask people why they hold a particular moral view [their] reasons are often superficial and post hoc. If the reasons are successfully challenged, the moral judgment often remains’ \\citep[p. 32]{prinz:2007_emotional}. But again, compare this with the abstract from \\citet{haidt:2000_moral}: ‘It was hypothesized that participants’ judgments would be highly consistent with their reasoning on the moral reasoning [Heinz] dilemma, but that judgment would separate from reason and follow intuition in the other four tasks.’ Prinz seems to ignore the crucial comparison with the Heinz dilemma, where reasoning *was* found to be consistent with judgement. He presents the evidence selectively, ignoring the part that contradicts his claim that reasons are *generally* post hoc. This looks like a misreading of the study he's citing. One needs to be very careful when discussing research; it's easy to misunderstand or misrepresent findings, especially if one hasn't engaged deeply with the original study design and results."
+  },
+  {
+    "transcript_id": "61eb8357-66fc-4357-8373-550871004e1c",
+    "transcript_text": "Recall the claims from earlier: Dwyer saying judgements are not conclusions of articulated reasoning \\citep{dwyer:2009_moral}, Haidt & Bjorklund saying reasoning is usually post-hoc justification \\citep{haidt:2008_social}, and Prinz saying reasons are superficial and post-hoc, with basic values outside justification \\citep{prinz:2007_emotional}. They often point to moral dumbfounding as key evidence."
+  },
+  {
+    "transcript_id": "10fae61c-656f-4471-bde8-f77f3c34c871",
+    "transcript_text": "So, what does moral dumbfounding actually show, if not that reasoning plays no role or is always post-hoc?"
+  },
+  {
+    "transcript_id": "cb097225-2548-441e-b62f-0bdc6a8737f2",
+    "transcript_text": "My view is this: Moral dumbfounding shows that *some* ethical judgements are not consequences of reasoning from known principles (e.g., judgements about [Incest] or [Cannibal] for many original participants). However, other phenomena, particularly moral disengagement (which we'll discuss next), indicate that *some* ethical judgements *are* consequences of reasoning from known principles. \n\n[Audience interaction clarifying the point about post-hoc reasoning]: How can we be sure the reasoning observed in the control cases isn't also post-hoc? We can't know that just from the dumbfounding studies. That's why we need an additional paradigm, like moral disengagement research, to provide evidence that reasoning *can* causally precede and influence judgement. \n\n[Audience interaction about Haidt's own interpretation]: Renato points out correctly that Haidt himself interprets his results as showing reasoning is *usually* post-hoc. This puzzles me, given the contrast with the Heinz dilemma in his own study. It's possible I'm misunderstanding something fundamental. You should be critical of my interpretation and Haidt's. But based on the study design as reported, I struggle to see how it supports the strong conclusion that reasoning is generally post-hoc, rather than just sometimes."
+  },
+  {
+    "transcript_id": "5c13c592-7dd5-43bb-9a58-43d69939704a",
+    "transcript_text": "So, to preview the contrast: Moral dumbfounding suggests a pattern where judgement often precedes reasoning (emotion -> judgement -> reasoning). Moral disengagement, which we'll examine next, suggests a pattern where reasoning can precede and cause judgement (emotion? -> reasoning -> judgement)."
+  },
+  {
+    "transcript_id": "cd7dd95a-5ae0-443a-8ed3-19112e063077",
+    "transcript_text": "This brings us back to the puzzle: Why are moral judgements sometimes, but not always, a consequence of reasoning from known principles? Moral dumbfounding gives us the 'not always' part. Now we need evidence for the 'sometimes' part, which I argue comes from moral disengagement."
+  },
+  {
+    "transcript_id": "3da3e378-edea-4a19-af23-83beb21bd22d",
+    "transcript_text": "Here I follow the philosopher Frank Hindriks, who observes that reason seems to play a key role in enabling atrocious acts \\citep{hindriks:2014_intuitions, hindriks:2015_how}. He argues that if moral judgements were characteristically just consequences of feelings, we wouldn't observe humans carrying out the reasoned, principled atrocities they sometimes do. To understand this, we need to explore the role of reason in enabling such acts, which leads us to Bandura's work on moral disengagement."
+  },
+  {
+    "transcript_id": "e05ec7a0-5e74-417b-920d-b461468c023e",
+    "transcript_text": "Bandura starts with a background theoretical claim about self-regulation \\citep{bandura:2002_selective}. He proposes that humans, over development, adopt standards of right and wrong. They monitor their conduct, judge it against their standards, and regulate their actions by applying consequences (sanctions or rewards) to themselves. ‘It is through the ongoing exercise of evaluative self-influence that moral conduct is motivated and regulated’ \\citep[p. 102]{bandura:2002_selective}. \n\nCrudely put, if you do something that, by your own lights, is wrong, you're likely to feel bad – the more wrong, the worse you feel. These self-sanctions can be severe, even crippling. This self-regulation can prevent us from getting things we want if obtaining them violates our standards. That's part of the point – balancing desires against potential harm to others. The question then arises: what happens when you are tempted to violate your standards to get something you want, anticipating the negative self-sanctions?"
+  },
+  {
+    "transcript_id": "0025174d-e186-4f5d-997a-aa433d984419",
+    "transcript_text": "Let's do an exercise. Imagine you are tempted to do something that is, by your own standards, wrong. Perhaps breaking pandemic rules, shoplifting (even at Waitrose!), driving when dangerously tired. It should be obvious to you that it's wrong, perhaps putting others at risk or causing harm. Imagine also that you anticipate feeling bad (self-inflicted sanctions) if you surrender to temptation. Now, suppose you decide to give in and do it anyway. What do you tell yourself?"
+  },
+  {
+    "transcript_id": "99f11c94-9987-4d34-8428-d6113697cf6e",
+    "transcript_text": "Hopefully, among the things you might tell yourself, you recognize excuses like these: 'Everyone else is doing it.' 'The politicians (or the 1%) are worse.' 'The rules are stupid.' 'It’s only a mild illness for most people.' 'I’m unlikely to infect anyone.' 'People who get it were likely to die anyway.' These are examples of what Bandura calls moral disengagement."
+  },
+  {
+    "transcript_id": "cee20fc5-b712-4257-a259-f1565f4834d6",
+    "transcript_text": "Bandura's theory posits that we can evade self-sanctions by reasoning in ways that make our conduct seem less bad or not applicable to our standards. His model \\citep[figure 1]{bandura:2002_selective} identifies several mechanisms of moral disengagement operating at different points: reconstruing the conduct (moral justification, euphemistic language, advantageous comparison), obscuring the agentive link (displacement or diffusion of responsibility), disregarding or distorting consequences, and blaming or dehumanizing the victim. Note the role of reason. Reason plays a role in most, if not all, of these processes. It is central to Moral Justification, Displacement of Responsibility, and Attribution of Blame. So if moral disengagement is responsible for a moral judgement or action, it is likely that reasoning played a causal role."
+  },
+  {
+    "transcript_id": "296fc0ca-020a-4bd4-a081-58162ae38972",
+    "transcript_text": "[Transition slide]"
+  },
+  {
+    "transcript_id": "46bae25e-9d72-4ae8-9f4c-6dd85eb47900",
+    "transcript_text": "Bandura argues, ‘The massive threats to human welfare stem mainly from deliberate acts of principle, rather than from unrestrained acts of impulse’ \\citep[p. 116]{bandura:2002_selective}. To illustrate moral disengagement involving reasoning, consider a study by \\citet{osofsky:2005_role} on prison workers involved in executions. They found that ‘The executioners, who face the most daunting moral dilemma, [...] adopted moral, economic, and societal security justifications for the death penalty’ \\citep[p. 387]{osofsky:2005_role}. Examples include: “I am for the death penalty. [...] Death Row inmates are here too long, it is wrong for the taxpayers, families, and us,” and “If a society is to be law-abiding, murders must be avenged with capital punishment”. You might disagree with the premises, but the reasoning itself isn't necessarily flawed; they are providing justifications."
+  },
+  {
+    "transcript_id": "6bff4592-adfd-4fb0-81a1-727378ce1d72",
+    "transcript_text": "This figure \\citep[fig 3a]{osofsky:2005_role} shows that executioners used moral justification significantly more than support staff or uninvolved prison workers, who tended to disavow such justifications. Bandura suggests these ordinary people use moral disengagement, particularly moral justification, to reconcile their actions (violating the 'don't kill' standard) with their self-concept as good people, allowing them to do the job without crippling self-sanction. \n\nObjection: Maybe people who already hold these justifications are drawn to the job (self-selection)? That's possible. At this stage, I'm mainly illustrating the theory. We'll consider stronger evidence for moral disengagement shortly."
+  },
+  {
+    "transcript_id": "297631ba-6f07-488c-8a71-f75bf638b311",
+    "transcript_text": "We have just seen an illustration of moral justification, one of the key mechanisms in Bandura's model of moral disengagement \\citep[figure 1]{bandura:2002_selective}."
+  },
+  {
+    "transcript_id": "e9bd079c-bb1c-4e4f-82c8-d8ab4b1dc807",
+    "transcript_text": "So now you know why I started this section by mentioning Hindriks' observation \\citep{hindriks:2014_intuitions, hindriks:2015_how} that reason plays a role in enabling atrocious acts. The theory of moral disengagement explains *what* that role is."
+  },
+  {
+    "transcript_id": "6eb8f4c9-01f4-47e9-a770-afc2094e9cbb",
+    "transcript_text": "So, how does reasoning influence moral judgements? Moral dumbfounding suggests sometimes judgement precedes reasoning (emotion -> judgement -> reasoning). Moral disengagement suggests sometimes reasoning precedes judgement (emotion? -> reasoning -> judgement). \n\n[Audience interaction about reliability]: One might think reasoning leads to more reliable judgements than feelings. But moral disengagement shows the opposite can happen; sticking with feelings might sometimes be more reliable. We shouldn't assume reason is inherently better, as it can be used to justify harmful actions. \n\n[Audience interaction about authenticity of judgement]: Raffy suggested maybe the judgements resulting from moral disengagement aren't 'real' judgements; people know deep down it's wrong. That's an interesting conjecture, perhaps related to Platonic ideas about justification only applying to true moral facts. But like the earlier conjecture about dumbfounding (that reasons exist but take time to recall), I'd want to see evidence supporting it before accepting it."
+  },
+  {
+    "transcript_id": "c65bbc60-d57c-4fc6-a741-345e820e4fd9",
+    "transcript_text": "So far, I've presented Bandura's theory of moral disengagement and its potential consequences. In philosophy, presenting a coherent, intuitively appealing story might be sufficient. But in moral psychology, we need to ask: Why accept the theory? Is there good evidence for it?"
+  },
+  {
+    "transcript_id": "f78690f9-efe2-4792-8e68-e62ba1a1eb42",
+    "transcript_text": "Why should we accept the theory of moral disengagement? We need to evaluate the evidence."
+  },
+  {
+    "transcript_id": "5adaacfd-20ed-418f-8ac6-877bb85f76a6",
+    "transcript_text": "The key evidence often starts with the Moral Disengagement Questionnaire, developed by \\citet{bandura:1996_mechanisms}. Participants rate their agreement with statements designed to tap into the different mechanisms. Examples include: 'It is alright to beat someone who bad mouths your family' (Moral Justification); 'It is okay to tell small lies because they don't really do any harm' (Distorting Consequences); 'Some people deserve to be treated like animals' (Dehumanization); 'Kids who get mistreated usually do things that deserve it' (Attribution of Blame)."
+  },
+  {
+    "transcript_id": "06d959b4-b29f-466d-8886-fcda360b3233",
+    "transcript_text": "The original study using this questionnaire (with 32 items, 4 per mechanism) found that statistically, a single factor could explain responses across all items. This suggests a general tendency towards moral disengagement that varies between individuals. Crucially, this factor correlated significantly with antisocial behaviour but *not* with socioeconomic status \\citep{bandura:1996_mechanisms}. The lack of correlation with SES helps rule out the possibility that the questionnaire simply measures social class bias. The correlation with behaviour suggests the construct is useful. \n\nFurther studies provide more support. For example, \\citet{mcalister:2006_mechanisms} compared moral disengagement in the United States before and after the September 11th terrorist attacks. They found a significant *increase* in moral disengagement post-9/11, which correlated with increased support for military force. Strikingly, they argued the attacks themselves seemed to affect support for military force primarily *via* this increase in moral disengagement \\citep[p. 156]{mcalister:2006_mechanisms}. This study is compelling because it shows a *change* in moral disengagement linked to real-world events and attitudes, addressing the self-selection concern raised about the executioner study."
+  },
+  {
+    "transcript_id": "b0a1a807-0355-4cb1-8a7d-65fb037befc7",
+    "transcript_text": "Based on such evidence, moral disengagement appears to be a valid and useful construct. A construct is a factor postulated by a theory to explain behaviour (like moral disengagement). A valid construct can be measured reliably, distinguishing it from other factors (like SES). A useful construct helps explain an interesting range of phenomena (like antisocial behaviour or support for military action)."
+  },
+  {
+    "transcript_id": "7ea3e138-11a7-4d07-af49-d1546e50d515",
+    "transcript_text": "Why is moral disengagement relevant to our main question about the role of reasoning?"
+  },
+  {
+    "transcript_id": "080c41c6-60f1-466e-9cb9-a93dab1c5ec9",
+    "transcript_text": "How, if at all, does a person’s reasoning influence their moral judgements? Moral disengagement provides part of the answer. In moral disengagement, the anticipation of self-inflicted punishment (for violating one's standards) triggers reasoning (e.g., moral justification, blaming the victim). This reasoning then influences the moral judgements made and the actions taken, enabling conduct that would otherwise be blocked by self-sanctions. The reasoning is not post-hoc justification here; it's arguably a necessary precursor to the judgement and action."
+  },
+  {
+    "transcript_id": "759098d5-3188-4923-a84f-26f9dcd19d07",
+    "transcript_text": "This brings us back to the tension observed by Hindriks. On one hand, \\citet{bandura:2002_selective} notes that ‘The massive threats to human welfare stem mainly from deliberate acts of principle, rather than from unrestrained acts of impulse’ (p. 116), suggesting a key role for reasoned principle in enabling atrocities via moral disengagement. On the other hand, \\citet{prinz:2007_emotional} claims, based partly on misinterpreting dumbfounding, that ‘reasons are often superficial and post hoc,’ and ‘basic values are implemented in our psychology in a way that puts them outside certain practices of justification [...] implemented in an emotional way’ (p. 32). \n\nThere seems to be a fundamental conflict here. How can humans be capable of reasoned, principled atrocities if reasoning is merely post-hoc and basic values are purely emotional, outside justification? The phenomenon of moral disengagement, where reasoning appears necessary to overcome emotional aversion to harming others and justify actions that violate core standards, strongly challenges views like Prinz's. It suggests reasoning *can* play a direct, causal role in shaping moral judgements, particularly in enabling harmful actions."
+  },
+  {
+    "transcript_id": "c85cc3e6-7c92-4002-95f8-58404fdc17fc",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "346a65fd-7b3d-40d3-923d-b9e657263809",
+    "transcript_text": "Let's frame this tension as an inconsistent dyad. Claim 1: Moral reasoning characteristically follows moral judgement. As \\citet{haidt:2008_social} put it, ‘moral reasoning is [...] usually engaged in after a moral judgment is made, in which a person searches for arguments that will support an already-made judgment’ (p. 189)."
+  },
+  {
+    "transcript_id": "fb680a8b-4d25-4ddd-9b76-55a2cc24be4b",
+    "transcript_text": "This first claim corresponds to the Social Intuitionist Model \\citep[figure 4.1]{haidt:2008_social}. In this model, an eliciting situation triggers an intuition (often via emotion), which leads directly to a moral judgement. Reasoning (link 6, the 'private reflection link') typically occurs only *after* the judgement is made, as a post-hoc search for justification (link 5, the 'reasoned justification link'). Haidt and Bjorklund explicitly state links 5 and 6 are rare intra-personally, primarily serving a social function: one person's reasoning (link 3) can influence another person's intuition (link 4), leading to social convergence or divergence of judgements. For now, we focus on the claim about the *typical intra-personal* sequence: intuition -> judgement -> reasoning."
+  },
+  {
+    "transcript_id": "bfb0b5b6-a80c-475c-9872-033bf904a357",
+    "transcript_text": "Claim 2 of the inconsistent dyad: Moral reasoning sometimes enables a moral judgement which would otherwise be impossible. As seen in moral disengagement, moral reasoning can overcome (i) affective support for judgements about not harming and (ii) affective obstacles to deliberately harming others. This reasoning appears necessary for the person to arrive at and accept the judgement that permits the harmful action (e.g., participating in executions, supporting military actions with civilian casualties). \n\nMy suggestion is that you can't hold both claims. We have good evidence for Claim 2 from research on moral disengagement. We lack compelling evidence for Claim 1 (as argued regarding the misinterpretation of dumbfounding). Therefore, we should accept Claim 2 and reject the strong version of Claim 1 which states reasoning is *usually* or *characteristically* post-hoc."
+  },
+  {
+    "transcript_id": "d03686eb-59b4-436b-a611-c7041a202868",
+    "transcript_text": "This reinforces our puzzle: Why are moral judgements sometimes, but not always, a consequence of reasoning from known principles? We now have evidence for the 'sometimes' part, derived from studies of moral disengagement, complementing the 'not always' part suggested by moral dumbfounding."
+  },
+  {
+    "transcript_id": "9fc5b3a5-af7f-4150-9bc1-14a70fef7d89",
+    "transcript_text": "In conclusion..."
+  },
+  {
+    "transcript_id": "7c13ad98-c221-4861-9247-855457c3a484",
+    "transcript_text": "How, if at all, does a person’s reasoning influence their moral judgements? \nMy argument has been: \n1. Moral dumbfounding shows that *not all* moral judgements reflect reasoning from known principles; sometimes judgement seems to precede reasoned justification. However, it does *not* show that reasoning generally fails to influence moral judgements, nor that it's always post-hoc. It suggests reasoning's influence is not universal.\n2. Moral disengagement shows that reasoning *does* play a substantial (if often tragic) role in people’s moral judgements. In these cases, reasoning appears to causally precede and enable certain judgements and actions, particularly harmful ones, by overriding conflicting intuitions or standards.\n\nTherefore, the overall picture is that *some, but not all*, moral judgements are a consequence of reasoning. We get the 'some' from moral disengagement, and the 'not all' from moral dumbfounding. (Acknowledging the counterarguments raised by Daniel and Raffy, which suggest these interpretations could be challenged with further evidence or argumentation)."
+  },
+  {
+    "transcript_id": "ab026dad-92d7-426a-91bd-31281df9c28a",
+    "transcript_text": "This lecture's question about reasoning connects to our previous questions: Do emotions influence moral intuitions? And what do humans compute that enables them to track moral attributes (the structure question)? \n\nSo far, our exploration has mainly revealed puzzles rather than answers:\n*   [emotion] Why do feelings like disgust sometimes influence moral judgements, and why do moral transgressions sometimes elicit disgust?\n*   [structure] Why do patterns in moral judgements reflect complex (e.g., legal) principles humans are typically unaware of?\n*   [dumbfounding-disengagement] Why are moral judgements sometimes, but not always, a consequence of reasoning from known principles? (The puzzle from today's lecture, arising from considering dumbfounding and disengagement together)."
+  },
+  {
+    "transcript_id": "9debcd88-cf0b-4f7d-bdea-cd2c1958bb46",
+    "transcript_text": "While we're collecting puzzles before moving towards solutions next week, let me add one last one."
+  },
+  {
+    "transcript_id": "2a17c12b-6f6f-4b2a-8a8f-784cc2966461",
+    "transcript_text": "Consider the [Trolley] dilemma (also known as Switch): a runaway trolley (or boxcar/tram) will kill five people unless you flip a switch to divert it to a side track where it will kill one person. How morally wrong is it to flip the switch? This is often compared with the [Drop] dilemma (also known as Footbridge): the trolley will kill five unless you push a large person off a footbridge into its path, stopping it but killing the one person. How morally wrong is it to push the person?"
+  },
+  {
+    "transcript_id": "89709004-3973-4e67-b83a-738f0b4d8d58",
+    "transcript_text": "We discussed Mikhail's work showing that people often judge Switch permissible but Drop impermissible, suggesting sensitivity to underlying principles (like the doctrine of double effect). However, a complication arises from order effects. \\citet{schwitzgebel:2015_philosophers} found that the order in which these dilemmas are presented affects judgement. If people see Switch first, they are more likely to judge it permissible and Drop impermissible (showing a difference). But if they see Drop first (judging it impermissible), they are then more likely to judge Switch *also* impermissible (showing consistency). This figure \\citep[figure 2 (part)]{schwitzgebel:2015_philosophers} illustrates this effect. These order effects persist even with time for reflection and occur in both philosophers and non-philosophers."
+  },
+  {
+    "transcript_id": "4abc5c9c-759b-4535-844f-5ba669ad513c",
+    "transcript_text": "This gives us our fourth puzzle: [order-effects] Why are people’s moral judgements about Switch and Drop subject to order-of-presentation effects? A complete theory of moral judgement should ideally account for this phenomenon as well."
+  },
+  {
+    "transcript_id": "f5996999-74ef-47ae-b263-5e746461739a",
+    "transcript_text": "So, where does this leave us? To understand the roles of feeling and reasoning in moral intuitions and judgements, we must identify or create a theory that can solve these four puzzles (emotion, structure, dumbfounding/disengagement, order effects). Such a theory must also be theoretically coherent, empirically motivated (consistent with existing evidence), and ideally generate novel, testable predictions that distinguish it from competitors. That's the challenge ahead. Thank you very much."
+  },
+  {
+    "transcript_id": "cc2992b8-72f7-4409-a6fa-b2239f85f392",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "05080176-f224-4ac0-93d8-b143a59150d1",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "b6b71bf4-16ec-447b-a89c-c6bf95b43fcb",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "aef74309-ce16-4507-a71f-6bc7436752cb",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "86da9abe-d60a-4fe5-b6c6-d7fbfa7007de",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "77112bd9-8470-42f4-a765-6306b0fa448b",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "0aca44c2-fac1-4fdd-be64-d086bdbe358d",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "c20acd79-795f-4666-9dc7-87a31046748a",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "d44735a2-78c8-4883-bc80-d8bdcab8e9e4",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "df0a6d48-e3ee-40f9-b346-0c156f10287b",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "3ab58b89-3adc-41ba-993f-4bd380389fd0",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "0ee72b0f-9ba4-4eec-8061-fe29f4673654",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "1b887a0f-ee65-4c7c-9730-51d67a10a975",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "6015d6b2-e95d-4420-9dd1-0b88dd3e3727",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "019f2dd1-0158-4806-b5ef-d1da01a45c1e",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "799b5ed7-d1f5-45d1-987b-d6991bdbd6dd",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "4a10696d-4fd3-44f3-93e0-b58231e2c276",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "6f6cabf4-d625-454e-823c-5f48ebc4500e",
+    "transcript_text": "[no transcript]"
+  }
+]

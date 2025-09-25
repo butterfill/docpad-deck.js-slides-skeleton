@@ -1,0 +1,326 @@
+[
+  {
+    "transcript_id": "e690603b-5999-48a4-9cbe-02816556cec8",
+    "transcript_text": "Why is this animation here today? Because appearances are not always a good guide to how things are. Lots of cartoons illustrate this, but this one is special. It’s a recreation of a famous animation from the 1940s that \\citet{Heider:1944ts} used to study how people attribute goals and emotions to simple shapes.\n\nAppearances are not always a good guide to how things are. Think about the physical aspects. There appear to be objects and movements, but of course, there are not really either of these, just patterns of light designed to create these appearances. When humans create novel situations and technologies, appearances are often not a reliable guide to truth.\n\nBut nearly every ethical theory is based on appearances or, as we sometimes say, intuitions—that is, claims we accept independently of whether they are justified inferentially. We do not rely on appearances in the same way in physics or chemistry. But somehow in ethics, appearances remain central. Why? Is this justified? That, in essence, is our question for today."
+  },
+  {
+    "transcript_id": "4372e20e-c47d-439b-a0ff-02c5567ca94e",
+    "transcript_text": "I admire \\citet{kagan:2023_answering} because he’s so clear. He’s been developing these ideas for at least a couple of decades. Although I don’t primarily work in ethics, I understand that he’s a significant ethicist.\n\nHis view centres on intuitions. But which intuitions? Kagan mentions various kinds, including intuitions about relatively abstract matters as well as about particular cases \\citep{kagan:2023_answering}. However, Kagan’s focus seems to be mostly on case-specific intuitions. Since Kagan compares intuitions to observations \\citep[p. 159]{kagan:2023_answering}, it's natural to focus on these case-specific intuitions."
+  },
+  {
+    "transcript_id": "3216e5ef-36a4-4077-982c-d9d2df47a5ee",
+    "transcript_text": "Okay, so we have a sense that Kagan is interested in case-specific intuitions, which are claims accepted independently of inferential justification. The next question is: How do intuitions enable ethical knowledge?\n\nYou might think the model is simply that you *know* the claims that are your intuitions, precisely *because* they are intuitions. But that‘s not quite Kagan’s view. Here’s what he used to think, back in 2001: 'it won't suffice if all we can do is organize these intuitions into systematic patterns. Instead, [...] we need [...] a moral theory that goes below the surface and [explains] the moral phenomena that are the subject matter of our moral intuitions' \\citep[p. 10]{kagan:2001_thinking}.\n\nCompare this to the animation I started with \\citep{Heider:1944ts}. The phenomena that are the subject matter of those intuitions are the movements of objects, as well as the goals and emotions of the shapes. The reason I think Kagan's earlier and current views differ (though perhaps Kagan does not) is this: empirical theories are not primarily *about* the phenomena of intuitions; they can be used to make systematic sense of these phenomena, but this is neither a primary concern nor a requirement for a successful physical theory.\n\nNow, in 2023, Kagan says: ‘moral intuitions function as inputs into our moral theories in something very much like the way that observations function as inputs into our empirical theories’ \\citep[p. 159]{kagan:2023_answering}. This seems quite different from explaining the phenomena that are the *subject matter* of intuitions."
+  },
+  {
+    "transcript_id": "4978a428-3b91-479d-bd3b-2db3a1a4352a",
+    "transcript_text": "What Kagan now has in mind seems quite different from explaining the phenomena that are the subject matter of intuitions. He clarifies in two steps \\citep{kagan:2023_answering}:\n\n1.  'If I have the intuition that P, then [...] my belief that P [...] will be justified [until such time (a time which may never come) as] I find reason to reject it' \\citep[p. 166]{kagan:2023_answering}.\n2.  'what it is to confirm an intuition: checking it against other intuitions to see if they harmonize in the appropriate ways' \\citep[p. 172]{kagan:2023_answering}.\n\nThis approach has similarities to Rawls' method of reflective equilibrium, which we will discuss next week \\citep{rawls:1999_theory}. (If you're unfamiliar with reflective equilibrium, please ignore this aside for now).\n\nKagan throws down a challenge: any sceptic about moral intuition needs to show there is ‘something especially problematic about moral intuitions, as distinct from others’ \\citep[p. 170]{kagan:2023_answering}. If an argument against moral intuitions would also undermine scientific knowledge or everyday knowledge, it's too general. Challenge accepted. Let's see if we can meet it today."
+  },
+  {
+    "transcript_id": "54d29d87-b2a1-4e86-ad73-79ea6235b630",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "d53a99ef-5048-4fc7-a406-66bfd17afc6b",
+    "transcript_text": "We are now in Phase 2 of this part of the course. In Phase 1 (covered in Lecture 06), we looked for places where a philosopher’s ethical argument relied on an empirical claim testable by scientific discoveries. We considered Foot, Singer, and Kamm, finding that discoveries in moral psychology could potentially alter the conclusions reached by their methods. This showed that moral psychology can be relevant *within* certain ethical arguments, assuming those philosophers' approaches are broadly correct.\n\nHowever, we also saw philosophers like Thomson whose methods seem to rely purely on normative premises and conclusions, without obvious empirical claims. It looked like moral psychology might be irrelevant to them.\n\nIn Phase 2, our concern shifts. We ask whether discoveries in moral psychology can undermine the case for accepting the non-empirical premises of ethical arguments *from the outside*. We are looking for general arguments against the use of intuitions (specifically, `not-justified-inferentially` premises) in ethics, which might suggest that approaches like Thomson's (and potentially Rawls' method of reflective equilibrium) are misguided. This involves considering attempts to show moral psychology is relevant precisely because some philosophical approaches might be substantially flawed."
+  },
+  {
+    "transcript_id": "713d14fb-7efe-44e1-9f2f-22b2db2909f8",
+    "transcript_text": "Many philosophers working in moral psychology focus on `debunking-arguments`. The consensus view is often that moral psychology's relevance to ethics lies in generating these arguments. My feeling is that debunking arguments don't ultimately work, but there's a better, deeper argument that does, which moral psychologists have largely missed. However, let's start with the standard approach.\n\nA `debunking-argument` aims to use facts about *why* people accept a certain judgement, together with facts about which factors are *morally relevant*, in order to undermine the case for accepting that judgement."
+  },
+  {
+    "transcript_id": "e3b98b5c-ab41-4df6-a6df-04f5291cdb53",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "61af445b-75c7-45e5-98e3-f5a7527c9718",
+    "transcript_text": "Here is an example of a `debunking-argument`, using an argument we considered previously \\citep{singer:1972_thinking}. The cases involve contrasting helping someone drowning nearby (Near Alone) versus someone far away (Far Alone).\n\nThe argument goes:\n1. On reflection, many people judge that not acting in Near Alone is worse than not acting in Far Alone.\n2. The difference in judgements is due to the difference in distance between the agent and the victim.\n3. The difference in distance is not morally relevant.\n4. Therefore, at least one of the judgements about Near Alone or Far Alone is wrong.\n\nThis is a classic debunking structure: Premise 2 is a fact about *why* we make the judgement, and Premise 3 is a claim about what is *morally relevant*. Together, they aim to undermine the initial judgements.\n\nNow, as we established last lecture, Premise 2 is actually false (the cause is not simply distance). But for the sake of illustrating the *form* of a debunking argument, let's pretend Premise 2 is true for now."
+  },
+  {
+    "transcript_id": "8f0ea1f0-0797-466e-9e32-6ae7bf4577c2",
+    "transcript_text": "\\citet{rini:2016_psychologicalcause} offers a general argument against debunking arguments. She observes: ‘To say that a particular psychological process does not track moral truth is to say that the process generates judgments which are not subjunctively sensitive to *certain* moral properties. We cannot say this without making some moral judgments ourselves’ \\citep[p. 682]{rini:2016_psychologicalcause}. Debunking arguments require judgments about moral relevance (like Premise 3 in Singer's argument), which are themselves moral judgments.\n\nRini then argues: ‘nearly any attempt to debunk a particular moral judgment on grounds of its psychological cause risks triggering a regress, because a debunking argument must involve moral evaluation of the psychological cause—and this evaluation is itself then subject to psychological investigation and moral evaluation, and so on’ \\citep[p. 676]{rini:2016_psychologicalcause}. She suggests this potential regress undermines debunking arguments.\n\nCan we apply Rini’s regress argument to Singer’s debunking argument? How exactly would it work? And is it a good argument against debunking in general?"
+  },
+  {
+    "transcript_id": "db008cdb-bf67-49a2-aa83-fa5e823ae310",
+    "transcript_text": "Rini's argument suggests we get stuck in a regress. Applied to Singer's argument, the claim in Premise 3 ('The difference in distance is not morally relevant') is a moral evaluation. Rini's thought is that we would then need to evaluate the psychological causes of *that* judgement, potentially leading to an infinite regress.\n\n(As noted on the handout, I've gone back and forth on this. I'm now tempted to think Rini’s regress argument might *not* apply to Singer's argument, mainly because Premise 3 seems relatively uncontroversial compared to other moral claims used in debunking. However, this specific argument is flawed anyway because Premise 2 is false.)"
+  },
+  {
+    "transcript_id": "e2bfc0df-701a-4472-8e94-5cb1bb02d771",
+    "transcript_text": "It's important to consider what proponents of debunking, like Greene, actually claim. \\citet{greene:2014_pointandshoot} argues carefully: \"experiments identify factors to which our moral judgments are sensitive. This information may be combined with independent normative assumptions concerning the kinds of things to which our judgments ought to be sensitive. This combination can lead us to new, substantive moral conclusions. [... Thus] scientific information can allow us to trade in difficult 'ought' questions for easier 'ought' questions\" \\citep[p. 711, quoted in Raia 2025, Ch 2]{greene:2014_pointandshoot}. Greene isn't responding directly to Rini here, but his idea is that debunking moves us from a difficult ethical question (e.g., comparing obligations to near vs. far) to an easier one (e.g., is spatial distance morally relevant?). This potentially counters the regress worry by suggesting progress, not just cycling."
+  },
+  {
+    "transcript_id": "88f6ee25-d46a-472e-bad2-4c026f97d578",
+    "transcript_text": "To summarise the debate on `debunking-arguments`:\n*   They aim to show our moral judgements are not sensitive to moral truth.\n*   Rini objects that they risk triggering a regress \\citep{rini:2016_psychologicalcause}.\n*   Greene suggests they swap harder moral questions for easier ones \\citep{greene:2014_pointandshoot}.\n*   Everyone agrees: Debunking cannot be done merely by invoking discoveries in moral psychology; the arguments also require normative premises about which factors are morally irrelevant.\n\nEvaluating the effectiveness of debunking arguments, considering these points, could be a potential essay topic."
+  },
+  {
+    "transcript_id": "d7215f59-fbfc-4321-b487-b963424df9c0",
+    "transcript_text": "For my part, I am uncertain about which factors are morally relevant. Therefore, I want to explore a different kind of argument—not a `debunking-argument`—one that aims to show moral psychology's relevance to ethics without relying on premises about moral relevance."
+  },
+  {
+    "transcript_id": "d665c2c5-2e26-4a6d-a2ea-dd0fa916752a",
+    "transcript_text": "This alternative argument is a version inspired by \\citet{greene:2014_pointandshoot}, although it's a `loose-reconstruction` and I take responsibility for its specific formulation.\n\nThe core idea from Greene is: ‘Science can advance ethics by revealing the hidden inner workings of our moral judgments, especially the ones we make intuitively. Once those inner workings are revealed we may have less confidence in some of [...] the ethical theories that are explicitly or implicitly based on them’ \\citep[pp. 695–6]{greene:2014_pointandshoot}. Our aim is to understand and evaluate this claim through a specific argument."
+  },
+  {
+    "transcript_id": "cc25a772-9173-4187-a7f2-0c1e3d3a9c4c",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "435aaa34-5a28-4cc9-9ce4-c5a3e3f62081",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "60e0c290-feea-4c80-9e77-b147e9856dc2",
+    "transcript_text": "This is a `loose-reconstruction` of one strand of Greene's argument \\citep{greene:2014_pointandshoot}. Crucially, it aims to avoid premises about which specific factors are morally relevant."
+  },
+  {
+    "transcript_id": "3640e597-0ee2-4dab-b9a8-5edb2542dce4",
+    "transcript_text": "Here is the argument outline. Let's start with the conclusion (6) and then look at the premises.\n\n**Conclusion (6):** `Not-justified-inferentially` premises about particular moral scenarios cannot be used in ethical arguments where the aim is knowledge.\n\n*   Why '`not-justified-inferentially`'? This term (from the glossary) refers to claims accepted independently of inferential justification (like intuitions). It avoids implying they *are* justified non-inferentially; they might be unjustified altogether.\n\n**Premises:**\n1.  Ethical judgements are explained by a `dual-process-theory`, which distinguishes `faster` from `slower` processes.\n    *   A `fast` process (glossary term) is `cognitively-efficient` (places fewer demands on scarce resources like attention, working memory, inhibitory control) and likely somewhat `automatic`.\n2.  `Faster` processes are unreliable in `unfamiliar-situations`.\n    *   An `unfamiliar-problem` (or situation) is one ‘with which we have inadequate evolutionary, cultural, or personal experience’ \\citep[p. 714]{greene:2014_pointandshoot}.\n3.  Therefore, we should not rely on `faster` processes in `unfamiliar-situations` [from 1, 2].\n4.  When philosophers rely on `not-justified-inferentially` premises, they are relying on `faster` processes.\n5.  The moral scenarios philosophers consider are `unfamiliar-situations`.\n6.  Therefore, `not-justified-inferentially` premises about particular moral scenarios cannot be used in ethical arguments where the aim is knowledge [from 3, 4, 5].\n\nThe inferences seem valid (1&2 -> 3; 3&4&5 -> 6). The task is to establish the truth of premises 1, 2, 4, and 5."
+  },
+  {
+    "transcript_id": "bb670055-cb5c-4def-a278-833f54c88c57",
+    "transcript_text": "Let's start with a simple causal model. 'Response 1' is a variable representing the subject's response (e.g., saying 'right' or 'wrong'). 'Process 1' represents whether a certain ethical process occurs and its outcome. The arrow indicates that the process causally influences the response. Contextual factors (instructions, dilemma content, time pressure) also influence the process, and thereby the response. Some factors might have strong effects (thick arrow, illustrative only), others weak (thin arrow)."
+  },
+  {
+    "transcript_id": "ab240762-20cf-4f23-9419-0082e1486bdc",
+    "transcript_text": "A `dual-process-theory` posits not one, but at least two distinct processes influencing the response."
+  },
+  {
+    "transcript_id": "fbd0005e-6e5c-4a9d-8278-a8d49f35d540",
+    "transcript_text": "Crucially, the processes are distinct in that the contextual factors influencing them do not completely overlap. For example, time pressure or cognitive load might strongly affect Process 2 but only weakly affect Process 1."
+  },
+  {
+    "transcript_id": "5e970015-f847-4102-b168-8a35a9bbfd5d",
+    "transcript_text": "Ideally, in dual-process research, we look at multiple response types (e.g., verbal judgement, eye gaze). The model might predict that one response type is dominated by Process 1, and another by Process 2."
+  },
+  {
+    "transcript_id": "0a1a8c69-e22c-4ecf-b18e-92d5763ac53e",
+    "transcript_text": "This allows us to test the theory by seeing if manipulations (like cognitive load) selectively affect one response type more than another, suggesting different underlying processes."
+  },
+  {
+    "transcript_id": "b3c93157-2f3f-464d-aad2-31a4e8e215f1",
+    "transcript_text": "So, here is the core of the `dual-process-theory` of ethical abilities:\n1.  Two (or more) ethical processes are distinct: the conditions which influence whether they occur, and which outputs they generate, do not completely overlap.\n2.  One process is `faster` than another: it makes fewer demands on scarce cognitive resources (like attention, working memory, inhibitory control).\n\nIt's crucial to start with this stripped-down, theoretically modest version. Many critiques of dual-process theories attack stronger, embellished versions (e.g., adding claims about consciousness, automaticity, emotion) that aren't essential to the core idea. We should only add such features if evidence warrants it."
+  },
+  {
+    "transcript_id": "cffdfbd0-ad97-4ef3-af2b-175682c2540a",
+    "transcript_text": "This diagram illustrates the core idea again: contextual factors influence the distinct processes differently."
+  },
+  {
+    "transcript_id": "2bb21c1d-b95c-44ed-89df-ba0f3fee72b1",
+    "transcript_text": "Unfortunately, in moral psychology, most studies use only a single response type (usually verbal judgement). This limits the ways we can test the theory compared to domains like memory or mindreading research, which often use multiple response measures."
+  },
+  {
+    "transcript_id": "4ba71675-a2ed-4466-8c92-2913bec9cd98",
+    "transcript_text": "So, we typically model the single response as being influenced, potentially to different degrees, by both the `fast` and `slow` processes."
+  },
+  {
+    "transcript_id": "1efa8a93-9b8f-41e0-ab1a-be70a9a67e03",
+    "transcript_text": "To test this model, we can manipulate a contextual factor, like cognitive load (e.g., by asking participants to count backwards while making a moral judgement). The theory predicts that increasing cognitive load will interfere more with the `slow` process than the `fast` process. It's not that the `fast` process is completely immune to load—no process likely is—but that the *degree* of interference differs significantly between the two. Evidence for differential effects of load exists in other domains, like visual perspective taking \\citep{qureshi:2010_executive}."
+  },
+  {
+    "transcript_id": "a52f9023-a82e-477e-b506-df006021cd1b",
+    "transcript_text": "To make specific predictions about ethical judgements, we need an additional assumption linking the processes to judgement types. Following Greene, let's assume: The `slow` process is responsible for `characteristically-consequentialist` responses; the `fast` process for other responses.\n\nA `characteristically-consequentialist` response (glossary term) is one that aligns with what a simple consequentialist theory would recommend (e.g., in the terrorist dilemma from \\citet{koenigs:2007_damage}, killing one hostage to save eight children). We use 'characteristically' because we're agnostic about *how* the process reaches this outcome—it might not involve actual consequentialist reasoning.\n\n**Prediction 1:** Increasing cognitive load will selectively slow down `characteristically-consequentialist` responses. Why? Because these responses rely on the `slow` process, which is more susceptible to cognitive load."
+  },
+  {
+    "transcript_id": "5c6f8be0-6c29-4d28-b632-57fae1ce55a9",
+    "transcript_text": "Here are results from \\citet{greene:2008_cognitive}, using dilemmas like the terrorist scenario \\citep{koenigs:2007_damage}. Under no cognitive load, reaction times (RTs) for consequentialist ('utilitarian') and other ('non-utilitarian') judgements are similar. Under cognitive load, RTs for consequentialist judgements increase significantly, while RTs for other judgements do not. This appears to confirm Prediction 1."
+  },
+  {
+    "transcript_id": "42522d20-7acd-4dd6-8e6d-916685f989cf",
+    "transcript_text": "This figure highlights the key finding: cognitive load selectively increases the time taken to make `characteristically-consequentialist` judgements."
+  },
+  {
+    "transcript_id": "b9736cbd-e23e-4193-bc3b-9d2a64c59ed8",
+    "transcript_text": "Could this result just capture individual heterogeneity or some other confounding factor? Absolutely. There might be other explanations for this pattern. However, the fact that the theory *predicted* this outcome, which was then observed, strengthens the case for the theory compared to a post-hoc explanation. Of course, we shouldn't accept the theory based on a single piece of evidence. A thorough review is needed, and indeed (as we'll see next week), the overall evidence for this specific dual-process model is more complex and contested than these initial studies suggest. But for now, this illustrates how the theory generates testable predictions."
+  },
+  {
+    "transcript_id": "edfff857-d64e-47ef-865a-ebd404e19601",
+    "transcript_text": "Let's use the same additional assumption: The `slow` process is responsible for `characteristically-consequentialist` responses; the `fast` for other responses.\n\nNow consider manipulating time pressure.\n\n**Prediction 2:** Limiting the time available to make a decision will reduce `characteristically-consequentialist` responses. Why? Because the `slow` process, being more time-consuming, is less likely to complete and influence the final judgement under time pressure. This biases the outcome towards the `fast` process."
+  },
+  {
+    "transcript_id": "cb4e7a8d-a94e-4e00-a7c7-261840af9a56",
+    "transcript_text": "Here are results from \\citet{tremoliere:2014_efficient}. They compared judgements with ample time versus time pressure. In dilemmas involving sacrificing one person to save five, participants under time pressure were less likely to make the consequentialist choice ('utilitarian response') than those with unlimited time. This effect was less pronounced when the trade-off involved saving many more lives (50, 500, 5000). For now, focusing on the basic finding, it appears to support Prediction 2: time pressure reduces consequentialist responses, consistent with the dual-process theory.\n\n(Note: As mentioned in the slide notes and handout, alternative interpretations of these findings exist, e.g., \\citet{gawronski:2017_what}; \\citet{gawronski:2018_effects})."
+  },
+  {
+    "transcript_id": "fbd4f304-d551-44cf-a63a-4c7f015911e0",
+    "transcript_text": "This figure highlights the key finding: under time pressure (dark bars), the rate of utilitarian responses is lower, especially for low kill-save ratios, compared to the no-pressure condition (light bars)."
+  },
+  {
+    "transcript_id": "c273fe31-b742-405d-bf42-52853a93cbf4",
+    "transcript_text": "So, this is our stripped-down `dual-process-theory` of ethical abilities: two (or more) distinct processes, differing in their sensitivity to context and cognitive load, with one being `faster` (less demanding on resources) than the other."
+  },
+  {
+    "transcript_id": "4e2cfd75-7d07-4296-84d1-1d2ffa728dfc",
+    "transcript_text": "When reading about this, you might encounter Greene's camera analogy \\citep[p. 698]{greene:2014_pointandshoot}. Greene himself notes three ways it might mislead. I advise disregarding analogies that require such caveats; they are likely unhelpful. Please avoid using similarly flawed analogies in your own work."
+  },
+  {
+    "transcript_id": "23a51e8f-a0fa-44fd-840a-3c018d30515e",
+    "transcript_text": "Returning to our main argument:\n\n1.  **Ethical judgements are explained by a `dual-process-theory`, which distinguishes `faster` from `slower` processes.**\n\nI believe this premise is true. So far, I've presented illustrative evidence \\citep{greene:2008_cognitive, tremoliere:2014_efficient}. We understand what the premise claims, but we haven't fully evaluated the evidence according to rigorous standards (checking replications, reviews, meta-analyses). So, let's tentatively accept it for now, acknowledging more work is needed."
+  },
+  {
+    "transcript_id": "344c65a0-1ca1-4a7c-b2df-9eada33fc265",
+    "transcript_text": "At this point, I'm excited because this `dual-process-theory`, if true, might solve puzzles encountered in Part 1 of the course. For example, the puzzle of why moral judgements *sometimes*, but not always, seem to be a consequence of reasoning from known principles. The dual-process framework offers a straightforward explanation: sometimes the `slow` (potentially reasoning-based) process dominates, other times the `fast` process does. One reason I favour the dual-process theory is its potential to resolve several such puzzles from Part 1 more effectively than single-process theories, without adding excessive complexity."
+  },
+  {
+    "transcript_id": "d7b825eb-fc2a-4a78-97c1-7698af97aadc",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "5cf3d0ce-1fba-4113-a90e-fc72bda2ec87",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "06e1d062-928e-4484-80a2-bbeaf8c6e428",
+    "transcript_text": "Now for the second premise: `Faster` processes are unreliable in `unfamiliar-situations`.\n\n\\citet[p. 714]{greene:2014_pointandshoot} argues that 'genetic transmission, cultural transmission, and learning from personal experience [...] are the only mechanisms known to endow [fast] processes with the information they need to function well'. An `unfamiliar-problem` is defined as one 'with which we have inadequate evolutionary, cultural, or personal experience' \\citep[p. 714]{greene:2014_pointandshoot}.\n\nConsider our evolutionary history: long periods as hunter-gatherers, followed by relatively recent, rapid changes like agriculture, cities, complex technologies. Much of our deep cultural heritage and widespread urban living is extremely recent in evolutionary terms. This suggests many modern situations might lack the deep evolutionary, cultural, or personal grounding needed for our `fast` processes to be reliable.\n\nThink about the trolley problem. Most of us lack personal experience as tram drivers (perhaps only ~50,000 worldwide). It's highly unlikely any have faced that exact dilemma. Cultural and evolutionary experience with such scenarios is also lacking. Thus, the trolley problem appears to be an `unfamiliar-situation` according to Greene's definition."
+  },
+  {
+    "transcript_id": "3ab25311-254b-4c5a-a6fe-a288208d071b",
+    "transcript_text": "Here's Thomson's passenger variant ('Frank') of the trolley problem \\citep[p. 207]{thomson:1976_killing}. The aim is to argue that this, too, represents an `unfamiliar-situation`."
+  },
+  {
+    "transcript_id": "e63d4b01-ea23-4cee-ace6-9f39efa1ad17",
+    "transcript_text": "Greene concludes: ‘it would be a cognitive miracle if we had reliably good moral instincts about unfamiliar* moral problems’. This leads to his 'No Cognitive Miracles Principle': 'When we are dealing with unfamiliar* moral problems, we ought to rely less on [...] automatic emotional responses [(`fast` processes)] and more on [...] conscious, controlled reasoning [(`slow` processes)], lest we bank on cognitive miracles’ \\citep[p. 715]{greene:2014_pointandshoot}. This principle essentially forms our Premise 2 (or justifies the inference to step 3)."
+  },
+  {
+    "transcript_id": "8c3588a9-0338-44f7-99ed-6ac7b88e63f7",
+    "transcript_text": "However, applying this principle is tricky. Consider the physical domain. We know `fast` physical cognition often operates on principles resembling impetus mechanics \\citep{kozhevnikov:2001_impetus}. These principles, while flawed from a Newtonian perspective, can yield correct predictions even in *apparently* `unfamiliar` situations, like interpreting point-light displays (e.g., identifying a jumping jack) or understanding cartoons (like the \\citet{Heider:1944ts} animation).\n\nThese situations seem `unfamiliar` by Greene's definition (lacking specific evolutionary, cultural, or personal experience with point-light displays or schematic animations). Yet, our `fast` processes handle them well, presumably because the underlying *principles* they use can be applied.\n\nThis creates a challenge: How do we define `unfamiliar`? If we define it as 'lacking adequate experience *to get the right answer*', the definition becomes circular. If we define it based on surface features ('never seen a point-light display before'), then the principle 'fast processes are unreliable in unfamiliar situations' seems false, as shown by the point-light/cartoon examples. Can we characterise `unfamiliarity` independently of knowing how the `fast` processes operate, such that cartoons and point-light displays count as familiar? Or should we consider them `unfamiliar` situations where `fast` processes happen to work (perhaps because the stimuli are reverse-engineered)? This ambiguity makes Greene's initial argument for Premise 2 less straightforward."
+  },
+  {
+    "transcript_id": "419969a7-21b2-47cf-8607-4b5722b93e5a",
+    "transcript_text": "Given the difficulty in applying the definition of `unfamiliar`, does this mean we must reject the No Cognitive Miracles Principle \\citep{greene:2014_pointandshoot} altogether?"
+  },
+  {
+    "transcript_id": "9b9d86d5-2fac-4a09-83ab-79ef7ad8677b",
+    "transcript_text": "Here's an argument suggesting the principle might be practically useless:\n1. Unfamiliarity* depends on inadequacy [by definition of `unfamiliar-problem`].\n2. We do not know which evolutionary, cultural, or personal experience is inadequate (unless we know how the `faster` processes work).\n3. Therefore, we do not know which problems are unfamiliar* [from 1, 2].\n4. Therefore, we can make no practical use of the No Cognitive Miracles Principle [from 3].\n\nIn the physical case, we *do* know roughly how the `fast` processes work (impetus mechanics), so we *can* identify situations where they are likely inadequate (e.g., vertical motion, micro/macro scales). But arguably, we lack equivalent knowledge for ethical cognition. Is this argument sound?"
+  },
+  {
+    "transcript_id": "c5b08eff-4e52-4409-bad6-888fec5da3dd",
+    "transcript_text": "\\citet[p. 716]{greene:2014_pointandshoot} suggests using fully-informed disagreement as a *proxy* for unfamiliarity. The idea is that disagreement likely stems from conflicting intuitions (outputs of `fast` processes), implying at least one party's 'automatic settings' are misfiring. I'm personally unsure how well this proxy works, as disagreement could arise from many sources. (The handout links this to arguments about disagreement and expertise by \\citet{mcgrath:2008_moral})."
+  },
+  {
+    "transcript_id": "cf200a1d-4434-4143-9eb2-4a00c11971e1",
+    "transcript_text": "Let's reconsider the argument that the No Cognitive Miracles Principle is practically useless because we can't identify `unfamiliar` situations without knowing the underlying processes."
+  },
+  {
+    "transcript_id": "19ba2151-b23f-4569-96f5-80ae541795ca",
+    "transcript_text": "Perhaps we can make progress by considering how researchers handle similar problems in applied settings. \\citet{hogarth:2010_intuition}, studying expert intuition in fields like business and medicine, suggests a practical heuristic: ‘When a person’s past experience is both representative of the situation relevant to the decision and supported by much valid feedback, trust the intuition; when it is not, be careful’ \\citep[p. 343]{hogarth:2010_intuition}. A similar idea is found in \\citet{kahneman:2009_conditions}. This suggests we might assess the reliability of intuitions by looking at the *learning environment* rather than the process itself. Are the situations philosophers consider (like action at a distance, WMDs \\citep{thomson:1976_killing}, organ harvesting) ones where people typically have representative experience and receive valid feedback on their judgements? Arguably not."
+  },
+  {
+    "transcript_id": "b3756cc9-4e68-4892-bae7-34ec75e91763",
+    "transcript_text": "Why is Hogarth's advice likely correct? Beyond empirical observation of decision-making success, there's a theoretical reason: the speed-accuracy trade-off."
+  },
+  {
+    "transcript_id": "26a32e0b-8d53-4f2c-95a5-9880d1393d70",
+    "transcript_text": "Any cognitive process faces a trade-off: increasing speed often comes at the cost of accuracy or flexibility."
+  },
+  {
+    "transcript_id": "bb2d67a2-3f0a-459a-94a9-3760147e94cd",
+    "transcript_text": "Faster processes gain speed by simplifying, using heuristics, or being tuned to specific, frequent, important situations."
+  },
+  {
+    "transcript_id": "21e9f4fa-5aa9-4d63-955f-2219ca22f324",
+    "transcript_text": "`Slower` processes can potentially achieve higher accuracy or handle novel situations better, but require more time and resources. Dual-process systems leverage both."
+  },
+  {
+    "transcript_id": "010d8751-470d-4adf-b7f4-b19f7bfd54ff",
+    "transcript_text": "Therefore, the argument on the previous slide (that the No Cognitive Miracles Principle is useless) is likely unsound. Even without knowing the specific principles of `fast` ethical cognition, we have general grounds to be cautious about their reliability outside of 'kind' learning environments (representative experience + valid feedback, à la \\citet{hogarth:2010_intuition}). The inherent speed-accuracy trade-off means `fast` processes are generally optimized for familiar domains and likely less reliable in novel, `unfamiliar` ones. Cases where they *do* work in unfamiliar settings (like cartoons) are probably exceptions, possibly due to stimuli being reverse-engineered to exploit those processes, rather than evidence of general reliability in unfamiliarity. So, we *can* make practical use of the principle: be wary of `fast` processes in `unfamiliar` situations."
+  },
+  {
+    "transcript_id": "dda6c89c-7dd3-4196-8618-b6587dc8985a",
+    "transcript_text": "So, where are we in the argument?\n1.  Ethical judgements are explained by a `dual-process-theory`... [Tentatively accepted]\n2.  `Faster` processes are unreliable in `unfamiliar-situations`. [Accepted based on Hogarth/speed-accuracy trade-off]\n3.  Therefore, we should not rely on `faster` process in `unfamiliar-situations`. [Follows from 1, 2]\n\nNow we need to establish Premise 4."
+  },
+  {
+    "transcript_id": "2cbfbced-c95a-49d7-a9c7-e94f5c5d47bc",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "d5c3b716-61f0-4db9-9867-d4c54686539d",
+    "transcript_text": "Premise 4 states: When philosophers rely on `not-justified-inferentially` premises, they are relying on `faster` processes.\n\nAn immediate objection arises: Philosophy is about thinking slowly and carefully! How can `fast` processes be relevant when philosophers deliberate extensively over moral scenarios?\n\nHowever, consider physicists in the Aristotelian or impetus tradition \\citep[e.g.,][]{moletti:2000_unfinished}. They also thought very slowly and deliberately about physical scenarios (like objects launched vertically or moving in curves). Yet, their judgements clearly reflected, and relied on, the outputs of `fast` physical cognition processes (based on flawed impetus principles). Slow thinking does not preclude influence from underlying `fast` processes."
+  },
+  {
+    "transcript_id": "6ff75dee-a03b-4108-a685-f1a00f1750f2",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "ff415654-65e2-4559-bac8-ee8c48a9d6c2",
+    "transcript_text": "Why did people untrained in physics so often predict a spiral trajectory for an object exiting a curved tube \\citep{mccloskey:1980_curvilinear}, even though this is physically impossible and never observed? Because `fast` cognitive processes, likely based on impetus principles, make it *appear* that way \\citep{kozhevnikov:2001_impetus}. Slow reflection on this appearance leads to the incorrect judgement."
+  },
+  {
+    "transcript_id": "11718003-d75d-41f2-86c5-6b1ca608e596",
+    "transcript_text": "The objection was: Research on `fast` processes isn't relevant because philosophers think slowly.\nThe observation from physics shows: Even very slow, careful thinking (like that of pre-Newtonian physicists debating vertical motion) can be heavily influenced by the outputs of `fast` processes. There's often no other explanation for their strong, confident (but incorrect) judgements, as observation didn't support them. Therefore, the objection fails; slow thinking can still rely on `fast` processes."
+  },
+  {
+    "transcript_id": "9bf659a1-f284-449e-8333-1e00c8e03324",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "6b51d496-6e71-4bd7-9ade-eb5bb65c8498",
+    "transcript_text": "Let's look at the \\citet{Heider:1944ts} animation again. What do you see? Many people describe attacking, rescuing, escaping, anger, fear. Yet, we *know* these are just patterns of light; there aren't even physical objects, let alone intentional agents.\n\nHow do these two perspectives coexist? It's a consequence of `fast` versus `slow` processes. `Fast` perceptual and social cognition processes, based on heuristics triggered by specific movements (kinematics), generate the *appearance* of agency and emotion. `Slow` processes allow us to reflect and know the reality is just light and shadow.\n\nNow, imagine a world where we had no independent knowledge of the true nature of these displays. We could only rely on our impressions (appearances). Our slow, deliberate reflection, trying to theorise about these 'life-forms', would be entirely founded on the outputs generated by the `fast` processes. The slow thinking would be shaped by the fast appearances."
+  },
+  {
+    "transcript_id": "55604d35-617c-4c06-bb6c-35c625e18016",
+    "transcript_text": "So, I am arguing that Premise 4 is plausible. The mechanism isn't direct influence, but indirect: `fast` processes generate appearances, often with high subjective confidence, which then provide the primary input or material for `slow`, reflective judgement, especially when independent knowledge is lacking."
+  },
+  {
+    "transcript_id": "5ae549a9-2ff1-41f1-afc2-60b315d29fb9",
+    "transcript_text": "To clarify the proposed mechanism: Does the `fast` process *directly* influence the `slow` judgement? No, or not significantly in the way relevant here. The pathway is:\n`fast` process -> appearance + high subjective confidence\nreflection on appearance -> `slow` judgement\n\nThe `fast` process provides the phenomenal *material* (how things seem) upon which slow judgement operates, especially for `not-justified-inferentially` premises."
+  },
+  {
+    "transcript_id": "5f9c4891-0c32-47cc-abba-1e50561a36c6",
+    "transcript_text": "So far, I've mainly used analogies from physical cognition or perception to argue against the objection and illustrate the mechanism. But why should we accept that this is also how `not-justified-inferentially` ethical judgements work?"
+  },
+  {
+    "transcript_id": "c25c9abe-2d13-4601-98a2-4417e546cba7",
+    "transcript_text": "When philosophers rely on `not-justified-inferentially` premises (intuitions about cases), are they relying on `faster` processes (via the mechanism of appearance)? We have two alternatives:\n\n1.  **Yes.** Philosophers are human, subject to the same cognitive architecture. In the absence of other justifications, the appearances generated by `faster` processes seem the only plausible source for these confident, non-inferential starting points.\n2.  **No.** Philosophers are somehow magic, able to access these truths directly or through a special intuitive faculty immune to the limitations affecting other domains.\n\nWhile I find the first option far more plausible, some philosophers, like \\citet{audi:2015_intuition} (see handout), seem to implicitly favour something closer to the second. My sense is this often stems from insufficient engagement with the relevant cognitive science. If someone has a serious argument for philosopher magic, I'm open to hearing it, but otherwise, the default assumption should be that they rely on the same underlying cognitive mechanisms as everyone else."
+  },
+  {
+    "transcript_id": "8df3955a-1adf-4b44-8a2a-10a2efffc68e",
+    "transcript_text": "Let's accept Premise 4 for now:\n\n4.  When philosophers rely on `not-justified-inferentially` premises, they are relying on `faster` processes (indirectly, via appearances).\n\nNow for the final premise, Premise 5."
+  },
+  {
+    "transcript_id": "c09e9da3-c3f2-4ffd-9a9b-ea4a1be70e33",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "9ad82372-d289-4341-8b90-dac3a7df122a",
+    "transcript_text": "[no transcript]"
+  },
+  {
+    "transcript_id": "8d52844e-e0ce-48b9-beb3-50b257a2cba0",
+    "transcript_text": "Premise 5: The moral scenarios philosophers consider involve `unfamiliar-situations`.\n\nGreene writes: ‘I strongly suspect that the footbridge dilemma is unfamiliar*, a bizarre case in which an act of personal violence against an innocent person is the one and only way to promote a much greater good’ \\citep[p. 716]{greene:2014_pointandshoot}. As I mentioned, relying on suspicion isn't rigorous. We need reasons to believe these scenarios are indeed `unfamiliar` in the relevant sense (i.e., inadequate evolutionary, cultural, or personal experience for reliable `fast` processing)."
+  },
+  {
+    "transcript_id": "3e935bde-5ae8-4ed1-af45-9538f3db0331",
+    "transcript_text": "We can argue for Premise 5 using the points developed earlier. Recall Hogarth's criteria for trusting intuition: representative experience and valid feedback \\citep{hogarth:2010_intuition}. It seems highly unlikely that standard philosophical thought experiments (Footbridge, organ harvesting, etc.) meet these criteria for most people. This doesn't automatically mean the intuitions are *wrong*, but it means we lack grounds for *trusting* their reliability based on the conditions under which intuitions typically become reliable.\n\nFurthermore, the philosophical method often involves exploring edge cases and fine distinctions precisely to test principles. This methodology inherently increases the risk of venturing into `unfamiliar` territory where our evolved/learned `fast` processes may not be well-calibrated."
+  },
+  {
+    "transcript_id": "e255dd96-bb22-49de-a837-13c43e642e7b",
+    "transcript_text": "Can we generally expect to find limits to our `fast` ethical processes? Some, like \\citet{railton:2014_affective}, emphasize the flexibility and trainability of intuitive systems. However, in other well-studied domains, `fast` cognitive systems exhibit clear `signature-limits`—characteristic errors or boundaries—even in expert adults. Examples include object cognition \\citep{kozhevnikov:2001_impetus}, mindreading \\citep{low:2016_cognitive}, and number cognition \\citep{feigenson:2004_core}. These limits often persist despite expertise gained through `slow` processes (like learning physics doesn't erase impetus-based appearances).\n\nThis pattern of limits is not accidental; it stems from the fundamental speed-accuracy trade-off \\citep[e.g.,][]{heitz:2014_speed}. `Fast` systems achieve speed by simplifying or specializing. It is therefore reasonable to *expect* similar `signature-limits` in our `fast` ethical cognition, meaning even some quite ordinary-seeming scenarios might turn out to be `unfamiliar` in the sense that they trigger these limits."
+  },
+  {
+    "transcript_id": "b2a7e9c0-74d7-49bc-a2e7-6377cb42263a",
+    "transcript_text": "Therefore, I accept Premise 5:\n\n5.  The moral scenarios philosophers consider involve `unfamiliar-situations`.\n\nThis is supported by two main reasons:\n(a) Even on charitable views, philosophers' focus on bizarre edge cases and fine distinctions makes it probable they encounter situations lacking representative experience and valid feedback (Hogarth's criteria).\n(b) Given the universality of speed-accuracy trade-offs and the existence of `signature-limits` in `fast` processes in other domains, we should expect such limits in ethics too. This means even scenarios that don't seem overtly bizarre might still be `unfamiliar` in the sense of triggering unreliable `fast` process outputs.\n\nEstablishing this premise is perhaps harder than often assumed, but these reasons provide strong grounds for accepting it."
+  },
+  {
+    "transcript_id": "62e9916d-4166-48e0-84fb-63be11c0f463",
+    "transcript_text": "In conclusion..."
+  },
+  {
+    "transcript_id": "4884612a-cdb1-431b-905f-be9cc9608c07",
+    "transcript_text": "We have examined the premises of the argument (1, 2, 4, 5) and found reasons to accept each, although Premise 1 requires further scrutiny of the evidence. If these premises hold, the conclusion follows:\n\n**Conclusion (6):** `Not-justified-inferentially` premises about particular moral scenarios cannot be used in ethical arguments where the aim is knowledge.\n\nComparing ethics to physics: relying on untutored intuitions (appearances generated by `fast` processes) in physics yielded Aristotelian/impetus mechanics – useful for some everyday purposes, but fundamentally flawed and unable to support major scientific progress. The argument suggests that relying on such intuitions in ethics is similarly limiting."
+  },
+  {
+    "transcript_id": "25d0e34d-f6e7-4bf4-ab82-34894868d2d5",
+    "transcript_text": "This conclusion directly challenges views like Kagan's: ‘When I have an intuition it seems to me that something is the case, and so I am defeasibly justified in believing that things are as they appear to me to be. That fact [...] opens the door to the possibility of moral knowledge’ \\citep[p. 167]{kagan:2023_answering}. Our argument suggests this reliance on appearance (intuition) is problematic in the ethical domain due to the unreliability of the underlying `fast` processes in the `unfamiliar` scenarios often considered."
+  },
+  {
+    "transcript_id": "ad36b976-fee3-45d4-92d5-9efea267020c",
+    "transcript_text": "Recall Kagan's mechanism: initial justification from intuition, confirmation via harmonisation with other intuitions \\citep{kagan:2023_answering}. And his challenge: show moral intuitions are *especially* problematic \\citep[p. 170]{kagan:2023_answering}. Our argument attempts to meet this challenge by identifying specific reasons (unfamiliarity, speed-accuracy trade-offs, `signature-limits`) why reliance on the `fast` processes underlying these intuitions is particularly unreliable in the contexts where philosophers often deploy them, arguably more so than in many everyday or scientific contexts where intuitions might be better calibrated through experience and feedback."
+  },
+  {
+    "transcript_id": "5cf84034-9e84-4c62-a3b3-20bbf2b58161",
+    "transcript_text": "Consider Rawls' conception of moral theory: ‘one may think of physical moral theory at first [...] as the attempt to describe our moral perceptual capacity [...] what is required is a formulation of a set of principles which, when conjoined to our beliefs and knowledge of the circumstances, would lead us to make these judgments with their supporting reasons were we to apply these principles’ \\citep[p. 41]{rawls:1999_theory}.\n\nInterestingly, this sounds like a project for descriptive moral psychology. However, Rawls pursued this largely through philosophical reflection on judgements (reflective equilibrium), not empirical investigation of the underlying capacities. Our argument, particularly the evidence for dual processes and potential inconsistencies arising from them or from cross-cultural variation (related to Moral Foundations Theory, see glossary), raises questions about whether a single, consistent set of principles reflecting 'our' moral capacity can be found through reflective equilibrium alone, foreshadowing issues we might discuss next week."
+  },
+  {
+    "transcript_id": "f1809dab-9cd7-4c77-b65b-75185d7d63d4",
+    "transcript_text": "I will leave you with the argument we have studied today. The massive progress made in physics, chemistry, biology, etc., stemmed from recognising the difference between appearance and reality, and developing methods (measurement, instrumentation) to move beyond reliance on untutored intuition. To make similar progress in ethics, we may need a similar revolution, shifting away from methods primarily focused on organising or harmonising intuitions derived from potentially unreliable `fast` processes operating in `unfamiliar` domains. Otherwise, our ethics may remain tethered to our prehistoric cognitive toolkit while our technology races ahead."
+  }
+]
