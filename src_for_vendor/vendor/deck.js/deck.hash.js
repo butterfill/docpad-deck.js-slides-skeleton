@@ -31,69 +31,27 @@ slide.
 		var id = str.substr(str.indexOf("#") + 1);
 		var slides = $[deck]('getSlides');
 		
-		$.each(slides, function(i, $el) {
-			if ($el.attr('id') === id) {
-				$[deck]('go', i);
-				return false;
-			}
-		});
-		
-		// If we don't set these to 0 the container scrolls due to hashchange
-		$[deck]('getContainer').scrollLeft(0).scrollTop(0);
-	};
-	
-	/*
-	Extends defaults/options.
-	
-	options.selectors.hashLink
-		The element matching this selector has its href attribute updated to
-		the hash of the current slide as the user navigates through the deck.
-		
-	options.hashPrefix
-		Every slide that does not have an id is assigned one at initialization.
-		Assigned ids take the form of hashPrefix + slideIndex, e.g., slide-0,
-		slide-12, etc.
-
-	options.preventFragmentScroll
-		When deep linking to a hash of a nested slide, this scrolls the deck
-		container to the top, undoing the natural browser behavior of scrolling
-		to the document fragment on load.
-	*/
-	$.extend(true, $[deck].defaults, {
-		selectors: {
-			hashLink: '.deck-permalink'
-		},
-		
-		hashPrefix: 'slide-',
-		preventFragmentScroll: true
-	});
-	
-	
-	$d.bind('deck.init', function() {
-	   var opts = $[deck]('getOptions');
-		$internals = $();
-		var slides = $[deck]('getSlides');
-		
-		$.each(slides, function(i, $el) {
-			var hash;
-			
+				$.each(slides, function(i, $el) {
 			/* Hand out ids to the unfortunate slides born without them */
 			if (!$el.attr('id') || $el.data('deckAssignedId') === $el.attr('id')) {
 				$el.attr('id', opts.hashPrefix + i);
 				$el.data('deckAssignedId', opts.hashPrefix + i);
 			}
-			
-			hash ='#' + $el.attr('id');
-			
+
+			var hash = '#' + $el.attr('id');
+
 			/* Deep link to slides on init */
-			if (hash === window.location.hash) {
-				setTimeout(function() {$[deck]('go', i)}, 1);
+			if (window && window.location && hash === window.location.hash) {
+				setTimeout(function() {
+					$[deck]('go', i);
+				}, 1);
 			}
-			
+
 			/* Add internal links to this slide */
-			$internals = $internals.add('a[href="' + hash + '"]');
+			if (window && window.location) {
+				$internals = $internals.add('a[href="' + hash + '"]');
+			}
 		});
-		
 		if (!Modernizr.hashchange) {
 			/* Set up internal links using click for the poor browsers
 			without a hashchange event. */
@@ -139,4 +97,4 @@ slide.
 			$[deck]('getContainer').scrollLeft(0).scrollTop(0);
 		}
 	});
-})(jQuery, 'deck', this);
+})(jQuery, 'deck', (typeof window !== "undefined" ? window : undefined));
