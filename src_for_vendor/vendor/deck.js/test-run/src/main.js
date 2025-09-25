@@ -17,15 +17,23 @@ import '../../deck.hash.css';
 import '../../deck.notes.css';
 import './styles.css';
 
-import '../../deck.core.js';
-import '../../deck.events.js';
-import '../../deck.fit.js';
-import '../../deck.menu.js';
-import '../../deck.hash.js';
-import '../../deck.notes.js';
-import '../../deck.remote.js';
-import '../../deck.clone.js';
-import '../../deck.slide-clone.js';
-import '../../deck.step.js';
-import '../../deck.velocity.js';
-import '../../deck.init.js';
+const deckModules = [
+  '../../deck.core.js',
+  '../../deck.events.js',
+  '../../deck.fit.js',
+  '../../deck.menu.js',
+  '../../deck.hash.js',
+  '../../deck.notes.js',
+  '../../deck.remote.js',
+  '../../deck.clone.js',
+  '../../deck.slide-clone.js',
+  '../../deck.step.js',
+  '../../deck.velocity.js',
+  '../../deck.init.js'
+];
+
+(async () => {
+  for (const modulePath of deckModules) {
+    await import(modulePath);
+  }
+})();
