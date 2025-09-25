@@ -54,7 +54,11 @@ This module provides a support for cloning the deck.
     });
     $[deck]('extend', 'pointerAt', function(rx, ry) {
         var opts = $[deck]('getOptions');
-        var r = $(".deck-current").get(0).getBoundingClientRect();
+        var $current = $(".deck-current");
+        if (!$current.length) {
+            return;
+        }
+        var r = $current.get(0).getBoundingClientRect();
         var x = r.left + r.width * rx;
         var y = r.top + r.height * ry;
         var pos = {left: x, top: y};
@@ -103,7 +107,11 @@ This module provides a support for cloning the deck.
     })
     /* Replicate mouse cursor */
     .bind('mousemove', function(e) {
-        var r = $(".deck-current").get(0).getBoundingClientRect();
+        var $current = $(".deck-current");
+        if (!$current.length) {
+            return;
+        }
+        var r = $current.get(0).getBoundingClientRect();
         var x = (e.clientX - r.left) / r.width;
         var y = (e.clientY - r.top) / r.height;
         cleanClones();

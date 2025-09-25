@@ -29,7 +29,7 @@ slide.
 	*/
 	goByHash = function(str) {
 		var id = str.substr(str.indexOf("#") + 1),
-		slides = $[deck]('getSlides');
+		var slides = $[deck]('getSlides');
 		
 		$.each(slides, function(i, $el) {
 			if ($el.attr('id') === id) {
@@ -71,8 +71,8 @@ slide.
 	
 	$d.bind('deck.init', function() {
 	   var opts = $[deck]('getOptions');
-		$internals = $(),
-		slides = $[deck]('getSlides');
+		$internals = $();
+		var slides = $[deck]('getSlides');
 		
 		$.each(slides, function(i, $el) {
 			var hash;
