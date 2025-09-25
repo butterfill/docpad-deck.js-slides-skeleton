@@ -17,18 +17,18 @@ kept by core, this module adds an on-slide state class that uses the id of each
 slide.
 */
 (function ($, deck, window, undefined) {
-	var $d = $(document),
-	$window = $(window),
+	var $d = $(document);
+	var $window = $(window);
 	
 	/* Collection of internal fragment links in the deck */
-	$internals,
+	var $internals;
 	
 	/*
 	Internal only function.  Given a string, extracts the id from the hash,
 	matches it to the appropriate slide, and navigates there.
 	*/
-	goByHash = function(str) {
-		var id = str.substr(str.indexOf("#") + 1),
+	var goByHash = function(str) {
+		var id = str.substr(str.indexOf("#") + 1);
 		var slides = $[deck]('getSlides');
 		
 		$.each(slides, function(i, $el) {
