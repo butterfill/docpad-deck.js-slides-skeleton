@@ -11,10 +11,7 @@ if (!window.Modernizr) {
   };
 }
 
-import '@deck/deck.core.css';
-import '@deck/deck.menu.css';
-import '@deck/deck.hash.css';
-import '@deck/deck.notes.css';
+import './deck.css';
 import './styles.css';
 
 const deckModules = [
