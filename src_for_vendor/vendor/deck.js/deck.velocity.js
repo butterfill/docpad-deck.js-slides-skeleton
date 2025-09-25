@@ -33,7 +33,8 @@
 (function($, deck, undefined) {
   
   var $d = $(document);
-  var slides = [];
+  var slides = window.__deckVelocitySlides || [];
+  window.__deckVelocitySlides = slides;
 
 
   // ------------------------------------------------
@@ -386,6 +387,7 @@
   var doInit = function doInit() {
     
     slides = $[deck]('getSlides');
+    window.__deckVelocitySlides = slides;
     log('deck.velocity '+ slides.length);
 
     log('current slide '+ $[deck]('getSlideIndex'));
@@ -450,6 +452,7 @@
       if( typeof($slide) === 'undefined' ) {
         $slide = $[deck]('getSlide');
       }
+      var slides = window.__deckVelocitySlides || [];
       var idx = 0;
       for( ; idx < slides.length; idx++ ) {
           if( slides[idx].is($slide) ) break;
