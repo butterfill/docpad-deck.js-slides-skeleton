@@ -37,7 +37,11 @@ It also overrides the defaults keybinding and countNested value (so it is better
         countNested: false
     });
     var myInArray = function(el, arr) {
-        for (i in arr) if (arr[i].is(el)) return i*1; // cast to int
+        for (var i in arr) {
+            if (arr[i].is(el)) {
+                return i * 1; // cast to int
+            }
+        }
         return -1;
     };
     $[deck]('extend', 'getToplevelSlideOf', function(node) {
@@ -106,10 +110,10 @@ It also overrides the defaults keybinding and countNested value (so it is better
         }
         var opts = $[deck]('getOptions');
         $($[deck]('getToplevelSlideOfIndex', to).node.find(opts.selectors.subslidesToNotify).get().reverse()).trigger('deck.toplevelBecameCurrent', direction);
-        for (icur = $[deck]('getToplevelSlideOfIndex', to).index + 1; icur < to+1; icur++) {
+        for (var icur = $[deck]('getToplevelSlideOfIndex', to).index + 1; icur < to + 1; icur++) {
             $[deck]('getSlides')[icur].trigger('deck.afterToplevelBecameCurrent', 'forward');
         }
-    }
+    };
     $d.bind('deck.change', function(e, from, to) {
         if (  Math.abs(from - to) > 1 || ! $[deck]('getToplevelSlideOfIndex', to).node.is($[deck]('getToplevelSlideOfIndex', from).node)) {
             // consider natural jumps and the case where we actually changed (top level) slide (even with a step)
