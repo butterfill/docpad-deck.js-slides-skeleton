@@ -108,16 +108,16 @@ that use the API provided by core.
     // which are otherwise painfully slow.
     // It assumes that the various deck class names are not used except
     // by deck internally.
-    clsToRemove = [
+    var clsToRemove = [
       options.classes.before,
       options.classes.previous,
       options.classes.current,
       options.classes.next,
       options.classes.after
     ];
-    for( var idx=0; idx < clsToRemove.length; idx++) {
-      clsName = clsToRemove[idx];
-      $('.'+clsName).removeClass(clsName)
+    for (var idx = 0; idx < clsToRemove.length; idx++) {
+      var clsName = clsToRemove[idx];
+      $('.' + clsName).removeClass(clsName);
     }
     // var $all = $();
     // $.each(slides, function(i, el) {

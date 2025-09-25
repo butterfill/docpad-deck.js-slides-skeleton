@@ -87,7 +87,7 @@ if( typeof jsPlumb !== 'undefined'){
  * stolen from the deck.scale extension
  * parameter is target height in pixels (e.g. 500)
  */
-scaleDeck = function(baseHeight) {
+window.scaleDeck = function(baseHeight) {
     var opts = $.deck('getOptions');
     var $container = $.deck('getContainer');
 
