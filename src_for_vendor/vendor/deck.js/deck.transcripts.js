@@ -57,23 +57,31 @@
   }
 
   function applyLiveTransform(opts) {
-    var $panel = $('.' + opts.classes.transcripts);
-    var $deckContainer = $('.deck-container');
-    if (!$panel.is(':visible')) {
-      // reset
-      $deckContainer.css({ transform: '' });
+    var $deckContainer = $[deck]('getContainer');
+    var $notes = $("." + (opts.classes.notes || 'deck-notes'));
+    var $trans = $("." + opts.classes.transcripts);
+
+    var left = ($notes.is(':visible') && !$notes.hasClass('notes-export')) ? ($notes.outerWidth() || 0) : 0;
+    var right = ($trans.is(':visible') && !$trans.hasClass('export')) ? ($trans.outerWidth() || 0) : 0;
+
+    if (left === 0 && right === 0) {
+      // reset to full width
+      $deckContainer.css({ width: '', marginLeft: '', marginRight: '', transform: '' });
+      // Re-run fit scaling
+      try { $[deck]('enableScale'); } catch(e) {}
       return;
     }
-    if ($panel.hasClass('export')) {
-      $deckContainer.css({ transform: '' });
-      return;
-    }
-    var w = $panel.outerWidth() || 0;
-    var isLarge = $panel.hasClass('large-format');
-    var scale = isLarge ? 0.55 : 0.8;
-    var tx = -(Math.round((w / 2) + (isLarge ? 100 : 0))); // shift left by ~half panel width (+ extra for large)
-    var ty = 0; // keep vertical center for readability
-    $deckContainer.css({ transform: 'translate(' + tx + 'px,' + ty + 'px) scale(' + scale + ',' + scale + ')' });
+
+    // shrink container width and add margins to reveal full slide beside panels
+    var total = left + right;
+    $deckContainer.css({
+      width: 'calc(100% - ' + total + 'px)',
+      marginLeft: left + 'px',
+      marginRight: right + 'px',
+      transform: ''
+    });
+    // Re-run fit scaling to recompute scale using the reduced width
+    try { $[deck]('enableScale'); } catch(e) {}
   }
 
   function getPanelContainer(opts) {
@@ -274,6 +282,7 @@
     var $panel = ensurePanel(opts).show();
     state.exportMode = false;
     applyLiveTransform(opts);
+    $(document).trigger('deck.sidepanels.changed');
     // render current slide immediately
     var $current = $[deck]('getSlide');
     var $effective = getEffectiveSlideForTranscripts($current);
@@ -285,6 +294,7 @@
     $('.' + opts.classes.transcripts).hide().removeClass('export');
     $('.deck-container').css({ transform: '' }).show();
     state.exportMode = false;
+    $(document).trigger('deck.sidepanels.changed');
   });
 
   $[deck]('extend', 'toggleTranscripts', function() {
@@ -302,6 +312,7 @@
     var $panel = ensurePanel(opts).addClass('export').show();
     $('.deck-container').hide().css({ transform: '' });
     state.exportMode = true;
+    $(document).trigger('deck.sidepanels.changed');
     renderExportAll(state.index, opts);
   });
 
@@ -310,6 +321,7 @@
     $('.' + opts.classes.transcripts).removeClass('export').hide();
     $('.deck-container').show();
     state.exportMode = false;
+    $(document).trigger('deck.sidepanels.changed');
   });
 
   $[deck]('extend', 'toggleTranscriptsExport', function() {
@@ -319,6 +331,12 @@
   });
 
   // Init / event bindings
+  // Recompute fit whenever side panels change
+  $d.bind('deck.sidepanels.changed', function(){
+    var opts = $[deck]('getOptions');
+    applyLiveTransform(opts);
+  });
+
   $d.bind('deck.init', function() {
     var opts = $[deck]('getOptions');
     ensurePanel(opts);

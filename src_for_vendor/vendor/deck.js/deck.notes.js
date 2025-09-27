@@ -589,11 +589,8 @@ only toggle the notes panel for this cloned window.
     $notesEl = $("."+$[deck]('getOptions').classes.notes);
     $notesEl.show();
     $('.notes-header-tex', $notesEl).hide();
-    if( $notesEl.hasClass('large-format')) {
-      $('.deck-container').css({transform:'translate(300px,-200px) scale(0.5,0.5)'});
-    } else {
-      $('.deck-container').css({transform:'translate(100px) scale(.8)'});
-    }
+    // Notify layout system to recompute deck sizing around side panels
+    $(document).trigger('deck.sidepanels.changed');
   });
     
   $[deck]('extend', 'showNotesExport', function() {
@@ -624,7 +621,8 @@ only toggle the notes panel for this cloned window.
 	*/
   $[deck]('extend', 'hideNotes', function() {
     $("."+$[deck]('getOptions').classes.notes).hide();
-    $('.deck-container').css({transform:'translate(0)'});
+    // Notify layout system to recompute deck sizing around side panels
+    $(document).trigger('deck.sidepanels.changed');
   });
 
   $[deck]('extend', 'hideNotesExport', function() {
@@ -681,6 +679,7 @@ only toggle the notes panel for this cloned window.
         if (e.altKey) {
           $notesEl = $("."+$[deck]('getOptions').classes.notes);
           $notesEl.toggleClass('large-format');
+          $(document).trigger('deck.sidepanels.changed');
         }
         if (e.shiftKey) {
           $[deck]('toggleNotesExport');
