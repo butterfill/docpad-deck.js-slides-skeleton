@@ -341,6 +341,23 @@
     var opts = $[deck]('getOptions');
     ensurePanel(opts);
 
+    // URL flags: ?transcript or ?t
+    try {
+      var qs = window.location.search || '';
+      var show_transcripts = /[?&](transcript|t)([&=]|$)/.test(qs);
+      if (show_transcripts) {
+        // Ensure transcripts are loaded before opening the panel to avoid initial "[no transcript]"
+        var p = doLoad(opts);
+        if (p && p.always) {
+          p.always(function(){ $[deck]('showTranscripts'); });
+        } else if (p && p.then) {
+          p.then(function(){ $[deck]('showTranscripts'); }, function(){ $[deck]('showTranscripts'); });
+        } else {
+          $[deck]('showTranscripts');
+        }
+      }
+    } catch(e) {}
+
     // keys
     $d.unbind('keydown.decktranscripts').bind('keydown.decktranscripts', function(e) {
       var key = opts.keys.transcripts;
@@ -361,6 +378,17 @@
     if (opts.load && opts.load.strategy === 'onInit') {
       var delay = (opts.load.delayMs == null) ? 250 : opts.load.delayMs;
       setTimeout(function(){ doLoad(opts); }, delay);
+    }
+  });
+
+  // If panel was opened before data loaded, re-render when load completes
+  $d.bind('deck.transcripts.loaded', function(){
+    var opts = $[deck]('getOptions');
+    var $panel = $('.' + opts.classes.transcripts);
+    if ($panel.is(':visible') && !$panel.hasClass('export')) {
+      var $current = $[deck]('getSlide');
+      var $effective = getEffectiveSlideForTranscripts($current);
+      renderPanelForSlide($effective, state.index, opts);
     }
   });
 

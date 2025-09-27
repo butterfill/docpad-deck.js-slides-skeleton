@@ -663,7 +663,7 @@ only toggle the notes panel for this cloned window.
     var container = $[deck]('getContainer');
     
     // notes can be specified in the url
-    var show_notes = (window.location.search.search(/[\?&]notes([&=]|$)/) != -1);
+    var show_notes = (window.location.search.search(/[\?&](notes|n)([&=]|$)/) != -1);
     var large_notes = (window.location.search.search(/[\?&]largenotes([&=]|$)/) != -1);
     if( large_notes ) {
       $notesEl = $("."+$[deck]('getOptions').classes.notes);
