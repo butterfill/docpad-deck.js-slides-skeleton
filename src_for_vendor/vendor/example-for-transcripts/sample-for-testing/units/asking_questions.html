@@ -1,0 +1,139 @@
+<html lang="en"><head><meta charset="utf-8"/><title>Administrative Hints</title><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link rel="stylesheet" href="/styles/for.slides.all.css"/><link rel="stylesheet" href="/styles/steve_deck_style.css"/></head><body><div data-rmx-id="lectures/units/asking_questions.md.njk"></div><script defer="defer" src="/scripts/for.slides.all.min.js"></script><script>const onReady = function(ready) {
+  // in case the document is already rendered
+  if (document.readyState!='loading') ready();
+  // modern browsers
+  else if (document.addEventListener) document.addEventListener('DOMContentLoaded', ready);
+  // IE <= 8
+  else document.attachEvent('onreadystatechange', function(){
+      if (document.readyState=='complete') ready();
+  });
+}
+
+function addLineNumbers () {
+  let el
+  while (el = document.querySelector('.pugdeck-line-number')) {
+    const next = el.nextElementSibling
+    if (next && !next.dataset?.lineNumber) {
+      next.classList.add('click-to-edit')
+      next.dataset.lineNumber = el.dataset.lineNumber
+      next.dataset.sourceFile = el.dataset.sourceFile
+    }
+    el.remove()
+  }
+}
+
+function makeClickToEdit () {
+  function _findLineNumber (el) {
+    console.log(`checking `, el, el?.dataset?.lineNumber)
+    if (el === undefined) {
+      return
+    }
+    if (el.dataset?.lineNumber) {
+      console.log(`found ${el.dataset?.lineNumber}`)
+      return {
+        lineNumber: el.dataset.lineNumber,
+        sourceFile: el.dataset.sourceFile
+      }
+    }
+    return _findLineNumber(el.parentElement)
+  }
+  const deckContainerEl = document.querySelector('.deck-container')
+  deckContainerEl.addEventListener('click', function (event) {
+    if (event.shiftKey && event.metaKey) {
+      const {lineNumber, sourceFile} = _findLineNumber(event.target)
+      if (lineNumber === undefined) {
+        console.log(`line number not found`, lineNumber)
+        console.log('event.target', event.target)
+        return
+      }
+      console.log(lineNumber)
+      // see https://code.visualstudio.com/docs/editor/command-line#_opening-vs-code-with-urls
+      const link = `vscode://file${sourceFile}:${lineNumber}`  //may need to add `/` between file and sourceFile
+      console.log(link)
+      window.location = link
+    }
+  })
+}
+
+onReady( function () {
+  addLineNumbers()
+  makeClickToEdit()
+})
+
+</script><script>const wshost = (window.location.search.match(/[\?&]wshost=([\w\.]+)(&|$)/) || [])[1] 
+const lead = (window.location.search.match(/[\?&]lead=(\w+)(&|$)/) || [])[1] || false
+const pathname = window.location.pathname
+console.log(`wshost: ${wshost}; lead: ${lead}`)
+const doLeader = function (socket) {
+  $(document).bind('deck.change', function (event, from, to) {
+    const msg = JSON.stringify({from, to, pathname})
+    socket.send(msg)
+    console.log(`sent: ${msg}`)
+  })
+}
+const doFollower = function (socket) {
+  socket.addEventListener('message',function (msg) {
+    const data = (() => {
+      try {
+        return JSON.parse(msg.data)
+      } catch (e) {
+        return msg.data
+      }
+    })()
+    if( data && data.pathname && data.pathname === pathname ) {
+      console.log(`remote control: going to slide ${data.to}`)
+      $.deck('go', data.to)
+    } else {
+      console.log(msg)
+    }
+  })
+}
+const configure = function () {
+  console.log(`configuring webscoket for remote control`)
+  const socket = new WebSocket(`ws://${wshost}`)
+  socket.onopen = function () {
+    if (!lead || lead === 'false') {
+      doFollower(socket)
+    } else {
+      doLeader(socket)
+    }
+  }
+  return socket
+}
+if (wshost) {
+  document.addEventListener("DOMContentLoaded", function(event) { 
+    let socket = configure()
+    window._socket = socket
+    const monitorSocket = function () {
+      if (socket.readyState !== 1) {
+        console.log('websocket connection lost, attempting to reconnect')
+        socket = configure()
+      }
+    }
+    window.setInterval(monitorSocket, 1000)
+  })
+}
+</script><div class="help-underlay" id="helpUnderlay"><div class="help-modal" id="helpModal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?f</span></kbd></h1><div class="help-close" id="helpClose">×</div><!-- .help-close--><div class="help-modal-content" id="helpModalContent"><div class="help-list-wrap" id="helpListWrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul></div></div></div></div><div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section class="slide" id="instructions"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide.</p><p class="center">(This may not work on mobile or ipad. You can try using chrome or firefox, but even that may fail. Sorry.)</p></div></div></div></div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section><script>window.deckSlideActions = window.deckSlideActions || [];
+addAction = function(o) {
+  // find which <script> element we are 
+  //   (used by deck.init to work out which slide to attach the action to)
+  var scripts = document.getElementsByTagName( 'script' );
+  var thisScriptEl = scripts[ scripts.length - 1 ];
+  o.scriptEl = thisScriptEl;
+  window.deckSlideActions.push(o);
+}
+
+</script><!-- param @cls and param @options should be objects--><div data-rmx-id="lectures/units/asking_questions.md.njk"></div><section class="slide" id="asking_questions"><img class="bkg" src="/img/bkg/flowers/DSC_AA_7346.JPG"/><div class="spacer">&nbsp;</div><div class="title-block"><div class="title-container"><h2 class="title1">Administrative Hints</h2></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="pugdeck-line-number" data-line-number="100" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="transcript" id="d7be4f4f-b0fe-415e-a300-7be58d05eb78">insert-transcript#d7be4f4f-b0fe-415e-a300-7be58d05eb78-here
+</div><div class="pugdeck-line-number" data-line-number="103" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><p class="center">clashes</p><div class="pugdeck-line-number" data-line-number="104" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="notes">Tell me. Not much I can do. I do not lecture capture
+by default although I may attempt to provide individuals
+with recordings in extreme cases.
+</div></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="pugdeck-line-number" data-line-number="110" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="transcript" id="e31f8afe-d284-438e-bc02-3d9240e9129b">insert-transcript#e31f8afe-d284-438e-bc02-3d9240e9129b-here
+</div><div class="pugdeck-line-number" data-line-number="113" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><p class="center">attend lectures or switch modules</p></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="pugdeck-line-number" data-line-number="116" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="transcript" id="3058ddc9-48f8-4e57-b64c-986dcb0f92af">insert-transcript#3058ddc9-48f8-4e57-b64c-986dcb0f92af-here
+</div><div class="pugdeck-line-number" data-line-number="119" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><p class="center">no lecture capture</p></div></div></div></div></section><section class="slide"><img class="bkg" src="/img/online-handout-01-moral-psychology.jpg" width="1024px"/><div class="words"><div class="container_12"><div class="grid_12"><div class="pugdeck-line-number" data-line-number="122" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="transcript" id="2003256b-e82b-4901-91df-fdf982d1246b">insert-transcript#2003256b-e82b-4901-91df-fdf982d1246b-here
+</div><div class="pugdeck-line-number" data-line-number="125" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="notes">There is an online handout</div></div></div></div></section><section class="slide"><img class="bkg" src="/img/online-handout-02-moral-psychology.jpg" width="1024px"/><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="pugdeck-line-number" data-line-number="128" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="transcript" id="eb280324-a246-4134-a453-3d64e5181be3">insert-transcript#eb280324-a246-4134-a453-3d64e5181be3-here
+</div><div class="pugdeck-line-number" data-line-number="131" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="notes">Do use the search</div><div class="pugdeck-line-number" data-line-number="133" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="slide"><div class="dv dv-velocity" data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}"></div><div class="pugdeck-line-number" data-line-number="135" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><p class="center">don’t rely on the recordings</p></div></div></div></div></div></section><section class="slide"><img class="bkg" src="/img/online-handout-03-moral-psychology.jpg" width="1024px"/><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="pugdeck-line-number" data-line-number="137" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="transcript" id="61e1b6bf-b0ae-4113-a95a-72e4f8842fb5">insert-transcript#61e1b6bf-b0ae-4113-a95a-72e4f8842fb5-here
+</div><div class="pugdeck-line-number" data-line-number="140" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="notes">Seminar tasks to complete *before* seminars
+</div></div></div></div></div></section><section class="slide"><img class="bkg" src="/img/glossary-moral-psychology.png" width="1024px"/><div class="words"><div class="container_12"><div class="grid_12"><div class="pugdeck-line-number" data-line-number="144" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="transcript" id="a003d774-686a-49b9-befe-d1c2f48ab67a">insert-transcript#a003d774-686a-49b9-befe-d1c2f48ab67a-here
+
+</div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="pugdeck-line-number" data-line-number="149" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="transcript" id="2b5d4363-d479-452f-b8e5-b06d357bac08">insert-transcript#2b5d4363-d479-452f-b8e5-b06d357bac08-here
+</div><div class="pugdeck-line-number" data-line-number="152" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><p class="center">reading list</p><div class="pugdeck-line-number" data-line-number="153" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><p class="center em-above">seminar tasks ⬦ essay questions ⬦ lecture handouts</p></div></div></div></div></section><div class="pugdeck-line-number" data-line-number="155" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="pugdeck-line-number" data-line-number="156" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="pugdeck-line-number" data-line-number="157" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="pugdeck-line-number" data-line-number="158" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="pugdeck-line-number" data-line-number="159" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="pugdeck-line-number" data-line-number="160" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="pugdeck-line-number" data-line-number="161" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="pugdeck-line-number" data-line-number="162" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="pugdeck-line-number" data-line-number="163" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="pugdeck-line-number" data-line-number="165" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="pugdeck-line-number" data-line-number="166" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="pugdeck-line-number" data-line-number="168" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="pugdeck-line-number" data-line-number="169" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="pugdeck-line-number" data-line-number="170" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="pugdeck-line-number" data-line-number="171" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="pugdeck-line-number" data-line-number="172" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="pugdeck-line-number" data-line-number="173" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div><div class="pugdeck-line-number" data-line-number="174" data-source-file="/Users/eleven/Documents/programming/git/rmx/sample-for-testing/src/lectures/units/asking_questions.md.njk"></div></div></body></html>
