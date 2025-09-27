@@ -71,13 +71,15 @@ Any refactor must keep the DOM traversal in sync with the markup conventions abo
 When adjusting layout, check both the live deck and export panels; many selectors are shared.
 
 ## Build And Distribution
-The source files are authored individually for readability.  Use the provided script to refresh the minified bundle that downstream templates include:
+The source files are used only as part of the parent directory:
 
 ```sh
-./uglify_and_clean_css_deck.sh
+../uglify_and_cleancss.sh
 ```
 
 You will need `uglifyjs` (`npm install -g uglify-js`) and `cleancss` (`npm install -g clean-css-cli`).  The script concatenates the JS modules in a specific order; keep that order in mind if you add new extensions.
+
+Confusingly there is also `./uglify_and_clean_css_deck.sh`; I am not sure what this is for.
 
 ## Extending This Fork
 1. Follow the existing plugin pattern: expose new APIs with `$.deck('extend', ...)`, listen to `deck.init`/`deck.change`, and avoid global state unless you need to coordinate with non-plugin code.
