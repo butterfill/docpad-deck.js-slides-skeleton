@@ -42,3 +42,49 @@
   width: 800px;
   right: auto;
 }
+
+/* Hide the inline first-use message in slides */
+#transcript-first-use-message { display: none !important; }
+
+/* First-use modal */
+.transcripts-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 200;
+  display: none; /* will be displayed via JS */
+  align-items: center;
+  justify-content: center;
+}
+.transcripts-modal {
+  background: #fff;
+  width: calc(100% - 60px);
+  max-width: 720px;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  overflow: hidden;
+}
+.transcripts-modal-content {
+  padding: 20px;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.transcripts-modal-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  padding: 0 20px 20px 20px;
+}
+.transcripts-modal-buttons button {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.transcripts-modal-buttons button.secondary {
+  background: #888;
+}

@@ -84,6 +84,55 @@
     try { $[deck]('enableScale'); } catch(e) {}
   }
 
+  // First-use modal helpers
+  function setCookie(name, value, days) {
+    try {
+      var expires = '';
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = '; expires=' + date.toUTCString();
+      }
+      document.cookie = name + '=' + encodeURIComponent(value) + expires + '; path=/';
+    } catch(e) {}
+  }
+  function getCookie(name) {
+    try {
+      var nameEQ = name + '=';
+      var ca = document.cookie.split(';');
+      for (var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return decodeURIComponent(c.substring(nameEQ.length,c.length));
+      }
+    } catch(e) {}
+    return null;
+  }
+  function transcriptsConsentAccepted(version) {
+    if (!version) return true; // if no version provided, don't gate
+    var v = getCookie('transcripts_consent');
+    return v === String(version);
+  }
+  function showFirstUseModal(version, html, onAccept, onCancel) {
+    var $overlay = $('<div class="transcripts-modal-overlay"/>').appendTo(document.body);
+    var $modal = $('<div class="transcripts-modal"/>').appendTo($overlay);
+    $('<div class="transcripts-modal-content"/>').html(html || '').appendTo($modal);
+    var $btns = $('<div class="transcripts-modal-buttons"/>').appendTo($modal);
+    var $cancel = $('<button class="secondary" type="button">CANCEL</button>').appendTo($btns);
+    var $accept = $('<button type="button">ACCEPT</button>').appendTo($btns);
+    // Minimal inline styles so modal is visible even if CSS didn’t load
+    try {
+      $overlay.css({ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', zIndex: 200, display: 'flex', alignItems: 'center', justifyContent: 'center' });
+      $modal.css({ background: '#fff', width: 'calc(100% - 60px)', maxWidth: '720px', borderRadius: '6px', boxShadow: '0 10px 30px rgba(0,0,0,0.25)', overflow: 'hidden' });
+      $('.transcripts-modal-content', $modal).css({ padding: '20px', color: '#000', fontSize: '18px', lineHeight: 1.5, fontFamily: 'Georgia, "Times New Roman", Times, serif' });
+      $('.transcripts-modal-buttons', $modal).css({ display: 'flex', gap: '12px', justifyContent: 'flex-end', padding: '0 20px 20px 20px' });
+    } catch(e) {}
+    $cancel.on('click', function(){ $overlay.remove(); if (onCancel) onCancel(); });
+    $accept.on('click', function(){ try { setCookie('transcripts_consent', String(version||''), 365); } catch(e) {} $overlay.remove(); if (onAccept) onAccept(); });
+    // allow Escape to cancel
+    $(document).on('keydown.transcriptsmodal', function(ev){ if (ev.which === 27) { $overlay.remove(); $(document).off('keydown.transcriptsmodal'); if (onCancel) onCancel(); }});
+  }
+
   function getPanelContainer(opts) {
     return $('.' + opts.classes.transcripts + ' .' + opts.classes.transcriptsContainer);
   }
@@ -279,6 +328,24 @@
 
   $[deck]('extend', 'showTranscripts', function() {
     var opts = $[deck]('getOptions');
+
+    // First-use consent gate
+    try {
+      var msgEl = document.getElementById('transcript-first-use-message');
+      if (msgEl) {
+        var version = msgEl.getAttribute('data-version');
+        if (!transcriptsConsentAccepted(version)) {
+          showFirstUseModal(version, msgEl.innerHTML, function onAccept(){
+            // re-enter after accept
+            $[deck]('showTranscripts');
+          }, function onCancel(){
+            // do nothing
+          });
+          return; // postpone showing until user accepts
+        }
+      }
+    } catch(e) {}
+
     var $panel = ensurePanel(opts).show();
     state.exportMode = false;
     applyLiveTransform(opts);
@@ -303,7 +370,7 @@
     if ($panel.is(':visible')) {
       $[deck]('hideTranscripts');
     } else {
-      $[deck]('showTranscripts');
+      $[deck]('showTranscripts'); // consent handled inside showTranscripts
     }
   });
 
@@ -346,15 +413,12 @@
       var qs = window.location.search || '';
       var show_transcripts = /[?&](transcript|t)([&=]|$)/.test(qs);
       if (show_transcripts) {
-        // Ensure transcripts are loaded before opening the panel to avoid initial "[no transcript]"
+        // Ensure consent and data load before opening the panel
+        var open = function(){ $[deck]('showTranscripts'); };
         var p = doLoad(opts);
-        if (p && p.always) {
-          p.always(function(){ $[deck]('showTranscripts'); });
-        } else if (p && p.then) {
-          p.then(function(){ $[deck]('showTranscripts'); }, function(){ $[deck]('showTranscripts'); });
-        } else {
-          $[deck]('showTranscripts');
-        }
+        if (p && p.always) { p.always(open); }
+        else if (p && p.then) { p.then(open, open); }
+        else { open(); }
       }
     } catch(e) {}
 
