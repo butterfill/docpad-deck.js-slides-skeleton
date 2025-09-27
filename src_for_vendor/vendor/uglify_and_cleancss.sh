@@ -34,6 +34,7 @@ uglifyjs  \
   deck.js/deck.menu.js \
   deck.js/deck.hash.js \
   deck.js/deck.notes.js \
+  deck.js/deck.transcripts.js \
   deck.js/deck.slide-clone.js \
   deck.js/deck.step.js \
   deck.js/deck.events.js \
@@ -49,4 +50,5 @@ cleancss -o for.slides.all.css \
   deck.js/deck.menu.css \
   deck.js/deck.hash.css \
   deck.js/deck.notes.css \
+  deck.js/deck.transcripts.css \
   questionmark.js/question.mark.css

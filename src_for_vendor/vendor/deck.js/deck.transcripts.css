@@ -1,0 +1,44 @@
+/* deck.transcripts.css - right-side transcripts panel */
+
+.deck-container .transcript:not(.show) {
+  display: none;
+}
+
+.deck-transcripts {
+  position: absolute;
+  background-color: white;
+  z-index: 15;
+  top: 0;
+  bottom: 0;
+  right: 0; /* right side */
+  width: 400px; /* wider default */
+  display: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: pre-wrap;
+}
+
+.deck-transcripts.large-format {
+  width: 600px;
+}
+
+.deck-transcripts.large-format .deck-transcripts-container {
+  font-size: 20px; /* larger in large-format */
+}
+
+.deck-transcripts .deck-transcripts-container {
+  margin-top: 2px;
+  border-top: 1px solid white;
+  padding: 0.875em;
+  color: black;
+  text-shadow: none;
+  font-size: 18px; /* larger text */
+  line-height: 1.5; /* readability */
+  font-family: Georgia, "Times New Roman", Times, serif; /* readable serif */
+}
+
+.deck-transcripts.export {
+  left: 25px;
+  width: 800px;
+  right: auto;
+}
